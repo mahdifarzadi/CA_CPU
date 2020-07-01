@@ -1,17 +1,22 @@
 <?xml version="1.0" ?>
 <LOG_ROOT>
 	<PROJECT NAME="CPU">
-		<CBX_INST_ENTRY INSTANCE_NAME="|ALU|adder:inst19|lpm_add_sub:lpm_add_sub_component" CBX_FILE_NAME="add_sub_7ri.tdf"/>
-		<CBX_INST_ENTRY INSTANCE_NAME="|ALU|mux_gate:inst|lpm_mux:lpm_mux_component" CBX_FILE_NAME="mux_2rc.tdf"/>
-		<CBX_INST_ENTRY INSTANCE_NAME="|ALU|rotate_left:inst25|lpm_clshift:lpm_clshift_component" CBX_FILE_NAME="lpm_clshift_iib.tdf"/>
-		<CBX_INST_ENTRY INSTANCE_NAME="|ALU|rotate_right:inst26|lpm_clshift:lpm_clshift_component" CBX_FILE_NAME="lpm_clshift_jhc.tdf"/>
-		<CBX_INST_ENTRY INSTANCE_NAME="|ALU|shift_left:inst22|lpm_clshift:lpm_clshift_component" CBX_FILE_NAME="lpm_clshift_nrd.tdf"/>
-		<CBX_INST_ENTRY INSTANCE_NAME="|ALU|shift_right:inst23|lpm_clshift:lpm_clshift_component" CBX_FILE_NAME="lpm_clshift_oqe.tdf"/>
-		<CBX_INST_ENTRY INSTANCE_NAME="|ALU|div:inst2|lpm_divide:lpm_divide_component" CBX_FILE_NAME="lpm_divide_67s.tdf"/>
-		<CBX_INST_ENTRY INSTANCE_NAME="|ALU|mult:inst1|lpm_mult:lpm_mult_component" CBX_FILE_NAME="mult_55n.tdf"/>
-		<CBX_INST_ENTRY INSTANCE_NAME="|ALU|mux21_gate:max|lpm_mux:lpm_mux_component" CBX_FILE_NAME="mux_bpc.tdf"/>
-		<CBX_INST_ENTRY INSTANCE_NAME="|ALU|mux21_gate:min|lpm_mux:lpm_mux_component" CBX_FILE_NAME="mux_bpc.tdf"/>
-		<CBX_INST_ENTRY INSTANCE_NAME="|ALU|subtractor:inst20|lpm_add_sub:lpm_add_sub_component" CBX_FILE_NAME="add_sub_8si.tdf"/>
-		<CBX_INST_ENTRY INSTANCE_NAME="|ALU|comp:inst3|lpm_compare:lpm_compare_component" CBX_FILE_NAME="cmpr_0gg.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|CPU|ALU:inst13|adder:inst19|lpm_add_sub:lpm_add_sub_component" CBX_FILE_NAME="add_sub_7ri.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|CPU|ALU:inst13|mux_gate:inst|lpm_mux:lpm_mux_component" CBX_FILE_NAME="mux_2rc.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|CPU|ALU:inst13|rotate_right:inst26|lpm_clshift:lpm_clshift_component" CBX_FILE_NAME="lpm_clshift_jhc.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|CPU|ALU:inst13|shift_left:inst22|lpm_clshift:lpm_clshift_component" CBX_FILE_NAME="lpm_clshift_nrd.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|CPU|registers:inst5|alt3pram:alt3pram_component|altdpram:altdpram_component1" CBX_FILE_NAME="dpram_7mm1.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|CPU|ALU:inst13|div:inst2|lpm_divide:lpm_divide_component" CBX_FILE_NAME="lpm_divide_67s.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|CPU|ALU:inst13|mult:inst1|lpm_mult:lpm_mult_component" CBX_FILE_NAME="mult_55n.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|CPU|ALU:inst13|mux21_gate:min|lpm_mux:lpm_mux_component" CBX_FILE_NAME="mux_bpc.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|CPU|ALU:inst13|subtractor:inst20|lpm_add_sub:lpm_add_sub_component" CBX_FILE_NAME="add_sub_8si.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|CPU|registers:inst5|alt3pram:alt3pram_component|altdpram:altdpram_component2" CBX_FILE_NAME="dpram_7mm1.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|CPU|ALU:inst13|comp:inst3|lpm_compare:lpm_compare_component" CBX_FILE_NAME="cmpr_0gg.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|CPU|registers:inst5|alt3pram:alt3pram_component|altdpram:altdpram_component1|altsyncram:ram_block" CBX_FILE_NAME="altsyncram_rpr1.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|CPU|ALU:inst13|mux21_gate:max|lpm_mux:lpm_mux_component" CBX_FILE_NAME="mux_bpc.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|CPU|instructions_mem:inst|altsyncram:altsyncram_component" CBX_FILE_NAME="altsyncram_lg81.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|CPU|registers:inst5|alt3pram:alt3pram_component|altdpram:altdpram_component2|altsyncram:ram_block" CBX_FILE_NAME="altsyncram_rpr1.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|CPU|ALU:inst13|rotate_left:inst25|lpm_clshift:lpm_clshift_component" CBX_FILE_NAME="lpm_clshift_iib.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|CPU|ALU:inst13|shift_right:inst23|lpm_clshift:lpm_clshift_component" CBX_FILE_NAME="lpm_clshift_oqe.tdf"/>
 	</PROJECT>
 </LOG_ROOT>
