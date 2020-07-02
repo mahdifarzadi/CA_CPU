@@ -18,5 +18,6 @@
 		<CBX_INST_ENTRY INSTANCE_NAME="|CPU|registers:inst5|alt3pram:alt3pram_component|altdpram:altdpram_component2|altsyncram:ram_block" CBX_FILE_NAME="altsyncram_rpr1.tdf"/>
 		<CBX_INST_ENTRY INSTANCE_NAME="|CPU|ALU:inst13|rotate_left:inst25|lpm_clshift:lpm_clshift_component" CBX_FILE_NAME="lpm_clshift_iib.tdf"/>
 		<CBX_INST_ENTRY INSTANCE_NAME="|CPU|ALU:inst13|shift_right:inst23|lpm_clshift:lpm_clshift_component" CBX_FILE_NAME="lpm_clshift_oqe.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|CPU|pc:inst1|lpm_counter:lpm_counter_component" CBX_FILE_NAME="cntr_qlh.tdf"/>
 	</PROJECT>
 </LOG_ROOT>

@@ -1,5 +1,5 @@
 Flow report for CPU
-Thu Jul 02 02:43:55 2020
+Thu Jul 02 20:48:27 2020
 Quartus II Version 9.0 Build 132 02/25/2009 SJ Web Edition
 
 
@@ -38,19 +38,19 @@ applicable agreement for further details.
 +-------------------------------------------------------------------------+
 ; Flow Summary                                                            ;
 +-------------------------------+-----------------------------------------+
-; Flow Status                   ; Successful - Thu Jul 02 02:43:51 2020   ;
+; Flow Status                   ; Successful - Thu Jul 02 20:48:14 2020   ;
 ; Quartus II Version            ; 9.0 Build 132 02/25/2009 SJ Web Edition ;
 ; Revision Name                 ; CPU                                     ;
 ; Top-level Entity Name         ; CPU                                     ;
 ; Family                        ; Stratix II                              ;
 ; Met timing requirements       ; Yes                                     ;
 ; Logic utilization             ; 17 %                                    ;
-;     Combinational ALUTs       ; 1,866 / 12,480 ( 15 % )                 ;
-;     Dedicated logic registers ; 0 / 12,480 ( 0 % )                      ;
-; Total registers               ; 0                                       ;
-; Total pins                    ; 38 / 343 ( 11 % )                       ;
+;     Combinational ALUTs       ; 1,896 / 12,480 ( 15 % )                 ;
+;     Dedicated logic registers ; 4 / 12,480 ( < 1 % )                    ;
+; Total registers               ; 4                                       ;
+; Total pins                    ; 100 / 343 ( 29 % )                      ;
 ; Total virtual pins            ; 0                                       ;
-; Total block memory bits       ; 2,352 / 419,328 ( < 1 % )               ;
+; Total block memory bits       ; 2,432 / 419,328 ( < 1 % )               ;
 ; DSP block 9-bit elements      ; 2 / 96 ( 2 % )                          ;
 ; Total PLLs                    ; 0 / 6 ( 0 % )                           ;
 ; Total DLLs                    ; 0 / 2 ( 0 % )                           ;
@@ -64,7 +64,7 @@ applicable agreement for further details.
 +-------------------+---------------------+
 ; Option            ; Setting             ;
 +-------------------+---------------------+
-; Start date & time ; 07/02/2020 02:43:26 ;
+; Start date & time ; 07/02/2020 20:47:40 ;
 ; Main task         ; Compilation         ;
 ; Revision Name     ; CPU                 ;
 +-------------------+---------------------+
@@ -75,7 +75,12 @@ applicable agreement for further details.
 +------------------------------------+-------------------------------+---------------+-------------+----------------+
 ; Assignment Name                    ; Value                         ; Default Value ; Entity Name ; Section Id     ;
 +------------------------------------+-------------------------------+---------------+-------------+----------------+
-; COMPILER_SIGNATURE_ID              ; 1095773015890.159364160622732 ; --            ; --          ; --             ;
+; COMPILER_SIGNATURE_ID              ; 1095773015890.159370666037096 ; --            ; --          ; --             ;
+; IP_TOOL_NAME                       ; LPM_COUNTER                   ; --            ; --          ; --             ;
+; IP_TOOL_VERSION                    ; 9.0                           ; --            ; --          ; --             ;
+; MISC_FILE                          ; pc.bsf                        ; --            ; --          ; --             ;
+; MISC_FILE                          ; pc_bb.v                       ; --            ; --          ; --             ;
+; MISC_FILE                          ; pc.inc                        ; --            ; --          ; --             ;
 ; PARTITION_COLOR                    ; 16764057                      ; --            ; --          ; Top            ;
 ; PARTITION_NETLIST_TYPE             ; SOURCE                        ; --            ; --          ; Top            ;
 ; USE_GENERATED_PHYSICAL_CONSTRAINTS ; Off                           ; --            ; --          ; eda_blast_fpga ;
@@ -87,11 +92,11 @@ applicable agreement for further details.
 +-------------------------+--------------+-------------------------+---------------------+------------------------------------+
 ; Module Name             ; Elapsed Time ; Average Processors Used ; Peak Virtual Memory ; Total CPU Time (on all processors) ;
 +-------------------------+--------------+-------------------------+---------------------+------------------------------------+
-; Analysis & Synthesis    ; 00:00:11     ; 1.0                     ; 279 MB              ; 00:00:11                           ;
-; Fitter                  ; 00:00:06     ; 1.0                     ; 292 MB              ; 00:00:07                           ;
-; Assembler               ; 00:00:04     ; 1.0                     ; 258 MB              ; 00:00:03                           ;
-; Classic Timing Analyzer ; 00:00:02     ; 1.0                     ; 197 MB              ; 00:00:02                           ;
-; Total                   ; 00:00:23     ; --                      ; --                  ; 00:00:23                           ;
+; Analysis & Synthesis    ; 00:00:11     ; 1.0                     ; 281 MB              ; 00:00:12                           ;
+; Fitter                  ; 00:00:09     ; 1.0                     ; 292 MB              ; 00:00:09                           ;
+; Assembler               ; 00:00:03     ; 1.0                     ; 259 MB              ; 00:00:03                           ;
+; Classic Timing Analyzer ; 00:00:02     ; 1.0                     ; 200 MB              ; 00:00:02                           ;
+; Total                   ; 00:00:25     ; --                      ; --                  ; 00:00:26                           ;
 +-------------------------+--------------+-------------------------+---------------------+------------------------------------+
 
 

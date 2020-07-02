@@ -32,11 +32,73 @@ out[29] <= ALU:inst13.result[29]
 out[30] <= ALU:inst13.result[30]
 out[31] <= ALU:inst13.result[31]
 clock => instructions_mem:inst.clock
-ins_addr[0] => instructions_mem:inst.address[0]
-ins_addr[1] => instructions_mem:inst.address[1]
-ins_addr[2] => instructions_mem:inst.address[2]
-ins_addr[3] => instructions_mem:inst.address[3]
+pc_clock => pc:inst1.clock
+wren => registers:inst5.wren
 clock2 => registers:inst5.clock
+qa[0] <= registers:inst5.qa[0]
+qa[1] <= registers:inst5.qa[1]
+qa[2] <= registers:inst5.qa[2]
+qa[3] <= registers:inst5.qa[3]
+qa[4] <= registers:inst5.qa[4]
+qa[5] <= registers:inst5.qa[5]
+qa[6] <= registers:inst5.qa[6]
+qa[7] <= registers:inst5.qa[7]
+qa[8] <= registers:inst5.qa[8]
+qa[9] <= registers:inst5.qa[9]
+qa[10] <= registers:inst5.qa[10]
+qa[11] <= registers:inst5.qa[11]
+qa[12] <= registers:inst5.qa[12]
+qa[13] <= registers:inst5.qa[13]
+qa[14] <= registers:inst5.qa[14]
+qa[15] <= registers:inst5.qa[15]
+qa[16] <= registers:inst5.qa[16]
+qa[17] <= registers:inst5.qa[17]
+qa[18] <= registers:inst5.qa[18]
+qa[19] <= registers:inst5.qa[19]
+qa[20] <= registers:inst5.qa[20]
+qa[21] <= registers:inst5.qa[21]
+qa[22] <= registers:inst5.qa[22]
+qa[23] <= registers:inst5.qa[23]
+qa[24] <= registers:inst5.qa[24]
+qa[25] <= registers:inst5.qa[25]
+qa[26] <= registers:inst5.qa[26]
+qa[27] <= registers:inst5.qa[27]
+qa[28] <= registers:inst5.qa[28]
+qa[29] <= registers:inst5.qa[29]
+qa[30] <= registers:inst5.qa[30]
+qa[31] <= registers:inst5.qa[31]
+qb[0] <= registers:inst5.qb[0]
+qb[1] <= registers:inst5.qb[1]
+qb[2] <= registers:inst5.qb[2]
+qb[3] <= registers:inst5.qb[3]
+qb[4] <= registers:inst5.qb[4]
+qb[5] <= registers:inst5.qb[5]
+qb[6] <= registers:inst5.qb[6]
+qb[7] <= registers:inst5.qb[7]
+qb[8] <= registers:inst5.qb[8]
+qb[9] <= registers:inst5.qb[9]
+qb[10] <= registers:inst5.qb[10]
+qb[11] <= registers:inst5.qb[11]
+qb[12] <= registers:inst5.qb[12]
+qb[13] <= registers:inst5.qb[13]
+qb[14] <= registers:inst5.qb[14]
+qb[15] <= registers:inst5.qb[15]
+qb[16] <= registers:inst5.qb[16]
+qb[17] <= registers:inst5.qb[17]
+qb[18] <= registers:inst5.qb[18]
+qb[19] <= registers:inst5.qb[19]
+qb[20] <= registers:inst5.qb[20]
+qb[21] <= registers:inst5.qb[21]
+qb[22] <= registers:inst5.qb[22]
+qb[23] <= registers:inst5.qb[23]
+qb[24] <= registers:inst5.qb[24]
+qb[25] <= registers:inst5.qb[25]
+qb[26] <= registers:inst5.qb[26]
+qb[27] <= registers:inst5.qb[27]
+qb[28] <= registers:inst5.qb[28]
+qb[29] <= registers:inst5.qb[29]
+qb[30] <= registers:inst5.qb[30]
+qb[31] <= registers:inst5.qb[31]
 
 
 |CPU|ALU:inst13
@@ -7177,6 +7239,66 @@ q_a[28] <= ram_block1a28.PORTADATAOUT
 q_a[29] <= ram_block1a29.PORTADATAOUT
 q_a[30] <= ram_block1a30.PORTADATAOUT
 q_a[31] <= ram_block1a31.PORTADATAOUT
+
+
+|CPU|pc:inst1
+clock => clock~0.IN1
+q[0] <= lpm_counter:lpm_counter_component.q
+q[1] <= lpm_counter:lpm_counter_component.q
+q[2] <= lpm_counter:lpm_counter_component.q
+q[3] <= lpm_counter:lpm_counter_component.q
+
+
+|CPU|pc:inst1|lpm_counter:lpm_counter_component
+clock => cntr_qlh:auto_generated.clock
+clk_en => ~NO_FANOUT~
+cnt_en => ~NO_FANOUT~
+updown => ~NO_FANOUT~
+aclr => ~NO_FANOUT~
+aset => ~NO_FANOUT~
+aconst => ~NO_FANOUT~
+aload => ~NO_FANOUT~
+sclr => ~NO_FANOUT~
+sset => ~NO_FANOUT~
+sconst => ~NO_FANOUT~
+sload => ~NO_FANOUT~
+data[0] => ~NO_FANOUT~
+data[1] => ~NO_FANOUT~
+data[2] => ~NO_FANOUT~
+data[3] => ~NO_FANOUT~
+cin => ~NO_FANOUT~
+q[0] <= cntr_qlh:auto_generated.q[0]
+q[1] <= cntr_qlh:auto_generated.q[1]
+q[2] <= cntr_qlh:auto_generated.q[2]
+q[3] <= cntr_qlh:auto_generated.q[3]
+cout <= <GND>
+eq[0] <= <GND>
+eq[1] <= <GND>
+eq[2] <= <GND>
+eq[3] <= <GND>
+eq[4] <= <GND>
+eq[5] <= <GND>
+eq[6] <= <GND>
+eq[7] <= <GND>
+eq[8] <= <GND>
+eq[9] <= <GND>
+eq[10] <= <GND>
+eq[11] <= <GND>
+eq[12] <= <GND>
+eq[13] <= <GND>
+eq[14] <= <GND>
+eq[15] <= <GND>
+
+
+|CPU|pc:inst1|lpm_counter:lpm_counter_component|cntr_qlh:auto_generated
+clock => counter_reg_bit1a[3].CLK
+clock => counter_reg_bit1a[2].CLK
+clock => counter_reg_bit1a[1].CLK
+clock => counter_reg_bit1a[0].CLK
+q[0] <= counter_reg_bit1a[0].REGOUT
+q[1] <= counter_reg_bit1a[1].REGOUT
+q[2] <= counter_reg_bit1a[2].REGOUT
+q[3] <= counter_reg_bit1a[3].REGOUT
 
 
 |CPU|registers:inst5
