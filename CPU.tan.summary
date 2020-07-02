@@ -2,55 +2,35 @@
 Timing Analyzer Summary
 --------------------------------------------------------------------------------------
 
-Type           : Worst-case tsu
-Slack          : N/A
-Required Time  : None
-Actual Time    : 3.670 ns
-From           : wren
-To             : registers:inst5|alt3pram:alt3pram_component|altdpram:altdpram_component2|altsyncram:ram_block|altsyncram_rpr1:auto_generated|ram_block1a0~porta_datain_reg31
-From Clock     : --
-To Clock       : clock2
-Failed Paths   : 0
-
 Type           : Worst-case tco
 Slack          : N/A
 Required Time  : None
-Actual Time    : 99.117 ns
+Actual Time    : 107.639 ns
 From           : registers:inst5|alt3pram:alt3pram_component|altdpram:altdpram_component2|altsyncram:ram_block|altsyncram_rpr1:auto_generated|ram_block1a0~portb_address_reg4
-To             : out[27]
-From Clock     : clock2
+To             : out[23]
+From Clock     : clock
 To Clock       : --
 Failed Paths   : 0
 
-Type           : Worst-case th
+Type           : Clock Setup: 'clock'
 Slack          : N/A
 Required Time  : None
-Actual Time    : -2.872 ns
-From           : wren
-To             : registers:inst5|alt3pram:alt3pram_component|altdpram:altdpram_component1|altsyncram:ram_block|altsyncram_rpr1:auto_generated|ram_block1a0~porta_we_reg
-From Clock     : --
-To Clock       : clock2
-Failed Paths   : 0
-
-Type           : Clock Setup: 'clock2'
-Slack          : N/A
-Required Time  : None
-Actual Time    : 10.61 MHz ( period = 94.240 ns )
+Actual Time    : 10.07 MHz ( period = 99.272 ns )
 From           : registers:inst5|alt3pram:alt3pram_component|altdpram:altdpram_component2|altsyncram:ram_block|altsyncram_rpr1:auto_generated|ram_block1a0~portb_address_reg4
 To             : registers:inst5|alt3pram:alt3pram_component|altdpram:altdpram_component2|altsyncram:ram_block|altsyncram_rpr1:auto_generated|ram_block1a0~porta_datain_reg31
-From Clock     : clock2
-To Clock       : clock2
+From Clock     : clock
+To Clock       : clock
 Failed Paths   : 0
 
-Type           : Clock Setup: 'pc_clock'
-Slack          : N/A
+Type           : Clock Hold: 'clock'
+Slack          : Not operational: Clock Skew > Data Delay
 Required Time  : None
-Actual Time    : Restricted to 500.00 MHz ( period = 2.000 ns )
-From           : pc:inst1|lpm_counter:lpm_counter_component|cntr_qlh:auto_generated|safe_q[0]
-To             : pc:inst1|lpm_counter:lpm_counter_component|cntr_qlh:auto_generated|safe_q[3]
-From Clock     : pc_clock
-To Clock       : pc_clock
-Failed Paths   : 0
+Actual Time    : N/A
+From           : CU:inst3|sequencer4:inst|counter:inst|lpm_counter:lpm_counter_component|cntr_olh:auto_generated|safe_q[0]
+To             : registers:inst5|alt3pram:alt3pram_component|altdpram:altdpram_component2|altsyncram:ram_block|altsyncram_rpr1:auto_generated|ram_block1a0~porta_we_reg
+From Clock     : clock
+To Clock       : clock
+Failed Paths   : 152
 
 Type           : Total number of failed paths
 Slack          : 
@@ -60,7 +40,7 @@ From           :
 To             : 
 From Clock     : 
 To Clock       : 
-Failed Paths   : 0
+Failed Paths   : 152
 
 --------------------------------------------------------------------------------------
 

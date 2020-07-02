@@ -11,12 +11,22 @@
       <reg_type>le</reg_type>
     </key_point>
     <key_point id="3" type="register">
-      <name>inst1/lpm_counter_component/auto_generated/counter_reg_bit1a[1]</name>
+      <name>inst3/inst/inst/lpm_counter_component/auto_generated/counter_reg_bit1a[1]</name>
       <entity>stratixii_lcell_ff</entity>
       <reg_type>le</reg_type>
     </key_point>
     <key_point id="4" type="register">
+      <name>inst1/lpm_counter_component/auto_generated/counter_reg_bit1a[1]</name>
+      <entity>stratixii_lcell_ff</entity>
+      <reg_type>le</reg_type>
+    </key_point>
+    <key_point id="5" type="register">
       <name>inst1/lpm_counter_component/auto_generated/counter_reg_bit1a[2]</name>
+      <entity>stratixii_lcell_ff</entity>
+      <reg_type>le</reg_type>
+    </key_point>
+    <key_point id="6" type="register">
+      <name>inst3/inst/inst/lpm_counter_component/auto_generated/counter_reg_bit1a[0]</name>
       <entity>stratixii_lcell_ff</entity>
       <reg_type>le</reg_type>
     </key_point>
@@ -24,16 +34,22 @@
   <key_points_set type="transition" hier_sep="|">
   </key_points_set>
   <key_points_set type="transformed" hier_sep="|">
-    <key_point id="5" type="register">
+    <key_point id="7" type="register">
       <name>pc:inst1|lpm_counter:lpm_counter_component|cntr_qlh:auto_generated|safe_q[1]</name>
     </key_point>
-    <key_point id="6" type="register">
+    <key_point id="8" type="register">
+      <name>CU:inst3|sequencer4:inst|counter:inst|lpm_counter:lpm_counter_component|cntr_olh:auto_generated|safe_q[0]</name>
+    </key_point>
+    <key_point id="9" type="register">
+      <name>CU:inst3|sequencer4:inst|counter:inst|lpm_counter:lpm_counter_component|cntr_olh:auto_generated|safe_q[1]</name>
+    </key_point>
+    <key_point id="10" type="register">
       <name>pc:inst1|lpm_counter:lpm_counter_component|cntr_qlh:auto_generated|safe_q[2]</name>
     </key_point>
-    <key_point id="7" type="register">
+    <key_point id="11" type="register">
       <name>pc:inst1|lpm_counter:lpm_counter_component|cntr_qlh:auto_generated|safe_q[3]</name>
     </key_point>
-    <key_point id="8" type="register">
+    <key_point id="12" type="register">
       <name>pc:inst1|lpm_counter:lpm_counter_component|cntr_qlh:auto_generated|safe_q[0]</name>
     </key_point>
   </key_points_set>
@@ -41,19 +57,7 @@
     <transformation>
       <kp_set type="reference">
         <kp_state index="0">
-          <kp id="3" type="proxy"></kp>
-        </kp_state>
-      </kp_set>
-      <kp_set type="transformed">
-        <kp_state index="0">
-          <kp id="5" type="proxy"></kp>
-        </kp_state>
-      </kp_set>
-    </transformation>
-    <transformation>
-      <kp_set type="reference">
-        <kp_state index="0">
-          <kp id="1" type="proxy"></kp>
+          <kp id="4" type="proxy"></kp>
         </kp_state>
       </kp_set>
       <kp_set type="transformed">
@@ -65,7 +69,7 @@
     <transformation>
       <kp_set type="reference">
         <kp_state index="0">
-          <kp id="2" type="proxy"></kp>
+          <kp id="6" type="proxy"></kp>
         </kp_state>
       </kp_set>
       <kp_set type="transformed">
@@ -77,12 +81,48 @@
     <transformation>
       <kp_set type="reference">
         <kp_state index="0">
-          <kp id="4" type="proxy"></kp>
+          <kp id="2" type="proxy"></kp>
         </kp_state>
       </kp_set>
       <kp_set type="transformed">
         <kp_state index="0">
-          <kp id="6" type="proxy"></kp>
+          <kp id="12" type="proxy"></kp>
+        </kp_state>
+      </kp_set>
+    </transformation>
+    <transformation>
+      <kp_set type="reference">
+        <kp_state index="0">
+          <kp id="1" type="proxy"></kp>
+        </kp_state>
+      </kp_set>
+      <kp_set type="transformed">
+        <kp_state index="0">
+          <kp id="11" type="proxy"></kp>
+        </kp_state>
+      </kp_set>
+    </transformation>
+    <transformation>
+      <kp_set type="reference">
+        <kp_state index="0">
+          <kp id="3" type="proxy"></kp>
+        </kp_state>
+      </kp_set>
+      <kp_set type="transformed">
+        <kp_state index="0">
+          <kp id="9" type="proxy"></kp>
+        </kp_state>
+      </kp_set>
+    </transformation>
+    <transformation>
+      <kp_set type="reference">
+        <kp_state index="0">
+          <kp id="5" type="proxy"></kp>
+        </kp_state>
+      </kp_set>
+      <kp_set type="transformed">
+        <kp_state index="0">
+          <kp id="10" type="proxy"></kp>
         </kp_state>
       </kp_set>
     </transformation>
