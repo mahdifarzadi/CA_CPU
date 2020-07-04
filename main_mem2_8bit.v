@@ -1,10 +1,10 @@
-// megafunction wizard: %RAM: 2-PORT%VBB%
+// megafunction wizard: %RAM: 2-PORT%
 // GENERATION: STANDARD
 // VERSION: WM1.0
 // MODULE: altsyncram 
 
 // ============================================================
-// File Name: main_mem.v
+// File Name: main_mem2_8bit.v
 // Megafunction Name(s):
 // 			altsyncram
 //
@@ -16,6 +16,7 @@
 //
 // 9.0 Build 132 02/25/2009 SJ Web Edition
 // ************************************************************
+
 
 //Copyright (C) 1991-2009 Altera Corporation
 //Your use of Altera Corporation's design tools, logic functions 
@@ -31,7 +32,11 @@
 //Altera or its authorized distributors.  Please refer to the 
 //applicable agreement for further details.
 
-module main_mem (
+
+// synopsys translate_off
+`timescale 1 ps / 1 ps
+// synopsys translate_on
+module main_mem2_8bit (
 	clock,
 	data,
 	rdaddress,
@@ -41,10 +46,10 @@ module main_mem (
 
 	input	  clock;
 	input	[7:0]  data;
-	input	[13:0]  rdaddress;
-	input	[15:0]  wraddress;
+	input	[4:0]  rdaddress;
+	input	[4:0]  wraddress;
 	input	  wren;
-	output	[31:0]  q;
+	output	[7:0]  q;
 `ifndef ALTERA_RESERVED_QIS
 // synopsys translate_off
 `endif
@@ -52,6 +57,55 @@ module main_mem (
 `ifndef ALTERA_RESERVED_QIS
 // synopsys translate_on
 `endif
+
+	wire [7:0] sub_wire0;
+	wire [7:0] q = sub_wire0[7:0];
+
+	altsyncram	altsyncram_component (
+				.wren_a (wren),
+				.clock0 (clock),
+				.address_a (wraddress),
+				.address_b (rdaddress),
+				.data_a (data),
+				.q_b (sub_wire0),
+				.aclr0 (1'b0),
+				.aclr1 (1'b0),
+				.addressstall_a (1'b0),
+				.addressstall_b (1'b0),
+				.byteena_a (1'b1),
+				.byteena_b (1'b1),
+				.clock1 (1'b1),
+				.clocken0 (1'b1),
+				.clocken1 (1'b1),
+				.clocken2 (1'b1),
+				.clocken3 (1'b1),
+				.data_b ({8{1'b1}}),
+				.eccstatus (),
+				.q_a (),
+				.rden_a (1'b1),
+				.rden_b (1'b1),
+				.wren_b (1'b0));
+	defparam
+		altsyncram_component.address_reg_b = "CLOCK0",
+		altsyncram_component.clock_enable_input_a = "BYPASS",
+		altsyncram_component.clock_enable_input_b = "BYPASS",
+		altsyncram_component.clock_enable_output_a = "BYPASS",
+		altsyncram_component.clock_enable_output_b = "BYPASS",
+		altsyncram_component.intended_device_family = "Stratix II",
+		altsyncram_component.lpm_type = "altsyncram",
+		altsyncram_component.numwords_a = 32,
+		altsyncram_component.numwords_b = 32,
+		altsyncram_component.operation_mode = "DUAL_PORT",
+		altsyncram_component.outdata_aclr_b = "NONE",
+		altsyncram_component.outdata_reg_b = "CLOCK0",
+		altsyncram_component.power_up_uninitialized = "FALSE",
+		altsyncram_component.read_during_write_mode_mixed_ports = "DONT_CARE",
+		altsyncram_component.widthad_a = 5,
+		altsyncram_component.widthad_b = 5,
+		altsyncram_component.width_a = 8,
+		altsyncram_component.width_b = 8,
+		altsyncram_component.width_byteena_a = 1;
+
 
 endmodule
 
@@ -89,7 +143,7 @@ endmodule
 // Retrieval info: PRIVATE: JTAG_ENABLED NUMERIC "0"
 // Retrieval info: PRIVATE: JTAG_ID STRING "NONE"
 // Retrieval info: PRIVATE: MAXIMUM_DEPTH NUMERIC "0"
-// Retrieval info: PRIVATE: MEMSIZE NUMERIC "524288"
+// Retrieval info: PRIVATE: MEMSIZE NUMERIC "256"
 // Retrieval info: PRIVATE: MEM_IN_BITS NUMERIC "0"
 // Retrieval info: PRIVATE: MIFfilename STRING ""
 // Retrieval info: PRIVATE: OPERATION_MODE NUMERIC "2"
@@ -108,11 +162,11 @@ endmodule
 // Retrieval info: PRIVATE: SYNTH_WRAPPER_GEN_POSTFIX STRING "0"
 // Retrieval info: PRIVATE: USE_DIFF_CLKEN NUMERIC "0"
 // Retrieval info: PRIVATE: UseDPRAM NUMERIC "1"
-// Retrieval info: PRIVATE: VarWidth NUMERIC "1"
+// Retrieval info: PRIVATE: VarWidth NUMERIC "0"
 // Retrieval info: PRIVATE: WIDTH_READ_A NUMERIC "8"
-// Retrieval info: PRIVATE: WIDTH_READ_B NUMERIC "32"
+// Retrieval info: PRIVATE: WIDTH_READ_B NUMERIC "8"
 // Retrieval info: PRIVATE: WIDTH_WRITE_A NUMERIC "8"
-// Retrieval info: PRIVATE: WIDTH_WRITE_B NUMERIC "32"
+// Retrieval info: PRIVATE: WIDTH_WRITE_B NUMERIC "8"
 // Retrieval info: PRIVATE: WRADDR_ACLR_B NUMERIC "0"
 // Retrieval info: PRIVATE: WRADDR_REG_B NUMERIC "0"
 // Retrieval info: PRIVATE: WRCTRL_ACLR_B NUMERIC "0"
@@ -125,37 +179,37 @@ endmodule
 // Retrieval info: CONSTANT: CLOCK_ENABLE_OUTPUT_B STRING "BYPASS"
 // Retrieval info: CONSTANT: INTENDED_DEVICE_FAMILY STRING "Stratix II"
 // Retrieval info: CONSTANT: LPM_TYPE STRING "altsyncram"
-// Retrieval info: CONSTANT: NUMWORDS_A NUMERIC "65536"
-// Retrieval info: CONSTANT: NUMWORDS_B NUMERIC "16384"
+// Retrieval info: CONSTANT: NUMWORDS_A NUMERIC "32"
+// Retrieval info: CONSTANT: NUMWORDS_B NUMERIC "32"
 // Retrieval info: CONSTANT: OPERATION_MODE STRING "DUAL_PORT"
 // Retrieval info: CONSTANT: OUTDATA_ACLR_B STRING "NONE"
 // Retrieval info: CONSTANT: OUTDATA_REG_B STRING "CLOCK0"
 // Retrieval info: CONSTANT: POWER_UP_UNINITIALIZED STRING "FALSE"
 // Retrieval info: CONSTANT: READ_DURING_WRITE_MODE_MIXED_PORTS STRING "DONT_CARE"
-// Retrieval info: CONSTANT: WIDTHAD_A NUMERIC "16"
-// Retrieval info: CONSTANT: WIDTHAD_B NUMERIC "14"
+// Retrieval info: CONSTANT: WIDTHAD_A NUMERIC "5"
+// Retrieval info: CONSTANT: WIDTHAD_B NUMERIC "5"
 // Retrieval info: CONSTANT: WIDTH_A NUMERIC "8"
-// Retrieval info: CONSTANT: WIDTH_B NUMERIC "32"
+// Retrieval info: CONSTANT: WIDTH_B NUMERIC "8"
 // Retrieval info: CONSTANT: WIDTH_BYTEENA_A NUMERIC "1"
 // Retrieval info: USED_PORT: clock 0 0 0 0 INPUT NODEFVAL clock
 // Retrieval info: USED_PORT: data 0 0 8 0 INPUT NODEFVAL data[7..0]
-// Retrieval info: USED_PORT: q 0 0 32 0 OUTPUT NODEFVAL q[31..0]
-// Retrieval info: USED_PORT: rdaddress 0 0 14 0 INPUT NODEFVAL rdaddress[13..0]
-// Retrieval info: USED_PORT: wraddress 0 0 16 0 INPUT NODEFVAL wraddress[15..0]
+// Retrieval info: USED_PORT: q 0 0 8 0 OUTPUT NODEFVAL q[7..0]
+// Retrieval info: USED_PORT: rdaddress 0 0 5 0 INPUT NODEFVAL rdaddress[4..0]
+// Retrieval info: USED_PORT: wraddress 0 0 5 0 INPUT NODEFVAL wraddress[4..0]
 // Retrieval info: USED_PORT: wren 0 0 0 0 INPUT VCC wren
 // Retrieval info: CONNECT: @data_a 0 0 8 0 data 0 0 8 0
 // Retrieval info: CONNECT: @wren_a 0 0 0 0 wren 0 0 0 0
-// Retrieval info: CONNECT: q 0 0 32 0 @q_b 0 0 32 0
-// Retrieval info: CONNECT: @address_a 0 0 16 0 wraddress 0 0 16 0
-// Retrieval info: CONNECT: @address_b 0 0 14 0 rdaddress 0 0 14 0
+// Retrieval info: CONNECT: q 0 0 8 0 @q_b 0 0 8 0
+// Retrieval info: CONNECT: @address_a 0 0 5 0 wraddress 0 0 5 0
+// Retrieval info: CONNECT: @address_b 0 0 5 0 rdaddress 0 0 5 0
 // Retrieval info: CONNECT: @clock0 0 0 0 0 clock 0 0 0 0
 // Retrieval info: LIBRARY: altera_mf altera_mf.altera_mf_components.all
-// Retrieval info: GEN_FILE: TYPE_NORMAL main_mem.v TRUE
-// Retrieval info: GEN_FILE: TYPE_NORMAL main_mem.inc TRUE
-// Retrieval info: GEN_FILE: TYPE_NORMAL main_mem.cmp FALSE
-// Retrieval info: GEN_FILE: TYPE_NORMAL main_mem.bsf TRUE FALSE
-// Retrieval info: GEN_FILE: TYPE_NORMAL main_mem_inst.v FALSE
-// Retrieval info: GEN_FILE: TYPE_NORMAL main_mem_bb.v TRUE
-// Retrieval info: GEN_FILE: TYPE_NORMAL main_mem_waveforms.html TRUE
-// Retrieval info: GEN_FILE: TYPE_NORMAL main_mem_wave*.jpg FALSE
+// Retrieval info: GEN_FILE: TYPE_NORMAL main_mem2_8bit.v TRUE
+// Retrieval info: GEN_FILE: TYPE_NORMAL main_mem2_8bit.inc TRUE
+// Retrieval info: GEN_FILE: TYPE_NORMAL main_mem2_8bit.cmp FALSE
+// Retrieval info: GEN_FILE: TYPE_NORMAL main_mem2_8bit.bsf TRUE FALSE
+// Retrieval info: GEN_FILE: TYPE_NORMAL main_mem2_8bit_inst.v FALSE
+// Retrieval info: GEN_FILE: TYPE_NORMAL main_mem2_8bit_bb.v TRUE
+// Retrieval info: GEN_FILE: TYPE_NORMAL main_mem2_8bit_waveforms.html TRUE
+// Retrieval info: GEN_FILE: TYPE_NORMAL main_mem2_8bit_wave*.jpg FALSE
 // Retrieval info: LIB_FILE: altera_mf

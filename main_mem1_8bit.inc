@@ -13,15 +13,15 @@
 --applicable agreement for further details.
 
 
-FUNCTION main_mem 
+FUNCTION main_mem1_8bit 
 (
 	clock,
 	data[7..0],
-	rdaddress[13..0],
-	wraddress[15..0],
+	rdaddress[4..0],
+	wraddress[4..0],
 	wren
 )
 
 RETURNS (
-	q[31..0]
+	q[7..0]
 );

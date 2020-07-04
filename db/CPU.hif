@@ -48,9 +48,6 @@ VERILOG_CONSTANT_LOOP_LIMIT
 VERILOG_NON_CONSTANT_LOOP_LIMIT
 250
 }
-# hierarchies {
-ALU:inst13|mux_gate:inst
-}
 # macro_sequence
 
 # end
@@ -126,9 +123,6 @@ c:|altera|90|quartus|libraries|megafunctions|muxlut.inc
 f172666ca13e5e31e17e3f6cb35af52
 c:|altera|90|quartus|libraries|megafunctions|altshift.inc
 70fa13aee7d6d160ef20b2de32813a
-}
-# hierarchies {
-ALU:inst13|mux_gate:inst|lpm_mux:lpm_mux_component
 }
 # macro_sequence
 
@@ -1693,9 +1687,6 @@ data0
 -1
 3
 }
-# hierarchies {
-ALU:inst13|mux_gate:inst|lpm_mux:lpm_mux_component|mux_2rc:auto_generated
-}
 # macro_sequence
 
 # end
@@ -1729,11 +1720,6 @@ VERILOG_CONSTANT_LOOP_LIMIT
 VERILOG_NON_CONSTANT_LOOP_LIMIT
 250
 }
-# hierarchies {
-ALU:inst13|not_gate:inst8
-ALU:inst13|not_gate:inst4
-ALU:inst13|not_gate:inst7
-}
 # macro_sequence
 
 # end
@@ -1760,11 +1746,6 @@ result
 data
 -1
 3
-}
-# hierarchies {
-ALU:inst13|not_gate:inst8|lpm_inv:lpm_inv_component
-ALU:inst13|not_gate:inst4|lpm_inv:lpm_inv_component
-ALU:inst13|not_gate:inst7|lpm_inv:lpm_inv_component
 }
 # macro_sequence
 
@@ -1799,9 +1780,6 @@ VERILOG_CONSTANT_LOOP_LIMIT
 VERILOG_NON_CONSTANT_LOOP_LIMIT
 250
 }
-# hierarchies {
-ALU:inst13|xor_gate:inst6
-}
 # macro_sequence
 
 # end
@@ -1832,9 +1810,6 @@ result
 data
 -1
 3
-}
-# hierarchies {
-ALU:inst13|xor_gate:inst6|lpm_xor:lpm_xor_component
 }
 # macro_sequence
 
@@ -1868,9 +1843,6 @@ VERILOG_CONSTANT_LOOP_LIMIT
 5000
 VERILOG_NON_CONSTANT_LOOP_LIMIT
 250
-}
-# hierarchies {
-ALU:inst13|shift_left:inst22
 }
 # macro_sequence
 
@@ -1926,9 +1898,6 @@ data
 direction
 -1
 1
-}
-# hierarchies {
-ALU:inst13|shift_left:inst22|lpm_clshift:lpm_clshift_component
 }
 # macro_sequence
 
@@ -2158,9 +2127,6 @@ data0
 -1
 3
 }
-# hierarchies {
-ALU:inst13|shift_left:inst22|lpm_clshift:lpm_clshift_component|lpm_clshift_nrd:auto_generated
-}
 # macro_sequence
 
 # end
@@ -2193,9 +2159,6 @@ VERILOG_CONSTANT_LOOP_LIMIT
 5000
 VERILOG_NON_CONSTANT_LOOP_LIMIT
 250
-}
-# hierarchies {
-ALU:inst13|shift_right:inst23
 }
 # macro_sequence
 
@@ -2251,9 +2214,6 @@ data
 direction
 -1
 2
-}
-# hierarchies {
-ALU:inst13|shift_right:inst23|lpm_clshift:lpm_clshift_component
 }
 # macro_sequence
 
@@ -2486,9 +2446,6 @@ data0
 -1
 3
 }
-# hierarchies {
-ALU:inst13|shift_right:inst23|lpm_clshift:lpm_clshift_component|lpm_clshift_oqe:auto_generated
-}
 # macro_sequence
 
 # end
@@ -2521,9 +2478,6 @@ VERILOG_CONSTANT_LOOP_LIMIT
 5000
 VERILOG_NON_CONSTANT_LOOP_LIMIT
 250
-}
-# hierarchies {
-ALU:inst13|rotate_left:inst25
 }
 # macro_sequence
 
@@ -2573,9 +2527,6 @@ data
 direction
 -1
 1
-}
-# hierarchies {
-ALU:inst13|rotate_left:inst25|lpm_clshift:lpm_clshift_component
 }
 # macro_sequence
 
@@ -2799,9 +2750,6 @@ data0
 -1
 3
 }
-# hierarchies {
-ALU:inst13|rotate_left:inst25|lpm_clshift:lpm_clshift_component|lpm_clshift_iib:auto_generated
-}
 # macro_sequence
 
 # end
@@ -2834,9 +2782,6 @@ VERILOG_CONSTANT_LOOP_LIMIT
 5000
 VERILOG_NON_CONSTANT_LOOP_LIMIT
 250
-}
-# hierarchies {
-ALU:inst13|rotate_right:inst26
 }
 # macro_sequence
 
@@ -2886,9 +2831,6 @@ data
 direction
 -1
 2
-}
-# hierarchies {
-ALU:inst13|rotate_right:inst26|lpm_clshift:lpm_clshift_component
 }
 # macro_sequence
 
@@ -3115,9 +3057,6 @@ data0
 -1
 3
 }
-# hierarchies {
-ALU:inst13|rotate_right:inst26|lpm_clshift:lpm_clshift_component|lpm_clshift_jhc:auto_generated
-}
 # macro_sequence
 
 # end
@@ -3150,9 +3089,6 @@ VERILOG_CONSTANT_LOOP_LIMIT
 5000
 VERILOG_NON_CONSTANT_LOOP_LIMIT
 250
-}
-# hierarchies {
-ALU:inst13|adder:inst19
 }
 # macro_sequence
 
@@ -3277,9 +3213,6 @@ c:|altera|90|quartus|libraries|megafunctions|alt_mercury_add_sub.inc
 ae39f15ed67cc9a095d29f68f6ad0f8
 c:|altera|90|quartus|libraries|megafunctions|look_add.inc
 ab9f577d30c5ef3166fab6c1c32c4a
-}
-# hierarchies {
-ALU:inst13|adder:inst19|lpm_add_sub:lpm_add_sub_component
 }
 # macro_sequence
 
@@ -3590,9 +3523,6 @@ cout
 -1
 3
 }
-# hierarchies {
-ALU:inst13|adder:inst19|lpm_add_sub:lpm_add_sub_component|add_sub_7ri:auto_generated
-}
 # macro_sequence
 
 # end
@@ -3625,9 +3555,6 @@ VERILOG_CONSTANT_LOOP_LIMIT
 5000
 VERILOG_NON_CONSTANT_LOOP_LIMIT
 250
-}
-# hierarchies {
-ALU:inst13|subtractor:inst20
 }
 # macro_sequence
 
@@ -3752,9 +3679,6 @@ c:|altera|90|quartus|libraries|megafunctions|alt_mercury_add_sub.inc
 ae39f15ed67cc9a095d29f68f6ad0f8
 c:|altera|90|quartus|libraries|megafunctions|look_add.inc
 ab9f577d30c5ef3166fab6c1c32c4a
-}
-# hierarchies {
-ALU:inst13|subtractor:inst20|lpm_add_sub:lpm_add_sub_component
 }
 # macro_sequence
 
@@ -4064,9 +3988,6 @@ dataa0
 cout
 -1
 3
-}
-# hierarchies {
-ALU:inst13|subtractor:inst20|lpm_add_sub:lpm_add_sub_component|add_sub_8si:auto_generated
 }
 # macro_sequence
 
@@ -4558,9 +4479,6 @@ VERILOG_CONSTANT_LOOP_LIMIT
 VERILOG_NON_CONSTANT_LOOP_LIMIT
 250
 }
-# hierarchies {
-ALU:inst13|div:inst2
-}
 # macro_sequence
 
 # end
@@ -4662,9 +4580,6 @@ c:|altera|90|quartus|libraries|megafunctions|abs_divider.inc
 cdfefd53e136b3a8e541899b82db37d
 c:|altera|90|quartus|libraries|megafunctions|sign_div_unsign.inc
 c1e17922387cb5d0c88d7fb673544bb4
-}
-# hierarchies {
-ALU:inst13|div:inst2|lpm_divide:lpm_divide_component
 }
 # macro_sequence
 
@@ -5065,9 +4980,6 @@ denom0
 -1
 3
 }
-# hierarchies {
-ALU:inst13|div:inst2|lpm_divide:lpm_divide_component|lpm_divide_67s:auto_generated
-}
 # macro_sequence
 
 # end
@@ -5466,9 +5378,6 @@ denominator1
 denominator0
 -1
 3
-}
-# hierarchies {
-ALU:inst13|div:inst2|lpm_divide:lpm_divide_component|lpm_divide_67s:auto_generated|sign_div_unsign_39h:divider
 }
 # macro_sequence
 
@@ -5869,9 +5778,6 @@ denominator0
 -1
 3
 }
-# hierarchies {
-ALU:inst13|div:inst2|lpm_divide:lpm_divide_component|lpm_divide_67s:auto_generated|sign_div_unsign_39h:divider|alt_u_div_m6f:divider
-}
 # macro_sequence
 
 # end
@@ -5904,11 +5810,6 @@ VERILOG_CONSTANT_LOOP_LIMIT
 5000
 VERILOG_NON_CONSTANT_LOOP_LIMIT
 250
-}
-# hierarchies {
-ALU:inst13|mux21_gate:max
-ALU:inst13|mux21_gate:min
-mux21_gate:inst8
 }
 # macro_sequence
 
@@ -5985,11 +5886,6 @@ c:|altera|90|quartus|libraries|megafunctions|muxlut.inc
 f172666ca13e5e31e17e3f6cb35af52
 c:|altera|90|quartus|libraries|megafunctions|altshift.inc
 70fa13aee7d6d160ef20b2de32813a
-}
-# hierarchies {
-ALU:inst13|mux21_gate:max|lpm_mux:lpm_mux_component
-ALU:inst13|mux21_gate:min|lpm_mux:lpm_mux_component
-mux21_gate:inst8|lpm_mux:lpm_mux_component
 }
 # macro_sequence
 
@@ -6297,11 +6193,6 @@ data0
 -1
 3
 }
-# hierarchies {
-ALU:inst13|mux21_gate:max|lpm_mux:lpm_mux_component|mux_bpc:auto_generated
-ALU:inst13|mux21_gate:min|lpm_mux:lpm_mux_component|mux_bpc:auto_generated
-mux21_gate:inst8|lpm_mux:lpm_mux_component|mux_bpc:auto_generated
-}
 # macro_sequence
 
 # end
@@ -6334,9 +6225,6 @@ VERILOG_CONSTANT_LOOP_LIMIT
 5000
 VERILOG_NON_CONSTANT_LOOP_LIMIT
 250
-}
-# hierarchies {
-ALU:inst13|comp:inst3
 }
 # macro_sequence
 
@@ -6440,9 +6328,6 @@ c:|altera|90|quartus|libraries|megafunctions|altshift.inc
 70fa13aee7d6d160ef20b2de32813a
 c:|altera|90|quartus|libraries|megafunctions|comptree.inc
 da21447b8e66c26bd34c85b6cdda8169
-}
-# hierarchies {
-ALU:inst13|comp:inst3|lpm_compare:lpm_compare_component
 }
 # macro_sequence
 
@@ -6654,9 +6539,6 @@ ageb
 -1
 3
 }
-# hierarchies {
-ALU:inst13|comp:inst3|lpm_compare:lpm_compare_component|cmpr_0gg:auto_generated
-}
 # macro_sequence
 
 # end
@@ -6689,9 +6571,6 @@ VERILOG_CONSTANT_LOOP_LIMIT
 5000
 VERILOG_NON_CONSTANT_LOOP_LIMIT
 250
-}
-# hierarchies {
-ALU:inst13|and_gate:inst5
 }
 # macro_sequence
 
@@ -6759,9 +6638,6 @@ data
 # include_file {
 c:|altera|90|quartus|libraries|megafunctions|aglobal90.inc
 99832fdf63412df51d7531202d74e75
-}
-# hierarchies {
-ALU:inst13|and_gate:inst5|lpm_and:lpm_and_component
 }
 # macro_sequence
 
@@ -7253,9 +7129,6 @@ VERILOG_CONSTANT_LOOP_LIMIT
 VERILOG_NON_CONSTANT_LOOP_LIMIT
 250
 }
-# hierarchies {
-ALU:inst13|mult:inst1
-}
 # macro_sequence
 
 # end
@@ -7409,9 +7282,6 @@ c:|altera|90|quartus|libraries|megafunctions|aglobal90.inc
 99832fdf63412df51d7531202d74e75
 c:|altera|90|quartus|libraries|megafunctions|altshift.inc
 70fa13aee7d6d160ef20b2de32813a
-}
-# hierarchies {
-ALU:inst13|mult:inst1|lpm_mult:lpm_mult_component
 }
 # macro_sequence
 
@@ -7620,9 +7490,6 @@ dataa0
 -1
 3
 }
-# hierarchies {
-ALU:inst13|mult:inst1|lpm_mult:lpm_mult_component|mult_55n:auto_generated
-}
 # macro_sequence
 
 # end
@@ -7639,9 +7506,6 @@ ALU.bdf
 # internal_option {
 BLOCK_DESIGN_NAMING
 AUTO
-}
-# hierarchies {
-ALU:inst13
 }
 # macro_sequence
 
@@ -12225,9 +12089,6 @@ VERILOG_CONSTANT_LOOP_LIMIT
 VERILOG_NON_CONSTANT_LOOP_LIMIT
 250
 }
-# hierarchies {
-instructions_mem:inst
-}
 # macro_sequence
 
 # end
@@ -12527,9 +12388,6 @@ c:|altera|90|quartus|libraries|megafunctions|lpm_decode.inc
 bd0e2f5e01c1bd360461dceb53d48
 c:|altera|90|quartus|libraries|megafunctions|altrom.inc
 d4e3a69a331d3a99d3281790d99a1ebd
-}
-# hierarchies {
-instructions_mem:inst|altsyncram:altsyncram_component
 }
 # macro_sequence
 
@@ -13879,9 +13737,6 @@ VERILOG_CONSTANT_LOOP_LIMIT
 VERILOG_NON_CONSTANT_LOOP_LIMIT
 250
 }
-# hierarchies {
-pc:inst1
-}
 # macro_sequence
 
 # end
@@ -14036,9 +13891,6 @@ c:|altera|90|quartus|libraries|megafunctions|lpm_add_sub.inc
 c:|altera|90|quartus|libraries|megafunctions|cmpconst.inc
 e61874547688138e6fc0b49ff8760
 }
-# hierarchies {
-pc:inst1|lpm_counter:lpm_counter_component
-}
 # macro_sequence
 
 # end
@@ -14068,9 +13920,6 @@ q0
 clock
 -1
 3
-}
-# hierarchies {
-pc:inst1|lpm_counter:lpm_counter_component|cntr_qlh:auto_generated
 }
 # macro_sequence
 
@@ -14202,9 +14051,6 @@ address_a0
 instructions.mif
 ef6484cbfa4bb2b937b8604ed4950
 }
-# hierarchies {
-instructions_mem:inst|altsyncram:altsyncram_component|altsyncram_lg81:auto_generated
-}
 # macro_sequence
 
 # end
@@ -14237,9 +14083,6 @@ VERILOG_CONSTANT_LOOP_LIMIT
 5000
 VERILOG_NON_CONSTANT_LOOP_LIMIT
 250
-}
-# hierarchies {
-CU:inst3|sequencer4:inst|dec24:inst5
 }
 # macro_sequence
 
@@ -14316,9 +14159,6 @@ aec4ea1b78f4cda1c3effe18f1abbf63
 c:|altera|90|quartus|libraries|megafunctions|aglobal90.inc
 99832fdf63412df51d7531202d74e75
 }
-# hierarchies {
-CU:inst3|sequencer4:inst|dec24:inst5|lpm_decode:lpm_decode_component
-}
 # macro_sequence
 
 # end
@@ -14351,9 +14191,6 @@ data1
 data0
 -1
 3
-}
-# hierarchies {
-CU:inst3|sequencer4:inst|dec24:inst5|lpm_decode:lpm_decode_component|decode_p7f:auto_generated
 }
 # macro_sequence
 
@@ -15163,9 +15000,6 @@ c:|altera|90|quartus|libraries|megafunctions|altdpram.inc
 c:|altera|90|quartus|libraries|megafunctions|aglobal90.inc
 99832fdf63412df51d7531202d74e75
 }
-# hierarchies {
-registers_mem:inst9|regs2_8bit:inst17|alt3pram:alt3pram_component
-}
 # macro_sequence
 
 # end
@@ -15429,10 +15263,6 @@ c:|altera|90|quartus|libraries|megafunctions|lpm_mux.inc
 c22bfd353214c01495b560fc34e47d79
 c:|altera|90|quartus|libraries|megafunctions|a_rdenreg.inc
 60d229340bc3c24acb0a137b4849830
-}
-# hierarchies {
-registers_mem:inst9|regs2_8bit:inst17|alt3pram:alt3pram_component|altdpram:altdpram_component1
-registers_mem:inst9|regs2_8bit:inst17|alt3pram:alt3pram_component|altdpram:altdpram_component2
 }
 # macro_sequence
 
@@ -15758,14 +15588,6 @@ c:|altera|90|quartus|libraries|megafunctions|a_rdenreg.inc
 c:|altera|90|quartus|libraries|megafunctions|stratix_ram_block.inc
 2263a3bdfffeb150af977ee13902f70
 }
-# hierarchies {
-registers_mem:inst9|regs4_8bit:inst19|alt3pram:alt3pram_component|altdpram:altdpram_component1|altsyncram:ram_block
-registers_mem:inst9|regs4_8bit:inst19|alt3pram:alt3pram_component|altdpram:altdpram_component2|altsyncram:ram_block
-registers_mem:inst9|regs3_8bit:inst18|alt3pram:alt3pram_component|altdpram:altdpram_component1|altsyncram:ram_block
-registers_mem:inst9|regs3_8bit:inst18|alt3pram:alt3pram_component|altdpram:altdpram_component2|altsyncram:ram_block
-registers_mem:inst9|regs2_8bit:inst17|alt3pram:alt3pram_component|altdpram:altdpram_component1|altsyncram:ram_block
-registers_mem:inst9|regs2_8bit:inst17|alt3pram:alt3pram_component|altdpram:altdpram_component2|altsyncram:ram_block
-}
 # macro_sequence
 
 # end
@@ -15868,14 +15690,6 @@ address_a0
 -1
 3
 }
-# hierarchies {
-registers_mem:inst9|regs4_8bit:inst19|alt3pram:alt3pram_component|altdpram:altdpram_component1|altsyncram:ram_block|altsyncram_1mo1:auto_generated
-registers_mem:inst9|regs4_8bit:inst19|alt3pram:alt3pram_component|altdpram:altdpram_component2|altsyncram:ram_block|altsyncram_1mo1:auto_generated
-registers_mem:inst9|regs3_8bit:inst18|alt3pram:alt3pram_component|altdpram:altdpram_component1|altsyncram:ram_block|altsyncram_1mo1:auto_generated
-registers_mem:inst9|regs3_8bit:inst18|alt3pram:alt3pram_component|altdpram:altdpram_component2|altsyncram:ram_block|altsyncram_1mo1:auto_generated
-registers_mem:inst9|regs2_8bit:inst17|alt3pram:alt3pram_component|altdpram:altdpram_component1|altsyncram:ram_block|altsyncram_1mo1:auto_generated
-registers_mem:inst9|regs2_8bit:inst17|alt3pram:alt3pram_component|altdpram:altdpram_component2|altsyncram:ram_block|altsyncram_1mo1:auto_generated
-}
 # macro_sequence
 
 # end
@@ -15910,7 +15724,7 @@ VERILOG_NON_CONSTANT_LOOP_LIMIT
 250
 }
 # hierarchies {
-registers_mem:inst9|mux21_8bit:inst12
+mux21_8bit:inst12
 }
 # macro_sequence
 
@@ -15989,7 +15803,7 @@ c:|altera|90|quartus|libraries|megafunctions|altshift.inc
 70fa13aee7d6d160ef20b2de32813a
 }
 # hierarchies {
-registers_mem:inst9|mux21_8bit:inst12|lpm_mux:lpm_mux_component
+mux21_8bit:inst12|lpm_mux:lpm_mux_component
 }
 # macro_sequence
 
@@ -16082,46 +15896,10 @@ data0
 3
 }
 # hierarchies {
-registers_mem:inst9|mux21_8bit:inst12|lpm_mux:lpm_mux_component|mux_unc:auto_generated
+mux21_8bit:inst12|lpm_mux:lpm_mux_component|mux_unc:auto_generated
 }
 # macro_sequence
 
-# end
-# entity
-main_mem
-# storage
-db|CPU.(107).cnf
-db|CPU.(107).cnf
-# logic_option {
-AUTO_RAM_RECOGNITION
-ON
-}
-# case_sensitive
-# source_file
-main_mem.v
-f802c90fc30a7994f59a24ec7098d3
-8
-# internal_option {
-HDL_INITIAL_FANOUT_LIMIT
-OFF
-AUTO_RESOURCE_SHARING
-OFF
-AUTO_RAM_RECOGNITION
-ON
-AUTO_ROM_RECOGNITION
-ON
-IGNORE_VERILOG_INITIAL_CONSTRUCTS
-OFF
-VERILOG_CONSTANT_LOOP_LIMIT
-5000
-VERILOG_NON_CONSTANT_LOOP_LIMIT
-250
-}
-# hierarchies {
-main_mem:inst2
-}
-# macro_sequence
-ALTERA_RESERVED_QISALTERA_RESERVED_QIS
 # end
 # entity
 altsyncram
@@ -16420,9 +16198,6 @@ c:|altera|90|quartus|libraries|megafunctions|a_rdenreg.inc
 c:|altera|90|quartus|libraries|megafunctions|stratix_ram_block.inc
 2263a3bdfffeb150af977ee13902f70
 }
-# hierarchies {
-main_mem:inst2|altsyncram:altsyncram_component
-}
 # macro_sequence
 
 # end
@@ -16654,9 +16429,6 @@ address_a0
 -1
 3
 }
-# hierarchies {
-main_mem:inst2|altsyncram:altsyncram_component|altsyncram_8mo1:auto_generated
-}
 # macro_sequence
 
 # end
@@ -16689,9 +16461,6 @@ VERILOG_CONSTANT_LOOP_LIMIT
 5000
 VERILOG_NON_CONSTANT_LOOP_LIMIT
 250
-}
-# hierarchies {
-mux21_5bit:inst6
 }
 # macro_sequence
 
@@ -16769,9 +16538,6 @@ c:|altera|90|quartus|libraries|megafunctions|aglobal90.inc
 c:|altera|90|quartus|libraries|megafunctions|altshift.inc
 70fa13aee7d6d160ef20b2de32813a
 }
-# hierarchies {
-mux21_5bit:inst6|lpm_mux:lpm_mux_component
-}
 # macro_sequence
 
 # end
@@ -16834,9 +16600,6 @@ data1
 data0
 -1
 3
-}
-# hierarchies {
-mux21_5bit:inst6|lpm_mux:lpm_mux_component|mux_rnc:auto_generated
 }
 # macro_sequence
 
@@ -17005,10 +16768,6 @@ c:|altera|90|quartus|libraries|megafunctions|altqpram.inc
 74e08939f96a7ea8e7a4d59a5b01fe7
 c:|altera|90|quartus|libraries|megafunctions|altdpram.inc
 99d442b5b66c88db4daf94d99c6e4e77
-}
-# hierarchies {
-registers_mem:inst9|regs4_8bit:inst19|alt3pram:alt3pram_component
-registers_mem:inst9|regs3_8bit:inst18|alt3pram:alt3pram_component
 }
 # macro_sequence
 
@@ -17273,12 +17032,6 @@ c:|altera|90|quartus|libraries|megafunctions|altsyncram.inc
 1b5760dd55919ddb45bfb2c0e896218b
 c:|altera|90|quartus|libraries|others|maxplus2|memmodes.inc
 44d4551a35f349f0dbacaf799d39950
-}
-# hierarchies {
-registers_mem:inst9|regs4_8bit:inst19|alt3pram:alt3pram_component|altdpram:altdpram_component1
-registers_mem:inst9|regs4_8bit:inst19|alt3pram:alt3pram_component|altdpram:altdpram_component2
-registers_mem:inst9|regs3_8bit:inst18|alt3pram:alt3pram_component|altdpram:altdpram_component1
-registers_mem:inst9|regs3_8bit:inst18|alt3pram:alt3pram_component|altdpram:altdpram_component2
 }
 # macro_sequence
 
@@ -18175,9 +17928,6 @@ VERILOG_CONSTANT_LOOP_LIMIT
 VERILOG_NON_CONSTANT_LOOP_LIMIT
 250
 }
-# hierarchies {
-CU:inst3|sequencer4:inst|counter:inst
-}
 # macro_sequence
 
 # end
@@ -18332,9 +18082,6 @@ aec4ea1b78f4cda1c3effe18f1abbf63
 c:|altera|90|quartus|libraries|megafunctions|alt_synch_counter_f.inc
 93a5aae1d8bd19c9e8e8eef93ab2177d
 }
-# hierarchies {
-CU:inst3|sequencer4:inst|counter:inst|lpm_counter:lpm_counter_component
-}
 # macro_sequence
 
 # end
@@ -18362,9 +18109,6 @@ aclr
 -1
 3
 }
-# hierarchies {
-CU:inst3|sequencer4:inst|counter:inst|lpm_counter:lpm_counter_component|cntr_q3i:auto_generated
-}
 # macro_sequence
 
 # end
@@ -18381,9 +18125,6 @@ f3997dbd2933791e2130a3a6598cff1
 # internal_option {
 BLOCK_DESIGN_NAMING
 AUTO
-}
-# hierarchies {
-CU:inst3|sequencer4:inst
 }
 # macro_sequence
 
@@ -20554,9 +20295,6 @@ e07b842be11ffd99a7a6ce4fe778a6e
 BLOCK_DESIGN_NAMING
 AUTO
 }
-# hierarchies {
-registers_mem:inst9
-}
 # macro_sequence
 
 # end
@@ -20589,9 +20327,6 @@ VERILOG_CONSTANT_LOOP_LIMIT
 5000
 VERILOG_NON_CONSTANT_LOOP_LIMIT
 250
-}
-# hierarchies {
-registers_mem:inst9|regs4_8bit:inst19
 }
 # macro_sequence
 ALTERA_RESERVED_QISALTERA_RESERVED_QIS
@@ -20626,9 +20361,6 @@ VERILOG_CONSTANT_LOOP_LIMIT
 VERILOG_NON_CONSTANT_LOOP_LIMIT
 250
 }
-# hierarchies {
-registers_mem:inst9|regs3_8bit:inst18
-}
 # macro_sequence
 ALTERA_RESERVED_QISALTERA_RESERVED_QIS
 # end
@@ -20662,9 +20394,6 @@ VERILOG_CONSTANT_LOOP_LIMIT
 VERILOG_NON_CONSTANT_LOOP_LIMIT
 250
 }
-# hierarchies {
-registers_mem:inst9|regs2_8bit:inst17
-}
 # macro_sequence
 ALTERA_RESERVED_QISALTERA_RESERVED_QIS
 # end
@@ -20697,9 +20426,6 @@ VERILOG_CONSTANT_LOOP_LIMIT
 5000
 VERILOG_NON_CONSTANT_LOOP_LIMIT
 250
-}
-# hierarchies {
-registers_mem:inst9|regs_8bit:inst4
 }
 # macro_sequence
 ALTERA_RESERVED_QISALTERA_RESERVED_QIS
@@ -20868,9 +20594,6 @@ c:|altera|90|quartus|libraries|megafunctions|aglobal90.inc
 99832fdf63412df51d7531202d74e75
 c:|altera|90|quartus|libraries|megafunctions|altqpram.inc
 74e08939f96a7ea8e7a4d59a5b01fe7
-}
-# hierarchies {
-registers_mem:inst9|regs_8bit:inst4|alt3pram:alt3pram_component
 }
 # macro_sequence
 
@@ -21135,10 +20858,6 @@ c:|altera|90|quartus|libraries|megafunctions|lpm_decode.inc
 bd0e2f5e01c1bd360461dceb53d48
 c:|altera|90|quartus|libraries|megafunctions|alt_le_rden_reg.inc
 7591066e9fa6e1ee16e5ba18b60506f
-}
-# hierarchies {
-registers_mem:inst9|regs_8bit:inst4|alt3pram:alt3pram_component|altdpram:altdpram_component1
-registers_mem:inst9|regs_8bit:inst4|alt3pram:alt3pram_component|altdpram:altdpram_component2
 }
 # macro_sequence
 
@@ -21464,10 +21183,6 @@ bd0e2f5e01c1bd360461dceb53d48
 c:|altera|90|quartus|libraries|megafunctions|altrom.inc
 d4e3a69a331d3a99d3281790d99a1ebd
 }
-# hierarchies {
-registers_mem:inst9|regs_8bit:inst4|alt3pram:alt3pram_component|altdpram:altdpram_component1|altsyncram:ram_block
-registers_mem:inst9|regs_8bit:inst4|alt3pram:alt3pram_component|altdpram:altdpram_component2|altsyncram:ram_block
-}
 # macro_sequence
 
 # end
@@ -21574,10 +21289,6 @@ address_a0
 registers1.mif
 fa4f252159dfcfeca427f7ba0e0f3
 }
-# hierarchies {
-registers_mem:inst9|regs_8bit:inst4|alt3pram:alt3pram_component|altdpram:altdpram_component1|altsyncram:ram_block|altsyncram_00t1:auto_generated
-registers_mem:inst9|regs_8bit:inst4|alt3pram:alt3pram_component|altdpram:altdpram_component2|altsyncram:ram_block|altsyncram_00t1:auto_generated
-}
 # macro_sequence
 
 # end
@@ -21612,21 +21323,18 @@ CU.bdf
 BLOCK_DESIGN_NAMING
 AUTO
 }
-# hierarchies {
-CU:inst3
-}
 # macro_sequence
 
 # end
 # entity
-CPU
+main_mem
 # storage
 db|CPU.(106).cnf
 db|CPU.(106).cnf
 # case_insensitive
 # source_file
-CPU.bdf
-5a60a97b1fa43b7be0cdac91a71557be
+main_mem.bdf
+ccc86212c3687c237755ce99203c1b
 26
 # internal_option {
 BLOCK_DESIGN_NAMING
@@ -21637,6 +21345,561 @@ AUTO
 }
 # macro_sequence
 
+# end
+# entity
+main_mem2_8bit
+# storage
+db|CPU.(107).cnf
+db|CPU.(107).cnf
+# logic_option {
+AUTO_RAM_RECOGNITION
+ON
+}
+# case_sensitive
+# source_file
+main_mem2_8bit.v
+3d7b1c7dc8bb764a559caec13427a34e
+8
+# internal_option {
+HDL_INITIAL_FANOUT_LIMIT
+OFF
+AUTO_RESOURCE_SHARING
+OFF
+AUTO_RAM_RECOGNITION
+ON
+AUTO_ROM_RECOGNITION
+ON
+IGNORE_VERILOG_INITIAL_CONSTRUCTS
+OFF
+VERILOG_CONSTANT_LOOP_LIMIT
+5000
+VERILOG_NON_CONSTANT_LOOP_LIMIT
+250
+}
+# hierarchies {
+main_mem2_8bit:inst1
+}
+# macro_sequence
+ALTERA_RESERVED_QISALTERA_RESERVED_QIS
+# end
+# entity
+altsyncram
+# storage
+db|CPU.(139).cnf
+db|CPU.(139).cnf
+# case_insensitive
+# source_file
+c:|altera|90|quartus|libraries|megafunctions|altsyncram.tdf
+3514e215aa7b20abd3414f7dd9c98ab7
+7
+# user_parameter {
+BYTE_SIZE_BLOCK
+8
+PARAMETER_UNKNOWN
+DEF
+AUTO_CARRY_CHAINS
+ON
+AUTO_CARRY
+USR
+IGNORE_CARRY_BUFFERS
+OFF
+IGNORE_CARRY
+USR
+AUTO_CASCADE_CHAINS
+ON
+AUTO_CASCADE
+USR
+IGNORE_CASCADE_BUFFERS
+OFF
+IGNORE_CASCADE
+USR
+WIDTH_BYTEENA
+1
+PARAMETER_UNKNOWN
+DEF
+OPERATION_MODE
+DUAL_PORT
+PARAMETER_UNKNOWN
+USR
+WIDTH_A
+8
+PARAMETER_SIGNED_DEC
+USR
+WIDTHAD_A
+5
+PARAMETER_SIGNED_DEC
+USR
+NUMWORDS_A
+32
+PARAMETER_SIGNED_DEC
+USR
+OUTDATA_REG_A
+UNREGISTERED
+PARAMETER_UNKNOWN
+DEF
+ADDRESS_ACLR_A
+NONE
+PARAMETER_UNKNOWN
+DEF
+OUTDATA_ACLR_A
+NONE
+PARAMETER_UNKNOWN
+DEF
+WRCONTROL_ACLR_A
+NONE
+PARAMETER_UNKNOWN
+DEF
+INDATA_ACLR_A
+NONE
+PARAMETER_UNKNOWN
+DEF
+BYTEENA_ACLR_A
+NONE
+PARAMETER_UNKNOWN
+DEF
+WIDTH_B
+8
+PARAMETER_SIGNED_DEC
+USR
+WIDTHAD_B
+5
+PARAMETER_SIGNED_DEC
+USR
+NUMWORDS_B
+32
+PARAMETER_SIGNED_DEC
+USR
+INDATA_REG_B
+CLOCK1
+PARAMETER_UNKNOWN
+DEF
+WRCONTROL_WRADDRESS_REG_B
+CLOCK1
+PARAMETER_UNKNOWN
+DEF
+RDCONTROL_REG_B
+CLOCK1
+PARAMETER_UNKNOWN
+DEF
+ADDRESS_REG_B
+CLOCK0
+PARAMETER_UNKNOWN
+USR
+OUTDATA_REG_B
+CLOCK0
+PARAMETER_UNKNOWN
+USR
+BYTEENA_REG_B
+CLOCK1
+PARAMETER_UNKNOWN
+DEF
+INDATA_ACLR_B
+NONE
+PARAMETER_UNKNOWN
+DEF
+WRCONTROL_ACLR_B
+NONE
+PARAMETER_UNKNOWN
+DEF
+ADDRESS_ACLR_B
+NONE
+PARAMETER_UNKNOWN
+DEF
+OUTDATA_ACLR_B
+NONE
+PARAMETER_UNKNOWN
+USR
+RDCONTROL_ACLR_B
+NONE
+PARAMETER_UNKNOWN
+DEF
+BYTEENA_ACLR_B
+NONE
+PARAMETER_UNKNOWN
+DEF
+WIDTH_BYTEENA_A
+1
+PARAMETER_SIGNED_DEC
+USR
+WIDTH_BYTEENA_B
+1
+PARAMETER_UNKNOWN
+DEF
+RAM_BLOCK_TYPE
+AUTO
+PARAMETER_UNKNOWN
+DEF
+BYTE_SIZE
+8
+PARAMETER_UNKNOWN
+DEF
+READ_DURING_WRITE_MODE_MIXED_PORTS
+DONT_CARE
+PARAMETER_UNKNOWN
+USR
+READ_DURING_WRITE_MODE_PORT_A
+NEW_DATA_NO_NBE_READ
+PARAMETER_UNKNOWN
+DEF
+READ_DURING_WRITE_MODE_PORT_B
+NEW_DATA_NO_NBE_READ
+PARAMETER_UNKNOWN
+DEF
+INIT_FILE
+UNUSED
+PARAMETER_UNKNOWN
+DEF
+INIT_FILE_LAYOUT
+PORT_A
+PARAMETER_UNKNOWN
+DEF
+MAXIMUM_DEPTH
+0
+PARAMETER_UNKNOWN
+DEF
+CLOCK_ENABLE_INPUT_A
+BYPASS
+PARAMETER_UNKNOWN
+USR
+CLOCK_ENABLE_INPUT_B
+BYPASS
+PARAMETER_UNKNOWN
+USR
+CLOCK_ENABLE_OUTPUT_A
+BYPASS
+PARAMETER_UNKNOWN
+USR
+CLOCK_ENABLE_OUTPUT_B
+BYPASS
+PARAMETER_UNKNOWN
+USR
+CLOCK_ENABLE_CORE_A
+USE_INPUT_CLKEN
+PARAMETER_UNKNOWN
+DEF
+CLOCK_ENABLE_CORE_B
+USE_INPUT_CLKEN
+PARAMETER_UNKNOWN
+DEF
+ENABLE_ECC
+FALSE
+PARAMETER_UNKNOWN
+DEF
+DEVICE_FAMILY
+Stratix II
+PARAMETER_UNKNOWN
+USR
+CBXI_PARAMETER
+altsyncram_k7o1
+PARAMETER_UNKNOWN
+USR
+}
+# used_port {
+wren_a
+-1
+3
+q_b
+-1
+3
+data_a
+-1
+3
+clock0
+-1
+3
+address_b
+-1
+3
+address_a
+-1
+3
+wren_b
+-1
+1
+addressstall_b
+-1
+1
+addressstall_a
+-1
+1
+aclr1
+-1
+1
+aclr0
+-1
+1
+rden_b
+-1
+2
+rden_a
+-1
+2
+data_b
+-1
+2
+clocken3
+-1
+2
+clocken2
+-1
+2
+clocken1
+-1
+2
+clocken0
+-1
+2
+clock1
+-1
+2
+byteena_b
+-1
+2
+byteena_a
+-1
+2
+}
+# include_file {
+c:|altera|90|quartus|libraries|megafunctions|lpm_mux.inc
+c22bfd353214c01495b560fc34e47d79
+c:|altera|90|quartus|libraries|megafunctions|a_rdenreg.inc
+60d229340bc3c24acb0a137b4849830
+c:|altera|90|quartus|libraries|megafunctions|stratix_ram_block.inc
+2263a3bdfffeb150af977ee13902f70
+c:|altera|90|quartus|libraries|megafunctions|altqpram.inc
+74e08939f96a7ea8e7a4d59a5b01fe7
+c:|altera|90|quartus|libraries|megafunctions|lpm_decode.inc
+bd0e2f5e01c1bd360461dceb53d48
+c:|altera|90|quartus|libraries|megafunctions|altrom.inc
+d4e3a69a331d3a99d3281790d99a1ebd
+c:|altera|90|quartus|libraries|megafunctions|altdpram.inc
+99d442b5b66c88db4daf94d99c6e4e77
+c:|altera|90|quartus|libraries|megafunctions|aglobal90.inc
+99832fdf63412df51d7531202d74e75
+c:|altera|90|quartus|libraries|megafunctions|altram.inc
+e66a83eccf6717bed97c99d891ad085
+}
+# hierarchies {
+main_mem2_8bit:inst1|altsyncram:altsyncram_component
+main_mem3_8bit:inst2|altsyncram:altsyncram_component
+main_mem4_8bit:inst3|altsyncram:altsyncram_component
+main_mem1_8bit:inst|altsyncram:altsyncram_component
+}
+# macro_sequence
+
+# end
+# entity
+altsyncram_k7o1
+# storage
+db|CPU.(140).cnf
+db|CPU.(140).cnf
+# case_insensitive
+# source_file
+db|altsyncram_k7o1.tdf
+31dd61e77ab11575b6e4c77a87f3dc0
+7
+# used_port {
+wren_a
+-1
+3
+q_b7
+-1
+3
+q_b6
+-1
+3
+q_b5
+-1
+3
+q_b4
+-1
+3
+q_b3
+-1
+3
+q_b2
+-1
+3
+q_b1
+-1
+3
+q_b0
+-1
+3
+data_a7
+-1
+3
+data_a6
+-1
+3
+data_a5
+-1
+3
+data_a4
+-1
+3
+data_a3
+-1
+3
+data_a2
+-1
+3
+data_a1
+-1
+3
+data_a0
+-1
+3
+clock0
+-1
+3
+address_b4
+-1
+3
+address_b3
+-1
+3
+address_b2
+-1
+3
+address_b1
+-1
+3
+address_b0
+-1
+3
+address_a4
+-1
+3
+address_a3
+-1
+3
+address_a2
+-1
+3
+address_a1
+-1
+3
+address_a0
+-1
+3
+}
+# hierarchies {
+main_mem2_8bit:inst1|altsyncram:altsyncram_component|altsyncram_k7o1:auto_generated
+main_mem3_8bit:inst2|altsyncram:altsyncram_component|altsyncram_k7o1:auto_generated
+main_mem4_8bit:inst3|altsyncram:altsyncram_component|altsyncram_k7o1:auto_generated
+main_mem1_8bit:inst|altsyncram:altsyncram_component|altsyncram_k7o1:auto_generated
+}
+# macro_sequence
+
+# end
+# entity
+main_mem3_8bit
+# storage
+db|CPU.(141).cnf
+db|CPU.(141).cnf
+# logic_option {
+AUTO_RAM_RECOGNITION
+ON
+}
+# case_sensitive
+# source_file
+main_mem3_8bit.v
+41b46cf743b91d2c67326023b9bd37f
+8
+# internal_option {
+HDL_INITIAL_FANOUT_LIMIT
+OFF
+AUTO_RESOURCE_SHARING
+OFF
+AUTO_RAM_RECOGNITION
+ON
+AUTO_ROM_RECOGNITION
+ON
+IGNORE_VERILOG_INITIAL_CONSTRUCTS
+OFF
+VERILOG_CONSTANT_LOOP_LIMIT
+5000
+VERILOG_NON_CONSTANT_LOOP_LIMIT
+250
+}
+# hierarchies {
+main_mem3_8bit:inst2
+}
+# macro_sequence
+ALTERA_RESERVED_QISALTERA_RESERVED_QIS
+# end
+# entity
+main_mem4_8bit
+# storage
+db|CPU.(142).cnf
+db|CPU.(142).cnf
+# logic_option {
+AUTO_RAM_RECOGNITION
+ON
+}
+# case_sensitive
+# source_file
+main_mem4_8bit.v
+9815dad8b982eab7fbcf7ce27cd255c6
+8
+# internal_option {
+HDL_INITIAL_FANOUT_LIMIT
+OFF
+AUTO_RESOURCE_SHARING
+OFF
+AUTO_RAM_RECOGNITION
+ON
+AUTO_ROM_RECOGNITION
+ON
+IGNORE_VERILOG_INITIAL_CONSTRUCTS
+OFF
+VERILOG_CONSTANT_LOOP_LIMIT
+5000
+VERILOG_NON_CONSTANT_LOOP_LIMIT
+250
+}
+# hierarchies {
+main_mem4_8bit:inst3
+}
+# macro_sequence
+ALTERA_RESERVED_QISALTERA_RESERVED_QIS
+# end
+# entity
+main_mem1_8bit
+# storage
+db|CPU.(143).cnf
+db|CPU.(143).cnf
+# logic_option {
+AUTO_RAM_RECOGNITION
+ON
+}
+# case_sensitive
+# source_file
+main_mem1_8bit.v
+4adc93819ff6eee49e55dacfc03362
+8
+# internal_option {
+HDL_INITIAL_FANOUT_LIMIT
+OFF
+AUTO_RESOURCE_SHARING
+OFF
+AUTO_RAM_RECOGNITION
+ON
+AUTO_ROM_RECOGNITION
+ON
+IGNORE_VERILOG_INITIAL_CONSTRUCTS
+OFF
+VERILOG_CONSTANT_LOOP_LIMIT
+5000
+VERILOG_NON_CONSTANT_LOOP_LIMIT
+250
+}
+# hierarchies {
+main_mem1_8bit:inst
+}
+# macro_sequence
+ALTERA_RESERVED_QISALTERA_RESERVED_QIS
 # end
 # complete
 
