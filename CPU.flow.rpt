@@ -1,5 +1,5 @@
 Flow report for CPU
-Fri Jul 03 02:27:17 2020
+Sat Jul 04 17:18:56 2020
 Quartus II Version 9.0 Build 132 02/25/2009 SJ Web Edition
 
 
@@ -38,19 +38,19 @@ applicable agreement for further details.
 +-------------------------------------------------------------------------+
 ; Flow Summary                                                            ;
 +-------------------------------+-----------------------------------------+
-; Flow Status                   ; Successful - Fri Jul 03 02:27:11 2020   ;
+; Flow Status                   ; Successful - Sat Jul 04 17:18:45 2020   ;
 ; Quartus II Version            ; 9.0 Build 132 02/25/2009 SJ Web Edition ;
 ; Revision Name                 ; CPU                                     ;
 ; Top-level Entity Name         ; CPU                                     ;
 ; Family                        ; Stratix II                              ;
 ; Met timing requirements       ; No                                      ;
 ; Logic utilization             ; 17 %                                    ;
-;     Combinational ALUTs       ; 1,905 / 12,480 ( 15 % )                 ;
+;     Combinational ALUTs       ; 1,930 / 12,480 ( 15 % )                 ;
 ;     Dedicated logic registers ; 6 / 12,480 ( < 1 % )                    ;
 ; Total registers               ; 6                                       ;
-; Total pins                    ; 129 / 343 ( 38 % )                      ;
+; Total pins                    ; 149 / 343 ( 43 % )                      ;
 ; Total virtual pins            ; 0                                       ;
-; Total block memory bits       ; 2,560 / 419,328 ( < 1 % )               ;
+; Total block memory bits       ; 2,624 / 419,328 ( < 1 % )               ;
 ; DSP block 9-bit elements      ; 2 / 96 ( 2 % )                          ;
 ; Total PLLs                    ; 0 / 6 ( 0 % )                           ;
 ; Total DLLs                    ; 0 / 2 ( 0 % )                           ;
@@ -64,7 +64,7 @@ applicable agreement for further details.
 +-------------------+---------------------+
 ; Option            ; Setting             ;
 +-------------------+---------------------+
-; Start date & time ; 07/03/2020 02:26:38 ;
+; Start date & time ; 07/04/2020 17:18:12 ;
 ; Main task         ; Compilation         ;
 ; Revision Name     ; CPU                 ;
 +-------------------+---------------------+
@@ -75,10 +75,32 @@ applicable agreement for further details.
 +------------------------------------+-------------------------------+---------------+-------------+----------------+
 ; Assignment Name                    ; Value                         ; Default Value ; Entity Name ; Section Id     ;
 +------------------------------------+-------------------------------+---------------+-------------+----------------+
-; COMPILER_SIGNATURE_ID              ; 1095773015890.159372699725300 ; --            ; --          ; --             ;
+; COMPILER_SIGNATURE_ID              ; 1095773015890.159386689104308 ; --            ; --          ; --             ;
 ; IP_TOOL_NAME                       ; LPM_COUNTER                   ; --            ; --          ; --             ;
 ; IP_TOOL_NAME                       ; LPM_COUNTER                   ; --            ; --          ; --             ;
 ; IP_TOOL_NAME                       ; LPM_DECODE                    ; --            ; --          ; --             ;
+; IP_TOOL_NAME                       ; RAM: 2-PORT                   ; --            ; --          ; --             ;
+; IP_TOOL_NAME                       ; LPM_MUX                       ; --            ; --          ; --             ;
+; IP_TOOL_NAME                       ; LPM_CONSTANT                  ; --            ; --          ; --             ;
+; IP_TOOL_NAME                       ; LPM_CONSTANT                  ; --            ; --          ; --             ;
+; IP_TOOL_NAME                       ; LPM_MUX                       ; --            ; --          ; --             ;
+; IP_TOOL_NAME                       ; RAM: 3-PORT                   ; --            ; --          ; --             ;
+; IP_TOOL_NAME                       ; LPM_MUX                       ; --            ; --          ; --             ;
+; IP_TOOL_NAME                       ; LPM_MUX                       ; --            ; --          ; --             ;
+; IP_TOOL_NAME                       ; RAM: 3-PORT                   ; --            ; --          ; --             ;
+; IP_TOOL_NAME                       ; RAM: 3-PORT                   ; --            ; --          ; --             ;
+; IP_TOOL_NAME                       ; RAM: 3-PORT                   ; --            ; --          ; --             ;
+; IP_TOOL_VERSION                    ; 9.0                           ; --            ; --          ; --             ;
+; IP_TOOL_VERSION                    ; 9.0                           ; --            ; --          ; --             ;
+; IP_TOOL_VERSION                    ; 9.0                           ; --            ; --          ; --             ;
+; IP_TOOL_VERSION                    ; 9.0                           ; --            ; --          ; --             ;
+; IP_TOOL_VERSION                    ; 9.0                           ; --            ; --          ; --             ;
+; IP_TOOL_VERSION                    ; 9.0                           ; --            ; --          ; --             ;
+; IP_TOOL_VERSION                    ; 9.0                           ; --            ; --          ; --             ;
+; IP_TOOL_VERSION                    ; 9.0                           ; --            ; --          ; --             ;
+; IP_TOOL_VERSION                    ; 9.0                           ; --            ; --          ; --             ;
+; IP_TOOL_VERSION                    ; 9.0                           ; --            ; --          ; --             ;
+; IP_TOOL_VERSION                    ; 9.0                           ; --            ; --          ; --             ;
 ; IP_TOOL_VERSION                    ; 9.0                           ; --            ; --          ; --             ;
 ; IP_TOOL_VERSION                    ; 9.0                           ; --            ; --          ; --             ;
 ; IP_TOOL_VERSION                    ; 9.0                           ; --            ; --          ; --             ;
@@ -91,6 +113,39 @@ applicable agreement for further details.
 ; MISC_FILE                          ; dec24.bsf                     ; --            ; --          ; --             ;
 ; MISC_FILE                          ; dec24_bb.v                    ; --            ; --          ; --             ;
 ; MISC_FILE                          ; dec24.inc                     ; --            ; --          ; --             ;
+; MISC_FILE                          ; main_mem.bsf                  ; --            ; --          ; --             ;
+; MISC_FILE                          ; main_mem_bb.v                 ; --            ; --          ; --             ;
+; MISC_FILE                          ; main_mem.inc                  ; --            ; --          ; --             ;
+; MISC_FILE                          ; mux21.bsf                     ; --            ; --          ; --             ;
+; MISC_FILE                          ; mux21_bb.v                    ; --            ; --          ; --             ;
+; MISC_FILE                          ; mux21.inc                     ; --            ; --          ; --             ;
+; MISC_FILE                          ; zero_const.bsf                ; --            ; --          ; --             ;
+; MISC_FILE                          ; zero_const_bb.v               ; --            ; --          ; --             ;
+; MISC_FILE                          ; zero_const.inc                ; --            ; --          ; --             ;
+; MISC_FILE                          ; all_one_const.bsf             ; --            ; --          ; --             ;
+; MISC_FILE                          ; all_one_const_bb.v            ; --            ; --          ; --             ;
+; MISC_FILE                          ; all_one_const.inc             ; --            ; --          ; --             ;
+; MISC_FILE                          ; mux21_5bit.bsf                ; --            ; --          ; --             ;
+; MISC_FILE                          ; mux21_5bit_bb.v               ; --            ; --          ; --             ;
+; MISC_FILE                          ; mux21_5bit.inc                ; --            ; --          ; --             ;
+; MISC_FILE                          ; regs_8bit.bsf                 ; --            ; --          ; --             ;
+; MISC_FILE                          ; regs_8bit_bb.v                ; --            ; --          ; --             ;
+; MISC_FILE                          ; regs_8bit.inc                 ; --            ; --          ; --             ;
+; MISC_FILE                          ; mux21_8bit.bsf                ; --            ; --          ; --             ;
+; MISC_FILE                          ; mux21_8bit_bb.v               ; --            ; --          ; --             ;
+; MISC_FILE                          ; mux21_8bit.inc                ; --            ; --          ; --             ;
+; MISC_FILE                          ; mux21_1bit.bsf                ; --            ; --          ; --             ;
+; MISC_FILE                          ; mux21_1bit_bb.v               ; --            ; --          ; --             ;
+; MISC_FILE                          ; mux21_1bit.inc                ; --            ; --          ; --             ;
+; MISC_FILE                          ; regs2_8bit.bsf                ; --            ; --          ; --             ;
+; MISC_FILE                          ; regs2_8bit_bb.v               ; --            ; --          ; --             ;
+; MISC_FILE                          ; regs2_8bit.inc                ; --            ; --          ; --             ;
+; MISC_FILE                          ; regs3_8bit.bsf                ; --            ; --          ; --             ;
+; MISC_FILE                          ; regs3_8bit_bb.v               ; --            ; --          ; --             ;
+; MISC_FILE                          ; regs3_8bit.inc                ; --            ; --          ; --             ;
+; MISC_FILE                          ; regs4_8bit.bsf                ; --            ; --          ; --             ;
+; MISC_FILE                          ; regs4_8bit_bb.v               ; --            ; --          ; --             ;
+; MISC_FILE                          ; regs4_8bit.inc                ; --            ; --          ; --             ;
 ; PARTITION_COLOR                    ; 16764057                      ; --            ; --          ; Top            ;
 ; PARTITION_NETLIST_TYPE             ; SOURCE                        ; --            ; --          ; Top            ;
 ; USE_GENERATED_PHYSICAL_CONSTRAINTS ; Off                           ; --            ; --          ; eda_blast_fpga ;
@@ -102,11 +157,11 @@ applicable agreement for further details.
 +-------------------------+--------------+-------------------------+---------------------+------------------------------------+
 ; Module Name             ; Elapsed Time ; Average Processors Used ; Peak Virtual Memory ; Total CPU Time (on all processors) ;
 +-------------------------+--------------+-------------------------+---------------------+------------------------------------+
-; Analysis & Synthesis    ; 00:00:12     ; 1.0                     ; 279 MB              ; 00:00:12                           ;
-; Fitter                  ; 00:00:09     ; 1.0                     ; 292 MB              ; 00:00:09                           ;
+; Analysis & Synthesis    ; 00:00:12     ; 1.0                     ; 284 MB              ; 00:00:12                           ;
+; Fitter                  ; 00:00:08     ; 1.0                     ; 293 MB              ; 00:00:09                           ;
 ; Assembler               ; 00:00:03     ; 1.0                     ; 259 MB              ; 00:00:03                           ;
-; Classic Timing Analyzer ; 00:00:02     ; 1.0                     ; 200 MB              ; 00:00:02                           ;
-; Total                   ; 00:00:26     ; --                      ; --                  ; 00:00:26                           ;
+; Classic Timing Analyzer ; 00:00:02     ; 1.0                     ; 202 MB              ; 00:00:02                           ;
+; Total                   ; 00:00:25     ; --                      ; --                  ; 00:00:26                           ;
 +-------------------------+--------------+-------------------------+---------------------+------------------------------------+
 
 

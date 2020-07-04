@@ -15,6 +15,7 @@
 
 FUNCTION counter 
 (
+	aclr,
 	clock
 )
 

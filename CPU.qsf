@@ -52,6 +52,20 @@ set_global_assignment -name QIP_FILE dec24.qip
 set_global_assignment -name BDF_FILE CU.bdf
 set_global_assignment -name BDF_FILE sequencer4.bdf
 set_global_assignment -name VECTOR_WAVEFORM_FILE CPU.vwf
+set_global_assignment -name QIP_FILE main_mem.qip
+set_global_assignment -name BDF_FILE sign_extend_16to32.bdf
+set_global_assignment -name QIP_FILE mux21.qip
+set_global_assignment -name QIP_FILE zero_const.qip
+set_global_assignment -name QIP_FILE all_one_const.qip
+set_global_assignment -name QIP_FILE mux21_5bit.qip
+set_global_assignment -name QIP_FILE regs_8bit.qip
+set_global_assignment -name BDF_FILE registers_mem.bdf
+set_global_assignment -name QIP_FILE mux21_8bit.qip
+set_global_assignment -name QIP_FILE mux21_1bit.qip
+set_global_assignment -name QIP_FILE regs2_8bit.qip
+set_global_assignment -name QIP_FILE regs3_8bit.qip
+set_global_assignment -name QIP_FILE regs4_8bit.qip
+set_global_assignment -name BDF_FILE test_reg_mem.bdf
 set_global_assignment -name PARTITION_NETLIST_TYPE SOURCE -section_id Top
 set_global_assignment -name PARTITION_COLOR 16764057 -section_id Top
 set_global_assignment -name LL_ROOT_REGION ON -section_id "Root Region"

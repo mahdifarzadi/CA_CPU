@@ -32,9 +32,11 @@
 //applicable agreement for further details.
 
 module counter (
+	aclr,
 	clock,
 	q);
 
+	input	  aclr;
 	input	  clock;
 	output	[1:0]  q;
 
@@ -43,7 +45,7 @@ endmodule
 // ============================================================
 // CNX file retrieval info
 // ============================================================
-// Retrieval info: PRIVATE: ACLR NUMERIC "0"
+// Retrieval info: PRIVATE: ACLR NUMERIC "1"
 // Retrieval info: PRIVATE: ALOAD NUMERIC "0"
 // Retrieval info: PRIVATE: ASET NUMERIC "0"
 // Retrieval info: PRIVATE: ASET_ALL1 NUMERIC "1"
@@ -65,10 +67,12 @@ endmodule
 // Retrieval info: CONSTANT: LPM_PORT_UPDOWN STRING "PORT_UNUSED"
 // Retrieval info: CONSTANT: LPM_TYPE STRING "LPM_COUNTER"
 // Retrieval info: CONSTANT: LPM_WIDTH NUMERIC "2"
+// Retrieval info: USED_PORT: aclr 0 0 0 0 INPUT NODEFVAL aclr
 // Retrieval info: USED_PORT: clock 0 0 0 0 INPUT NODEFVAL clock
 // Retrieval info: USED_PORT: q 0 0 2 0 OUTPUT NODEFVAL q[1..0]
 // Retrieval info: CONNECT: @clock 0 0 0 0 clock 0 0 0 0
 // Retrieval info: CONNECT: q 0 0 2 0 @q 0 0 2 0
+// Retrieval info: CONNECT: @aclr 0 0 0 0 aclr 0 0 0 0
 // Retrieval info: LIBRARY: lpm lpm.lpm_components.all
 // Retrieval info: GEN_FILE: TYPE_NORMAL counter.v TRUE
 // Retrieval info: GEN_FILE: TYPE_NORMAL counter.inc TRUE
