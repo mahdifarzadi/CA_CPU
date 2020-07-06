@@ -16,6 +16,7 @@
 FUNCTION instructions_mem 
 (
 	address[3..0],
+	clken,
 	clock
 )
 

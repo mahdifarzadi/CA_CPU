@@ -1,0 +1,28 @@
+%  multiple-line comment  
+
+multiple-line comment  %      
+
+-- single-line comment
+
+
+DEPTH = 256;                   -- The size of memory in words
+WIDTH = 10;                    -- The size of data in bits
+ADDRESS_RADIX = HEX;          -- The radix for address values
+DATA_RADIX = BIN;             -- The radix for data values
+CONTENT                       -- start of (address : data pairs)
+BEGIN
+-- test for CPU(alu)
+00 : 0000100000;                -- memory address : data
+01 : 0001000000;
+02 : 0000001110;
+03 : 0000001001;
+04 : 0000100000;
+05 : 0001000000;
+06 : 0000001110;
+07 : 0000001001;
+08 : 0000100000;
+09 : 0001000000;
+0A : 0000001110;
+0B : 0000001001;
+
+END;

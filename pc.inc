@@ -15,7 +15,11 @@
 
 FUNCTION pc 
 (
-	clock
+	aclr,
+	clock,
+	cnt_en,
+	data[3..0],
+	sload
 )
 
 RETURNS (
