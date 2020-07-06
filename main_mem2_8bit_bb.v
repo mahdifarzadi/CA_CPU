@@ -35,6 +35,7 @@ module main_mem2_8bit (
 	clock,
 	data,
 	rdaddress,
+	rden,
 	wraddress,
 	wren,
 	q);
@@ -42,12 +43,14 @@ module main_mem2_8bit (
 	input	  clock;
 	input	[7:0]  data;
 	input	[4:0]  rdaddress;
+	input	  rden;
 	input	[4:0]  wraddress;
 	input	  wren;
 	output	[7:0]  q;
 `ifndef ALTERA_RESERVED_QIS
 // synopsys translate_off
 `endif
+	tri1	  rden;
 	tri1	  wren;
 `ifndef ALTERA_RESERVED_QIS
 // synopsys translate_on
@@ -94,7 +97,7 @@ endmodule
 // Retrieval info: PRIVATE: MIFfilename STRING ""
 // Retrieval info: PRIVATE: OPERATION_MODE NUMERIC "2"
 // Retrieval info: PRIVATE: OUTDATA_ACLR_B NUMERIC "0"
-// Retrieval info: PRIVATE: OUTDATA_REG_B NUMERIC "1"
+// Retrieval info: PRIVATE: OUTDATA_REG_B NUMERIC "0"
 // Retrieval info: PRIVATE: RAM_BLOCK_TYPE NUMERIC "0"
 // Retrieval info: PRIVATE: READ_DURING_WRITE_MODE_MIXED_PORTS NUMERIC "2"
 // Retrieval info: PRIVATE: READ_DURING_WRITE_MODE_PORT_A NUMERIC "3"
@@ -117,7 +120,7 @@ endmodule
 // Retrieval info: PRIVATE: WRADDR_REG_B NUMERIC "0"
 // Retrieval info: PRIVATE: WRCTRL_ACLR_B NUMERIC "0"
 // Retrieval info: PRIVATE: enable NUMERIC "0"
-// Retrieval info: PRIVATE: rden NUMERIC "0"
+// Retrieval info: PRIVATE: rden NUMERIC "1"
 // Retrieval info: CONSTANT: ADDRESS_REG_B STRING "CLOCK0"
 // Retrieval info: CONSTANT: CLOCK_ENABLE_INPUT_A STRING "BYPASS"
 // Retrieval info: CONSTANT: CLOCK_ENABLE_INPUT_B STRING "BYPASS"
@@ -129,8 +132,9 @@ endmodule
 // Retrieval info: CONSTANT: NUMWORDS_B NUMERIC "32"
 // Retrieval info: CONSTANT: OPERATION_MODE STRING "DUAL_PORT"
 // Retrieval info: CONSTANT: OUTDATA_ACLR_B STRING "NONE"
-// Retrieval info: CONSTANT: OUTDATA_REG_B STRING "CLOCK0"
+// Retrieval info: CONSTANT: OUTDATA_REG_B STRING "UNREGISTERED"
 // Retrieval info: CONSTANT: POWER_UP_UNINITIALIZED STRING "FALSE"
+// Retrieval info: CONSTANT: RDCONTROL_REG_B STRING "CLOCK0"
 // Retrieval info: CONSTANT: READ_DURING_WRITE_MODE_MIXED_PORTS STRING "DONT_CARE"
 // Retrieval info: CONSTANT: WIDTHAD_A NUMERIC "5"
 // Retrieval info: CONSTANT: WIDTHAD_B NUMERIC "5"
@@ -141,6 +145,7 @@ endmodule
 // Retrieval info: USED_PORT: data 0 0 8 0 INPUT NODEFVAL data[7..0]
 // Retrieval info: USED_PORT: q 0 0 8 0 OUTPUT NODEFVAL q[7..0]
 // Retrieval info: USED_PORT: rdaddress 0 0 5 0 INPUT NODEFVAL rdaddress[4..0]
+// Retrieval info: USED_PORT: rden 0 0 0 0 INPUT VCC rden
 // Retrieval info: USED_PORT: wraddress 0 0 5 0 INPUT NODEFVAL wraddress[4..0]
 // Retrieval info: USED_PORT: wren 0 0 0 0 INPUT VCC wren
 // Retrieval info: CONNECT: @data_a 0 0 8 0 data 0 0 8 0
@@ -148,6 +153,7 @@ endmodule
 // Retrieval info: CONNECT: q 0 0 8 0 @q_b 0 0 8 0
 // Retrieval info: CONNECT: @address_a 0 0 5 0 wraddress 0 0 5 0
 // Retrieval info: CONNECT: @address_b 0 0 5 0 rdaddress 0 0 5 0
+// Retrieval info: CONNECT: @rden_b 0 0 0 0 rden 0 0 0 0
 // Retrieval info: CONNECT: @clock0 0 0 0 0 clock 0 0 0 0
 // Retrieval info: LIBRARY: altera_mf altera_mf.altera_mf_components.all
 // Retrieval info: GEN_FILE: TYPE_NORMAL main_mem2_8bit.v TRUE

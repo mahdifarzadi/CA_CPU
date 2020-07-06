@@ -18,6 +18,7 @@ FUNCTION main_mem3_8bit
 	clock,
 	data[7..0],
 	rdaddress[4..0],
+	rden,
 	wraddress[4..0],
 	wren
 )

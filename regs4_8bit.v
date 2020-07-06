@@ -37,7 +37,6 @@
 `timescale 1 ps / 1 ps
 // synopsys translate_on
 module regs4_8bit (
-	aclr,
 	clock,
 	data,
 	rdaddress_a,
@@ -49,7 +48,6 @@ module regs4_8bit (
 	qa,
 	qb);
 
-	input	  aclr;
 	input	  clock;
 	input	[7:0]  data;
 	input	[4:0]  rdaddress_a;
@@ -63,7 +61,6 @@ module regs4_8bit (
 `ifndef ALTERA_RESERVED_QIS
 // synopsys translate_off
 `endif
-	tri0	  aclr;
 	tri1	  rden_a;
 	tri1	  rden_b;
 	tri1	  wren;
@@ -77,10 +74,8 @@ module regs4_8bit (
 	wire [7:0] qb = sub_wire1[7:0];
 
 	alt3pram	alt3pram_component (
-				.outclock (clock),
 				.wren (wren),
 				.inclock (clock),
-				.aclr (aclr),
 				.data (data),
 				.rden_a (rden_a),
 				.rdaddress_a (rdaddress_a),
@@ -91,7 +86,9 @@ module regs4_8bit (
 				.qb (sub_wire1)
 				// synopsys translate_off
 				,
+				.aclr (),
 				.inclocken (),
+				.outclock (),
 				.outclocken ()
 				// synopsys translate_on
 				);
@@ -100,10 +97,10 @@ module regs4_8bit (
 		alt3pram_component.indata_reg = "INCLOCK",
 		alt3pram_component.intended_device_family = "Stratix II",
 		alt3pram_component.lpm_type = "alt3pram",
-		alt3pram_component.outdata_aclr_a = "ON",
-		alt3pram_component.outdata_aclr_b = "ON",
-		alt3pram_component.outdata_reg_a = "OUTCLOCK",
-		alt3pram_component.outdata_reg_b = "OUTCLOCK",
+		alt3pram_component.outdata_aclr_a = "OFF",
+		alt3pram_component.outdata_aclr_b = "OFF",
+		alt3pram_component.outdata_reg_a = "UNREGISTERED",
+		alt3pram_component.outdata_reg_b = "UNREGISTERED",
 		alt3pram_component.rdaddress_aclr_a = "OFF",
 		alt3pram_component.rdaddress_aclr_b = "OFF",
 		alt3pram_component.rdaddress_reg_a = "INCLOCK",
@@ -142,8 +139,8 @@ endmodule
 // Retrieval info: PRIVATE: MIFfilename STRING ""
 // Retrieval info: PRIVATE: RAM_BLOCK_TYPE NUMERIC "0"
 // Retrieval info: PRIVATE: REGdata NUMERIC "1"
-// Retrieval info: PRIVATE: REGqa NUMERIC "1"
-// Retrieval info: PRIVATE: REGqb NUMERIC "1"
+// Retrieval info: PRIVATE: REGqa NUMERIC "0"
+// Retrieval info: PRIVATE: REGqb NUMERIC "0"
 // Retrieval info: PRIVATE: REGrdaddress_a NUMERIC "1"
 // Retrieval info: PRIVATE: REGrdaddress_b NUMERIC "1"
 // Retrieval info: PRIVATE: REGrren_a NUMERIC "1"
@@ -159,10 +156,10 @@ endmodule
 // Retrieval info: CONSTANT: INDATA_REG STRING "INCLOCK"
 // Retrieval info: CONSTANT: INTENDED_DEVICE_FAMILY STRING "Stratix II"
 // Retrieval info: CONSTANT: LPM_TYPE STRING "alt3pram"
-// Retrieval info: CONSTANT: OUTDATA_ACLR_A STRING "ON"
-// Retrieval info: CONSTANT: OUTDATA_ACLR_B STRING "ON"
-// Retrieval info: CONSTANT: OUTDATA_REG_A STRING "OUTCLOCK"
-// Retrieval info: CONSTANT: OUTDATA_REG_B STRING "OUTCLOCK"
+// Retrieval info: CONSTANT: OUTDATA_ACLR_A STRING "OFF"
+// Retrieval info: CONSTANT: OUTDATA_ACLR_B STRING "OFF"
+// Retrieval info: CONSTANT: OUTDATA_REG_A STRING "UNREGISTERED"
+// Retrieval info: CONSTANT: OUTDATA_REG_B STRING "UNREGISTERED"
 // Retrieval info: CONSTANT: RDADDRESS_ACLR_A STRING "OFF"
 // Retrieval info: CONSTANT: RDADDRESS_ACLR_B STRING "OFF"
 // Retrieval info: CONSTANT: RDADDRESS_REG_A STRING "INCLOCK"
@@ -175,7 +172,6 @@ endmodule
 // Retrieval info: CONSTANT: WIDTHAD NUMERIC "5"
 // Retrieval info: CONSTANT: WRITE_ACLR STRING "OFF"
 // Retrieval info: CONSTANT: WRITE_REG STRING "INCLOCK"
-// Retrieval info: USED_PORT: aclr 0 0 0 0 INPUT GND aclr
 // Retrieval info: USED_PORT: clock 0 0 0 0 INPUT NODEFVAL clock
 // Retrieval info: USED_PORT: data 0 0 8 0 INPUT NODEFVAL data[7..0]
 // Retrieval info: USED_PORT: qa 0 0 8 0 OUTPUT NODEFVAL qa[7..0]
@@ -196,8 +192,6 @@ endmodule
 // Retrieval info: CONNECT: @rden_a 0 0 0 0 rden_a 0 0 0 0
 // Retrieval info: CONNECT: @rden_b 0 0 0 0 rden_b 0 0 0 0
 // Retrieval info: CONNECT: @inclock 0 0 0 0 clock 0 0 0 0
-// Retrieval info: CONNECT: @outclock 0 0 0 0 clock 0 0 0 0
-// Retrieval info: CONNECT: @aclr 0 0 0 0 aclr 0 0 0 0
 // Retrieval info: LIBRARY: altera_mf altera_mf.altera_mf_components.all
 // Retrieval info: GEN_FILE: TYPE_NORMAL regs4_8bit.v TRUE
 // Retrieval info: GEN_FILE: TYPE_NORMAL regs4_8bit.inc TRUE

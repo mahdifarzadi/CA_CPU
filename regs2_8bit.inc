@@ -15,7 +15,6 @@
 
 FUNCTION regs2_8bit 
 (
-	aclr,
 	clock,
 	data[7..0],
 	rdaddress_a[4..0],
