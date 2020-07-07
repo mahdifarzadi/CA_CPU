@@ -1,0 +1,44 @@
+%  multiple-line comment  
+
+multiple-line comment  %      
+
+-- single-line comment
+
+
+DEPTH = 256;                   -- The size of memory in words
+WIDTH = 10;                    -- The size of data in bits
+ADDRESS_RADIX = HEX;          -- The radix for address values
+DATA_RADIX = BIN;             -- The radix for data values
+CONTENT                       -- start of (address : data pairs)
+BEGIN
+-- test for CPU(mem ins)
+00 : 0000100000;              
+01 : 0001000000; --sw
+02 : 0000011110; -- read AR & VR
+03 : 0010011000; -- write vr in mem
+04 : 0000100000;
+05 : 0001000000; --lw
+06 : 0000011110; -- read AR & VR
+07 : 0100011000; -- read from mem
+08 : 0000011001; -- write mem to vr
+09 : 0000100000;
+0A : 0001000000; --lb
+0B : 0000010110; -- read AR & VR
+0C : 0100010000; -- read from mem
+0D : 0000010001; -- write mem to vr
+0E : 0000100000;              
+0F : 0001000000; --sb
+10 : 0000010110; -- read AR & VR
+11 : 0010010000; -- write vr in mem
+12 : 0000100000;
+13 : 0001000000; --lw
+14 : 0000011110; -- read AR & VR
+15 : 0100011000; -- read from mem
+16 : 0000011001; -- write mem to vr
+17 : 0000100000;
+18 : 0001000000; --lb
+19 : 0000010110; -- read AR & VR
+1A : 0100010000; -- read from mem
+1B : 0000010001; -- write mem to vr
+
+END;
