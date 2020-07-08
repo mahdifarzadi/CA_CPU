@@ -5,9 +5,9 @@ Timing Analyzer Summary
 Type           : Worst-case tco
 Slack          : N/A
 Required Time  : None
-Actual Time    : 102.684 ns
-From           : registers_mem:inst9|regs2_8bit:inst17|alt3pram:alt3pram_component|altdpram:altdpram_component2|altsyncram:ram_block|altsyncram_2ep1:auto_generated|ram_block1a0~portb_address_reg4
-To             : out[21]
+Actual Time    : 104.868 ns
+From           : registers_mem:inst9|regs_8bit:inst4|alt3pram:alt3pram_component|altdpram:altdpram_component2|altsyncram:ram_block|altsyncram_1ot1:auto_generated|ram_block1a0~portb_address_reg4
+To             : out[31]
 From Clock     : clock_reg
 To Clock       : --
 Failed Paths   : 0
@@ -15,9 +15,9 @@ Failed Paths   : 0
 Type           : Clock Setup: 'clock_reg'
 Slack          : N/A
 Required Time  : None
-Actual Time    : 10.27 MHz ( period = 97.392 ns )
-From           : registers_mem:inst9|regs2_8bit:inst17|alt3pram:alt3pram_component|altdpram:altdpram_component2|altsyncram:ram_block|altsyncram_2ep1:auto_generated|ram_block1a0~portb_address_reg4
-To             : registers_mem:inst9|regs2_8bit:inst17|alt3pram:alt3pram_component|altdpram:altdpram_component2|altsyncram:ram_block|altsyncram_2ep1:auto_generated|ram_block1a0~porta_datain_reg14
+Actual Time    : 9.99 MHz ( period = 100.150 ns )
+From           : registers_mem:inst9|regs_8bit:inst4|alt3pram:alt3pram_component|altdpram:altdpram_component2|altsyncram:ram_block|altsyncram_1ot1:auto_generated|ram_block1a0~portb_address_reg4
+To             : registers_mem:inst9|regs2_8bit:inst17|alt3pram:alt3pram_component|altdpram:altdpram_component1|altsyncram:ram_block|altsyncram_2ep1:auto_generated|ram_block1a0~porta_datain_reg23
 From Clock     : clock_reg
 To Clock       : clock_reg
 Failed Paths   : 0
@@ -25,9 +25,9 @@ Failed Paths   : 0
 Type           : Clock Setup: 'clock'
 Slack          : N/A
 Required Time  : None
-Actual Time    : 164.80 MHz ( period = 6.068 ns )
-From           : CU_mp:inst3|micro_mem:inst1|altsyncram:altsyncram_component|altsyncram_1881:auto_generated|ram_block1a0~porta_address_reg7
-To             : instructions_mem:inst|altsyncram:altsyncram_component|altsyncram_db91:auto_generated|ram_block1a0~porta_address_reg3
+Actual Time    : 107.64 MHz ( period = 9.290 ns )
+From           : CU_mp:inst2|micro_mem:inst1|altsyncram:altsyncram_component|altsyncram_8881:auto_generated|ram_block1a0~porta_address_reg7
+To             : instructions_mem:inst|altsyncram:altsyncram_component|altsyncram_r991:auto_generated|ram_block1a0~porta_address_reg3
 From Clock     : clock
 To Clock       : clock
 Failed Paths   : 0

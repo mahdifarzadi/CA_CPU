@@ -36,9 +36,9 @@ module cu_buf (
 	enabledt,
 	tridata);
 
-	input	[9:0]  data;
+	input	[12:0]  data;
 	input	  enabledt;
-	inout	[9:0]  tridata;
+	inout	[12:0]  tridata;
 
 endmodule
 
@@ -48,14 +48,14 @@ endmodule
 // Retrieval info: PRIVATE: BiDir NUMERIC "0"
 // Retrieval info: PRIVATE: INTENDED_DEVICE_FAMILY STRING "Stratix II"
 // Retrieval info: PRIVATE: SYNTH_WRAPPER_GEN_POSTFIX STRING "0"
-// Retrieval info: PRIVATE: nBit NUMERIC "10"
+// Retrieval info: PRIVATE: nBit NUMERIC "13"
 // Retrieval info: CONSTANT: LPM_TYPE STRING "LPM_BUSTRI"
-// Retrieval info: CONSTANT: LPM_WIDTH NUMERIC "10"
-// Retrieval info: USED_PORT: data 0 0 10 0 INPUT NODEFVAL data[9..0]
+// Retrieval info: CONSTANT: LPM_WIDTH NUMERIC "13"
+// Retrieval info: USED_PORT: data 0 0 13 0 INPUT NODEFVAL data[12..0]
 // Retrieval info: USED_PORT: enabledt 0 0 0 0 INPUT NODEFVAL enabledt
-// Retrieval info: USED_PORT: tridata 0 0 10 0 BIDIR NODEFVAL tridata[9..0]
-// Retrieval info: CONNECT: tridata 0 0 10 0 @tridata 0 0 10 0
-// Retrieval info: CONNECT: @data 0 0 10 0 data 0 0 10 0
+// Retrieval info: USED_PORT: tridata 0 0 13 0 BIDIR NODEFVAL tridata[12..0]
+// Retrieval info: CONNECT: tridata 0 0 13 0 @tridata 0 0 13 0
+// Retrieval info: CONNECT: @data 0 0 13 0 data 0 0 13 0
 // Retrieval info: CONNECT: @enabledt 0 0 0 0 enabledt 0 0 0 0
 // Retrieval info: LIBRARY: lpm lpm.lpm_components.all
 // Retrieval info: GEN_FILE: TYPE_NORMAL cu_buf.v TRUE

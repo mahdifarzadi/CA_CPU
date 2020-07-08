@@ -15,10 +15,10 @@
 
 FUNCTION cu_buf 
 (
-	data[9..0],
+	data[12..0],
 	enabledt
 )
 
 RETURNS (
-	tridata[9..0]
+	tridata[12..0]
 );
