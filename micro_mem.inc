@@ -20,5 +20,5 @@ FUNCTION micro_mem
 )
 
 RETURNS (
-	q[15..0]
+	q[23..0]
 );

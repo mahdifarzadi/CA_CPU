@@ -922,14 +922,14 @@ VECTOR("F:/dev/CR_CPU/ALU.vwf")
 VECTOR("F:/dev/CR_CPU/CPU.vwf")
 {
 	ZOOM{
-		ZBEGIN = 189039;
-		ZEND = 819171;
+		ZBEGIN = 0;
+		ZEND = 646809;
 		NUMERATOR = 812;
 		DENOMINATOR = 588800;
 		TOP_INDEX = 0;
 	}
 	CLOCK{
-		PERIOD = 60000;
+		PERIOD = 20000;
 		OFFSET = 0;
 		DUTY_CYCLE = 50;
 	}
@@ -2518,10 +2518,10 @@ VECTOR("F:/dev/CR_CPU/db/CPU.sim.cvwf")
 {
 	ZOOM{
 		ZBEGIN = 0;
-		ZEND = 524288;
-		NUMERATOR = 817;
-		DENOMINATOR = 524288;
-		TOP_INDEX = 0;
+		ZEND = 1070394;
+		NUMERATOR = 834;
+		DENOMINATOR = 1070394;
+		TOP_INDEX = 35;
 	}
 	CLOCK{
 		PERIOD = 10000;
@@ -2812,8 +2812,16 @@ VECTOR("F:/dev/CR_CPU/db/CPU.sim.cvwf")
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "out";
+		SIGNAL = "ins_mem_en";
 		INDEX = 35;
+		FORMAT = E;
+		SCALE = 1;
+		VISIBLE = Y;
+		FLAG = N;
+	}
+	LINE{
+		SIGNAL = "out";
+		INDEX = 36;
 		FORMAT = T;
 		SCALE = 1;
 		VISIBLE = Y;
@@ -2821,14 +2829,6 @@ VECTOR("F:/dev/CR_CPU/db/CPU.sim.cvwf")
 	}
 	LINE{
 		SIGNAL = "out[31]";
-		INDEX = 36;
-		FORMAT = E;
-		SCALE = 1;
-		VISIBLE = Y;
-		FLAG = N;
-	}
-	LINE{
-		SIGNAL = "out[30]";
 		INDEX = 37;
 		FORMAT = E;
 		SCALE = 1;
@@ -2836,7 +2836,7 @@ VECTOR("F:/dev/CR_CPU/db/CPU.sim.cvwf")
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "out[29]";
+		SIGNAL = "out[30]";
 		INDEX = 38;
 		FORMAT = E;
 		SCALE = 1;
@@ -2844,7 +2844,7 @@ VECTOR("F:/dev/CR_CPU/db/CPU.sim.cvwf")
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "out[28]";
+		SIGNAL = "out[29]";
 		INDEX = 39;
 		FORMAT = E;
 		SCALE = 1;
@@ -2852,7 +2852,7 @@ VECTOR("F:/dev/CR_CPU/db/CPU.sim.cvwf")
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "out[27]";
+		SIGNAL = "out[28]";
 		INDEX = 40;
 		FORMAT = E;
 		SCALE = 1;
@@ -2860,7 +2860,7 @@ VECTOR("F:/dev/CR_CPU/db/CPU.sim.cvwf")
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "out[26]";
+		SIGNAL = "out[27]";
 		INDEX = 41;
 		FORMAT = E;
 		SCALE = 1;
@@ -2868,7 +2868,7 @@ VECTOR("F:/dev/CR_CPU/db/CPU.sim.cvwf")
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "out[25]";
+		SIGNAL = "out[26]";
 		INDEX = 42;
 		FORMAT = E;
 		SCALE = 1;
@@ -2876,7 +2876,7 @@ VECTOR("F:/dev/CR_CPU/db/CPU.sim.cvwf")
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "out[24]";
+		SIGNAL = "out[25]";
 		INDEX = 43;
 		FORMAT = E;
 		SCALE = 1;
@@ -2884,7 +2884,7 @@ VECTOR("F:/dev/CR_CPU/db/CPU.sim.cvwf")
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "out[23]";
+		SIGNAL = "out[24]";
 		INDEX = 44;
 		FORMAT = E;
 		SCALE = 1;
@@ -2892,7 +2892,7 @@ VECTOR("F:/dev/CR_CPU/db/CPU.sim.cvwf")
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "out[22]";
+		SIGNAL = "out[23]";
 		INDEX = 45;
 		FORMAT = E;
 		SCALE = 1;
@@ -2900,7 +2900,7 @@ VECTOR("F:/dev/CR_CPU/db/CPU.sim.cvwf")
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "out[21]";
+		SIGNAL = "out[22]";
 		INDEX = 46;
 		FORMAT = E;
 		SCALE = 1;
@@ -2908,7 +2908,7 @@ VECTOR("F:/dev/CR_CPU/db/CPU.sim.cvwf")
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "out[20]";
+		SIGNAL = "out[21]";
 		INDEX = 47;
 		FORMAT = E;
 		SCALE = 1;
@@ -2916,7 +2916,7 @@ VECTOR("F:/dev/CR_CPU/db/CPU.sim.cvwf")
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "out[19]";
+		SIGNAL = "out[20]";
 		INDEX = 48;
 		FORMAT = E;
 		SCALE = 1;
@@ -2924,7 +2924,7 @@ VECTOR("F:/dev/CR_CPU/db/CPU.sim.cvwf")
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "out[18]";
+		SIGNAL = "out[19]";
 		INDEX = 49;
 		FORMAT = E;
 		SCALE = 1;
@@ -2932,7 +2932,7 @@ VECTOR("F:/dev/CR_CPU/db/CPU.sim.cvwf")
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "out[17]";
+		SIGNAL = "out[18]";
 		INDEX = 50;
 		FORMAT = E;
 		SCALE = 1;
@@ -2940,7 +2940,7 @@ VECTOR("F:/dev/CR_CPU/db/CPU.sim.cvwf")
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "out[16]";
+		SIGNAL = "out[17]";
 		INDEX = 51;
 		FORMAT = E;
 		SCALE = 1;
@@ -2948,7 +2948,7 @@ VECTOR("F:/dev/CR_CPU/db/CPU.sim.cvwf")
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "out[15]";
+		SIGNAL = "out[16]";
 		INDEX = 52;
 		FORMAT = E;
 		SCALE = 1;
@@ -2956,7 +2956,7 @@ VECTOR("F:/dev/CR_CPU/db/CPU.sim.cvwf")
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "out[14]";
+		SIGNAL = "out[15]";
 		INDEX = 53;
 		FORMAT = E;
 		SCALE = 1;
@@ -2964,7 +2964,7 @@ VECTOR("F:/dev/CR_CPU/db/CPU.sim.cvwf")
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "out[13]";
+		SIGNAL = "out[14]";
 		INDEX = 54;
 		FORMAT = E;
 		SCALE = 1;
@@ -2972,7 +2972,7 @@ VECTOR("F:/dev/CR_CPU/db/CPU.sim.cvwf")
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "out[12]";
+		SIGNAL = "out[13]";
 		INDEX = 55;
 		FORMAT = E;
 		SCALE = 1;
@@ -2980,7 +2980,7 @@ VECTOR("F:/dev/CR_CPU/db/CPU.sim.cvwf")
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "out[11]";
+		SIGNAL = "out[12]";
 		INDEX = 56;
 		FORMAT = E;
 		SCALE = 1;
@@ -2988,7 +2988,7 @@ VECTOR("F:/dev/CR_CPU/db/CPU.sim.cvwf")
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "out[10]";
+		SIGNAL = "out[11]";
 		INDEX = 57;
 		FORMAT = E;
 		SCALE = 1;
@@ -2996,7 +2996,7 @@ VECTOR("F:/dev/CR_CPU/db/CPU.sim.cvwf")
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "out[9]";
+		SIGNAL = "out[10]";
 		INDEX = 58;
 		FORMAT = E;
 		SCALE = 1;
@@ -3004,7 +3004,7 @@ VECTOR("F:/dev/CR_CPU/db/CPU.sim.cvwf")
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "out[8]";
+		SIGNAL = "out[9]";
 		INDEX = 59;
 		FORMAT = E;
 		SCALE = 1;
@@ -3012,7 +3012,7 @@ VECTOR("F:/dev/CR_CPU/db/CPU.sim.cvwf")
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "out[7]";
+		SIGNAL = "out[8]";
 		INDEX = 60;
 		FORMAT = E;
 		SCALE = 1;
@@ -3020,7 +3020,7 @@ VECTOR("F:/dev/CR_CPU/db/CPU.sim.cvwf")
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "out[6]";
+		SIGNAL = "out[7]";
 		INDEX = 61;
 		FORMAT = E;
 		SCALE = 1;
@@ -3028,7 +3028,7 @@ VECTOR("F:/dev/CR_CPU/db/CPU.sim.cvwf")
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "out[5]";
+		SIGNAL = "out[6]";
 		INDEX = 62;
 		FORMAT = E;
 		SCALE = 1;
@@ -3036,7 +3036,7 @@ VECTOR("F:/dev/CR_CPU/db/CPU.sim.cvwf")
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "out[4]";
+		SIGNAL = "out[5]";
 		INDEX = 63;
 		FORMAT = E;
 		SCALE = 1;
@@ -3044,7 +3044,7 @@ VECTOR("F:/dev/CR_CPU/db/CPU.sim.cvwf")
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "out[3]";
+		SIGNAL = "out[4]";
 		INDEX = 64;
 		FORMAT = E;
 		SCALE = 1;
@@ -3052,7 +3052,7 @@ VECTOR("F:/dev/CR_CPU/db/CPU.sim.cvwf")
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "out[2]";
+		SIGNAL = "out[3]";
 		INDEX = 65;
 		FORMAT = E;
 		SCALE = 1;
@@ -3060,7 +3060,7 @@ VECTOR("F:/dev/CR_CPU/db/CPU.sim.cvwf")
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "out[1]";
+		SIGNAL = "out[2]";
 		INDEX = 66;
 		FORMAT = E;
 		SCALE = 1;
@@ -3068,7 +3068,7 @@ VECTOR("F:/dev/CR_CPU/db/CPU.sim.cvwf")
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "out[0]";
+		SIGNAL = "out[1]";
 		INDEX = 67;
 		FORMAT = E;
 		SCALE = 1;
@@ -3076,8 +3076,16 @@ VECTOR("F:/dev/CR_CPU/db/CPU.sim.cvwf")
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "out_mem";
+		SIGNAL = "out[0]";
 		INDEX = 68;
+		FORMAT = E;
+		SCALE = 1;
+		VISIBLE = Y;
+		FLAG = N;
+	}
+	LINE{
+		SIGNAL = "out_mem";
+		INDEX = 69;
 		FORMAT = T;
 		SCALE = 1;
 		VISIBLE = Y;
@@ -3085,14 +3093,6 @@ VECTOR("F:/dev/CR_CPU/db/CPU.sim.cvwf")
 	}
 	LINE{
 		SIGNAL = "out_mem[31]";
-		INDEX = 69;
-		FORMAT = E;
-		SCALE = 1;
-		VISIBLE = Y;
-		FLAG = N;
-	}
-	LINE{
-		SIGNAL = "out_mem[30]";
 		INDEX = 70;
 		FORMAT = E;
 		SCALE = 1;
@@ -3100,7 +3100,7 @@ VECTOR("F:/dev/CR_CPU/db/CPU.sim.cvwf")
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "out_mem[29]";
+		SIGNAL = "out_mem[30]";
 		INDEX = 71;
 		FORMAT = E;
 		SCALE = 1;
@@ -3108,7 +3108,7 @@ VECTOR("F:/dev/CR_CPU/db/CPU.sim.cvwf")
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "out_mem[28]";
+		SIGNAL = "out_mem[29]";
 		INDEX = 72;
 		FORMAT = E;
 		SCALE = 1;
@@ -3116,7 +3116,7 @@ VECTOR("F:/dev/CR_CPU/db/CPU.sim.cvwf")
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "out_mem[27]";
+		SIGNAL = "out_mem[28]";
 		INDEX = 73;
 		FORMAT = E;
 		SCALE = 1;
@@ -3124,7 +3124,7 @@ VECTOR("F:/dev/CR_CPU/db/CPU.sim.cvwf")
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "out_mem[26]";
+		SIGNAL = "out_mem[27]";
 		INDEX = 74;
 		FORMAT = E;
 		SCALE = 1;
@@ -3132,7 +3132,7 @@ VECTOR("F:/dev/CR_CPU/db/CPU.sim.cvwf")
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "out_mem[25]";
+		SIGNAL = "out_mem[26]";
 		INDEX = 75;
 		FORMAT = E;
 		SCALE = 1;
@@ -3140,7 +3140,7 @@ VECTOR("F:/dev/CR_CPU/db/CPU.sim.cvwf")
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "out_mem[24]";
+		SIGNAL = "out_mem[25]";
 		INDEX = 76;
 		FORMAT = E;
 		SCALE = 1;
@@ -3148,7 +3148,7 @@ VECTOR("F:/dev/CR_CPU/db/CPU.sim.cvwf")
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "out_mem[23]";
+		SIGNAL = "out_mem[24]";
 		INDEX = 77;
 		FORMAT = E;
 		SCALE = 1;
@@ -3156,7 +3156,7 @@ VECTOR("F:/dev/CR_CPU/db/CPU.sim.cvwf")
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "out_mem[22]";
+		SIGNAL = "out_mem[23]";
 		INDEX = 78;
 		FORMAT = E;
 		SCALE = 1;
@@ -3164,7 +3164,7 @@ VECTOR("F:/dev/CR_CPU/db/CPU.sim.cvwf")
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "out_mem[21]";
+		SIGNAL = "out_mem[22]";
 		INDEX = 79;
 		FORMAT = E;
 		SCALE = 1;
@@ -3172,7 +3172,7 @@ VECTOR("F:/dev/CR_CPU/db/CPU.sim.cvwf")
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "out_mem[20]";
+		SIGNAL = "out_mem[21]";
 		INDEX = 80;
 		FORMAT = E;
 		SCALE = 1;
@@ -3180,7 +3180,7 @@ VECTOR("F:/dev/CR_CPU/db/CPU.sim.cvwf")
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "out_mem[19]";
+		SIGNAL = "out_mem[20]";
 		INDEX = 81;
 		FORMAT = E;
 		SCALE = 1;
@@ -3188,7 +3188,7 @@ VECTOR("F:/dev/CR_CPU/db/CPU.sim.cvwf")
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "out_mem[18]";
+		SIGNAL = "out_mem[19]";
 		INDEX = 82;
 		FORMAT = E;
 		SCALE = 1;
@@ -3196,7 +3196,7 @@ VECTOR("F:/dev/CR_CPU/db/CPU.sim.cvwf")
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "out_mem[17]";
+		SIGNAL = "out_mem[18]";
 		INDEX = 83;
 		FORMAT = E;
 		SCALE = 1;
@@ -3204,7 +3204,7 @@ VECTOR("F:/dev/CR_CPU/db/CPU.sim.cvwf")
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "out_mem[16]";
+		SIGNAL = "out_mem[17]";
 		INDEX = 84;
 		FORMAT = E;
 		SCALE = 1;
@@ -3212,7 +3212,7 @@ VECTOR("F:/dev/CR_CPU/db/CPU.sim.cvwf")
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "out_mem[15]";
+		SIGNAL = "out_mem[16]";
 		INDEX = 85;
 		FORMAT = E;
 		SCALE = 1;
@@ -3220,7 +3220,7 @@ VECTOR("F:/dev/CR_CPU/db/CPU.sim.cvwf")
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "out_mem[14]";
+		SIGNAL = "out_mem[15]";
 		INDEX = 86;
 		FORMAT = E;
 		SCALE = 1;
@@ -3228,7 +3228,7 @@ VECTOR("F:/dev/CR_CPU/db/CPU.sim.cvwf")
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "out_mem[13]";
+		SIGNAL = "out_mem[14]";
 		INDEX = 87;
 		FORMAT = E;
 		SCALE = 1;
@@ -3236,7 +3236,7 @@ VECTOR("F:/dev/CR_CPU/db/CPU.sim.cvwf")
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "out_mem[12]";
+		SIGNAL = "out_mem[13]";
 		INDEX = 88;
 		FORMAT = E;
 		SCALE = 1;
@@ -3244,7 +3244,7 @@ VECTOR("F:/dev/CR_CPU/db/CPU.sim.cvwf")
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "out_mem[11]";
+		SIGNAL = "out_mem[12]";
 		INDEX = 89;
 		FORMAT = E;
 		SCALE = 1;
@@ -3252,7 +3252,7 @@ VECTOR("F:/dev/CR_CPU/db/CPU.sim.cvwf")
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "out_mem[10]";
+		SIGNAL = "out_mem[11]";
 		INDEX = 90;
 		FORMAT = E;
 		SCALE = 1;
@@ -3260,7 +3260,7 @@ VECTOR("F:/dev/CR_CPU/db/CPU.sim.cvwf")
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "out_mem[9]";
+		SIGNAL = "out_mem[10]";
 		INDEX = 91;
 		FORMAT = E;
 		SCALE = 1;
@@ -3268,7 +3268,7 @@ VECTOR("F:/dev/CR_CPU/db/CPU.sim.cvwf")
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "out_mem[8]";
+		SIGNAL = "out_mem[9]";
 		INDEX = 92;
 		FORMAT = E;
 		SCALE = 1;
@@ -3276,7 +3276,7 @@ VECTOR("F:/dev/CR_CPU/db/CPU.sim.cvwf")
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "out_mem[7]";
+		SIGNAL = "out_mem[8]";
 		INDEX = 93;
 		FORMAT = E;
 		SCALE = 1;
@@ -3284,7 +3284,7 @@ VECTOR("F:/dev/CR_CPU/db/CPU.sim.cvwf")
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "out_mem[6]";
+		SIGNAL = "out_mem[7]";
 		INDEX = 94;
 		FORMAT = E;
 		SCALE = 1;
@@ -3292,7 +3292,7 @@ VECTOR("F:/dev/CR_CPU/db/CPU.sim.cvwf")
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "out_mem[5]";
+		SIGNAL = "out_mem[6]";
 		INDEX = 95;
 		FORMAT = E;
 		SCALE = 1;
@@ -3300,7 +3300,7 @@ VECTOR("F:/dev/CR_CPU/db/CPU.sim.cvwf")
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "out_mem[4]";
+		SIGNAL = "out_mem[5]";
 		INDEX = 96;
 		FORMAT = E;
 		SCALE = 1;
@@ -3308,7 +3308,7 @@ VECTOR("F:/dev/CR_CPU/db/CPU.sim.cvwf")
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "out_mem[3]";
+		SIGNAL = "out_mem[4]";
 		INDEX = 97;
 		FORMAT = E;
 		SCALE = 1;
@@ -3316,7 +3316,7 @@ VECTOR("F:/dev/CR_CPU/db/CPU.sim.cvwf")
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "out_mem[2]";
+		SIGNAL = "out_mem[3]";
 		INDEX = 98;
 		FORMAT = E;
 		SCALE = 1;
@@ -3324,7 +3324,7 @@ VECTOR("F:/dev/CR_CPU/db/CPU.sim.cvwf")
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "out_mem[1]";
+		SIGNAL = "out_mem[2]";
 		INDEX = 99;
 		FORMAT = E;
 		SCALE = 1;
@@ -3332,7 +3332,7 @@ VECTOR("F:/dev/CR_CPU/db/CPU.sim.cvwf")
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "out_mem[0]";
+		SIGNAL = "out_mem[1]";
 		INDEX = 100;
 		FORMAT = E;
 		SCALE = 1;
@@ -3340,8 +3340,16 @@ VECTOR("F:/dev/CR_CPU/db/CPU.sim.cvwf")
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "pc";
+		SIGNAL = "out_mem[0]";
 		INDEX = 101;
+		FORMAT = E;
+		SCALE = 1;
+		VISIBLE = Y;
+		FLAG = N;
+	}
+	LINE{
+		SIGNAL = "pc";
+		INDEX = 102;
 		FORMAT = T;
 		SCALE = 1;
 		VISIBLE = Y;
@@ -3349,14 +3357,6 @@ VECTOR("F:/dev/CR_CPU/db/CPU.sim.cvwf")
 	}
 	LINE{
 		SIGNAL = "pc[3]";
-		INDEX = 102;
-		FORMAT = E;
-		SCALE = 1;
-		VISIBLE = Y;
-		FLAG = N;
-	}
-	LINE{
-		SIGNAL = "pc[2]";
 		INDEX = 103;
 		FORMAT = E;
 		SCALE = 1;
@@ -3364,7 +3364,7 @@ VECTOR("F:/dev/CR_CPU/db/CPU.sim.cvwf")
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "pc[1]";
+		SIGNAL = "pc[2]";
 		INDEX = 104;
 		FORMAT = E;
 		SCALE = 1;
@@ -3372,7 +3372,7 @@ VECTOR("F:/dev/CR_CPU/db/CPU.sim.cvwf")
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "pc[0]";
+		SIGNAL = "pc[1]";
 		INDEX = 105;
 		FORMAT = E;
 		SCALE = 1;
@@ -3380,680 +3380,8 @@ VECTOR("F:/dev/CR_CPU/db/CPU.sim.cvwf")
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "qa";
+		SIGNAL = "pc[0]";
 		INDEX = 106;
-		FORMAT = T;
-		SCALE = 1;
-		VISIBLE = Y;
-		FLAG = N;
-	}
-	LINE{
-		SIGNAL = "qa[31]";
-		INDEX = 107;
-		FORMAT = E;
-		SCALE = 1;
-		VISIBLE = Y;
-		FLAG = N;
-	}
-	LINE{
-		SIGNAL = "qa[30]";
-		INDEX = 108;
-		FORMAT = E;
-		SCALE = 1;
-		VISIBLE = Y;
-		FLAG = N;
-	}
-	LINE{
-		SIGNAL = "qa[29]";
-		INDEX = 109;
-		FORMAT = E;
-		SCALE = 1;
-		VISIBLE = Y;
-		FLAG = N;
-	}
-	LINE{
-		SIGNAL = "qa[28]";
-		INDEX = 110;
-		FORMAT = E;
-		SCALE = 1;
-		VISIBLE = Y;
-		FLAG = N;
-	}
-	LINE{
-		SIGNAL = "qa[27]";
-		INDEX = 111;
-		FORMAT = E;
-		SCALE = 1;
-		VISIBLE = Y;
-		FLAG = N;
-	}
-	LINE{
-		SIGNAL = "qa[26]";
-		INDEX = 112;
-		FORMAT = E;
-		SCALE = 1;
-		VISIBLE = Y;
-		FLAG = N;
-	}
-	LINE{
-		SIGNAL = "qa[25]";
-		INDEX = 113;
-		FORMAT = E;
-		SCALE = 1;
-		VISIBLE = Y;
-		FLAG = N;
-	}
-	LINE{
-		SIGNAL = "qa[24]";
-		INDEX = 114;
-		FORMAT = E;
-		SCALE = 1;
-		VISIBLE = Y;
-		FLAG = N;
-	}
-	LINE{
-		SIGNAL = "qa[23]";
-		INDEX = 115;
-		FORMAT = E;
-		SCALE = 1;
-		VISIBLE = Y;
-		FLAG = N;
-	}
-	LINE{
-		SIGNAL = "qa[22]";
-		INDEX = 116;
-		FORMAT = E;
-		SCALE = 1;
-		VISIBLE = Y;
-		FLAG = N;
-	}
-	LINE{
-		SIGNAL = "qa[21]";
-		INDEX = 117;
-		FORMAT = E;
-		SCALE = 1;
-		VISIBLE = Y;
-		FLAG = N;
-	}
-	LINE{
-		SIGNAL = "qa[20]";
-		INDEX = 118;
-		FORMAT = E;
-		SCALE = 1;
-		VISIBLE = Y;
-		FLAG = N;
-	}
-	LINE{
-		SIGNAL = "qa[19]";
-		INDEX = 119;
-		FORMAT = E;
-		SCALE = 1;
-		VISIBLE = Y;
-		FLAG = N;
-	}
-	LINE{
-		SIGNAL = "qa[18]";
-		INDEX = 120;
-		FORMAT = E;
-		SCALE = 1;
-		VISIBLE = Y;
-		FLAG = N;
-	}
-	LINE{
-		SIGNAL = "qa[17]";
-		INDEX = 121;
-		FORMAT = E;
-		SCALE = 1;
-		VISIBLE = Y;
-		FLAG = N;
-	}
-	LINE{
-		SIGNAL = "qa[16]";
-		INDEX = 122;
-		FORMAT = E;
-		SCALE = 1;
-		VISIBLE = Y;
-		FLAG = N;
-	}
-	LINE{
-		SIGNAL = "qa[15]";
-		INDEX = 123;
-		FORMAT = E;
-		SCALE = 1;
-		VISIBLE = Y;
-		FLAG = N;
-	}
-	LINE{
-		SIGNAL = "qa[14]";
-		INDEX = 124;
-		FORMAT = E;
-		SCALE = 1;
-		VISIBLE = Y;
-		FLAG = N;
-	}
-	LINE{
-		SIGNAL = "qa[13]";
-		INDEX = 125;
-		FORMAT = E;
-		SCALE = 1;
-		VISIBLE = Y;
-		FLAG = N;
-	}
-	LINE{
-		SIGNAL = "qa[12]";
-		INDEX = 126;
-		FORMAT = E;
-		SCALE = 1;
-		VISIBLE = Y;
-		FLAG = N;
-	}
-	LINE{
-		SIGNAL = "qa[11]";
-		INDEX = 127;
-		FORMAT = E;
-		SCALE = 1;
-		VISIBLE = Y;
-		FLAG = N;
-	}
-	LINE{
-		SIGNAL = "qa[10]";
-		INDEX = 128;
-		FORMAT = E;
-		SCALE = 1;
-		VISIBLE = Y;
-		FLAG = N;
-	}
-	LINE{
-		SIGNAL = "qa[9]";
-		INDEX = 129;
-		FORMAT = E;
-		SCALE = 1;
-		VISIBLE = Y;
-		FLAG = N;
-	}
-	LINE{
-		SIGNAL = "qa[8]";
-		INDEX = 130;
-		FORMAT = E;
-		SCALE = 1;
-		VISIBLE = Y;
-		FLAG = N;
-	}
-	LINE{
-		SIGNAL = "qa[7]";
-		INDEX = 131;
-		FORMAT = E;
-		SCALE = 1;
-		VISIBLE = Y;
-		FLAG = N;
-	}
-	LINE{
-		SIGNAL = "qa[6]";
-		INDEX = 132;
-		FORMAT = E;
-		SCALE = 1;
-		VISIBLE = Y;
-		FLAG = N;
-	}
-	LINE{
-		SIGNAL = "qa[5]";
-		INDEX = 133;
-		FORMAT = E;
-		SCALE = 1;
-		VISIBLE = Y;
-		FLAG = N;
-	}
-	LINE{
-		SIGNAL = "qa[4]";
-		INDEX = 134;
-		FORMAT = E;
-		SCALE = 1;
-		VISIBLE = Y;
-		FLAG = N;
-	}
-	LINE{
-		SIGNAL = "qa[3]";
-		INDEX = 135;
-		FORMAT = E;
-		SCALE = 1;
-		VISIBLE = Y;
-		FLAG = N;
-	}
-	LINE{
-		SIGNAL = "qa[2]";
-		INDEX = 136;
-		FORMAT = E;
-		SCALE = 1;
-		VISIBLE = Y;
-		FLAG = N;
-	}
-	LINE{
-		SIGNAL = "qa[1]";
-		INDEX = 137;
-		FORMAT = E;
-		SCALE = 1;
-		VISIBLE = Y;
-		FLAG = N;
-	}
-	LINE{
-		SIGNAL = "qa[0]";
-		INDEX = 138;
-		FORMAT = E;
-		SCALE = 1;
-		VISIBLE = Y;
-		FLAG = N;
-	}
-	LINE{
-		SIGNAL = "qa8";
-		INDEX = 139;
-		FORMAT = T;
-		SCALE = 1;
-		VISIBLE = Y;
-		FLAG = N;
-	}
-	LINE{
-		SIGNAL = "qa8[7]";
-		INDEX = 140;
-		FORMAT = E;
-		SCALE = 1;
-		VISIBLE = Y;
-		FLAG = N;
-	}
-	LINE{
-		SIGNAL = "qa8[6]";
-		INDEX = 141;
-		FORMAT = E;
-		SCALE = 1;
-		VISIBLE = Y;
-		FLAG = N;
-	}
-	LINE{
-		SIGNAL = "qa8[5]";
-		INDEX = 142;
-		FORMAT = E;
-		SCALE = 1;
-		VISIBLE = Y;
-		FLAG = N;
-	}
-	LINE{
-		SIGNAL = "qa8[4]";
-		INDEX = 143;
-		FORMAT = E;
-		SCALE = 1;
-		VISIBLE = Y;
-		FLAG = N;
-	}
-	LINE{
-		SIGNAL = "qa8[3]";
-		INDEX = 144;
-		FORMAT = E;
-		SCALE = 1;
-		VISIBLE = Y;
-		FLAG = N;
-	}
-	LINE{
-		SIGNAL = "qa8[2]";
-		INDEX = 145;
-		FORMAT = E;
-		SCALE = 1;
-		VISIBLE = Y;
-		FLAG = N;
-	}
-	LINE{
-		SIGNAL = "qa8[1]";
-		INDEX = 146;
-		FORMAT = E;
-		SCALE = 1;
-		VISIBLE = Y;
-		FLAG = N;
-	}
-	LINE{
-		SIGNAL = "qa8[0]";
-		INDEX = 147;
-		FORMAT = E;
-		SCALE = 1;
-		VISIBLE = Y;
-		FLAG = N;
-	}
-	LINE{
-		SIGNAL = "qb";
-		INDEX = 148;
-		FORMAT = T;
-		SCALE = 1;
-		VISIBLE = Y;
-		FLAG = N;
-	}
-	LINE{
-		SIGNAL = "qb[31]";
-		INDEX = 149;
-		FORMAT = E;
-		SCALE = 1;
-		VISIBLE = Y;
-		FLAG = N;
-	}
-	LINE{
-		SIGNAL = "qb[30]";
-		INDEX = 150;
-		FORMAT = E;
-		SCALE = 1;
-		VISIBLE = Y;
-		FLAG = N;
-	}
-	LINE{
-		SIGNAL = "qb[29]";
-		INDEX = 151;
-		FORMAT = E;
-		SCALE = 1;
-		VISIBLE = Y;
-		FLAG = N;
-	}
-	LINE{
-		SIGNAL = "qb[28]";
-		INDEX = 152;
-		FORMAT = E;
-		SCALE = 1;
-		VISIBLE = Y;
-		FLAG = N;
-	}
-	LINE{
-		SIGNAL = "qb[27]";
-		INDEX = 153;
-		FORMAT = E;
-		SCALE = 1;
-		VISIBLE = Y;
-		FLAG = N;
-	}
-	LINE{
-		SIGNAL = "qb[26]";
-		INDEX = 154;
-		FORMAT = E;
-		SCALE = 1;
-		VISIBLE = Y;
-		FLAG = N;
-	}
-	LINE{
-		SIGNAL = "qb[25]";
-		INDEX = 155;
-		FORMAT = E;
-		SCALE = 1;
-		VISIBLE = Y;
-		FLAG = N;
-	}
-	LINE{
-		SIGNAL = "qb[24]";
-		INDEX = 156;
-		FORMAT = E;
-		SCALE = 1;
-		VISIBLE = Y;
-		FLAG = N;
-	}
-	LINE{
-		SIGNAL = "qb[23]";
-		INDEX = 157;
-		FORMAT = E;
-		SCALE = 1;
-		VISIBLE = Y;
-		FLAG = N;
-	}
-	LINE{
-		SIGNAL = "qb[22]";
-		INDEX = 158;
-		FORMAT = E;
-		SCALE = 1;
-		VISIBLE = Y;
-		FLAG = N;
-	}
-	LINE{
-		SIGNAL = "qb[21]";
-		INDEX = 159;
-		FORMAT = E;
-		SCALE = 1;
-		VISIBLE = Y;
-		FLAG = N;
-	}
-	LINE{
-		SIGNAL = "qb[20]";
-		INDEX = 160;
-		FORMAT = E;
-		SCALE = 1;
-		VISIBLE = Y;
-		FLAG = N;
-	}
-	LINE{
-		SIGNAL = "qb[19]";
-		INDEX = 161;
-		FORMAT = E;
-		SCALE = 1;
-		VISIBLE = Y;
-		FLAG = N;
-	}
-	LINE{
-		SIGNAL = "qb[18]";
-		INDEX = 162;
-		FORMAT = E;
-		SCALE = 1;
-		VISIBLE = Y;
-		FLAG = N;
-	}
-	LINE{
-		SIGNAL = "qb[17]";
-		INDEX = 163;
-		FORMAT = E;
-		SCALE = 1;
-		VISIBLE = Y;
-		FLAG = N;
-	}
-	LINE{
-		SIGNAL = "qb[16]";
-		INDEX = 164;
-		FORMAT = E;
-		SCALE = 1;
-		VISIBLE = Y;
-		FLAG = N;
-	}
-	LINE{
-		SIGNAL = "qb[15]";
-		INDEX = 165;
-		FORMAT = E;
-		SCALE = 1;
-		VISIBLE = Y;
-		FLAG = N;
-	}
-	LINE{
-		SIGNAL = "qb[14]";
-		INDEX = 166;
-		FORMAT = E;
-		SCALE = 1;
-		VISIBLE = Y;
-		FLAG = N;
-	}
-	LINE{
-		SIGNAL = "qb[13]";
-		INDEX = 167;
-		FORMAT = E;
-		SCALE = 1;
-		VISIBLE = Y;
-		FLAG = N;
-	}
-	LINE{
-		SIGNAL = "qb[12]";
-		INDEX = 168;
-		FORMAT = E;
-		SCALE = 1;
-		VISIBLE = Y;
-		FLAG = N;
-	}
-	LINE{
-		SIGNAL = "qb[11]";
-		INDEX = 169;
-		FORMAT = E;
-		SCALE = 1;
-		VISIBLE = Y;
-		FLAG = N;
-	}
-	LINE{
-		SIGNAL = "qb[10]";
-		INDEX = 170;
-		FORMAT = E;
-		SCALE = 1;
-		VISIBLE = Y;
-		FLAG = N;
-	}
-	LINE{
-		SIGNAL = "qb[9]";
-		INDEX = 171;
-		FORMAT = E;
-		SCALE = 1;
-		VISIBLE = Y;
-		FLAG = N;
-	}
-	LINE{
-		SIGNAL = "qb[8]";
-		INDEX = 172;
-		FORMAT = E;
-		SCALE = 1;
-		VISIBLE = Y;
-		FLAG = N;
-	}
-	LINE{
-		SIGNAL = "qb[7]";
-		INDEX = 173;
-		FORMAT = E;
-		SCALE = 1;
-		VISIBLE = Y;
-		FLAG = N;
-	}
-	LINE{
-		SIGNAL = "qb[6]";
-		INDEX = 174;
-		FORMAT = E;
-		SCALE = 1;
-		VISIBLE = Y;
-		FLAG = N;
-	}
-	LINE{
-		SIGNAL = "qb[5]";
-		INDEX = 175;
-		FORMAT = E;
-		SCALE = 1;
-		VISIBLE = Y;
-		FLAG = N;
-	}
-	LINE{
-		SIGNAL = "qb[4]";
-		INDEX = 176;
-		FORMAT = E;
-		SCALE = 1;
-		VISIBLE = Y;
-		FLAG = N;
-	}
-	LINE{
-		SIGNAL = "qb[3]";
-		INDEX = 177;
-		FORMAT = E;
-		SCALE = 1;
-		VISIBLE = Y;
-		FLAG = N;
-	}
-	LINE{
-		SIGNAL = "qb[2]";
-		INDEX = 178;
-		FORMAT = E;
-		SCALE = 1;
-		VISIBLE = Y;
-		FLAG = N;
-	}
-	LINE{
-		SIGNAL = "qb[1]";
-		INDEX = 179;
-		FORMAT = E;
-		SCALE = 1;
-		VISIBLE = Y;
-		FLAG = N;
-	}
-	LINE{
-		SIGNAL = "qb[0]";
-		INDEX = 180;
-		FORMAT = E;
-		SCALE = 1;
-		VISIBLE = Y;
-		FLAG = N;
-	}
-	LINE{
-		SIGNAL = "qb8";
-		INDEX = 181;
-		FORMAT = T;
-		SCALE = 1;
-		VISIBLE = Y;
-		FLAG = N;
-	}
-	LINE{
-		SIGNAL = "qb8[7]";
-		INDEX = 182;
-		FORMAT = E;
-		SCALE = 1;
-		VISIBLE = Y;
-		FLAG = N;
-	}
-	LINE{
-		SIGNAL = "qb8[6]";
-		INDEX = 183;
-		FORMAT = E;
-		SCALE = 1;
-		VISIBLE = Y;
-		FLAG = N;
-	}
-	LINE{
-		SIGNAL = "qb8[5]";
-		INDEX = 184;
-		FORMAT = E;
-		SCALE = 1;
-		VISIBLE = Y;
-		FLAG = N;
-	}
-	LINE{
-		SIGNAL = "qb8[4]";
-		INDEX = 185;
-		FORMAT = E;
-		SCALE = 1;
-		VISIBLE = Y;
-		FLAG = N;
-	}
-	LINE{
-		SIGNAL = "qb8[3]";
-		INDEX = 186;
-		FORMAT = E;
-		SCALE = 1;
-		VISIBLE = Y;
-		FLAG = N;
-	}
-	LINE{
-		SIGNAL = "qb8[2]";
-		INDEX = 187;
-		FORMAT = E;
-		SCALE = 1;
-		VISIBLE = Y;
-		FLAG = N;
-	}
-	LINE{
-		SIGNAL = "qb8[1]";
-		INDEX = 188;
-		FORMAT = E;
-		SCALE = 1;
-		VISIBLE = Y;
-		FLAG = N;
-	}
-	LINE{
-		SIGNAL = "qb8[0]";
-		INDEX = 189;
-		FORMAT = E;
-		SCALE = 1;
-		VISIBLE = Y;
-		FLAG = N;
-	}
-	LINE{
-		SIGNAL = "ins_mem_en";
-		INDEX = 190;
 		FORMAT = E;
 		SCALE = 1;
 		VISIBLE = Y;
@@ -4061,6 +3389,678 @@ VECTOR("F:/dev/CR_CPU/db/CPU.sim.cvwf")
 	}
 	LINE{
 		SIGNAL = "pc_count";
+		INDEX = 107;
+		FORMAT = E;
+		SCALE = 1;
+		VISIBLE = Y;
+		FLAG = N;
+	}
+	LINE{
+		SIGNAL = "qa";
+		INDEX = 108;
+		FORMAT = T;
+		SCALE = 1;
+		VISIBLE = Y;
+		FLAG = N;
+	}
+	LINE{
+		SIGNAL = "qa[31]";
+		INDEX = 109;
+		FORMAT = E;
+		SCALE = 1;
+		VISIBLE = Y;
+		FLAG = N;
+	}
+	LINE{
+		SIGNAL = "qa[30]";
+		INDEX = 110;
+		FORMAT = E;
+		SCALE = 1;
+		VISIBLE = Y;
+		FLAG = N;
+	}
+	LINE{
+		SIGNAL = "qa[29]";
+		INDEX = 111;
+		FORMAT = E;
+		SCALE = 1;
+		VISIBLE = Y;
+		FLAG = N;
+	}
+	LINE{
+		SIGNAL = "qa[28]";
+		INDEX = 112;
+		FORMAT = E;
+		SCALE = 1;
+		VISIBLE = Y;
+		FLAG = N;
+	}
+	LINE{
+		SIGNAL = "qa[27]";
+		INDEX = 113;
+		FORMAT = E;
+		SCALE = 1;
+		VISIBLE = Y;
+		FLAG = N;
+	}
+	LINE{
+		SIGNAL = "qa[26]";
+		INDEX = 114;
+		FORMAT = E;
+		SCALE = 1;
+		VISIBLE = Y;
+		FLAG = N;
+	}
+	LINE{
+		SIGNAL = "qa[25]";
+		INDEX = 115;
+		FORMAT = E;
+		SCALE = 1;
+		VISIBLE = Y;
+		FLAG = N;
+	}
+	LINE{
+		SIGNAL = "qa[24]";
+		INDEX = 116;
+		FORMAT = E;
+		SCALE = 1;
+		VISIBLE = Y;
+		FLAG = N;
+	}
+	LINE{
+		SIGNAL = "qa[23]";
+		INDEX = 117;
+		FORMAT = E;
+		SCALE = 1;
+		VISIBLE = Y;
+		FLAG = N;
+	}
+	LINE{
+		SIGNAL = "qa[22]";
+		INDEX = 118;
+		FORMAT = E;
+		SCALE = 1;
+		VISIBLE = Y;
+		FLAG = N;
+	}
+	LINE{
+		SIGNAL = "qa[21]";
+		INDEX = 119;
+		FORMAT = E;
+		SCALE = 1;
+		VISIBLE = Y;
+		FLAG = N;
+	}
+	LINE{
+		SIGNAL = "qa[20]";
+		INDEX = 120;
+		FORMAT = E;
+		SCALE = 1;
+		VISIBLE = Y;
+		FLAG = N;
+	}
+	LINE{
+		SIGNAL = "qa[19]";
+		INDEX = 121;
+		FORMAT = E;
+		SCALE = 1;
+		VISIBLE = Y;
+		FLAG = N;
+	}
+	LINE{
+		SIGNAL = "qa[18]";
+		INDEX = 122;
+		FORMAT = E;
+		SCALE = 1;
+		VISIBLE = Y;
+		FLAG = N;
+	}
+	LINE{
+		SIGNAL = "qa[17]";
+		INDEX = 123;
+		FORMAT = E;
+		SCALE = 1;
+		VISIBLE = Y;
+		FLAG = N;
+	}
+	LINE{
+		SIGNAL = "qa[16]";
+		INDEX = 124;
+		FORMAT = E;
+		SCALE = 1;
+		VISIBLE = Y;
+		FLAG = N;
+	}
+	LINE{
+		SIGNAL = "qa[15]";
+		INDEX = 125;
+		FORMAT = E;
+		SCALE = 1;
+		VISIBLE = Y;
+		FLAG = N;
+	}
+	LINE{
+		SIGNAL = "qa[14]";
+		INDEX = 126;
+		FORMAT = E;
+		SCALE = 1;
+		VISIBLE = Y;
+		FLAG = N;
+	}
+	LINE{
+		SIGNAL = "qa[13]";
+		INDEX = 127;
+		FORMAT = E;
+		SCALE = 1;
+		VISIBLE = Y;
+		FLAG = N;
+	}
+	LINE{
+		SIGNAL = "qa[12]";
+		INDEX = 128;
+		FORMAT = E;
+		SCALE = 1;
+		VISIBLE = Y;
+		FLAG = N;
+	}
+	LINE{
+		SIGNAL = "qa[11]";
+		INDEX = 129;
+		FORMAT = E;
+		SCALE = 1;
+		VISIBLE = Y;
+		FLAG = N;
+	}
+	LINE{
+		SIGNAL = "qa[10]";
+		INDEX = 130;
+		FORMAT = E;
+		SCALE = 1;
+		VISIBLE = Y;
+		FLAG = N;
+	}
+	LINE{
+		SIGNAL = "qa[9]";
+		INDEX = 131;
+		FORMAT = E;
+		SCALE = 1;
+		VISIBLE = Y;
+		FLAG = N;
+	}
+	LINE{
+		SIGNAL = "qa[8]";
+		INDEX = 132;
+		FORMAT = E;
+		SCALE = 1;
+		VISIBLE = Y;
+		FLAG = N;
+	}
+	LINE{
+		SIGNAL = "qa[7]";
+		INDEX = 133;
+		FORMAT = E;
+		SCALE = 1;
+		VISIBLE = Y;
+		FLAG = N;
+	}
+	LINE{
+		SIGNAL = "qa[6]";
+		INDEX = 134;
+		FORMAT = E;
+		SCALE = 1;
+		VISIBLE = Y;
+		FLAG = N;
+	}
+	LINE{
+		SIGNAL = "qa[5]";
+		INDEX = 135;
+		FORMAT = E;
+		SCALE = 1;
+		VISIBLE = Y;
+		FLAG = N;
+	}
+	LINE{
+		SIGNAL = "qa[4]";
+		INDEX = 136;
+		FORMAT = E;
+		SCALE = 1;
+		VISIBLE = Y;
+		FLAG = N;
+	}
+	LINE{
+		SIGNAL = "qa[3]";
+		INDEX = 137;
+		FORMAT = E;
+		SCALE = 1;
+		VISIBLE = Y;
+		FLAG = N;
+	}
+	LINE{
+		SIGNAL = "qa[2]";
+		INDEX = 138;
+		FORMAT = E;
+		SCALE = 1;
+		VISIBLE = Y;
+		FLAG = N;
+	}
+	LINE{
+		SIGNAL = "qa[1]";
+		INDEX = 139;
+		FORMAT = E;
+		SCALE = 1;
+		VISIBLE = Y;
+		FLAG = N;
+	}
+	LINE{
+		SIGNAL = "qa[0]";
+		INDEX = 140;
+		FORMAT = E;
+		SCALE = 1;
+		VISIBLE = Y;
+		FLAG = N;
+	}
+	LINE{
+		SIGNAL = "qa8";
+		INDEX = 141;
+		FORMAT = T;
+		SCALE = 1;
+		VISIBLE = Y;
+		FLAG = N;
+	}
+	LINE{
+		SIGNAL = "qa8[7]";
+		INDEX = 142;
+		FORMAT = E;
+		SCALE = 1;
+		VISIBLE = Y;
+		FLAG = N;
+	}
+	LINE{
+		SIGNAL = "qa8[6]";
+		INDEX = 143;
+		FORMAT = E;
+		SCALE = 1;
+		VISIBLE = Y;
+		FLAG = N;
+	}
+	LINE{
+		SIGNAL = "qa8[5]";
+		INDEX = 144;
+		FORMAT = E;
+		SCALE = 1;
+		VISIBLE = Y;
+		FLAG = N;
+	}
+	LINE{
+		SIGNAL = "qa8[4]";
+		INDEX = 145;
+		FORMAT = E;
+		SCALE = 1;
+		VISIBLE = Y;
+		FLAG = N;
+	}
+	LINE{
+		SIGNAL = "qa8[3]";
+		INDEX = 146;
+		FORMAT = E;
+		SCALE = 1;
+		VISIBLE = Y;
+		FLAG = N;
+	}
+	LINE{
+		SIGNAL = "qa8[2]";
+		INDEX = 147;
+		FORMAT = E;
+		SCALE = 1;
+		VISIBLE = Y;
+		FLAG = N;
+	}
+	LINE{
+		SIGNAL = "qa8[1]";
+		INDEX = 148;
+		FORMAT = E;
+		SCALE = 1;
+		VISIBLE = Y;
+		FLAG = N;
+	}
+	LINE{
+		SIGNAL = "qa8[0]";
+		INDEX = 149;
+		FORMAT = E;
+		SCALE = 1;
+		VISIBLE = Y;
+		FLAG = N;
+	}
+	LINE{
+		SIGNAL = "qb";
+		INDEX = 150;
+		FORMAT = T;
+		SCALE = 1;
+		VISIBLE = Y;
+		FLAG = N;
+	}
+	LINE{
+		SIGNAL = "qb[31]";
+		INDEX = 151;
+		FORMAT = E;
+		SCALE = 1;
+		VISIBLE = Y;
+		FLAG = N;
+	}
+	LINE{
+		SIGNAL = "qb[30]";
+		INDEX = 152;
+		FORMAT = E;
+		SCALE = 1;
+		VISIBLE = Y;
+		FLAG = N;
+	}
+	LINE{
+		SIGNAL = "qb[29]";
+		INDEX = 153;
+		FORMAT = E;
+		SCALE = 1;
+		VISIBLE = Y;
+		FLAG = N;
+	}
+	LINE{
+		SIGNAL = "qb[28]";
+		INDEX = 154;
+		FORMAT = E;
+		SCALE = 1;
+		VISIBLE = Y;
+		FLAG = N;
+	}
+	LINE{
+		SIGNAL = "qb[27]";
+		INDEX = 155;
+		FORMAT = E;
+		SCALE = 1;
+		VISIBLE = Y;
+		FLAG = N;
+	}
+	LINE{
+		SIGNAL = "qb[26]";
+		INDEX = 156;
+		FORMAT = E;
+		SCALE = 1;
+		VISIBLE = Y;
+		FLAG = N;
+	}
+	LINE{
+		SIGNAL = "qb[25]";
+		INDEX = 157;
+		FORMAT = E;
+		SCALE = 1;
+		VISIBLE = Y;
+		FLAG = N;
+	}
+	LINE{
+		SIGNAL = "qb[24]";
+		INDEX = 158;
+		FORMAT = E;
+		SCALE = 1;
+		VISIBLE = Y;
+		FLAG = N;
+	}
+	LINE{
+		SIGNAL = "qb[23]";
+		INDEX = 159;
+		FORMAT = E;
+		SCALE = 1;
+		VISIBLE = Y;
+		FLAG = N;
+	}
+	LINE{
+		SIGNAL = "qb[22]";
+		INDEX = 160;
+		FORMAT = E;
+		SCALE = 1;
+		VISIBLE = Y;
+		FLAG = N;
+	}
+	LINE{
+		SIGNAL = "qb[21]";
+		INDEX = 161;
+		FORMAT = E;
+		SCALE = 1;
+		VISIBLE = Y;
+		FLAG = N;
+	}
+	LINE{
+		SIGNAL = "qb[20]";
+		INDEX = 162;
+		FORMAT = E;
+		SCALE = 1;
+		VISIBLE = Y;
+		FLAG = N;
+	}
+	LINE{
+		SIGNAL = "qb[19]";
+		INDEX = 163;
+		FORMAT = E;
+		SCALE = 1;
+		VISIBLE = Y;
+		FLAG = N;
+	}
+	LINE{
+		SIGNAL = "qb[18]";
+		INDEX = 164;
+		FORMAT = E;
+		SCALE = 1;
+		VISIBLE = Y;
+		FLAG = N;
+	}
+	LINE{
+		SIGNAL = "qb[17]";
+		INDEX = 165;
+		FORMAT = E;
+		SCALE = 1;
+		VISIBLE = Y;
+		FLAG = N;
+	}
+	LINE{
+		SIGNAL = "qb[16]";
+		INDEX = 166;
+		FORMAT = E;
+		SCALE = 1;
+		VISIBLE = Y;
+		FLAG = N;
+	}
+	LINE{
+		SIGNAL = "qb[15]";
+		INDEX = 167;
+		FORMAT = E;
+		SCALE = 1;
+		VISIBLE = Y;
+		FLAG = N;
+	}
+	LINE{
+		SIGNAL = "qb[14]";
+		INDEX = 168;
+		FORMAT = E;
+		SCALE = 1;
+		VISIBLE = Y;
+		FLAG = N;
+	}
+	LINE{
+		SIGNAL = "qb[13]";
+		INDEX = 169;
+		FORMAT = E;
+		SCALE = 1;
+		VISIBLE = Y;
+		FLAG = N;
+	}
+	LINE{
+		SIGNAL = "qb[12]";
+		INDEX = 170;
+		FORMAT = E;
+		SCALE = 1;
+		VISIBLE = Y;
+		FLAG = N;
+	}
+	LINE{
+		SIGNAL = "qb[11]";
+		INDEX = 171;
+		FORMAT = E;
+		SCALE = 1;
+		VISIBLE = Y;
+		FLAG = N;
+	}
+	LINE{
+		SIGNAL = "qb[10]";
+		INDEX = 172;
+		FORMAT = E;
+		SCALE = 1;
+		VISIBLE = Y;
+		FLAG = N;
+	}
+	LINE{
+		SIGNAL = "qb[9]";
+		INDEX = 173;
+		FORMAT = E;
+		SCALE = 1;
+		VISIBLE = Y;
+		FLAG = N;
+	}
+	LINE{
+		SIGNAL = "qb[8]";
+		INDEX = 174;
+		FORMAT = E;
+		SCALE = 1;
+		VISIBLE = Y;
+		FLAG = N;
+	}
+	LINE{
+		SIGNAL = "qb[7]";
+		INDEX = 175;
+		FORMAT = E;
+		SCALE = 1;
+		VISIBLE = Y;
+		FLAG = N;
+	}
+	LINE{
+		SIGNAL = "qb[6]";
+		INDEX = 176;
+		FORMAT = E;
+		SCALE = 1;
+		VISIBLE = Y;
+		FLAG = N;
+	}
+	LINE{
+		SIGNAL = "qb[5]";
+		INDEX = 177;
+		FORMAT = E;
+		SCALE = 1;
+		VISIBLE = Y;
+		FLAG = N;
+	}
+	LINE{
+		SIGNAL = "qb[4]";
+		INDEX = 178;
+		FORMAT = E;
+		SCALE = 1;
+		VISIBLE = Y;
+		FLAG = N;
+	}
+	LINE{
+		SIGNAL = "qb[3]";
+		INDEX = 179;
+		FORMAT = E;
+		SCALE = 1;
+		VISIBLE = Y;
+		FLAG = N;
+	}
+	LINE{
+		SIGNAL = "qb[2]";
+		INDEX = 180;
+		FORMAT = E;
+		SCALE = 1;
+		VISIBLE = Y;
+		FLAG = N;
+	}
+	LINE{
+		SIGNAL = "qb[1]";
+		INDEX = 181;
+		FORMAT = E;
+		SCALE = 1;
+		VISIBLE = Y;
+		FLAG = N;
+	}
+	LINE{
+		SIGNAL = "qb[0]";
+		INDEX = 182;
+		FORMAT = E;
+		SCALE = 1;
+		VISIBLE = Y;
+		FLAG = N;
+	}
+	LINE{
+		SIGNAL = "qb8";
+		INDEX = 183;
+		FORMAT = T;
+		SCALE = 1;
+		VISIBLE = Y;
+		FLAG = N;
+	}
+	LINE{
+		SIGNAL = "qb8[7]";
+		INDEX = 184;
+		FORMAT = E;
+		SCALE = 1;
+		VISIBLE = Y;
+		FLAG = N;
+	}
+	LINE{
+		SIGNAL = "qb8[6]";
+		INDEX = 185;
+		FORMAT = E;
+		SCALE = 1;
+		VISIBLE = Y;
+		FLAG = N;
+	}
+	LINE{
+		SIGNAL = "qb8[5]";
+		INDEX = 186;
+		FORMAT = E;
+		SCALE = 1;
+		VISIBLE = Y;
+		FLAG = N;
+	}
+	LINE{
+		SIGNAL = "qb8[4]";
+		INDEX = 187;
+		FORMAT = E;
+		SCALE = 1;
+		VISIBLE = Y;
+		FLAG = N;
+	}
+	LINE{
+		SIGNAL = "qb8[3]";
+		INDEX = 188;
+		FORMAT = E;
+		SCALE = 1;
+		VISIBLE = Y;
+		FLAG = N;
+	}
+	LINE{
+		SIGNAL = "qb8[2]";
+		INDEX = 189;
+		FORMAT = E;
+		SCALE = 1;
+		VISIBLE = Y;
+		FLAG = N;
+	}
+	LINE{
+		SIGNAL = "qb8[1]";
+		INDEX = 190;
+		FORMAT = E;
+		SCALE = 1;
+		VISIBLE = Y;
+		FLAG = N;
+	}
+	LINE{
+		SIGNAL = "qb8[0]";
 		INDEX = 191;
 		FORMAT = E;
 		SCALE = 1;

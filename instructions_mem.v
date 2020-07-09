@@ -77,7 +77,7 @@ module instructions_mem (
 	defparam
 		altsyncram_component.clock_enable_input_a = "NORMAL",
 		altsyncram_component.clock_enable_output_a = "BYPASS",
-		altsyncram_component.init_file = "instructions.mif",
+		altsyncram_component.init_file = "instructions3.mif",
 		altsyncram_component.intended_device_family = "Stratix II",
 		altsyncram_component.lpm_hint = "ENABLE_RUNTIME_MOD=NO",
 		altsyncram_component.lpm_type = "altsyncram",
@@ -112,7 +112,7 @@ endmodule
 // Retrieval info: PRIVATE: JTAG_ENABLED NUMERIC "0"
 // Retrieval info: PRIVATE: JTAG_ID STRING "NONE"
 // Retrieval info: PRIVATE: MAXIMUM_DEPTH NUMERIC "0"
-// Retrieval info: PRIVATE: MIFfilename STRING "instructions.mif"
+// Retrieval info: PRIVATE: MIFfilename STRING "instructions3.mif"
 // Retrieval info: PRIVATE: NUMWORDS_A NUMERIC "16"
 // Retrieval info: PRIVATE: RAM_BLOCK_TYPE NUMERIC "0"
 // Retrieval info: PRIVATE: RegAddr NUMERIC "1"
@@ -125,7 +125,7 @@ endmodule
 // Retrieval info: PRIVATE: rden NUMERIC "0"
 // Retrieval info: CONSTANT: CLOCK_ENABLE_INPUT_A STRING "NORMAL"
 // Retrieval info: CONSTANT: CLOCK_ENABLE_OUTPUT_A STRING "BYPASS"
-// Retrieval info: CONSTANT: INIT_FILE STRING "instructions.mif"
+// Retrieval info: CONSTANT: INIT_FILE STRING "instructions3.mif"
 // Retrieval info: CONSTANT: INTENDED_DEVICE_FAMILY STRING "Stratix II"
 // Retrieval info: CONSTANT: LPM_HINT STRING "ENABLE_RUNTIME_MOD=NO"
 // Retrieval info: CONSTANT: LPM_TYPE STRING "altsyncram"
