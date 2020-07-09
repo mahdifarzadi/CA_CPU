@@ -14565,26 +14565,6 @@ CU_mp:inst2
 
 # end
 # entity
-immediate_sel
-# storage
-db|CPU.(203).cnf
-db|CPU.(203).cnf
-# case_insensitive
-# source_file
-immediate_sel.bdf
-129091d5cca0ca6701c88ed88b7214d
-26
-# internal_option {
-BLOCK_DESIGN_NAMING
-AUTO
-}
-# hierarchies {
-immediate_sel:inst4
-}
-# macro_sequence
-
-# end
-# entity
 mux21_6bit
 # storage
 db|CPU.(204).cnf
@@ -14616,6 +14596,7 @@ VERILOG_NON_CONSTANT_LOOP_LIMIT
 }
 # hierarchies {
 immediate_sel:inst4|mux21_6bit:inst8
+immediate_sel:inst4|mux21_6bit:inst9
 }
 # macro_sequence
 
@@ -14695,6 +14676,7 @@ c:|altera|90|quartus|libraries|megafunctions|altshift.inc
 }
 # hierarchies {
 immediate_sel:inst4|mux21_6bit:inst8|lpm_mux:lpm_mux_component
+immediate_sel:inst4|mux21_6bit:inst9|lpm_mux:lpm_mux_component
 }
 # macro_sequence
 
@@ -14770,42 +14752,7 @@ data0
 }
 # hierarchies {
 immediate_sel:inst4|mux21_6bit:inst8|lpm_mux:lpm_mux_component|mux_snc:auto_generated
-}
-# macro_sequence
-
-# end
-# entity
-sub_6bit
-# storage
-db|CPU.(207).cnf
-db|CPU.(207).cnf
-# logic_option {
-AUTO_RAM_RECOGNITION
-ON
-}
-# case_sensitive
-# source_file
-sub_6bit.v
-ad2ac949747957aa755b871c3e2169f
-8
-# internal_option {
-HDL_INITIAL_FANOUT_LIMIT
-OFF
-AUTO_RESOURCE_SHARING
-OFF
-AUTO_RAM_RECOGNITION
-ON
-AUTO_ROM_RECOGNITION
-ON
-IGNORE_VERILOG_INITIAL_CONSTRUCTS
-OFF
-VERILOG_CONSTANT_LOOP_LIMIT
-5000
-VERILOG_NON_CONSTANT_LOOP_LIMIT
-250
-}
-# hierarchies {
-immediate_sel:inst4|sub_6bit:inst7
+immediate_sel:inst4|mux21_6bit:inst9|lpm_mux:lpm_mux_component|mux_snc:auto_generated
 }
 # macro_sequence
 
@@ -14926,7 +14873,8 @@ c:|altera|90|quartus|libraries|megafunctions|altshift.inc
 70fa13aee7d6d160ef20b2de32813a
 }
 # hierarchies {
-immediate_sel:inst4|sub_6bit:inst7|lpm_add_sub:lpm_add_sub_component
+immediate_sel:inst4|sub_6bit:inst12|lpm_add_sub:lpm_add_sub_component
+immediate_sel:inst4|sub2_6bit:inst13|lpm_add_sub:lpm_add_sub_component
 }
 # macro_sequence
 
@@ -14998,7 +14946,8 @@ dataa0
 3
 }
 # hierarchies {
-immediate_sel:inst4|sub_6bit:inst7|lpm_add_sub:lpm_add_sub_component|add_sub_1qh:auto_generated
+immediate_sel:inst4|sub_6bit:inst12|lpm_add_sub:lpm_add_sub_component|add_sub_1qh:auto_generated
+immediate_sel:inst4|sub2_6bit:inst13|lpm_add_sub:lpm_add_sub_component|add_sub_1qh:auto_generated
 }
 # macro_sequence
 
@@ -15615,6 +15564,98 @@ instructions3.mif
 }
 # hierarchies {
 instructions_mem:inst|altsyncram:altsyncram_component|altsyncram_eb91:auto_generated
+}
+# macro_sequence
+
+# end
+# entity
+immediate_sel
+# storage
+db|CPU.(203).cnf
+db|CPU.(203).cnf
+# case_insensitive
+# source_file
+immediate_sel.bdf
+62be8fbef95ba58a66d54ffc8287d163
+26
+# internal_option {
+BLOCK_DESIGN_NAMING
+AUTO
+}
+# hierarchies {
+immediate_sel:inst4
+}
+# macro_sequence
+
+# end
+# entity
+sub_6bit
+# storage
+db|CPU.(207).cnf
+db|CPU.(207).cnf
+# logic_option {
+AUTO_RAM_RECOGNITION
+ON
+}
+# case_sensitive
+# source_file
+sub_6bit.v
+85fb8a95b5f21de2eddf5ae53aeb6ac
+8
+# internal_option {
+HDL_INITIAL_FANOUT_LIMIT
+OFF
+AUTO_RESOURCE_SHARING
+OFF
+AUTO_RAM_RECOGNITION
+ON
+AUTO_ROM_RECOGNITION
+ON
+IGNORE_VERILOG_INITIAL_CONSTRUCTS
+OFF
+VERILOG_CONSTANT_LOOP_LIMIT
+5000
+VERILOG_NON_CONSTANT_LOOP_LIMIT
+250
+}
+# hierarchies {
+immediate_sel:inst4|sub_6bit:inst12
+}
+# macro_sequence
+
+# end
+# entity
+sub2_6bit
+# storage
+db|CPU.(213).cnf
+db|CPU.(213).cnf
+# logic_option {
+AUTO_RAM_RECOGNITION
+ON
+}
+# case_sensitive
+# source_file
+sub2_6bit.v
+44863b7529f51aaa77219b08dfaca0
+8
+# internal_option {
+HDL_INITIAL_FANOUT_LIMIT
+OFF
+AUTO_RESOURCE_SHARING
+OFF
+AUTO_RAM_RECOGNITION
+ON
+AUTO_ROM_RECOGNITION
+ON
+IGNORE_VERILOG_INITIAL_CONSTRUCTS
+OFF
+VERILOG_CONSTANT_LOOP_LIMIT
+5000
+VERILOG_NON_CONSTANT_LOOP_LIMIT
+250
+}
+# hierarchies {
+immediate_sel:inst4|sub2_6bit:inst13
 }
 # macro_sequence
 

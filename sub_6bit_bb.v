@@ -53,7 +53,7 @@ endmodule
 // Retrieval info: PRIVATE: Latency NUMERIC "0"
 // Retrieval info: PRIVATE: Overflow NUMERIC "0"
 // Retrieval info: PRIVATE: RadixA NUMERIC "10"
-// Retrieval info: PRIVATE: RadixB NUMERIC "10"
+// Retrieval info: PRIVATE: RadixB NUMERIC "2"
 // Retrieval info: PRIVATE: Representation NUMERIC "1"
 // Retrieval info: PRIVATE: SYNTH_WRAPPER_GEN_POSTFIX STRING "0"
 // Retrieval info: PRIVATE: ValidCtA NUMERIC "0"

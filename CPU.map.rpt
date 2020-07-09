@@ -1,5 +1,5 @@
 Analysis & Synthesis report for CPU
-Thu Jul 09 06:42:39 2020
+Thu Jul 09 07:21:05 2020
 Quartus II Version 9.0 Build 132 02/25/2009 SJ Web Edition
 
 
@@ -99,10 +99,12 @@ Quartus II Version 9.0 Build 132 02/25/2009 SJ Web Edition
  91. Parameter Settings for User Entity Instance: immediate_sel:inst4|sign_extend_16to32:inst|zero_const:inst2|lpm_constant:lpm_constant_component
  92. Parameter Settings for User Entity Instance: immediate_sel:inst4|sign_extend_16to32:inst|all_one_const:inst4|lpm_constant:lpm_constant_component
  93. Parameter Settings for User Entity Instance: immediate_sel:inst4|mux21_6bit:inst8|lpm_mux:lpm_mux_component
- 94. Parameter Settings for User Entity Instance: immediate_sel:inst4|sub_6bit:inst7|lpm_add_sub:lpm_add_sub_component
- 95. altsyncram Parameter Settings by Entity Instance
- 96. lpm_mult Parameter Settings by Entity Instance
- 97. Analysis & Synthesis Messages
+ 94. Parameter Settings for User Entity Instance: immediate_sel:inst4|mux21_6bit:inst9|lpm_mux:lpm_mux_component
+ 95. Parameter Settings for User Entity Instance: immediate_sel:inst4|sub_6bit:inst12|lpm_add_sub:lpm_add_sub_component
+ 96. Parameter Settings for User Entity Instance: immediate_sel:inst4|sub2_6bit:inst13|lpm_add_sub:lpm_add_sub_component
+ 97. altsyncram Parameter Settings by Entity Instance
+ 98. lpm_mult Parameter Settings by Entity Instance
+ 99. Analysis & Synthesis Messages
 
 
 
@@ -128,13 +130,13 @@ applicable agreement for further details.
 +-------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                            ;
 +-------------------------------+-----------------------------------------+
-; Analysis & Synthesis Status   ; Successful - Thu Jul 09 06:42:39 2020   ;
+; Analysis & Synthesis Status   ; Successful - Thu Jul 09 07:21:05 2020   ;
 ; Quartus II Version            ; 9.0 Build 132 02/25/2009 SJ Web Edition ;
 ; Revision Name                 ; CPU                                     ;
 ; Top-level Entity Name         ; CPU                                     ;
 ; Family                        ; Stratix II                              ;
 ; Logic utilization             ; N/A                                     ;
-;     Combinational ALUTs       ; 2,124                                   ;
+;     Combinational ALUTs       ; 2,120                                   ;
 ;     Dedicated logic registers ; 12                                      ;
 ; Total registers               ; 12                                      ;
 ; Total pins                    ; 189                                     ;
@@ -222,141 +224,141 @@ applicable agreement for further details.
 +----------------------------------------------------------------+--------------------+--------------------+
 
 
-+--------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Analysis & Synthesis Source Files Read                                                                                                                             ;
-+----------------------------------+-----------------+----------------------------------------+----------------------------------------------------------------------+
-; File Name with User-Entered Path ; Used in Netlist ; File Type                              ; File Name with Absolute Path                                         ;
-+----------------------------------+-----------------+----------------------------------------+----------------------------------------------------------------------+
-; CPU.bdf                          ; yes             ; User Block Diagram/Schematic File      ; F:/dev/CR_CPU/CPU.bdf                                                ;
-; ALU.bdf                          ; yes             ; User Block Diagram/Schematic File      ; F:/dev/CR_CPU/ALU.bdf                                                ;
-; pc.v                             ; yes             ; User Wizard-Generated File             ; F:/dev/CR_CPU/pc.v                                                   ;
-; dec24.v                          ; yes             ; User Wizard-Generated File             ; F:/dev/CR_CPU/dec24.v                                                ;
-; sign_extend_16to32.bdf           ; yes             ; User Block Diagram/Schematic File      ; F:/dev/CR_CPU/sign_extend_16to32.bdf                                 ;
-; mux21.v                          ; yes             ; User Wizard-Generated File             ; F:/dev/CR_CPU/mux21.v                                                ;
-; zero_const.v                     ; yes             ; User Wizard-Generated File             ; F:/dev/CR_CPU/zero_const.v                                           ;
-; all_one_const.v                  ; yes             ; User Wizard-Generated File             ; F:/dev/CR_CPU/all_one_const.v                                        ;
-; mux21_5bit.v                     ; yes             ; User Wizard-Generated File             ; F:/dev/CR_CPU/mux21_5bit.v                                           ;
-; regs_8bit.v                      ; yes             ; User Wizard-Generated File             ; F:/dev/CR_CPU/regs_8bit.v                                            ;
-; registers_mem.bdf                ; yes             ; User Block Diagram/Schematic File      ; F:/dev/CR_CPU/registers_mem.bdf                                      ;
-; mux21_8bit.v                     ; yes             ; User Wizard-Generated File             ; F:/dev/CR_CPU/mux21_8bit.v                                           ;
-; regs2_8bit.v                     ; yes             ; User Wizard-Generated File             ; F:/dev/CR_CPU/regs2_8bit.v                                           ;
-; regs3_8bit.v                     ; yes             ; User Wizard-Generated File             ; F:/dev/CR_CPU/regs3_8bit.v                                           ;
-; regs4_8bit.v                     ; yes             ; User Wizard-Generated File             ; F:/dev/CR_CPU/regs4_8bit.v                                           ;
-; main_mem1_8bit.v                 ; yes             ; User Wizard-Generated File             ; F:/dev/CR_CPU/main_mem1_8bit.v                                       ;
-; main_mem.bdf                     ; yes             ; User Block Diagram/Schematic File      ; F:/dev/CR_CPU/main_mem.bdf                                           ;
-; main_mem2_8bit.v                 ; yes             ; User Wizard-Generated File             ; F:/dev/CR_CPU/main_mem2_8bit.v                                       ;
-; main_mem3_8bit.v                 ; yes             ; User Wizard-Generated File             ; F:/dev/CR_CPU/main_mem3_8bit.v                                       ;
-; main_mem4_8bit.v                 ; yes             ; User Wizard-Generated File             ; F:/dev/CR_CPU/main_mem4_8bit.v                                       ;
-; CU_mp.bdf                        ; yes             ; User Block Diagram/Schematic File      ; F:/dev/CR_CPU/CU_mp.bdf                                              ;
-; pc_micro.v                       ; yes             ; User Wizard-Generated File             ; F:/dev/CR_CPU/pc_micro.v                                             ;
-; micro_mem.v                      ; yes             ; User Wizard-Generated File             ; F:/dev/CR_CPU/micro_mem.v                                            ;
-; one_const.v                      ; yes             ; User Wizard-Generated File             ; F:/dev/CR_CPU/one_const.v                                            ;
-; mux41_8bit.v                     ; yes             ; User Wizard-Generated File             ; F:/dev/CR_CPU/mux41_8bit.v                                           ;
-; adder_5bit.v                     ; yes             ; User Wizard-Generated File             ; F:/dev/CR_CPU/adder_5bit.v                                           ;
-; mux81_1bit.v                     ; yes             ; User Wizard-Generated File             ; F:/dev/CR_CPU/mux81_1bit.v                                           ;
-; zero_const_1bit.v                ; yes             ; User Wizard-Generated File             ; F:/dev/CR_CPU/zero_const_1bit.v                                      ;
-; mux21_20bit.v                    ; yes             ; User Wizard-Generated File             ; F:/dev/CR_CPU/mux21_20bit.v                                          ;
-; zero_const_20bit.v               ; yes             ; User Wizard-Generated File             ; F:/dev/CR_CPU/zero_const_20bit.v                                     ;
-; sub_6bit.v                       ; yes             ; User Wizard-Generated File             ; F:/dev/CR_CPU/sub_6bit.v                                             ;
-; mux21_6bit.v                     ; yes             ; User Wizard-Generated File             ; F:/dev/CR_CPU/mux21_6bit.v                                           ;
-; immediate_sel.bdf                ; yes             ; User Block Diagram/Schematic File      ; F:/dev/CR_CPU/immediate_sel.bdf                                      ;
-; lpm_mux.tdf                      ; yes             ; Megafunction                           ; c:/altera/90/quartus/libraries/megafunctions/lpm_mux.tdf             ;
-; aglobal90.inc                    ; yes             ; Megafunction                           ; c:/altera/90/quartus/libraries/megafunctions/aglobal90.inc           ;
-; muxlut.inc                       ; yes             ; Megafunction                           ; c:/altera/90/quartus/libraries/megafunctions/muxlut.inc              ;
-; bypassff.inc                     ; yes             ; Megafunction                           ; c:/altera/90/quartus/libraries/megafunctions/bypassff.inc            ;
-; altshift.inc                     ; yes             ; Megafunction                           ; c:/altera/90/quartus/libraries/megafunctions/altshift.inc            ;
-; db/mux_8pc.tdf                   ; yes             ; Auto-Generated Megafunction            ; F:/dev/CR_CPU/db/mux_8pc.tdf                                         ;
-; altsyncram.tdf                   ; yes             ; Megafunction                           ; c:/altera/90/quartus/libraries/megafunctions/altsyncram.tdf          ;
-; stratix_ram_block.inc            ; yes             ; Megafunction                           ; c:/altera/90/quartus/libraries/megafunctions/stratix_ram_block.inc   ;
-; lpm_mux.inc                      ; yes             ; Megafunction                           ; c:/altera/90/quartus/libraries/megafunctions/lpm_mux.inc             ;
-; lpm_decode.inc                   ; yes             ; Megafunction                           ; c:/altera/90/quartus/libraries/megafunctions/lpm_decode.inc          ;
-; a_rdenreg.inc                    ; yes             ; Megafunction                           ; c:/altera/90/quartus/libraries/megafunctions/a_rdenreg.inc           ;
-; altrom.inc                       ; yes             ; Megafunction                           ; c:/altera/90/quartus/libraries/megafunctions/altrom.inc              ;
-; altram.inc                       ; yes             ; Megafunction                           ; c:/altera/90/quartus/libraries/megafunctions/altram.inc              ;
-; altdpram.inc                     ; yes             ; Megafunction                           ; c:/altera/90/quartus/libraries/megafunctions/altdpram.inc            ;
-; altqpram.inc                     ; yes             ; Megafunction                           ; c:/altera/90/quartus/libraries/megafunctions/altqpram.inc            ;
-; db/altsyncram_7881.tdf           ; yes             ; Auto-Generated Megafunction            ; F:/dev/CR_CPU/db/altsyncram_7881.tdf                                 ;
-; lpm_counter.tdf                  ; yes             ; Megafunction                           ; c:/altera/90/quartus/libraries/megafunctions/lpm_counter.tdf         ;
-; lpm_constant.inc                 ; yes             ; Megafunction                           ; c:/altera/90/quartus/libraries/megafunctions/lpm_constant.inc        ;
-; lpm_add_sub.inc                  ; yes             ; Megafunction                           ; c:/altera/90/quartus/libraries/megafunctions/lpm_add_sub.inc         ;
-; cmpconst.inc                     ; yes             ; Megafunction                           ; c:/altera/90/quartus/libraries/megafunctions/cmpconst.inc            ;
-; lpm_compare.inc                  ; yes             ; Megafunction                           ; c:/altera/90/quartus/libraries/megafunctions/lpm_compare.inc         ;
-; lpm_counter.inc                  ; yes             ; Megafunction                           ; c:/altera/90/quartus/libraries/megafunctions/lpm_counter.inc         ;
-; dffeea.inc                       ; yes             ; Megafunction                           ; c:/altera/90/quartus/libraries/megafunctions/dffeea.inc              ;
-; alt_synch_counter.inc            ; yes             ; Megafunction                           ; c:/altera/90/quartus/libraries/megafunctions/alt_synch_counter.inc   ;
-; alt_synch_counter_f.inc          ; yes             ; Megafunction                           ; c:/altera/90/quartus/libraries/megafunctions/alt_synch_counter_f.inc ;
-; alt_counter_f10ke.inc            ; yes             ; Megafunction                           ; c:/altera/90/quartus/libraries/megafunctions/alt_counter_f10ke.inc   ;
-; alt_counter_stratix.inc          ; yes             ; Megafunction                           ; c:/altera/90/quartus/libraries/megafunctions/alt_counter_stratix.inc ;
-; db/cntr_4oj.tdf                  ; yes             ; Auto-Generated Megafunction            ; F:/dev/CR_CPU/db/cntr_4oj.tdf                                        ;
-; db/mux_vnc.tdf                   ; yes             ; Auto-Generated Megafunction            ; F:/dev/CR_CPU/db/mux_vnc.tdf                                         ;
-; lpm_constant.tdf                 ; yes             ; Megafunction                           ; c:/altera/90/quartus/libraries/megafunctions/lpm_constant.tdf        ;
-; instructions_mem.v               ; yes             ; Auto-Found Wizard-Generated File       ; F:/dev/CR_CPU/instructions_mem.v                                     ;
-; db/altsyncram_eb91.tdf           ; yes             ; Auto-Generated Megafunction            ; F:/dev/CR_CPU/db/altsyncram_eb91.tdf                                 ;
-; instructions3.mif                ; yes             ; Auto-Found Memory Initialization File  ; F:/dev/CR_CPU/instructions3.mif                                      ;
-; db/cntr_0oj.tdf                  ; yes             ; Auto-Generated Megafunction            ; F:/dev/CR_CPU/db/cntr_0oj.tdf                                        ;
-; mux_gate.v                       ; yes             ; Auto-Found Wizard-Generated File       ; F:/dev/CR_CPU/mux_gate.v                                             ;
-; db/mux_2rc.tdf                   ; yes             ; Auto-Generated Megafunction            ; F:/dev/CR_CPU/db/mux_2rc.tdf                                         ;
-; not_gate.v                       ; yes             ; Auto-Found Wizard-Generated File       ; F:/dev/CR_CPU/not_gate.v                                             ;
-; lpm_inv.tdf                      ; yes             ; Megafunction                           ; c:/altera/90/quartus/libraries/megafunctions/lpm_inv.tdf             ;
-; xor_gate.v                       ; yes             ; Auto-Found Wizard-Generated File       ; F:/dev/CR_CPU/xor_gate.v                                             ;
-; lpm_xor.tdf                      ; yes             ; Megafunction                           ; c:/altera/90/quartus/libraries/megafunctions/lpm_xor.tdf             ;
-; shift_left.v                     ; yes             ; Auto-Found Wizard-Generated File       ; F:/dev/CR_CPU/shift_left.v                                           ;
-; lpm_clshift.tdf                  ; yes             ; Megafunction                           ; c:/altera/90/quartus/libraries/megafunctions/lpm_clshift.tdf         ;
-; db/lpm_clshift_nrd.tdf           ; yes             ; Auto-Generated Megafunction            ; F:/dev/CR_CPU/db/lpm_clshift_nrd.tdf                                 ;
-; shift_right.v                    ; yes             ; Auto-Found Wizard-Generated File       ; F:/dev/CR_CPU/shift_right.v                                          ;
-; db/lpm_clshift_oqe.tdf           ; yes             ; Auto-Generated Megafunction            ; F:/dev/CR_CPU/db/lpm_clshift_oqe.tdf                                 ;
-; rotate_left.v                    ; yes             ; Auto-Found Wizard-Generated File       ; F:/dev/CR_CPU/rotate_left.v                                          ;
-; db/lpm_clshift_iib.tdf           ; yes             ; Auto-Generated Megafunction            ; F:/dev/CR_CPU/db/lpm_clshift_iib.tdf                                 ;
-; rotate_right.v                   ; yes             ; Auto-Found Wizard-Generated File       ; F:/dev/CR_CPU/rotate_right.v                                         ;
-; db/lpm_clshift_jhc.tdf           ; yes             ; Auto-Generated Megafunction            ; F:/dev/CR_CPU/db/lpm_clshift_jhc.tdf                                 ;
-; adder.v                          ; yes             ; Auto-Found Wizard-Generated File       ; F:/dev/CR_CPU/adder.v                                                ;
-; lpm_add_sub.tdf                  ; yes             ; Megafunction                           ; c:/altera/90/quartus/libraries/megafunctions/lpm_add_sub.tdf         ;
-; addcore.inc                      ; yes             ; Megafunction                           ; c:/altera/90/quartus/libraries/megafunctions/addcore.inc             ;
-; look_add.inc                     ; yes             ; Megafunction                           ; c:/altera/90/quartus/libraries/megafunctions/look_add.inc            ;
-; alt_stratix_add_sub.inc          ; yes             ; Megafunction                           ; c:/altera/90/quartus/libraries/megafunctions/alt_stratix_add_sub.inc ;
-; alt_mercury_add_sub.inc          ; yes             ; Megafunction                           ; c:/altera/90/quartus/libraries/megafunctions/alt_mercury_add_sub.inc ;
-; db/add_sub_7ri.tdf               ; yes             ; Auto-Generated Megafunction            ; F:/dev/CR_CPU/db/add_sub_7ri.tdf                                     ;
-; subtractor.v                     ; yes             ; Auto-Found Wizard-Generated File       ; F:/dev/CR_CPU/subtractor.v                                           ;
-; db/add_sub_8si.tdf               ; yes             ; Auto-Generated Megafunction            ; F:/dev/CR_CPU/db/add_sub_8si.tdf                                     ;
-; mult.v                           ; yes             ; Auto-Found Wizard-Generated File       ; F:/dev/CR_CPU/mult.v                                                 ;
-; lpm_mult.tdf                     ; yes             ; Megafunction                           ; c:/altera/90/quartus/libraries/megafunctions/lpm_mult.tdf            ;
-; multcore.inc                     ; yes             ; Megafunction                           ; c:/altera/90/quartus/libraries/megafunctions/multcore.inc            ;
-; db/mult_55n.tdf                  ; yes             ; Auto-Generated Megafunction            ; F:/dev/CR_CPU/db/mult_55n.tdf                                        ;
-; div.v                            ; yes             ; Auto-Found Wizard-Generated File       ; F:/dev/CR_CPU/div.v                                                  ;
-; lpm_divide.tdf                   ; yes             ; Megafunction                           ; c:/altera/90/quartus/libraries/megafunctions/lpm_divide.tdf          ;
-; abs_divider.inc                  ; yes             ; Megafunction                           ; c:/altera/90/quartus/libraries/megafunctions/abs_divider.inc         ;
-; sign_div_unsign.inc              ; yes             ; Megafunction                           ; c:/altera/90/quartus/libraries/megafunctions/sign_div_unsign.inc     ;
-; db/lpm_divide_67s.tdf            ; yes             ; Auto-Generated Megafunction            ; F:/dev/CR_CPU/db/lpm_divide_67s.tdf                                  ;
-; db/sign_div_unsign_39h.tdf       ; yes             ; Auto-Generated Megafunction            ; F:/dev/CR_CPU/db/sign_div_unsign_39h.tdf                             ;
-; db/alt_u_div_m6f.tdf             ; yes             ; Auto-Generated Megafunction            ; F:/dev/CR_CPU/db/alt_u_div_m6f.tdf                                   ;
-; mux21_gate.v                     ; yes             ; Auto-Found Wizard-Generated File       ; F:/dev/CR_CPU/mux21_gate.v                                           ;
-; db/mux_bpc.tdf                   ; yes             ; Auto-Generated Megafunction            ; F:/dev/CR_CPU/db/mux_bpc.tdf                                         ;
-; comp.v                           ; yes             ; Auto-Found Wizard-Generated File       ; F:/dev/CR_CPU/comp.v                                                 ;
-; lpm_compare.tdf                  ; yes             ; Megafunction                           ; c:/altera/90/quartus/libraries/megafunctions/lpm_compare.tdf         ;
-; comptree.inc                     ; yes             ; Megafunction                           ; c:/altera/90/quartus/libraries/megafunctions/comptree.inc            ;
-; db/cmpr_0gg.tdf                  ; yes             ; Auto-Generated Megafunction            ; F:/dev/CR_CPU/db/cmpr_0gg.tdf                                        ;
-; and_gate.v                       ; yes             ; Auto-Found Wizard-Generated File       ; F:/dev/CR_CPU/and_gate.v                                             ;
-; lpm_and.tdf                      ; yes             ; Megafunction                           ; c:/altera/90/quartus/libraries/megafunctions/lpm_and.tdf             ;
-; alt3pram.tdf                     ; yes             ; Megafunction                           ; c:/altera/90/quartus/libraries/megafunctions/alt3pram.tdf            ;
-; altdpram.tdf                     ; yes             ; Megafunction                           ; c:/altera/90/quartus/libraries/megafunctions/altdpram.tdf            ;
-; memmodes.inc                     ; yes             ; Megafunction                           ; c:/altera/90/quartus/libraries/others/maxplus2/memmodes.inc          ;
-; a_hdffe.inc                      ; yes             ; Megafunction                           ; c:/altera/90/quartus/libraries/megafunctions/a_hdffe.inc             ;
-; alt_le_rden_reg.inc              ; yes             ; Megafunction                           ; c:/altera/90/quartus/libraries/megafunctions/alt_le_rden_reg.inc     ;
-; altsyncram.inc                   ; yes             ; Megafunction                           ; c:/altera/90/quartus/libraries/megafunctions/altsyncram.inc          ;
-; db/altsyncram_1ot1.tdf           ; yes             ; Auto-Generated Megafunction            ; F:/dev/CR_CPU/db/altsyncram_1ot1.tdf                                 ;
-; db/mux_unc.tdf                   ; yes             ; Auto-Generated Megafunction            ; F:/dev/CR_CPU/db/mux_unc.tdf                                         ;
-; db/altsyncram_2ep1.tdf           ; yes             ; Auto-Generated Megafunction            ; F:/dev/CR_CPU/db/altsyncram_2ep1.tdf                                 ;
-; db/mux_1oc.tdf                   ; yes             ; Auto-Generated Megafunction            ; F:/dev/CR_CPU/db/mux_1oc.tdf                                         ;
-; db/altsyncram_5rr1.tdf           ; yes             ; Auto-Generated Megafunction            ; F:/dev/CR_CPU/db/altsyncram_5rr1.tdf                                 ;
-; lpm_decode.tdf                   ; yes             ; Megafunction                           ; c:/altera/90/quartus/libraries/megafunctions/lpm_decode.tdf          ;
-; declut.inc                       ; yes             ; Megafunction                           ; c:/altera/90/quartus/libraries/megafunctions/declut.inc              ;
-; db/decode_p7f.tdf                ; yes             ; Auto-Generated Megafunction            ; F:/dev/CR_CPU/db/decode_p7f.tdf                                      ;
-; db/mux_rnc.tdf                   ; yes             ; Auto-Generated Megafunction            ; F:/dev/CR_CPU/db/mux_rnc.tdf                                         ;
-; db/add_sub_q7i.tdf               ; yes             ; Auto-Generated Megafunction            ; F:/dev/CR_CPU/db/add_sub_q7i.tdf                                     ;
-; db/mux_dpc.tdf                   ; yes             ; Auto-Generated Megafunction            ; F:/dev/CR_CPU/db/mux_dpc.tdf                                         ;
-; db/mux_snc.tdf                   ; yes             ; Auto-Generated Megafunction            ; F:/dev/CR_CPU/db/mux_snc.tdf                                         ;
-; db/add_sub_1qh.tdf               ; yes             ; Auto-Generated Megafunction            ; F:/dev/CR_CPU/db/add_sub_1qh.tdf                                     ;
-+----------------------------------+-----------------+----------------------------------------+----------------------------------------------------------------------+
++----------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Source Files Read                                                                                                                         ;
++----------------------------------+-----------------+------------------------------------+----------------------------------------------------------------------+
+; File Name with User-Entered Path ; Used in Netlist ; File Type                          ; File Name with Absolute Path                                         ;
++----------------------------------+-----------------+------------------------------------+----------------------------------------------------------------------+
+; CPU.bdf                          ; yes             ; User Block Diagram/Schematic File  ; F:/dev/CR_CPU/CPU.bdf                                                ;
+; ALU.bdf                          ; yes             ; User Block Diagram/Schematic File  ; F:/dev/CR_CPU/ALU.bdf                                                ;
+; pc.v                             ; yes             ; User Wizard-Generated File         ; F:/dev/CR_CPU/pc.v                                                   ;
+; dec24.v                          ; yes             ; User Wizard-Generated File         ; F:/dev/CR_CPU/dec24.v                                                ;
+; sign_extend_16to32.bdf           ; yes             ; User Block Diagram/Schematic File  ; F:/dev/CR_CPU/sign_extend_16to32.bdf                                 ;
+; mux21.v                          ; yes             ; User Wizard-Generated File         ; F:/dev/CR_CPU/mux21.v                                                ;
+; zero_const.v                     ; yes             ; User Wizard-Generated File         ; F:/dev/CR_CPU/zero_const.v                                           ;
+; all_one_const.v                  ; yes             ; User Wizard-Generated File         ; F:/dev/CR_CPU/all_one_const.v                                        ;
+; mux21_5bit.v                     ; yes             ; User Wizard-Generated File         ; F:/dev/CR_CPU/mux21_5bit.v                                           ;
+; regs_8bit.v                      ; yes             ; User Wizard-Generated File         ; F:/dev/CR_CPU/regs_8bit.v                                            ;
+; registers_mem.bdf                ; yes             ; User Block Diagram/Schematic File  ; F:/dev/CR_CPU/registers_mem.bdf                                      ;
+; mux21_8bit.v                     ; yes             ; User Wizard-Generated File         ; F:/dev/CR_CPU/mux21_8bit.v                                           ;
+; regs2_8bit.v                     ; yes             ; User Wizard-Generated File         ; F:/dev/CR_CPU/regs2_8bit.v                                           ;
+; regs3_8bit.v                     ; yes             ; User Wizard-Generated File         ; F:/dev/CR_CPU/regs3_8bit.v                                           ;
+; regs4_8bit.v                     ; yes             ; User Wizard-Generated File         ; F:/dev/CR_CPU/regs4_8bit.v                                           ;
+; main_mem1_8bit.v                 ; yes             ; User Wizard-Generated File         ; F:/dev/CR_CPU/main_mem1_8bit.v                                       ;
+; main_mem.bdf                     ; yes             ; User Block Diagram/Schematic File  ; F:/dev/CR_CPU/main_mem.bdf                                           ;
+; main_mem2_8bit.v                 ; yes             ; User Wizard-Generated File         ; F:/dev/CR_CPU/main_mem2_8bit.v                                       ;
+; main_mem3_8bit.v                 ; yes             ; User Wizard-Generated File         ; F:/dev/CR_CPU/main_mem3_8bit.v                                       ;
+; main_mem4_8bit.v                 ; yes             ; User Wizard-Generated File         ; F:/dev/CR_CPU/main_mem4_8bit.v                                       ;
+; CU_mp.bdf                        ; yes             ; User Block Diagram/Schematic File  ; F:/dev/CR_CPU/CU_mp.bdf                                              ;
+; pc_micro.v                       ; yes             ; User Wizard-Generated File         ; F:/dev/CR_CPU/pc_micro.v                                             ;
+; micro_mem.v                      ; yes             ; User Wizard-Generated File         ; F:/dev/CR_CPU/micro_mem.v                                            ;
+; one_const.v                      ; yes             ; User Wizard-Generated File         ; F:/dev/CR_CPU/one_const.v                                            ;
+; mux41_8bit.v                     ; yes             ; User Wizard-Generated File         ; F:/dev/CR_CPU/mux41_8bit.v                                           ;
+; adder_5bit.v                     ; yes             ; User Wizard-Generated File         ; F:/dev/CR_CPU/adder_5bit.v                                           ;
+; mux81_1bit.v                     ; yes             ; User Wizard-Generated File         ; F:/dev/CR_CPU/mux81_1bit.v                                           ;
+; zero_const_1bit.v                ; yes             ; User Wizard-Generated File         ; F:/dev/CR_CPU/zero_const_1bit.v                                      ;
+; mux21_20bit.v                    ; yes             ; User Wizard-Generated File         ; F:/dev/CR_CPU/mux21_20bit.v                                          ;
+; zero_const_20bit.v               ; yes             ; User Wizard-Generated File         ; F:/dev/CR_CPU/zero_const_20bit.v                                     ;
+; sub_6bit.v                       ; yes             ; User Wizard-Generated File         ; F:/dev/CR_CPU/sub_6bit.v                                             ;
+; mux21_6bit.v                     ; yes             ; User Wizard-Generated File         ; F:/dev/CR_CPU/mux21_6bit.v                                           ;
+; immediate_sel.bdf                ; yes             ; User Block Diagram/Schematic File  ; F:/dev/CR_CPU/immediate_sel.bdf                                      ;
+; sub2_6bit.v                      ; yes             ; User Wizard-Generated File         ; F:/dev/CR_CPU/sub2_6bit.v                                            ;
+; lpm_mux.tdf                      ; yes             ; Megafunction                       ; c:/altera/90/quartus/libraries/megafunctions/lpm_mux.tdf             ;
+; aglobal90.inc                    ; yes             ; Megafunction                       ; c:/altera/90/quartus/libraries/megafunctions/aglobal90.inc           ;
+; muxlut.inc                       ; yes             ; Megafunction                       ; c:/altera/90/quartus/libraries/megafunctions/muxlut.inc              ;
+; bypassff.inc                     ; yes             ; Megafunction                       ; c:/altera/90/quartus/libraries/megafunctions/bypassff.inc            ;
+; altshift.inc                     ; yes             ; Megafunction                       ; c:/altera/90/quartus/libraries/megafunctions/altshift.inc            ;
+; db/mux_8pc.tdf                   ; yes             ; Auto-Generated Megafunction        ; F:/dev/CR_CPU/db/mux_8pc.tdf                                         ;
+; altsyncram.tdf                   ; yes             ; Megafunction                       ; c:/altera/90/quartus/libraries/megafunctions/altsyncram.tdf          ;
+; stratix_ram_block.inc            ; yes             ; Megafunction                       ; c:/altera/90/quartus/libraries/megafunctions/stratix_ram_block.inc   ;
+; lpm_mux.inc                      ; yes             ; Megafunction                       ; c:/altera/90/quartus/libraries/megafunctions/lpm_mux.inc             ;
+; lpm_decode.inc                   ; yes             ; Megafunction                       ; c:/altera/90/quartus/libraries/megafunctions/lpm_decode.inc          ;
+; a_rdenreg.inc                    ; yes             ; Megafunction                       ; c:/altera/90/quartus/libraries/megafunctions/a_rdenreg.inc           ;
+; altrom.inc                       ; yes             ; Megafunction                       ; c:/altera/90/quartus/libraries/megafunctions/altrom.inc              ;
+; altram.inc                       ; yes             ; Megafunction                       ; c:/altera/90/quartus/libraries/megafunctions/altram.inc              ;
+; altdpram.inc                     ; yes             ; Megafunction                       ; c:/altera/90/quartus/libraries/megafunctions/altdpram.inc            ;
+; altqpram.inc                     ; yes             ; Megafunction                       ; c:/altera/90/quartus/libraries/megafunctions/altqpram.inc            ;
+; db/altsyncram_7881.tdf           ; yes             ; Auto-Generated Megafunction        ; F:/dev/CR_CPU/db/altsyncram_7881.tdf                                 ;
+; lpm_counter.tdf                  ; yes             ; Megafunction                       ; c:/altera/90/quartus/libraries/megafunctions/lpm_counter.tdf         ;
+; lpm_constant.inc                 ; yes             ; Megafunction                       ; c:/altera/90/quartus/libraries/megafunctions/lpm_constant.inc        ;
+; lpm_add_sub.inc                  ; yes             ; Megafunction                       ; c:/altera/90/quartus/libraries/megafunctions/lpm_add_sub.inc         ;
+; cmpconst.inc                     ; yes             ; Megafunction                       ; c:/altera/90/quartus/libraries/megafunctions/cmpconst.inc            ;
+; lpm_compare.inc                  ; yes             ; Megafunction                       ; c:/altera/90/quartus/libraries/megafunctions/lpm_compare.inc         ;
+; lpm_counter.inc                  ; yes             ; Megafunction                       ; c:/altera/90/quartus/libraries/megafunctions/lpm_counter.inc         ;
+; dffeea.inc                       ; yes             ; Megafunction                       ; c:/altera/90/quartus/libraries/megafunctions/dffeea.inc              ;
+; alt_synch_counter.inc            ; yes             ; Megafunction                       ; c:/altera/90/quartus/libraries/megafunctions/alt_synch_counter.inc   ;
+; alt_synch_counter_f.inc          ; yes             ; Megafunction                       ; c:/altera/90/quartus/libraries/megafunctions/alt_synch_counter_f.inc ;
+; alt_counter_f10ke.inc            ; yes             ; Megafunction                       ; c:/altera/90/quartus/libraries/megafunctions/alt_counter_f10ke.inc   ;
+; alt_counter_stratix.inc          ; yes             ; Megafunction                       ; c:/altera/90/quartus/libraries/megafunctions/alt_counter_stratix.inc ;
+; db/cntr_4oj.tdf                  ; yes             ; Auto-Generated Megafunction        ; F:/dev/CR_CPU/db/cntr_4oj.tdf                                        ;
+; db/mux_vnc.tdf                   ; yes             ; Auto-Generated Megafunction        ; F:/dev/CR_CPU/db/mux_vnc.tdf                                         ;
+; lpm_constant.tdf                 ; yes             ; Megafunction                       ; c:/altera/90/quartus/libraries/megafunctions/lpm_constant.tdf        ;
+; instructions_mem.v               ; yes             ; Auto-Found Wizard-Generated File   ; F:/dev/CR_CPU/instructions_mem.v                                     ;
+; db/altsyncram_eb91.tdf           ; yes             ; Auto-Generated Megafunction        ; F:/dev/CR_CPU/db/altsyncram_eb91.tdf                                 ;
+; db/cntr_0oj.tdf                  ; yes             ; Auto-Generated Megafunction        ; F:/dev/CR_CPU/db/cntr_0oj.tdf                                        ;
+; mux_gate.v                       ; yes             ; Auto-Found Wizard-Generated File   ; F:/dev/CR_CPU/mux_gate.v                                             ;
+; db/mux_2rc.tdf                   ; yes             ; Auto-Generated Megafunction        ; F:/dev/CR_CPU/db/mux_2rc.tdf                                         ;
+; not_gate.v                       ; yes             ; Auto-Found Wizard-Generated File   ; F:/dev/CR_CPU/not_gate.v                                             ;
+; lpm_inv.tdf                      ; yes             ; Megafunction                       ; c:/altera/90/quartus/libraries/megafunctions/lpm_inv.tdf             ;
+; xor_gate.v                       ; yes             ; Auto-Found Wizard-Generated File   ; F:/dev/CR_CPU/xor_gate.v                                             ;
+; lpm_xor.tdf                      ; yes             ; Megafunction                       ; c:/altera/90/quartus/libraries/megafunctions/lpm_xor.tdf             ;
+; shift_left.v                     ; yes             ; Auto-Found Wizard-Generated File   ; F:/dev/CR_CPU/shift_left.v                                           ;
+; lpm_clshift.tdf                  ; yes             ; Megafunction                       ; c:/altera/90/quartus/libraries/megafunctions/lpm_clshift.tdf         ;
+; db/lpm_clshift_nrd.tdf           ; yes             ; Auto-Generated Megafunction        ; F:/dev/CR_CPU/db/lpm_clshift_nrd.tdf                                 ;
+; shift_right.v                    ; yes             ; Auto-Found Wizard-Generated File   ; F:/dev/CR_CPU/shift_right.v                                          ;
+; db/lpm_clshift_oqe.tdf           ; yes             ; Auto-Generated Megafunction        ; F:/dev/CR_CPU/db/lpm_clshift_oqe.tdf                                 ;
+; rotate_left.v                    ; yes             ; Auto-Found Wizard-Generated File   ; F:/dev/CR_CPU/rotate_left.v                                          ;
+; db/lpm_clshift_iib.tdf           ; yes             ; Auto-Generated Megafunction        ; F:/dev/CR_CPU/db/lpm_clshift_iib.tdf                                 ;
+; rotate_right.v                   ; yes             ; Auto-Found Wizard-Generated File   ; F:/dev/CR_CPU/rotate_right.v                                         ;
+; db/lpm_clshift_jhc.tdf           ; yes             ; Auto-Generated Megafunction        ; F:/dev/CR_CPU/db/lpm_clshift_jhc.tdf                                 ;
+; adder.v                          ; yes             ; Auto-Found Wizard-Generated File   ; F:/dev/CR_CPU/adder.v                                                ;
+; lpm_add_sub.tdf                  ; yes             ; Megafunction                       ; c:/altera/90/quartus/libraries/megafunctions/lpm_add_sub.tdf         ;
+; addcore.inc                      ; yes             ; Megafunction                       ; c:/altera/90/quartus/libraries/megafunctions/addcore.inc             ;
+; look_add.inc                     ; yes             ; Megafunction                       ; c:/altera/90/quartus/libraries/megafunctions/look_add.inc            ;
+; alt_stratix_add_sub.inc          ; yes             ; Megafunction                       ; c:/altera/90/quartus/libraries/megafunctions/alt_stratix_add_sub.inc ;
+; alt_mercury_add_sub.inc          ; yes             ; Megafunction                       ; c:/altera/90/quartus/libraries/megafunctions/alt_mercury_add_sub.inc ;
+; db/add_sub_7ri.tdf               ; yes             ; Auto-Generated Megafunction        ; F:/dev/CR_CPU/db/add_sub_7ri.tdf                                     ;
+; subtractor.v                     ; yes             ; Auto-Found Wizard-Generated File   ; F:/dev/CR_CPU/subtractor.v                                           ;
+; db/add_sub_8si.tdf               ; yes             ; Auto-Generated Megafunction        ; F:/dev/CR_CPU/db/add_sub_8si.tdf                                     ;
+; mult.v                           ; yes             ; Auto-Found Wizard-Generated File   ; F:/dev/CR_CPU/mult.v                                                 ;
+; lpm_mult.tdf                     ; yes             ; Megafunction                       ; c:/altera/90/quartus/libraries/megafunctions/lpm_mult.tdf            ;
+; multcore.inc                     ; yes             ; Megafunction                       ; c:/altera/90/quartus/libraries/megafunctions/multcore.inc            ;
+; db/mult_55n.tdf                  ; yes             ; Auto-Generated Megafunction        ; F:/dev/CR_CPU/db/mult_55n.tdf                                        ;
+; div.v                            ; yes             ; Auto-Found Wizard-Generated File   ; F:/dev/CR_CPU/div.v                                                  ;
+; lpm_divide.tdf                   ; yes             ; Megafunction                       ; c:/altera/90/quartus/libraries/megafunctions/lpm_divide.tdf          ;
+; abs_divider.inc                  ; yes             ; Megafunction                       ; c:/altera/90/quartus/libraries/megafunctions/abs_divider.inc         ;
+; sign_div_unsign.inc              ; yes             ; Megafunction                       ; c:/altera/90/quartus/libraries/megafunctions/sign_div_unsign.inc     ;
+; db/lpm_divide_67s.tdf            ; yes             ; Auto-Generated Megafunction        ; F:/dev/CR_CPU/db/lpm_divide_67s.tdf                                  ;
+; db/sign_div_unsign_39h.tdf       ; yes             ; Auto-Generated Megafunction        ; F:/dev/CR_CPU/db/sign_div_unsign_39h.tdf                             ;
+; db/alt_u_div_m6f.tdf             ; yes             ; Auto-Generated Megafunction        ; F:/dev/CR_CPU/db/alt_u_div_m6f.tdf                                   ;
+; mux21_gate.v                     ; yes             ; Auto-Found Wizard-Generated File   ; F:/dev/CR_CPU/mux21_gate.v                                           ;
+; db/mux_bpc.tdf                   ; yes             ; Auto-Generated Megafunction        ; F:/dev/CR_CPU/db/mux_bpc.tdf                                         ;
+; comp.v                           ; yes             ; Auto-Found Wizard-Generated File   ; F:/dev/CR_CPU/comp.v                                                 ;
+; lpm_compare.tdf                  ; yes             ; Megafunction                       ; c:/altera/90/quartus/libraries/megafunctions/lpm_compare.tdf         ;
+; comptree.inc                     ; yes             ; Megafunction                       ; c:/altera/90/quartus/libraries/megafunctions/comptree.inc            ;
+; db/cmpr_0gg.tdf                  ; yes             ; Auto-Generated Megafunction        ; F:/dev/CR_CPU/db/cmpr_0gg.tdf                                        ;
+; and_gate.v                       ; yes             ; Auto-Found Wizard-Generated File   ; F:/dev/CR_CPU/and_gate.v                                             ;
+; lpm_and.tdf                      ; yes             ; Megafunction                       ; c:/altera/90/quartus/libraries/megafunctions/lpm_and.tdf             ;
+; alt3pram.tdf                     ; yes             ; Megafunction                       ; c:/altera/90/quartus/libraries/megafunctions/alt3pram.tdf            ;
+; altdpram.tdf                     ; yes             ; Megafunction                       ; c:/altera/90/quartus/libraries/megafunctions/altdpram.tdf            ;
+; memmodes.inc                     ; yes             ; Megafunction                       ; c:/altera/90/quartus/libraries/others/maxplus2/memmodes.inc          ;
+; a_hdffe.inc                      ; yes             ; Megafunction                       ; c:/altera/90/quartus/libraries/megafunctions/a_hdffe.inc             ;
+; alt_le_rden_reg.inc              ; yes             ; Megafunction                       ; c:/altera/90/quartus/libraries/megafunctions/alt_le_rden_reg.inc     ;
+; altsyncram.inc                   ; yes             ; Megafunction                       ; c:/altera/90/quartus/libraries/megafunctions/altsyncram.inc          ;
+; db/altsyncram_1ot1.tdf           ; yes             ; Auto-Generated Megafunction        ; F:/dev/CR_CPU/db/altsyncram_1ot1.tdf                                 ;
+; db/mux_unc.tdf                   ; yes             ; Auto-Generated Megafunction        ; F:/dev/CR_CPU/db/mux_unc.tdf                                         ;
+; db/altsyncram_2ep1.tdf           ; yes             ; Auto-Generated Megafunction        ; F:/dev/CR_CPU/db/altsyncram_2ep1.tdf                                 ;
+; db/mux_1oc.tdf                   ; yes             ; Auto-Generated Megafunction        ; F:/dev/CR_CPU/db/mux_1oc.tdf                                         ;
+; db/altsyncram_5rr1.tdf           ; yes             ; Auto-Generated Megafunction        ; F:/dev/CR_CPU/db/altsyncram_5rr1.tdf                                 ;
+; lpm_decode.tdf                   ; yes             ; Megafunction                       ; c:/altera/90/quartus/libraries/megafunctions/lpm_decode.tdf          ;
+; declut.inc                       ; yes             ; Megafunction                       ; c:/altera/90/quartus/libraries/megafunctions/declut.inc              ;
+; db/decode_p7f.tdf                ; yes             ; Auto-Generated Megafunction        ; F:/dev/CR_CPU/db/decode_p7f.tdf                                      ;
+; db/mux_rnc.tdf                   ; yes             ; Auto-Generated Megafunction        ; F:/dev/CR_CPU/db/mux_rnc.tdf                                         ;
+; db/add_sub_q7i.tdf               ; yes             ; Auto-Generated Megafunction        ; F:/dev/CR_CPU/db/add_sub_q7i.tdf                                     ;
+; db/mux_dpc.tdf                   ; yes             ; Auto-Generated Megafunction        ; F:/dev/CR_CPU/db/mux_dpc.tdf                                         ;
+; db/mux_snc.tdf                   ; yes             ; Auto-Generated Megafunction        ; F:/dev/CR_CPU/db/mux_snc.tdf                                         ;
+; db/add_sub_1qh.tdf               ; yes             ; Auto-Generated Megafunction        ; F:/dev/CR_CPU/db/add_sub_1qh.tdf                                     ;
++----------------------------------+-----------------+------------------------------------+----------------------------------------------------------------------+
 
 
 +---------------------------------------------------------------------------------------------------------------------------------------------------------------+
@@ -364,39 +366,39 @@ applicable agreement for further details.
 +-----------------------------------------------+---------------------------------------------------------------------------------------------------------------+
 ; Resource                                      ; Usage                                                                                                         ;
 +-----------------------------------------------+---------------------------------------------------------------------------------------------------------------+
-; Estimated ALUTs Used                          ; 2124                                                                                                          ;
+; Estimated ALUTs Used                          ; 2120                                                                                                          ;
 ; Dedicated logic registers                     ; 12                                                                                                            ;
 ;                                               ;                                                                                                               ;
-; Estimated ALUTs Unavailable                   ; 139                                                                                                           ;
+; Estimated ALUTs Unavailable                   ; 140                                                                                                           ;
 ;                                               ;                                                                                                               ;
-; Total combinational functions                 ; 2124                                                                                                          ;
+; Total combinational functions                 ; 2120                                                                                                          ;
 ; Combinational ALUT usage by number of inputs  ;                                                                                                               ;
 ;     -- 7 input functions                      ; 10                                                                                                            ;
-;     -- 6 input functions                      ; 180                                                                                                           ;
-;     -- 5 input functions                      ; 629                                                                                                           ;
-;     -- 4 input functions                      ; 766                                                                                                           ;
-;     -- <=3 input functions                    ; 539                                                                                                           ;
+;     -- 6 input functions                      ; 181                                                                                                           ;
+;     -- 5 input functions                      ; 618                                                                                                           ;
+;     -- 4 input functions                      ; 786                                                                                                           ;
+;     -- <=3 input functions                    ; 525                                                                                                           ;
 ;                                               ;                                                                                                               ;
 ; Combinational ALUTs by mode                   ;                                                                                                               ;
-;     -- normal mode                            ; 1351                                                                                                          ;
+;     -- normal mode                            ; 1347                                                                                                          ;
 ;     -- extended LUT mode                      ; 10                                                                                                            ;
 ;     -- arithmetic mode                        ; 763                                                                                                           ;
 ;     -- shared arithmetic mode                 ; 0                                                                                                             ;
 ;                                               ;                                                                                                               ;
-; Estimated ALUT/register pairs used            ; 2124                                                                                                          ;
+; Estimated ALUT/register pairs used            ; 2120                                                                                                          ;
 ;                                               ;                                                                                                               ;
 ; Total registers                               ; 12                                                                                                            ;
 ;     -- Dedicated logic registers              ; 12                                                                                                            ;
 ;     -- I/O registers                          ; 0                                                                                                             ;
 ;                                               ;                                                                                                               ;
-; Estimated ALMs:  partially or completely used ; 1,065                                                                                                         ;
+; Estimated ALMs:  partially or completely used ; 1,063                                                                                                         ;
 ;                                               ;                                                                                                               ;
 ; I/O pins                                      ; 189                                                                                                           ;
 ; Total block memory bits                       ; 7936                                                                                                          ;
 ; DSP block 9-bit elements                      ; 2                                                                                                             ;
 ; Maximum fan-out node                          ; immediate_sel:inst4|mux21_gate:inst6|lpm_mux:lpm_mux_component|mux_bpc:auto_generated|l1_w31_n0_mux_dataout~2 ;
-; Maximum fan-out                               ; 446                                                                                                           ;
-; Total fan-out                                 ; 11126                                                                                                         ;
+; Maximum fan-out                               ; 447                                                                                                           ;
+; Total fan-out                                 ; 11116                                                                                                         ;
 ; Average fan-out                               ; 4.50                                                                                                          ;
 +-----------------------------------------------+---------------------------------------------------------------------------------------------------------------+
 
@@ -406,25 +408,25 @@ applicable agreement for further details.
 +----------------------------------------------------+-------------------+--------------+-------------------+--------------+---------+-----------+-----------+------+--------------+---------------------------------------------------------------------------------------------------------------------------------------------------------+--------------+
 ; Compilation Hierarchy Node                         ; LC Combinationals ; LC Registers ; Block Memory Bits ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; DSP 36x36 ; Pins ; Virtual Pins ; Full Hierarchy Name                                                                                                                                     ; Library Name ;
 +----------------------------------------------------+-------------------+--------------+-------------------+--------------+---------+-----------+-----------+------+--------------+---------------------------------------------------------------------------------------------------------------------------------------------------------+--------------+
-; |CPU                                               ; 2124 (1)          ; 12 (0)       ; 7936              ; 2            ; 0       ; 1         ; 0         ; 189  ; 0            ; |CPU                                                                                                                                                    ; work         ;
-;    |ALU:inst13|                                    ; 1872 (0)          ; 0 (0)        ; 0                 ; 2            ; 0       ; 1         ; 0         ; 0    ; 0            ; |CPU|ALU:inst13                                                                                                                                         ; work         ;
+; |CPU                                               ; 2120 (1)          ; 12 (0)       ; 7936              ; 2            ; 0       ; 1         ; 0         ; 189  ; 0            ; |CPU                                                                                                                                                    ; work         ;
+;    |ALU:inst13|                                    ; 1870 (0)          ; 0 (0)        ; 0                 ; 2            ; 0       ; 1         ; 0         ; 0    ; 0            ; |CPU|ALU:inst13                                                                                                                                         ; work         ;
 ;       |adder:inst19|                               ; 32 (0)            ; 0 (0)        ; 0                 ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |CPU|ALU:inst13|adder:inst19                                                                                                                            ; work         ;
 ;          |lpm_add_sub:lpm_add_sub_component|       ; 32 (0)            ; 0 (0)        ; 0                 ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |CPU|ALU:inst13|adder:inst19|lpm_add_sub:lpm_add_sub_component                                                                                          ; work         ;
 ;             |add_sub_7ri:auto_generated|           ; 32 (32)           ; 0 (0)        ; 0                 ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |CPU|ALU:inst13|adder:inst19|lpm_add_sub:lpm_add_sub_component|add_sub_7ri:auto_generated                                                               ; work         ;
 ;       |comp:inst3|                                 ; 30 (0)            ; 0 (0)        ; 0                 ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |CPU|ALU:inst13|comp:inst3                                                                                                                              ; work         ;
 ;          |lpm_compare:lpm_compare_component|       ; 30 (0)            ; 0 (0)        ; 0                 ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |CPU|ALU:inst13|comp:inst3|lpm_compare:lpm_compare_component                                                                                            ; work         ;
 ;             |cmpr_0gg:auto_generated|              ; 30 (30)           ; 0 (0)        ; 0                 ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |CPU|ALU:inst13|comp:inst3|lpm_compare:lpm_compare_component|cmpr_0gg:auto_generated                                                                    ; work         ;
-;       |div:inst2|                                  ; 1263 (0)          ; 0 (0)        ; 0                 ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |CPU|ALU:inst13|div:inst2                                                                                                                               ; work         ;
-;          |lpm_divide:lpm_divide_component|         ; 1263 (0)          ; 0 (0)        ; 0                 ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |CPU|ALU:inst13|div:inst2|lpm_divide:lpm_divide_component                                                                                               ; work         ;
-;             |lpm_divide_67s:auto_generated|        ; 1263 (0)          ; 0 (0)        ; 0                 ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |CPU|ALU:inst13|div:inst2|lpm_divide:lpm_divide_component|lpm_divide_67s:auto_generated                                                                 ; work         ;
-;                |sign_div_unsign_39h:divider|       ; 1263 (156)        ; 0 (0)        ; 0                 ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |CPU|ALU:inst13|div:inst2|lpm_divide:lpm_divide_component|lpm_divide_67s:auto_generated|sign_div_unsign_39h:divider                                     ; work         ;
-;                   |alt_u_div_m6f:divider|          ; 1107 (1107)       ; 0 (0)        ; 0                 ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |CPU|ALU:inst13|div:inst2|lpm_divide:lpm_divide_component|lpm_divide_67s:auto_generated|sign_div_unsign_39h:divider|alt_u_div_m6f:divider               ; work         ;
+;       |div:inst2|                                  ; 1264 (0)          ; 0 (0)        ; 0                 ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |CPU|ALU:inst13|div:inst2                                                                                                                               ; work         ;
+;          |lpm_divide:lpm_divide_component|         ; 1264 (0)          ; 0 (0)        ; 0                 ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |CPU|ALU:inst13|div:inst2|lpm_divide:lpm_divide_component                                                                                               ; work         ;
+;             |lpm_divide_67s:auto_generated|        ; 1264 (0)          ; 0 (0)        ; 0                 ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |CPU|ALU:inst13|div:inst2|lpm_divide:lpm_divide_component|lpm_divide_67s:auto_generated                                                                 ; work         ;
+;                |sign_div_unsign_39h:divider|       ; 1264 (156)        ; 0 (0)        ; 0                 ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |CPU|ALU:inst13|div:inst2|lpm_divide:lpm_divide_component|lpm_divide_67s:auto_generated|sign_div_unsign_39h:divider                                     ; work         ;
+;                   |alt_u_div_m6f:divider|          ; 1108 (1108)       ; 0 (0)        ; 0                 ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |CPU|ALU:inst13|div:inst2|lpm_divide:lpm_divide_component|lpm_divide_67s:auto_generated|sign_div_unsign_39h:divider|alt_u_div_m6f:divider               ; work         ;
 ;       |mult:inst1|                                 ; 0 (0)             ; 0 (0)        ; 0                 ; 2            ; 0       ; 1         ; 0         ; 0    ; 0            ; |CPU|ALU:inst13|mult:inst1                                                                                                                              ; work         ;
 ;          |lpm_mult:lpm_mult_component|             ; 0 (0)             ; 0 (0)        ; 0                 ; 2            ; 0       ; 1         ; 0         ; 0    ; 0            ; |CPU|ALU:inst13|mult:inst1|lpm_mult:lpm_mult_component                                                                                                  ; work         ;
 ;             |mult_55n:auto_generated|              ; 0 (0)             ; 0 (0)        ; 0                 ; 2            ; 0       ; 1         ; 0         ; 0    ; 0            ; |CPU|ALU:inst13|mult:inst1|lpm_mult:lpm_mult_component|mult_55n:auto_generated                                                                          ; work         ;
-;       |mux_gate:inst|                              ; 266 (0)           ; 0 (0)        ; 0                 ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |CPU|ALU:inst13|mux_gate:inst                                                                                                                           ; work         ;
-;          |lpm_mux:lpm_mux_component|               ; 266 (0)           ; 0 (0)        ; 0                 ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |CPU|ALU:inst13|mux_gate:inst|lpm_mux:lpm_mux_component                                                                                                 ; work         ;
-;             |mux_2rc:auto_generated|               ; 266 (266)         ; 0 (0)        ; 0                 ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |CPU|ALU:inst13|mux_gate:inst|lpm_mux:lpm_mux_component|mux_2rc:auto_generated                                                                          ; work         ;
+;       |mux_gate:inst|                              ; 263 (0)           ; 0 (0)        ; 0                 ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |CPU|ALU:inst13|mux_gate:inst                                                                                                                           ; work         ;
+;          |lpm_mux:lpm_mux_component|               ; 263 (0)           ; 0 (0)        ; 0                 ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |CPU|ALU:inst13|mux_gate:inst|lpm_mux:lpm_mux_component                                                                                                 ; work         ;
+;             |mux_2rc:auto_generated|               ; 263 (263)         ; 0 (0)        ; 0                 ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |CPU|ALU:inst13|mux_gate:inst|lpm_mux:lpm_mux_component|mux_2rc:auto_generated                                                                          ; work         ;
 ;       |rotate_left:inst25|                         ; 31 (0)            ; 0 (0)        ; 0                 ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |CPU|ALU:inst13|rotate_left:inst25                                                                                                                      ; work         ;
 ;          |lpm_clshift:lpm_clshift_component|       ; 31 (0)            ; 0 (0)        ; 0                 ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |CPU|ALU:inst13|rotate_left:inst25|lpm_clshift:lpm_clshift_component                                                                                    ; work         ;
 ;             |lpm_clshift_iib:auto_generated|       ; 31 (31)           ; 0 (0)        ; 0                 ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |CPU|ALU:inst13|rotate_left:inst25|lpm_clshift:lpm_clshift_component|lpm_clshift_iib:auto_generated                                                     ; work         ;
@@ -440,16 +442,16 @@ applicable agreement for further details.
 ;       |subtractor:inst20|                          ; 33 (0)            ; 0 (0)        ; 0                 ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |CPU|ALU:inst13|subtractor:inst20                                                                                                                       ; work         ;
 ;          |lpm_add_sub:lpm_add_sub_component|       ; 33 (0)            ; 0 (0)        ; 0                 ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |CPU|ALU:inst13|subtractor:inst20|lpm_add_sub:lpm_add_sub_component                                                                                     ; work         ;
 ;             |add_sub_8si:auto_generated|           ; 33 (33)           ; 0 (0)        ; 0                 ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |CPU|ALU:inst13|subtractor:inst20|lpm_add_sub:lpm_add_sub_component|add_sub_8si:auto_generated                                                          ; work         ;
-;    |CU_mp:inst2|                                   ; 23 (1)            ; 8 (0)        ; 4352              ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |CPU|CU_mp:inst2                                                                                                                                        ; work         ;
+;    |CU_mp:inst2|                                   ; 21 (1)            ; 8 (0)        ; 4352              ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |CPU|CU_mp:inst2                                                                                                                                        ; work         ;
 ;       |micro_mem:inst1|                            ; 0 (0)             ; 0 (0)        ; 4352              ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |CPU|CU_mp:inst2|micro_mem:inst1                                                                                                                        ; work         ;
 ;          |altsyncram:altsyncram_component|         ; 0 (0)             ; 0 (0)        ; 4352              ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |CPU|CU_mp:inst2|micro_mem:inst1|altsyncram:altsyncram_component                                                                                        ; work         ;
 ;             |altsyncram_7881:auto_generated|       ; 0 (0)             ; 0 (0)        ; 4352              ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |CPU|CU_mp:inst2|micro_mem:inst1|altsyncram:altsyncram_component|altsyncram_7881:auto_generated                                                         ; work         ;
 ;       |mux21_20bit:inst3|                          ; 9 (0)             ; 0 (0)        ; 0                 ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |CPU|CU_mp:inst2|mux21_20bit:inst3                                                                                                                      ; work         ;
 ;          |lpm_mux:lpm_mux_component|               ; 9 (0)             ; 0 (0)        ; 0                 ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |CPU|CU_mp:inst2|mux21_20bit:inst3|lpm_mux:lpm_mux_component                                                                                            ; work         ;
 ;             |mux_8pc:auto_generated|               ; 9 (9)             ; 0 (0)        ; 0                 ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |CPU|CU_mp:inst2|mux21_20bit:inst3|lpm_mux:lpm_mux_component|mux_8pc:auto_generated                                                                     ; work         ;
-;       |mux81_1bit:inst6|                           ; 5 (0)             ; 0 (0)        ; 0                 ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |CPU|CU_mp:inst2|mux81_1bit:inst6                                                                                                                       ; work         ;
-;          |lpm_mux:lpm_mux_component|               ; 5 (0)             ; 0 (0)        ; 0                 ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |CPU|CU_mp:inst2|mux81_1bit:inst6|lpm_mux:lpm_mux_component                                                                                             ; work         ;
-;             |mux_vnc:auto_generated|               ; 5 (5)             ; 0 (0)        ; 0                 ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |CPU|CU_mp:inst2|mux81_1bit:inst6|lpm_mux:lpm_mux_component|mux_vnc:auto_generated                                                                      ; work         ;
+;       |mux81_1bit:inst6|                           ; 3 (0)             ; 0 (0)        ; 0                 ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |CPU|CU_mp:inst2|mux81_1bit:inst6                                                                                                                       ; work         ;
+;          |lpm_mux:lpm_mux_component|               ; 3 (0)             ; 0 (0)        ; 0                 ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |CPU|CU_mp:inst2|mux81_1bit:inst6|lpm_mux:lpm_mux_component                                                                                             ; work         ;
+;             |mux_vnc:auto_generated|               ; 3 (3)             ; 0 (0)        ; 0                 ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |CPU|CU_mp:inst2|mux81_1bit:inst6|lpm_mux:lpm_mux_component|mux_vnc:auto_generated                                                                      ; work         ;
 ;       |pc_micro:inst|                              ; 8 (0)             ; 8 (0)        ; 0                 ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |CPU|CU_mp:inst2|pc_micro:inst                                                                                                                          ; work         ;
 ;          |lpm_counter:lpm_counter_component|       ; 8 (0)             ; 8 (0)        ; 0                 ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |CPU|CU_mp:inst2|pc_micro:inst|lpm_counter:lpm_counter_component                                                                                        ; work         ;
 ;             |cntr_4oj:auto_generated|              ; 8 (8)             ; 8 (8)        ; 0                 ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |CPU|CU_mp:inst2|pc_micro:inst|lpm_counter:lpm_counter_component|cntr_4oj:auto_generated                                                                ; work         ;
@@ -640,11 +642,12 @@ Note: number of DSP Blocks used is only available after a successful fit.
 +--------------------+-----------+---------------+----------------------+------------------------+------------+------------------------------------------------------------------------------------------------------------------+
 ; Multiplexer Inputs ; Bus Width ; Baseline Area ; Area if Restructured ; Saving if Restructured ; Registered ; Example Multiplexer Output                                                                                       ;
 +--------------------+-----------+---------------+----------------------+------------------------+------------+------------------------------------------------------------------------------------------------------------------+
-; 3:1                ; 24 bits   ; 48 ALUTs      ; 48 ALUTs             ; 0 ALUTs                ; No         ; |CPU|registers_mem:inst9|mux21_8bit:inst11|lpm_mux:lpm_mux_component|mux_unc:auto_generated|l1_w4_n0_mux_dataout ;
-; 3:1                ; 32 bits   ; 64 ALUTs      ; 64 ALUTs             ; 0 ALUTs                ; No         ; |CPU|main_mem:inst7|mux21_8bit:inst42|lpm_mux:lpm_mux_component|mux_unc:auto_generated|l1_w6_n0_mux_dataout      ;
+; 3:1                ; 24 bits   ; 48 ALUTs      ; 48 ALUTs             ; 0 ALUTs                ; No         ; |CPU|registers_mem:inst9|mux21_8bit:inst12|lpm_mux:lpm_mux_component|mux_unc:auto_generated|l1_w6_n0_mux_dataout ;
+; 3:1                ; 3 bits    ; 6 ALUTs       ; 6 ALUTs              ; 0 ALUTs                ; No         ; |CPU|immediate_sel:inst4|mux21_6bit:inst8|lpm_mux:lpm_mux_component|mux_snc:auto_generated|l1_w3_n0_mux_dataout  ;
+; 3:1                ; 32 bits   ; 64 ALUTs      ; 64 ALUTs             ; 0 ALUTs                ; No         ; |CPU|main_mem:inst7|mux21_8bit:inst42|lpm_mux:lpm_mux_component|mux_unc:auto_generated|l1_w7_n0_mux_dataout      ;
 ; 4:1                ; 8 bits    ; 16 ALUTs      ; 16 ALUTs             ; 0 ALUTs                ; No         ; |CPU|registers_mem:inst9|mux21_8bit:inst|lpm_mux:lpm_mux_component|mux_unc:auto_generated|l1_w0_n0_mux_dataout   ;
-; 20:1               ; 15 bits   ; 195 ALUTs     ; 180 ALUTs            ; 15 ALUTs               ; No         ; |CPU|ALU:inst13|mux_gate:inst|lpm_mux:lpm_mux_component|mux_2rc:auto_generated|l4_w10_n0_mux_dataout             ;
-; 21:1               ; 15 bits   ; 210 ALUTs     ; 180 ALUTs            ; 30 ALUTs               ; No         ; |CPU|ALU:inst13|mux_gate:inst|lpm_mux:lpm_mux_component|mux_2rc:auto_generated|l4_w16_n0_mux_dataout             ;
+; 20:1               ; 15 bits   ; 195 ALUTs     ; 180 ALUTs            ; 15 ALUTs               ; No         ; |CPU|ALU:inst13|mux_gate:inst|lpm_mux:lpm_mux_component|mux_2rc:auto_generated|l4_w6_n0_mux_dataout              ;
+; 21:1               ; 15 bits   ; 210 ALUTs     ; 180 ALUTs            ; 30 ALUTs               ; No         ; |CPU|ALU:inst13|mux_gate:inst|lpm_mux:lpm_mux_component|mux_2rc:auto_generated|l4_w20_n0_mux_dataout             ;
 +--------------------+-----------+---------------+----------------------+------------------------+------------+------------------------------------------------------------------------------------------------------------------+
 
 
@@ -2365,31 +2368,78 @@ Note: In order to hide this table in the UI and the text report file, please set
 Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings Tables in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
 
 
-+-------------------------------------------------------------------------------------------------------------------+
-; Parameter Settings for User Entity Instance: immediate_sel:inst4|sub_6bit:inst7|lpm_add_sub:lpm_add_sub_component ;
-+------------------------+-------------+----------------------------------------------------------------------------+
-; Parameter Name         ; Value       ; Type                                                                       ;
-+------------------------+-------------+----------------------------------------------------------------------------+
-; LPM_WIDTH              ; 6           ; Signed Integer                                                             ;
-; LPM_REPRESENTATION     ; UNSIGNED    ; Untyped                                                                    ;
-; LPM_DIRECTION          ; SUB         ; Untyped                                                                    ;
-; ONE_INPUT_IS_CONSTANT  ; YES         ; Untyped                                                                    ;
-; LPM_PIPELINE           ; 0           ; Untyped                                                                    ;
-; MAXIMIZE_SPEED         ; 5           ; Untyped                                                                    ;
-; REGISTERED_AT_END      ; 0           ; Untyped                                                                    ;
-; OPTIMIZE_FOR_SPEED     ; 5           ; Untyped                                                                    ;
-; USE_CS_BUFFERS         ; 1           ; Untyped                                                                    ;
-; CARRY_CHAIN            ; MANUAL      ; Untyped                                                                    ;
-; CARRY_CHAIN_LENGTH     ; 48          ; CARRY_CHAIN_LENGTH                                                         ;
-; DEVICE_FAMILY          ; Stratix II  ; Untyped                                                                    ;
-; USE_WYS                ; OFF         ; Untyped                                                                    ;
-; STYLE                  ; FAST        ; Untyped                                                                    ;
-; CBXI_PARAMETER         ; add_sub_1qh ; Untyped                                                                    ;
-; AUTO_CARRY_CHAINS      ; ON          ; AUTO_CARRY                                                                 ;
-; IGNORE_CARRY_BUFFERS   ; OFF         ; IGNORE_CARRY                                                               ;
-; AUTO_CASCADE_CHAINS    ; ON          ; AUTO_CASCADE                                                               ;
-; IGNORE_CASCADE_BUFFERS ; OFF         ; IGNORE_CASCADE                                                             ;
-+------------------------+-------------+----------------------------------------------------------------------------+
++-------------------------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: immediate_sel:inst4|mux21_6bit:inst9|lpm_mux:lpm_mux_component ;
++------------------------+------------+-----------------------------------------------------------------------+
+; Parameter Name         ; Value      ; Type                                                                  ;
++------------------------+------------+-----------------------------------------------------------------------+
+; AUTO_CARRY_CHAINS      ; ON         ; AUTO_CARRY                                                            ;
+; IGNORE_CARRY_BUFFERS   ; OFF        ; IGNORE_CARRY                                                          ;
+; AUTO_CASCADE_CHAINS    ; ON         ; AUTO_CASCADE                                                          ;
+; IGNORE_CASCADE_BUFFERS ; OFF        ; IGNORE_CASCADE                                                        ;
+; LPM_WIDTH              ; 6          ; Signed Integer                                                        ;
+; LPM_SIZE               ; 2          ; Signed Integer                                                        ;
+; LPM_WIDTHS             ; 1          ; Signed Integer                                                        ;
+; LPM_PIPELINE           ; 0          ; Untyped                                                               ;
+; CBXI_PARAMETER         ; mux_snc    ; Untyped                                                               ;
+; DEVICE_FAMILY          ; Stratix II ; Untyped                                                               ;
++------------------------+------------+-----------------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings Tables in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++--------------------------------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: immediate_sel:inst4|sub_6bit:inst12|lpm_add_sub:lpm_add_sub_component ;
++------------------------+-------------+-----------------------------------------------------------------------------+
+; Parameter Name         ; Value       ; Type                                                                        ;
++------------------------+-------------+-----------------------------------------------------------------------------+
+; LPM_WIDTH              ; 6           ; Signed Integer                                                              ;
+; LPM_REPRESENTATION     ; UNSIGNED    ; Untyped                                                                     ;
+; LPM_DIRECTION          ; SUB         ; Untyped                                                                     ;
+; ONE_INPUT_IS_CONSTANT  ; YES         ; Untyped                                                                     ;
+; LPM_PIPELINE           ; 0           ; Untyped                                                                     ;
+; MAXIMIZE_SPEED         ; 5           ; Untyped                                                                     ;
+; REGISTERED_AT_END      ; 0           ; Untyped                                                                     ;
+; OPTIMIZE_FOR_SPEED     ; 5           ; Untyped                                                                     ;
+; USE_CS_BUFFERS         ; 1           ; Untyped                                                                     ;
+; CARRY_CHAIN            ; MANUAL      ; Untyped                                                                     ;
+; CARRY_CHAIN_LENGTH     ; 48          ; CARRY_CHAIN_LENGTH                                                          ;
+; DEVICE_FAMILY          ; Stratix II  ; Untyped                                                                     ;
+; USE_WYS                ; OFF         ; Untyped                                                                     ;
+; STYLE                  ; FAST        ; Untyped                                                                     ;
+; CBXI_PARAMETER         ; add_sub_1qh ; Untyped                                                                     ;
+; AUTO_CARRY_CHAINS      ; ON          ; AUTO_CARRY                                                                  ;
+; IGNORE_CARRY_BUFFERS   ; OFF         ; IGNORE_CARRY                                                                ;
+; AUTO_CASCADE_CHAINS    ; ON          ; AUTO_CASCADE                                                                ;
+; IGNORE_CASCADE_BUFFERS ; OFF         ; IGNORE_CASCADE                                                              ;
++------------------------+-------------+-----------------------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings Tables in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++---------------------------------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: immediate_sel:inst4|sub2_6bit:inst13|lpm_add_sub:lpm_add_sub_component ;
++------------------------+-------------+------------------------------------------------------------------------------+
+; Parameter Name         ; Value       ; Type                                                                         ;
++------------------------+-------------+------------------------------------------------------------------------------+
+; LPM_WIDTH              ; 6           ; Signed Integer                                                               ;
+; LPM_REPRESENTATION     ; UNSIGNED    ; Untyped                                                                      ;
+; LPM_DIRECTION          ; SUB         ; Untyped                                                                      ;
+; ONE_INPUT_IS_CONSTANT  ; YES         ; Untyped                                                                      ;
+; LPM_PIPELINE           ; 0           ; Untyped                                                                      ;
+; MAXIMIZE_SPEED         ; 5           ; Untyped                                                                      ;
+; REGISTERED_AT_END      ; 0           ; Untyped                                                                      ;
+; OPTIMIZE_FOR_SPEED     ; 5           ; Untyped                                                                      ;
+; USE_CS_BUFFERS         ; 1           ; Untyped                                                                      ;
+; CARRY_CHAIN            ; MANUAL      ; Untyped                                                                      ;
+; CARRY_CHAIN_LENGTH     ; 48          ; CARRY_CHAIN_LENGTH                                                           ;
+; DEVICE_FAMILY          ; Stratix II  ; Untyped                                                                      ;
+; USE_WYS                ; OFF         ; Untyped                                                                      ;
+; STYLE                  ; FAST        ; Untyped                                                                      ;
+; CBXI_PARAMETER         ; add_sub_1qh ; Untyped                                                                      ;
+; AUTO_CARRY_CHAINS      ; ON          ; AUTO_CARRY                                                                   ;
+; IGNORE_CARRY_BUFFERS   ; OFF         ; IGNORE_CARRY                                                                 ;
+; AUTO_CASCADE_CHAINS    ; ON          ; AUTO_CASCADE                                                                 ;
+; IGNORE_CASCADE_BUFFERS ; OFF         ; IGNORE_CASCADE                                                               ;
++------------------------+-------------+------------------------------------------------------------------------------+
 Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings Tables in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
 
 
@@ -2494,7 +2544,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 Info: *******************************************************************
 Info: Running Quartus II Analysis & Synthesis
     Info: Version 9.0 Build 132 02/25/2009 SJ Web Edition
-    Info: Processing started: Thu Jul 09 06:42:22 2020
+    Info: Processing started: Thu Jul 09 07:20:46 2020
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off CPU -c CPU
 Info: Found 1 design units, including 1 entities, in source file CPU.bdf
     Info: Found entity 1: CPU
@@ -2588,6 +2638,8 @@ Info: Found 1 design units, including 1 entities, in source file mux21_6bit.v
     Info: Found entity 1: mux21_6bit
 Info: Found 1 design units, including 1 entities, in source file immediate_sel.bdf
     Info: Found entity 1: immediate_sel
+Info: Found 1 design units, including 1 entities, in source file sub2_6bit.v
+    Info: Found entity 1: sub2_6bit
 Info: Elaborating entity "CPU" for the top level hierarchy
 Info: Elaborating entity "CU_mp" for hierarchy "CU_mp:inst2"
 Info: Elaborating entity "mux21_20bit" for hierarchy "CU_mp:inst2|mux21_20bit:inst3"
@@ -2689,8 +2741,6 @@ Info: Instantiated megafunction "instructions_mem:inst|altsyncram:altsyncram_com
 Info: Found 1 design units, including 1 entities, in source file db/altsyncram_eb91.tdf
     Info: Found entity 1: altsyncram_eb91
 Info: Elaborating entity "altsyncram_eb91" for hierarchy "instructions_mem:inst|altsyncram:altsyncram_component|altsyncram_eb91:auto_generated"
-Warning: 1 out of 16 addresses are uninitialized. The Quartus II software will initialize them to "0". There are 1 warnings found, and 1 warnings are reported.
-    Warning: Memory Initialization File Address 15 is not initialized
 Info: Elaborating entity "pc" for hierarchy "pc:inst1"
 Info: Elaborating entity "lpm_counter" for hierarchy "pc:inst1|lpm_counter:lpm_counter_component"
 Info: Elaborated megafunction instantiation "pc:inst1|lpm_counter:lpm_counter_component"
@@ -3076,10 +3126,10 @@ Info: Instantiated megafunction "immediate_sel:inst4|mux21_6bit:inst8|lpm_mux:lp
 Info: Found 1 design units, including 1 entities, in source file db/mux_snc.tdf
     Info: Found entity 1: mux_snc
 Info: Elaborating entity "mux_snc" for hierarchy "immediate_sel:inst4|mux21_6bit:inst8|lpm_mux:lpm_mux_component|mux_snc:auto_generated"
-Info: Elaborating entity "sub_6bit" for hierarchy "immediate_sel:inst4|sub_6bit:inst7"
-Info: Elaborating entity "lpm_add_sub" for hierarchy "immediate_sel:inst4|sub_6bit:inst7|lpm_add_sub:lpm_add_sub_component"
-Info: Elaborated megafunction instantiation "immediate_sel:inst4|sub_6bit:inst7|lpm_add_sub:lpm_add_sub_component"
-Info: Instantiated megafunction "immediate_sel:inst4|sub_6bit:inst7|lpm_add_sub:lpm_add_sub_component" with the following parameter:
+Info: Elaborating entity "sub_6bit" for hierarchy "immediate_sel:inst4|sub_6bit:inst12"
+Info: Elaborating entity "lpm_add_sub" for hierarchy "immediate_sel:inst4|sub_6bit:inst12|lpm_add_sub:lpm_add_sub_component"
+Info: Elaborated megafunction instantiation "immediate_sel:inst4|sub_6bit:inst12|lpm_add_sub:lpm_add_sub_component"
+Info: Instantiated megafunction "immediate_sel:inst4|sub_6bit:inst12|lpm_add_sub:lpm_add_sub_component" with the following parameter:
     Info: Parameter "lpm_direction" = "SUB"
     Info: Parameter "lpm_hint" = "ONE_INPUT_IS_CONSTANT=YES,CIN_USED=NO"
     Info: Parameter "lpm_representation" = "UNSIGNED"
@@ -3087,7 +3137,8 @@ Info: Instantiated megafunction "immediate_sel:inst4|sub_6bit:inst7|lpm_add_sub:
     Info: Parameter "lpm_width" = "6"
 Info: Found 1 design units, including 1 entities, in source file db/add_sub_1qh.tdf
     Info: Found entity 1: add_sub_1qh
-Info: Elaborating entity "add_sub_1qh" for hierarchy "immediate_sel:inst4|sub_6bit:inst7|lpm_add_sub:lpm_add_sub_component|add_sub_1qh:auto_generated"
+Info: Elaborating entity "add_sub_1qh" for hierarchy "immediate_sel:inst4|sub_6bit:inst12|lpm_add_sub:lpm_add_sub_component|add_sub_1qh:auto_generated"
+Info: Elaborating entity "sub2_6bit" for hierarchy "immediate_sel:inst4|sub2_6bit:inst13"
 Warning: Port "sel[4]" does not exist in entity definition of "mux_gate".  The port's range differs between the entity definition and its actual instantiation, "ALU:inst13|mux_gate:inst".
 Warning: Port "sel[5]" does not exist in entity definition of "mux_gate".  The port's range differs between the entity definition and its actual instantiation, "ALU:inst13|mux_gate:inst".
 Warning: Synthesized away the following node(s):
@@ -3099,16 +3150,16 @@ Warning: Synthesized away the following node(s):
         Warning (14320): Synthesized away node "CU_mp:inst2|micro_mem:inst1|altsyncram:altsyncram_component|altsyncram_7881:auto_generated|q_a[17]"
         Warning (14320): Synthesized away node "CU_mp:inst2|micro_mem:inst1|altsyncram:altsyncram_component|altsyncram_7881:auto_generated|q_a[18]"
         Warning (14320): Synthesized away node "CU_mp:inst2|micro_mem:inst1|altsyncram:altsyncram_component|altsyncram_7881:auto_generated|q_a[19]"
-Info: Implemented 2460 device resources after synthesis - the final resource count might be different
+Info: Implemented 2456 device resources after synthesis - the final resource count might be different
     Info: Implemented 2 input pins
     Info: Implemented 187 output pins
-    Info: Implemented 2124 logic cells
+    Info: Implemented 2120 logic cells
     Info: Implemented 145 RAM segments
     Info: Implemented 2 DSP elements
-Info: Quartus II Analysis & Synthesis was successful. 0 errors, 28 warnings
+Info: Quartus II Analysis & Synthesis was successful. 0 errors, 26 warnings
     Info: Peak virtual memory: 288 megabytes
-    Info: Processing ended: Thu Jul 09 06:42:39 2020
-    Info: Elapsed time: 00:00:17
-    Info: Total CPU time (on all processors): 00:00:17
+    Info: Processing ended: Thu Jul 09 07:21:05 2020
+    Info: Elapsed time: 00:00:19
+    Info: Total CPU time (on all processors): 00:00:18
 
 
