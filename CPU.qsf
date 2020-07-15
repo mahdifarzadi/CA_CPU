@@ -92,6 +92,11 @@ set_global_assignment -name QIP_FILE sub_6bit.qip
 set_global_assignment -name QIP_FILE mux21_6bit.qip
 set_global_assignment -name BDF_FILE immediate_sel.bdf
 set_global_assignment -name QIP_FILE sub2_6bit.qip
+set_global_assignment -name QIP_FILE mux21_4bit.qip
+set_global_assignment -name QIP_FILE adder_4bit.qip
+set_global_assignment -name BDF_FILE jump_sel.bdf
+set_global_assignment -name QIP_FILE mux10to1_1bit.qip
+set_global_assignment -name QIP_FILE comp_cu.qip
 set_global_assignment -name PARTITION_NETLIST_TYPE SOURCE -section_id Top
 set_global_assignment -name PARTITION_COLOR 16764057 -section_id Top
 set_global_assignment -name LL_ROOT_REGION ON -section_id "Root Region"
