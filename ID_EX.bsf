@@ -54,8 +54,8 @@ applicable agreement for further details.
 	(port
 		(pt 0 96)
 		(input)
-		(text "inst20_16[4..0]" (rect 0 0 83 14)(font "Arial" (font_size 8)))
-		(text "inst20_16[4..0]" (rect 21 91 104 105)(font "Arial" (font_size 8)))
+		(text "inst25_21[4..0]" (rect 0 0 83 14)(font "Arial" (font_size 8)))
+		(text "inst25_21[4..0]" (rect 21 91 104 105)(font "Arial" (font_size 8)))
 		(line (pt 0 96)(pt 16 96)(line_width 3))
 	)
 	(port
@@ -103,8 +103,8 @@ applicable agreement for further details.
 	(port
 		(pt 272 96)
 		(output)
-		(text "inst_out20_16[4..0]" (rect 0 0 108 14)(font "Arial" (font_size 8)))
-		(text "inst_out20_16[4..0]" (rect 143 91 251 105)(font "Arial" (font_size 8)))
+		(text "inst_out25_21[4..0]" (rect 0 0 108 14)(font "Arial" (font_size 8)))
+		(text "inst_out25_21[4..0]" (rect 143 91 251 105)(font "Arial" (font_size 8)))
 		(line (pt 272 96)(pt 256 96)(line_width 3))
 	)
 	(port

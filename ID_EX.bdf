@@ -86,22 +86,6 @@ applicable agreement for further details.
 )
 (pin
 	(input)
-	(rect 688 640 856 656)
-	(text "INPUT" (rect 133 0 161 10)(font "Arial" (font_size 6)))
-	(text "inst20_16[4..0]" (rect 5 0 78 12)(font "Arial" ))
-	(pt 168 8)
-	(drawing
-		(line (pt 92 12)(pt 117 12)(line_width 1))
-		(line (pt 92 4)(pt 117 4)(line_width 1))
-		(line (pt 121 8)(pt 168 8)(line_width 1))
-		(line (pt 92 12)(pt 92 4)(line_width 1))
-		(line (pt 117 4)(pt 121 8)(line_width 1))
-		(line (pt 117 12)(pt 121 8)(line_width 1))
-	)
-	(text "VCC" (rect 136 7 156 17)(font "Arial" (font_size 6)))
-)
-(pin
-	(input)
 	(rect 688 752 856 768)
 	(text "INPUT" (rect 133 0 161 10)(font "Arial" (font_size 6)))
 	(text "inst15_11[4..0]" (rect 5 0 78 12)(font "Arial" ))
@@ -121,6 +105,22 @@ applicable agreement for further details.
 	(rect 696 536 864 552)
 	(text "INPUT" (rect 133 0 161 10)(font "Arial" (font_size 6)))
 	(text "pc[3..0]" (rect 5 0 42 12)(font "Arial" ))
+	(pt 168 8)
+	(drawing
+		(line (pt 92 12)(pt 117 12)(line_width 1))
+		(line (pt 92 4)(pt 117 4)(line_width 1))
+		(line (pt 121 8)(pt 168 8)(line_width 1))
+		(line (pt 92 12)(pt 92 4)(line_width 1))
+		(line (pt 117 4)(pt 121 8)(line_width 1))
+		(line (pt 117 12)(pt 121 8)(line_width 1))
+	)
+	(text "VCC" (rect 136 7 156 17)(font "Arial" (font_size 6)))
+)
+(pin
+	(input)
+	(rect 688 640 856 656)
+	(text "INPUT" (rect 133 0 161 10)(font "Arial" (font_size 6)))
+	(text "inst25_21[4..0]" (rect 5 0 78 12)(font "Arial" ))
 	(pt 168 8)
 	(drawing
 		(line (pt 92 12)(pt 117 12)(line_width 1))
@@ -198,9 +198,9 @@ applicable agreement for further details.
 )
 (pin
 	(output)
-	(rect 1128 656 1317 672)
+	(rect 1128 768 1317 784)
 	(text "OUTPUT" (rect 1 0 39 10)(font "Arial" (font_size 6)))
-	(text "inst_out20_16[4..0]" (rect 90 0 184 12)(font "Arial" ))
+	(text "inst_out15_11[4..0]" (rect 90 0 184 12)(font "Arial" ))
 	(pt 0 8)
 	(drawing
 		(line (pt 0 8)(pt 52 8)(line_width 1))
@@ -214,9 +214,9 @@ applicable agreement for further details.
 )
 (pin
 	(output)
-	(rect 1128 768 1317 784)
+	(rect 1128 656 1317 672)
 	(text "OUTPUT" (rect 1 0 39 10)(font "Arial" (font_size 6)))
-	(text "inst_out15_11[4..0]" (rect 90 0 184 12)(font "Arial" ))
+	(text "inst_out25_21[4..0]" (rect 90 0 184 12)(font "Arial" ))
 	(pt 0 8)
 	(drawing
 		(line (pt 0 8)(pt 52 8)(line_width 1))
