@@ -48,16 +48,6 @@ VERILOG_CONSTANT_LOOP_LIMIT
 VERILOG_NON_CONSTANT_LOOP_LIMIT
 250
 }
-# hierarchies {
-main_mem:inst7|mux41_8bit:inst4
-main_mem:inst7|mux41_8bit:inst30
-main_mem:inst7|mux41_8bit:inst31
-main_mem:inst7|mux41_8bit:inst32
-main_mem:inst7|mux41_8bit:inst29
-main_mem:inst7|mux41_8bit:inst6
-main_mem:inst7|mux41_8bit:inst5
-main_mem:inst7|mux41_8bit:inst7
-}
 # macro_sequence
 
 # end
@@ -275,16 +265,6 @@ data0
 -1
 3
 }
-# hierarchies {
-main_mem:inst7|mux41_8bit:inst4|lpm_mux:lpm_mux_component|mux_1oc:auto_generated
-main_mem:inst7|mux41_8bit:inst30|lpm_mux:lpm_mux_component|mux_1oc:auto_generated
-main_mem:inst7|mux41_8bit:inst31|lpm_mux:lpm_mux_component|mux_1oc:auto_generated
-main_mem:inst7|mux41_8bit:inst32|lpm_mux:lpm_mux_component|mux_1oc:auto_generated
-main_mem:inst7|mux41_8bit:inst29|lpm_mux:lpm_mux_component|mux_1oc:auto_generated
-main_mem:inst7|mux41_8bit:inst6|lpm_mux:lpm_mux_component|mux_1oc:auto_generated
-main_mem:inst7|mux41_8bit:inst5|lpm_mux:lpm_mux_component|mux_1oc:auto_generated
-main_mem:inst7|mux41_8bit:inst7|lpm_mux:lpm_mux_component|mux_1oc:auto_generated
-}
 # macro_sequence
 
 # end
@@ -317,9 +297,6 @@ VERILOG_CONSTANT_LOOP_LIMIT
 5000
 VERILOG_NON_CONSTANT_LOOP_LIMIT
 250
-}
-# hierarchies {
-main_mem:inst7|main_mem2_8bit:inst1
 }
 # macro_sequence
 ALTERA_RESERVED_QISALTERA_RESERVED_QIS
@@ -723,12 +700,6 @@ address_a0
 -1
 3
 }
-# hierarchies {
-main_mem:inst7|main_mem2_8bit:inst1|altsyncram:altsyncram_component|altsyncram_5rr1:auto_generated
-main_mem:inst7|main_mem3_8bit:inst2|altsyncram:altsyncram_component|altsyncram_5rr1:auto_generated
-main_mem:inst7|main_mem4_8bit:inst3|altsyncram:altsyncram_component|altsyncram_5rr1:auto_generated
-main_mem:inst7|main_mem1_8bit:inst|altsyncram:altsyncram_component|altsyncram_5rr1:auto_generated
-}
 # macro_sequence
 
 # end
@@ -761,9 +732,6 @@ VERILOG_CONSTANT_LOOP_LIMIT
 5000
 VERILOG_NON_CONSTANT_LOOP_LIMIT
 250
-}
-# hierarchies {
-main_mem:inst7|dec24:inst19
 }
 # macro_sequence
 
@@ -873,9 +841,6 @@ data0
 -1
 3
 }
-# hierarchies {
-main_mem:inst7|dec24:inst19|lpm_decode:lpm_decode_component|decode_p7f:auto_generated
-}
 # macro_sequence
 
 # end
@@ -908,17 +873,6 @@ VERILOG_CONSTANT_LOOP_LIMIT
 5000
 VERILOG_NON_CONSTANT_LOOP_LIMIT
 250
-}
-# hierarchies {
-registers_mem:inst9|mux21_8bit:inst
-registers_mem:inst9|mux21_8bit:inst9
-registers_mem:inst9|mux21_8bit:inst10
-registers_mem:inst9|mux21_8bit:inst11
-registers_mem:inst9|mux21_8bit:inst12
-main_mem:inst7|mux21_8bit:inst42
-main_mem:inst7|mux21_8bit:inst43
-main_mem:inst7|mux21_8bit:inst44
-main_mem:inst7|mux21_8bit:inst41
 }
 # macro_sequence
 
@@ -1086,17 +1040,6 @@ data0
 -1
 3
 }
-# hierarchies {
-registers_mem:inst9|mux21_8bit:inst|lpm_mux:lpm_mux_component|mux_unc:auto_generated
-registers_mem:inst9|mux21_8bit:inst9|lpm_mux:lpm_mux_component|mux_unc:auto_generated
-registers_mem:inst9|mux21_8bit:inst10|lpm_mux:lpm_mux_component|mux_unc:auto_generated
-registers_mem:inst9|mux21_8bit:inst11|lpm_mux:lpm_mux_component|mux_unc:auto_generated
-registers_mem:inst9|mux21_8bit:inst12|lpm_mux:lpm_mux_component|mux_unc:auto_generated
-main_mem:inst7|mux21_8bit:inst42|lpm_mux:lpm_mux_component|mux_unc:auto_generated
-main_mem:inst7|mux21_8bit:inst43|lpm_mux:lpm_mux_component|mux_unc:auto_generated
-main_mem:inst7|mux21_8bit:inst44|lpm_mux:lpm_mux_component|mux_unc:auto_generated
-main_mem:inst7|mux21_8bit:inst41|lpm_mux:lpm_mux_component|mux_unc:auto_generated
-}
 # macro_sequence
 
 # end
@@ -1129,12 +1072,6 @@ VERILOG_CONSTANT_LOOP_LIMIT
 5000
 VERILOG_NON_CONSTANT_LOOP_LIMIT
 250
-}
-# hierarchies {
-main_mem:inst7|mux21_5bit:inst27
-main_mem:inst7|mux21_5bit:inst28
-main_mem:inst7|mux21_5bit:inst26
-mux21_5bit:inst6
 }
 # macro_sequence
 
@@ -1275,12 +1212,6 @@ data0
 -1
 3
 }
-# hierarchies {
-main_mem:inst7|mux21_5bit:inst27|lpm_mux:lpm_mux_component|mux_rnc:auto_generated
-main_mem:inst7|mux21_5bit:inst28|lpm_mux:lpm_mux_component|mux_rnc:auto_generated
-main_mem:inst7|mux21_5bit:inst26|lpm_mux:lpm_mux_component|mux_rnc:auto_generated
-mux21_5bit:inst6|lpm_mux:lpm_mux_component|mux_rnc:auto_generated
-}
 # macro_sequence
 
 # end
@@ -1313,9 +1244,6 @@ VERILOG_CONSTANT_LOOP_LIMIT
 5000
 VERILOG_NON_CONSTANT_LOOP_LIMIT
 250
-}
-# hierarchies {
-main_mem:inst7|adder_5bit:inst21
 }
 # macro_sequence
 
@@ -1501,9 +1429,6 @@ cout
 -1
 3
 }
-# hierarchies {
-main_mem:inst7|adder_5bit:inst21|lpm_add_sub:lpm_add_sub_component|add_sub_q7i:auto_generated
-}
 # macro_sequence
 
 # end
@@ -1536,9 +1461,6 @@ VERILOG_CONSTANT_LOOP_LIMIT
 5000
 VERILOG_NON_CONSTANT_LOOP_LIMIT
 250
-}
-# hierarchies {
-main_mem:inst7|main_mem3_8bit:inst2
 }
 # macro_sequence
 ALTERA_RESERVED_QISALTERA_RESERVED_QIS
@@ -1573,9 +1495,6 @@ VERILOG_CONSTANT_LOOP_LIMIT
 VERILOG_NON_CONSTANT_LOOP_LIMIT
 250
 }
-# hierarchies {
-main_mem:inst7|main_mem4_8bit:inst3
-}
 # macro_sequence
 ALTERA_RESERVED_QISALTERA_RESERVED_QIS
 # end
@@ -1609,9 +1528,6 @@ VERILOG_CONSTANT_LOOP_LIMIT
 VERILOG_NON_CONSTANT_LOOP_LIMIT
 250
 }
-# hierarchies {
-main_mem:inst7|main_mem1_8bit:inst
-}
 # macro_sequence
 ALTERA_RESERVED_QISALTERA_RESERVED_QIS
 # end
@@ -1628,9 +1544,6 @@ main_mem.bdf
 # internal_option {
 BLOCK_DESIGN_NAMING
 AUTO
-}
-# hierarchies {
-main_mem:inst7
 }
 # macro_sequence
 
@@ -1694,9 +1607,6 @@ VERILOG_CONSTANT_LOOP_LIMIT
 5000
 VERILOG_NON_CONSTANT_LOOP_LIMIT
 250
-}
-# hierarchies {
-CU_mp:inst2|one_const:inst13
 }
 # macro_sequence
 
@@ -2143,9 +2053,6 @@ VERILOG_CONSTANT_LOOP_LIMIT
 VERILOG_NON_CONSTANT_LOOP_LIMIT
 250
 }
-# hierarchies {
-CU_mp:inst2|pc_micro:inst
-}
 # macro_sequence
 
 # end
@@ -2374,9 +2281,6 @@ clock
 aclr
 -1
 3
-}
-# hierarchies {
-CU_mp:inst2|pc_micro:inst|lpm_counter:lpm_counter_component|cntr_4oj:auto_generated
 }
 # macro_sequence
 
@@ -2844,9 +2748,6 @@ VERILOG_CONSTANT_LOOP_LIMIT
 VERILOG_NON_CONSTANT_LOOP_LIMIT
 250
 }
-# hierarchies {
-pc:inst1
-}
 # macro_sequence
 
 # end
@@ -3052,9 +2953,6 @@ aclr
 -1
 3
 }
-# hierarchies {
-pc:inst1|lpm_counter:lpm_counter_component|cntr_0oj:auto_generated
-}
 # macro_sequence
 
 # end
@@ -3071,9 +2969,6 @@ ALU.bdf
 # internal_option {
 BLOCK_DESIGN_NAMING
 AUTO
-}
-# hierarchies {
-ALU:inst13
 }
 # macro_sequence
 
@@ -3107,9 +3002,6 @@ VERILOG_CONSTANT_LOOP_LIMIT
 5000
 VERILOG_NON_CONSTANT_LOOP_LIMIT
 250
-}
-# hierarchies {
-ALU:inst13|mux_gate:inst
 }
 # macro_sequence
 
@@ -4750,9 +4642,6 @@ data0
 -1
 3
 }
-# hierarchies {
-ALU:inst13|mux_gate:inst|lpm_mux:lpm_mux_component|mux_2rc:auto_generated
-}
 # macro_sequence
 
 # end
@@ -4785,11 +4674,6 @@ VERILOG_CONSTANT_LOOP_LIMIT
 5000
 VERILOG_NON_CONSTANT_LOOP_LIMIT
 250
-}
-# hierarchies {
-ALU:inst13|not_gate:inst8
-ALU:inst13|not_gate:inst4
-ALU:inst13|not_gate:inst7
 }
 # macro_sequence
 
@@ -4850,9 +4734,6 @@ VERILOG_CONSTANT_LOOP_LIMIT
 5000
 VERILOG_NON_CONSTANT_LOOP_LIMIT
 250
-}
-# hierarchies {
-ALU:inst13|xor_gate:inst6
 }
 # macro_sequence
 
@@ -4917,9 +4798,6 @@ VERILOG_CONSTANT_LOOP_LIMIT
 5000
 VERILOG_NON_CONSTANT_LOOP_LIMIT
 250
-}
-# hierarchies {
-ALU:inst13|shift_left:inst22
 }
 # macro_sequence
 
@@ -5204,9 +5082,6 @@ data0
 -1
 3
 }
-# hierarchies {
-ALU:inst13|shift_left:inst22|lpm_clshift:lpm_clshift_component|lpm_clshift_nrd:auto_generated
-}
 # macro_sequence
 
 # end
@@ -5239,9 +5114,6 @@ VERILOG_CONSTANT_LOOP_LIMIT
 5000
 VERILOG_NON_CONSTANT_LOOP_LIMIT
 250
-}
-# hierarchies {
-ALU:inst13|shift_right:inst23
 }
 # macro_sequence
 
@@ -5529,9 +5401,6 @@ data0
 -1
 3
 }
-# hierarchies {
-ALU:inst13|shift_right:inst23|lpm_clshift:lpm_clshift_component|lpm_clshift_oqe:auto_generated
-}
 # macro_sequence
 
 # end
@@ -5564,9 +5433,6 @@ VERILOG_CONSTANT_LOOP_LIMIT
 5000
 VERILOG_NON_CONSTANT_LOOP_LIMIT
 250
-}
-# hierarchies {
-ALU:inst13|rotate_left:inst25
 }
 # macro_sequence
 
@@ -5839,9 +5705,6 @@ data0
 -1
 3
 }
-# hierarchies {
-ALU:inst13|rotate_left:inst25|lpm_clshift:lpm_clshift_component|lpm_clshift_iib:auto_generated
-}
 # macro_sequence
 
 # end
@@ -5874,9 +5737,6 @@ VERILOG_CONSTANT_LOOP_LIMIT
 5000
 VERILOG_NON_CONSTANT_LOOP_LIMIT
 250
-}
-# hierarchies {
-ALU:inst13|rotate_right:inst26
 }
 # macro_sequence
 
@@ -6152,9 +6012,6 @@ data0
 -1
 3
 }
-# hierarchies {
-ALU:inst13|rotate_right:inst26|lpm_clshift:lpm_clshift_component|lpm_clshift_jhc:auto_generated
-}
 # macro_sequence
 
 # end
@@ -6187,10 +6044,6 @@ VERILOG_CONSTANT_LOOP_LIMIT
 5000
 VERILOG_NON_CONSTANT_LOOP_LIMIT
 250
-}
-# hierarchies {
-ALU:inst13|adder:inst19
-adder:inst11
 }
 # macro_sequence
 
@@ -6625,10 +6478,6 @@ cout
 -1
 3
 }
-# hierarchies {
-ALU:inst13|adder:inst19|lpm_add_sub:lpm_add_sub_component|add_sub_7ri:auto_generated
-adder:inst11|lpm_add_sub:lpm_add_sub_component|add_sub_7ri:auto_generated
-}
 # macro_sequence
 
 # end
@@ -6661,9 +6510,6 @@ VERILOG_CONSTANT_LOOP_LIMIT
 5000
 VERILOG_NON_CONSTANT_LOOP_LIMIT
 250
-}
-# hierarchies {
-ALU:inst13|subtractor:inst20
 }
 # macro_sequence
 
@@ -7098,9 +6944,6 @@ cout
 -1
 3
 }
-# hierarchies {
-ALU:inst13|subtractor:inst20|lpm_add_sub:lpm_add_sub_component|add_sub_8si:auto_generated
-}
 # macro_sequence
 
 # end
@@ -7133,9 +6976,6 @@ VERILOG_CONSTANT_LOOP_LIMIT
 5000
 VERILOG_NON_CONSTANT_LOOP_LIMIT
 250
-}
-# hierarchies {
-ALU:inst13|mult:inst1
 }
 # macro_sequence
 
@@ -7498,9 +7338,6 @@ dataa0
 -1
 3
 }
-# hierarchies {
-ALU:inst13|mult:inst1|lpm_mult:lpm_mult_component|mult_55n:auto_generated
-}
 # macro_sequence
 
 # end
@@ -7533,9 +7370,6 @@ VERILOG_CONSTANT_LOOP_LIMIT
 5000
 VERILOG_NON_CONSTANT_LOOP_LIMIT
 250
-}
-# hierarchies {
-ALU:inst13|div:inst2
 }
 # macro_sequence
 
@@ -8038,9 +7872,6 @@ denom0
 -1
 3
 }
-# hierarchies {
-ALU:inst13|div:inst2|lpm_divide:lpm_divide_component|lpm_divide_67s:auto_generated
-}
 # macro_sequence
 
 # end
@@ -8439,9 +8270,6 @@ denominator1
 denominator0
 -1
 3
-}
-# hierarchies {
-ALU:inst13|div:inst2|lpm_divide:lpm_divide_component|lpm_divide_67s:auto_generated|sign_div_unsign_39h:divider
 }
 # macro_sequence
 
@@ -8842,9 +8670,6 @@ denominator0
 -1
 3
 }
-# hierarchies {
-ALU:inst13|div:inst2|lpm_divide:lpm_divide_component|lpm_divide_67s:auto_generated|sign_div_unsign_39h:divider|alt_u_div_m6f:divider
-}
 # macro_sequence
 
 # end
@@ -8877,12 +8702,6 @@ VERILOG_CONSTANT_LOOP_LIMIT
 5000
 VERILOG_NON_CONSTANT_LOOP_LIMIT
 250
-}
-# hierarchies {
-mux21_gate:inst8
-ALU:inst13|mux21_gate:max
-ALU:inst13|mux21_gate:min
-immediate_sel:inst4|mux21_gate:inst6
 }
 # macro_sequence
 
@@ -9266,12 +9085,6 @@ data0
 -1
 3
 }
-# hierarchies {
-mux21_gate:inst8|lpm_mux:lpm_mux_component|mux_bpc:auto_generated
-ALU:inst13|mux21_gate:max|lpm_mux:lpm_mux_component|mux_bpc:auto_generated
-ALU:inst13|mux21_gate:min|lpm_mux:lpm_mux_component|mux_bpc:auto_generated
-immediate_sel:inst4|mux21_gate:inst6|lpm_mux:lpm_mux_component|mux_bpc:auto_generated
-}
 # macro_sequence
 
 # end
@@ -9304,9 +9117,6 @@ VERILOG_CONSTANT_LOOP_LIMIT
 5000
 VERILOG_NON_CONSTANT_LOOP_LIMIT
 250
-}
-# hierarchies {
-ALU:inst13|comp:inst3
 }
 # macro_sequence
 
@@ -9621,9 +9431,6 @@ ageb
 -1
 3
 }
-# hierarchies {
-ALU:inst13|comp:inst3|lpm_compare:lpm_compare_component|cmpr_0gg:auto_generated
-}
 # macro_sequence
 
 # end
@@ -9656,9 +9463,6 @@ VERILOG_CONSTANT_LOOP_LIMIT
 5000
 VERILOG_NON_CONSTANT_LOOP_LIMIT
 250
-}
-# hierarchies {
-ALU:inst13|and_gate:inst5
 }
 # macro_sequence
 
@@ -9759,9 +9563,6 @@ VERILOG_CONSTANT_LOOP_LIMIT
 5000
 VERILOG_NON_CONSTANT_LOOP_LIMIT
 250
-}
-# hierarchies {
-registers_mem:inst9|regs_8bit:inst4
 }
 # macro_sequence
 ALTERA_RESERVED_QISALTERA_RESERVED_QIS
@@ -10554,9 +10355,6 @@ VERILOG_CONSTANT_LOOP_LIMIT
 5000
 VERILOG_NON_CONSTANT_LOOP_LIMIT
 250
-}
-# hierarchies {
-registers_mem:inst9|regs2_8bit:inst17
 }
 # macro_sequence
 ALTERA_RESERVED_QISALTERA_RESERVED_QIS
@@ -11419,14 +11217,6 @@ address_a0
 -1
 3
 }
-# hierarchies {
-registers_mem:inst9|regs2_8bit:inst17|alt3pram:alt3pram_component|altdpram:altdpram_component1|altsyncram:ram_block|altsyncram_2ep1:auto_generated
-registers_mem:inst9|regs2_8bit:inst17|alt3pram:alt3pram_component|altdpram:altdpram_component2|altsyncram:ram_block|altsyncram_2ep1:auto_generated
-registers_mem:inst9|regs3_8bit:inst18|alt3pram:alt3pram_component|altdpram:altdpram_component1|altsyncram:ram_block|altsyncram_2ep1:auto_generated
-registers_mem:inst9|regs3_8bit:inst18|alt3pram:alt3pram_component|altdpram:altdpram_component2|altsyncram:ram_block|altsyncram_2ep1:auto_generated
-registers_mem:inst9|regs4_8bit:inst19|alt3pram:alt3pram_component|altdpram:altdpram_component1|altsyncram:ram_block|altsyncram_2ep1:auto_generated
-registers_mem:inst9|regs4_8bit:inst19|alt3pram:alt3pram_component|altdpram:altdpram_component2|altsyncram:ram_block|altsyncram_2ep1:auto_generated
-}
 # macro_sequence
 
 # end
@@ -11459,9 +11249,6 @@ VERILOG_CONSTANT_LOOP_LIMIT
 5000
 VERILOG_NON_CONSTANT_LOOP_LIMIT
 250
-}
-# hierarchies {
-registers_mem:inst9|regs3_8bit:inst18
 }
 # macro_sequence
 ALTERA_RESERVED_QISALTERA_RESERVED_QIS
@@ -11496,9 +11283,6 @@ VERILOG_CONSTANT_LOOP_LIMIT
 VERILOG_NON_CONSTANT_LOOP_LIMIT
 250
 }
-# hierarchies {
-registers_mem:inst9|regs4_8bit:inst19
-}
 # macro_sequence
 ALTERA_RESERVED_QISALTERA_RESERVED_QIS
 # end
@@ -11515,10 +11299,6 @@ sign_extend_16to32.bdf
 # internal_option {
 BLOCK_DESIGN_NAMING
 AUTO
-}
-# hierarchies {
-sign_extend_16to32:inst10
-immediate_sel:inst4|sign_extend_16to32:inst
 }
 # macro_sequence
 
@@ -11552,10 +11332,6 @@ VERILOG_CONSTANT_LOOP_LIMIT
 5000
 VERILOG_NON_CONSTANT_LOOP_LIMIT
 250
-}
-# hierarchies {
-sign_extend_16to32:inst10|mux21:inst
-immediate_sel:inst4|sign_extend_16to32:inst|mux21:inst
 }
 # macro_sequence
 
@@ -11795,10 +11571,6 @@ data0
 -1
 3
 }
-# hierarchies {
-sign_extend_16to32:inst10|mux21:inst|lpm_mux:lpm_mux_component|mux_dpc:auto_generated
-immediate_sel:inst4|sign_extend_16to32:inst|mux21:inst|lpm_mux:lpm_mux_component|mux_dpc:auto_generated
-}
 # macro_sequence
 
 # end
@@ -11831,10 +11603,6 @@ VERILOG_CONSTANT_LOOP_LIMIT
 5000
 VERILOG_NON_CONSTANT_LOOP_LIMIT
 250
-}
-# hierarchies {
-sign_extend_16to32:inst10|zero_const:inst2
-immediate_sel:inst4|sign_extend_16to32:inst|zero_const:inst2
 }
 # macro_sequence
 
@@ -11904,10 +11672,6 @@ VERILOG_CONSTANT_LOOP_LIMIT
 5000
 VERILOG_NON_CONSTANT_LOOP_LIMIT
 250
-}
-# hierarchies {
-sign_extend_16to32:inst10|all_one_const:inst4
-immediate_sel:inst4|sign_extend_16to32:inst|all_one_const:inst4
 }
 # macro_sequence
 
@@ -12871,9 +12635,6 @@ VERILOG_CONSTANT_LOOP_LIMIT
 VERILOG_NON_CONSTANT_LOOP_LIMIT
 250
 }
-# hierarchies {
-CU_mp:inst2|zero_const_1bit:inst9
-}
 # macro_sequence
 
 # end
@@ -13546,9 +13307,6 @@ ad8187a9f5e8528bc27952ac5ee8a94
 BLOCK_DESIGN_NAMING
 AUTO
 }
-# hierarchies {
-registers_mem:inst9
-}
 # macro_sequence
 
 # end
@@ -13581,9 +13339,6 @@ VERILOG_CONSTANT_LOOP_LIMIT
 5000
 VERILOG_NON_CONSTANT_LOOP_LIMIT
 250
-}
-# hierarchies {
-CU_mp:inst2|mux21_20bit:inst3
 }
 # macro_sequence
 
@@ -13859,9 +13614,6 @@ data0
 -1
 3
 }
-# hierarchies {
-CU_mp:inst2|mux21_20bit:inst3|lpm_mux:lpm_mux_component|mux_8pc:auto_generated
-}
 # macro_sequence
 
 # end
@@ -13894,9 +13646,6 @@ VERILOG_CONSTANT_LOOP_LIMIT
 5000
 VERILOG_NON_CONSTANT_LOOP_LIMIT
 250
-}
-# hierarchies {
-CU_mp:inst2|micro_mem:inst1
 }
 # macro_sequence
 
@@ -14231,9 +13980,6 @@ VERILOG_CONSTANT_LOOP_LIMIT
 VERILOG_NON_CONSTANT_LOOP_LIMIT
 250
 }
-# hierarchies {
-CU_mp:inst2|zero_const_20bit:inst4
-}
 # macro_sequence
 
 # end
@@ -14302,10 +14048,6 @@ VERILOG_CONSTANT_LOOP_LIMIT
 5000
 VERILOG_NON_CONSTANT_LOOP_LIMIT
 250
-}
-# hierarchies {
-immediate_sel:inst4|mux21_6bit:inst8
-immediate_sel:inst4|mux21_6bit:inst9
 }
 # macro_sequence
 
@@ -14454,10 +14196,6 @@ data1
 data0
 -1
 3
-}
-# hierarchies {
-immediate_sel:inst4|mux21_6bit:inst8|lpm_mux:lpm_mux_component|mux_snc:auto_generated
-immediate_sel:inst4|mux21_6bit:inst9|lpm_mux:lpm_mux_component|mux_snc:auto_generated
 }
 # macro_sequence
 
@@ -14645,10 +14383,6 @@ dataa1
 dataa0
 -1
 3
-}
-# hierarchies {
-immediate_sel:inst4|sub_6bit:inst12|lpm_add_sub:lpm_add_sub_component|add_sub_1qh:auto_generated
-immediate_sel:inst4|sub2_6bit:inst13|lpm_add_sub:lpm_add_sub_component|add_sub_1qh:auto_generated
 }
 # macro_sequence
 
@@ -15100,9 +14834,6 @@ immediate_sel.bdf
 BLOCK_DESIGN_NAMING
 AUTO
 }
-# hierarchies {
-immediate_sel:inst4
-}
 # macro_sequence
 
 # end
@@ -15135,9 +14866,6 @@ VERILOG_CONSTANT_LOOP_LIMIT
 5000
 VERILOG_NON_CONSTANT_LOOP_LIMIT
 250
-}
-# hierarchies {
-immediate_sel:inst4|sub_6bit:inst12
 }
 # macro_sequence
 
@@ -15172,9 +14900,6 @@ VERILOG_CONSTANT_LOOP_LIMIT
 VERILOG_NON_CONSTANT_LOOP_LIMIT
 250
 }
-# hierarchies {
-immediate_sel:inst4|sub2_6bit:inst13
-}
 # macro_sequence
 
 # end
@@ -15191,9 +14916,6 @@ jump_sel.bdf
 # internal_option {
 BLOCK_DESIGN_NAMING
 AUTO
-}
-# hierarchies {
-jump_sel:inst3
 }
 # macro_sequence
 
@@ -15227,10 +14949,6 @@ VERILOG_CONSTANT_LOOP_LIMIT
 5000
 VERILOG_NON_CONSTANT_LOOP_LIMIT
 250
-}
-# hierarchies {
-jump_sel:inst3|mux21_4bit:inst5
-jump_sel:inst3|mux21_4bit:inst
 }
 # macro_sequence
 
@@ -15362,10 +15080,6 @@ data0
 -1
 3
 }
-# hierarchies {
-jump_sel:inst3|mux21_4bit:inst5|lpm_mux:lpm_mux_component|mux_qnc:auto_generated
-jump_sel:inst3|mux21_4bit:inst|lpm_mux:lpm_mux_component|mux_qnc:auto_generated
-}
 # macro_sequence
 
 # end
@@ -15398,9 +15112,6 @@ VERILOG_CONSTANT_LOOP_LIMIT
 5000
 VERILOG_NON_CONSTANT_LOOP_LIMIT
 250
-}
-# hierarchies {
-jump_sel:inst3|adder_4bit:inst6
 }
 # macro_sequence
 
@@ -15571,9 +15282,6 @@ dataa0
 -1
 3
 }
-# hierarchies {
-jump_sel:inst3|adder_4bit:inst6|lpm_add_sub:lpm_add_sub_component|add_sub_7eh:auto_generated
-}
 # macro_sequence
 
 # end
@@ -15606,9 +15314,6 @@ VERILOG_CONSTANT_LOOP_LIMIT
 5000
 VERILOG_NON_CONSTANT_LOOP_LIMIT
 250
-}
-# hierarchies {
-CU_mp:inst2|mux10to1_1bit:inst7
 }
 # macro_sequence
 
@@ -15745,9 +15450,6 @@ data1
 data0
 -1
 3
-}
-# hierarchies {
-CU_mp:inst2|mux10to1_1bit:inst7|lpm_mux:lpm_mux_component|mux_9pc:auto_generated
 }
 # macro_sequence
 
@@ -16085,9 +15787,6 @@ CU_mp.bdf
 BLOCK_DESIGN_NAMING
 AUTO
 }
-# hierarchies {
-CU_mp:inst2
-}
 # macro_sequence
 
 # end
@@ -16120,9 +15819,6 @@ VERILOG_CONSTANT_LOOP_LIMIT
 5000
 VERILOG_NON_CONSTANT_LOOP_LIMIT
 250
-}
-# hierarchies {
-CU_mp:inst2|comp_cu:inst17
 }
 # macro_sequence
 
@@ -16443,9 +16139,6 @@ aeb
 -1
 3
 }
-# hierarchies {
-CU_mp:inst2|comp_cu:inst17|lpm_compare:lpm_compare_component|cmpr_bug:auto_generated
-}
 # macro_sequence
 
 # end
@@ -16478,9 +16171,6 @@ VERILOG_CONSTANT_LOOP_LIMIT
 5000
 VERILOG_NON_CONSTANT_LOOP_LIMIT
 250
-}
-# hierarchies {
-instructions_mem:inst
 }
 # macro_sequence
 
@@ -16888,10 +16578,6 @@ address_a0
 registers1.mif
 d3c18012bccdc9c85f43c5247b3a8be
 }
-# hierarchies {
-registers_mem:inst9|regs_8bit:inst4|alt3pram:alt3pram_component|altdpram:altdpram_component1|altsyncram:ram_block|altsyncram_1ot1:auto_generated
-registers_mem:inst9|regs_8bit:inst4|alt3pram:alt3pram_component|altdpram:altdpram_component2|altsyncram:ram_block|altsyncram_1ot1:auto_generated
-}
 # macro_sequence
 
 # end
@@ -17009,9 +16695,6 @@ address_a0
 # memory_file {
 micro_mem4.mif
 886bfb31b2f91f63993e1ae7ced378
-}
-# hierarchies {
-CU_mp:inst2|micro_mem:inst1|altsyncram:altsyncram_component|altsyncram_7881:auto_generated
 }
 # macro_sequence
 
@@ -17146,9 +16829,6 @@ address_a0
 instructions4.mif
 eccd3db228f72de96e539cb0df8618c
 }
-# hierarchies {
-instructions_mem:inst|altsyncram:altsyncram_component|altsyncram_fb91:auto_generated
-}
 # macro_sequence
 
 # end
@@ -17224,9 +16904,6 @@ data
 f172666ca13e5e31e17e3f6cb35af52
 ..|..|..|..|..|altera|90|quartus|libraries|megafunctions|bypassff.inc
 8e8df160d449a63ec15dc86ecf2b373f
-}
-# hierarchies {
-CU_mp:inst2|mux21_20bit:inst3|lpm_mux:lpm_mux_component
 }
 # macro_sequence
 
@@ -17528,9 +17205,6 @@ e66a83eccf6717bed97c99d891ad085
 ..|..|..|..|..|altera|90|quartus|libraries|megafunctions|stratix_ram_block.inc
 2263a3bdfffeb150af977ee13902f70
 }
-# hierarchies {
-CU_mp:inst2|micro_mem:inst1|altsyncram:altsyncram_component
-}
 # macro_sequence
 
 # end
@@ -17685,9 +17359,6 @@ dcde44eee59335c1e2fe75d574f9646
 ..|..|..|..|..|altera|90|quartus|libraries|megafunctions|dffeea.inc
 55d29d20f7e852c37746bec4e2495ec
 }
-# hierarchies {
-CU_mp:inst2|pc_micro:inst|lpm_counter:lpm_counter_component
-}
 # macro_sequence
 
 # end
@@ -17763,9 +17434,6 @@ data
 f172666ca13e5e31e17e3f6cb35af52
 ..|..|..|..|..|altera|90|quartus|libraries|megafunctions|bypassff.inc
 8e8df160d449a63ec15dc86ecf2b373f
-}
-# hierarchies {
-CU_mp:inst2|mux10to1_1bit:inst7|lpm_mux:lpm_mux_component
 }
 # macro_sequence
 
@@ -17873,9 +17541,6 @@ clken
 ..|..|..|..|..|altera|90|quartus|libraries|megafunctions|comptree.inc
 da21447b8e66c26bd34c85b6cdda8169
 }
-# hierarchies {
-CU_mp:inst2|comp_cu:inst17|lpm_compare:lpm_compare_component
-}
 # macro_sequence
 
 # end
@@ -17911,9 +17576,6 @@ USR
 result
 -1
 3
-}
-# hierarchies {
-CU_mp:inst2|one_const:inst13|lpm_constant:lpm_constant_component
 }
 # macro_sequence
 
@@ -17951,9 +17613,6 @@ result
 -1
 3
 }
-# hierarchies {
-CU_mp:inst2|zero_const_1bit:inst9|lpm_constant:lpm_constant_component
-}
 # macro_sequence
 
 # end
@@ -17989,9 +17648,6 @@ USR
 result
 -1
 3
-}
-# hierarchies {
-CU_mp:inst2|zero_const_20bit:inst4|lpm_constant:lpm_constant_component
 }
 # macro_sequence
 
@@ -18293,9 +17949,6 @@ e66a83eccf6717bed97c99d891ad085
 ..|..|..|..|..|altera|90|quartus|libraries|megafunctions|stratix_ram_block.inc
 2263a3bdfffeb150af977ee13902f70
 }
-# hierarchies {
-instructions_mem:inst|altsyncram:altsyncram_component
-}
 # macro_sequence
 
 # end
@@ -18450,9 +18103,6 @@ dcde44eee59335c1e2fe75d574f9646
 ..|..|..|..|..|altera|90|quartus|libraries|megafunctions|dffeea.inc
 55d29d20f7e852c37746bec4e2495ec
 }
-# hierarchies {
-pc:inst1|lpm_counter:lpm_counter_component
-}
 # macro_sequence
 
 # end
@@ -18528,10 +18178,6 @@ data
 f172666ca13e5e31e17e3f6cb35af52
 ..|..|..|..|..|altera|90|quartus|libraries|megafunctions|bypassff.inc
 8e8df160d449a63ec15dc86ecf2b373f
-}
-# hierarchies {
-jump_sel:inst3|mux21_4bit:inst5|lpm_mux:lpm_mux_component
-jump_sel:inst3|mux21_4bit:inst|lpm_mux:lpm_mux_component
 }
 # macro_sequence
 
@@ -18650,9 +18296,6 @@ c08f604aefba5b4f1f554e565113c6
 8e8df160d449a63ec15dc86ecf2b373f
 ..|..|..|..|..|altera|90|quartus|libraries|megafunctions|addcore.inc
 ff795e21e4847824c03218724f1a1252
-}
-# hierarchies {
-jump_sel:inst3|adder_4bit:inst6|lpm_add_sub:lpm_add_sub_component
 }
 # macro_sequence
 
@@ -18824,9 +18467,6 @@ data
 74e08939f96a7ea8e7a4d59a5b01fe7
 ..|..|..|..|..|altera|90|quartus|libraries|megafunctions|aglobal90.inc
 99832fdf63412df51d7531202d74e75
-}
-# hierarchies {
-registers_mem:inst9|regs_8bit:inst4|alt3pram:alt3pram_component
 }
 # macro_sequence
 
@@ -19091,10 +18731,6 @@ c22bfd353214c01495b560fc34e47d79
 44d4551a35f349f0dbacaf799d39950
 ..|..|..|..|..|altera|90|quartus|libraries|megafunctions|a_hdffe.inc
 6e1dd1dda0dcf1122cd2b84d66c10b3
-}
-# hierarchies {
-registers_mem:inst9|regs_8bit:inst4|alt3pram:alt3pram_component|altdpram:altdpram_component1
-registers_mem:inst9|regs_8bit:inst4|alt3pram:alt3pram_component|altdpram:altdpram_component2
 }
 # macro_sequence
 
@@ -19420,10 +19056,6 @@ e66a83eccf6717bed97c99d891ad085
 ..|..|..|..|..|altera|90|quartus|libraries|megafunctions|stratix_ram_block.inc
 2263a3bdfffeb150af977ee13902f70
 }
-# hierarchies {
-registers_mem:inst9|regs_8bit:inst4|alt3pram:alt3pram_component|altdpram:altdpram_component1|altsyncram:ram_block
-registers_mem:inst9|regs_8bit:inst4|alt3pram:alt3pram_component|altdpram:altdpram_component2|altsyncram:ram_block
-}
 # macro_sequence
 
 # end
@@ -19499,17 +19131,6 @@ data
 f172666ca13e5e31e17e3f6cb35af52
 ..|..|..|..|..|altera|90|quartus|libraries|megafunctions|bypassff.inc
 8e8df160d449a63ec15dc86ecf2b373f
-}
-# hierarchies {
-registers_mem:inst9|mux21_8bit:inst|lpm_mux:lpm_mux_component
-registers_mem:inst9|mux21_8bit:inst9|lpm_mux:lpm_mux_component
-registers_mem:inst9|mux21_8bit:inst10|lpm_mux:lpm_mux_component
-registers_mem:inst9|mux21_8bit:inst11|lpm_mux:lpm_mux_component
-registers_mem:inst9|mux21_8bit:inst12|lpm_mux:lpm_mux_component
-main_mem:inst7|mux21_8bit:inst42|lpm_mux:lpm_mux_component
-main_mem:inst7|mux21_8bit:inst43|lpm_mux:lpm_mux_component
-main_mem:inst7|mux21_8bit:inst44|lpm_mux:lpm_mux_component
-main_mem:inst7|mux21_8bit:inst41|lpm_mux:lpm_mux_component
 }
 # macro_sequence
 
@@ -19681,11 +19302,6 @@ data
 74e08939f96a7ea8e7a4d59a5b01fe7
 ..|..|..|..|..|altera|90|quartus|libraries|megafunctions|aglobal90.inc
 99832fdf63412df51d7531202d74e75
-}
-# hierarchies {
-registers_mem:inst9|regs2_8bit:inst17|alt3pram:alt3pram_component
-registers_mem:inst9|regs3_8bit:inst18|alt3pram:alt3pram_component
-registers_mem:inst9|regs4_8bit:inst19|alt3pram:alt3pram_component
 }
 # macro_sequence
 
@@ -19950,14 +19566,6 @@ c22bfd353214c01495b560fc34e47d79
 44d4551a35f349f0dbacaf799d39950
 ..|..|..|..|..|altera|90|quartus|libraries|megafunctions|a_hdffe.inc
 6e1dd1dda0dcf1122cd2b84d66c10b3
-}
-# hierarchies {
-registers_mem:inst9|regs2_8bit:inst17|alt3pram:alt3pram_component|altdpram:altdpram_component1
-registers_mem:inst9|regs2_8bit:inst17|alt3pram:alt3pram_component|altdpram:altdpram_component2
-registers_mem:inst9|regs3_8bit:inst18|alt3pram:alt3pram_component|altdpram:altdpram_component1
-registers_mem:inst9|regs3_8bit:inst18|alt3pram:alt3pram_component|altdpram:altdpram_component2
-registers_mem:inst9|regs4_8bit:inst19|alt3pram:alt3pram_component|altdpram:altdpram_component1
-registers_mem:inst9|regs4_8bit:inst19|alt3pram:alt3pram_component|altdpram:altdpram_component2
 }
 # macro_sequence
 
@@ -20283,14 +19891,6 @@ e66a83eccf6717bed97c99d891ad085
 ..|..|..|..|..|altera|90|quartus|libraries|megafunctions|stratix_ram_block.inc
 2263a3bdfffeb150af977ee13902f70
 }
-# hierarchies {
-registers_mem:inst9|regs2_8bit:inst17|alt3pram:alt3pram_component|altdpram:altdpram_component1|altsyncram:ram_block
-registers_mem:inst9|regs2_8bit:inst17|alt3pram:alt3pram_component|altdpram:altdpram_component2|altsyncram:ram_block
-registers_mem:inst9|regs3_8bit:inst18|alt3pram:alt3pram_component|altdpram:altdpram_component1|altsyncram:ram_block
-registers_mem:inst9|regs3_8bit:inst18|alt3pram:alt3pram_component|altdpram:altdpram_component2|altsyncram:ram_block
-registers_mem:inst9|regs4_8bit:inst19|alt3pram:alt3pram_component|altdpram:altdpram_component1|altsyncram:ram_block
-registers_mem:inst9|regs4_8bit:inst19|alt3pram:alt3pram_component|altdpram:altdpram_component2|altsyncram:ram_block
-}
 # macro_sequence
 
 # end
@@ -20366,12 +19966,6 @@ data
 f172666ca13e5e31e17e3f6cb35af52
 ..|..|..|..|..|altera|90|quartus|libraries|megafunctions|bypassff.inc
 8e8df160d449a63ec15dc86ecf2b373f
-}
-# hierarchies {
-mux21_gate:inst8|lpm_mux:lpm_mux_component
-ALU:inst13|mux21_gate:max|lpm_mux:lpm_mux_component
-ALU:inst13|mux21_gate:min|lpm_mux:lpm_mux_component
-immediate_sel:inst4|mux21_gate:inst6|lpm_mux:lpm_mux_component
 }
 # macro_sequence
 
@@ -20449,9 +20043,6 @@ f172666ca13e5e31e17e3f6cb35af52
 ..|..|..|..|..|altera|90|quartus|libraries|megafunctions|bypassff.inc
 8e8df160d449a63ec15dc86ecf2b373f
 }
-# hierarchies {
-ALU:inst13|mux_gate:inst|lpm_mux:lpm_mux_component
-}
 # macro_sequence
 
 # end
@@ -20478,11 +20069,6 @@ result
 data
 -1
 3
-}
-# hierarchies {
-ALU:inst13|not_gate:inst8|lpm_inv:lpm_inv_component
-ALU:inst13|not_gate:inst4|lpm_inv:lpm_inv_component
-ALU:inst13|not_gate:inst7|lpm_inv:lpm_inv_component
 }
 # macro_sequence
 
@@ -20514,9 +20100,6 @@ result
 data
 -1
 3
-}
-# hierarchies {
-ALU:inst13|xor_gate:inst6|lpm_xor:lpm_xor_component
 }
 # macro_sequence
 
@@ -20573,9 +20156,6 @@ direction
 -1
 1
 }
-# hierarchies {
-ALU:inst13|shift_left:inst22|lpm_clshift:lpm_clshift_component
-}
 # macro_sequence
 
 # end
@@ -20631,9 +20211,6 @@ direction
 -1
 2
 }
-# hierarchies {
-ALU:inst13|shift_right:inst23|lpm_clshift:lpm_clshift_component
-}
 # macro_sequence
 
 # end
@@ -20683,9 +20260,6 @@ direction
 -1
 1
 }
-# hierarchies {
-ALU:inst13|rotate_left:inst25|lpm_clshift:lpm_clshift_component
-}
 # macro_sequence
 
 # end
@@ -20734,9 +20308,6 @@ data
 direction
 -1
 2
-}
-# hierarchies {
-ALU:inst13|rotate_right:inst26|lpm_clshift:lpm_clshift_component
 }
 # macro_sequence
 
@@ -20862,10 +20433,6 @@ c08f604aefba5b4f1f554e565113c6
 ..|..|..|..|..|altera|90|quartus|libraries|megafunctions|addcore.inc
 ff795e21e4847824c03218724f1a1252
 }
-# hierarchies {
-ALU:inst13|adder:inst19|lpm_add_sub:lpm_add_sub_component
-adder:inst11|lpm_add_sub:lpm_add_sub_component
-}
 # macro_sequence
 
 # end
@@ -20989,9 +20556,6 @@ c08f604aefba5b4f1f554e565113c6
 8e8df160d449a63ec15dc86ecf2b373f
 ..|..|..|..|..|altera|90|quartus|libraries|megafunctions|addcore.inc
 ff795e21e4847824c03218724f1a1252
-}
-# hierarchies {
-ALU:inst13|subtractor:inst20|lpm_add_sub:lpm_add_sub_component
 }
 # macro_sequence
 
@@ -21147,9 +20711,6 @@ clken
 ..|..|..|..|..|altera|90|quartus|libraries|megafunctions|bypassff.inc
 8e8df160d449a63ec15dc86ecf2b373f
 }
-# hierarchies {
-ALU:inst13|mult:inst1|lpm_mult:lpm_mult_component
-}
 # macro_sequence
 
 # end
@@ -21251,9 +20812,6 @@ cdfefd53e136b3a8e541899b82db37d
 c1e17922387cb5d0c88d7fb673544bb4
 ..|..|..|..|..|altera|90|quartus|libraries|megafunctions|aglobal90.inc
 99832fdf63412df51d7531202d74e75
-}
-# hierarchies {
-ALU:inst13|div:inst2|lpm_divide:lpm_divide_component
 }
 # macro_sequence
 
@@ -21358,9 +20916,6 @@ clken
 ..|..|..|..|..|altera|90|quartus|libraries|megafunctions|comptree.inc
 da21447b8e66c26bd34c85b6cdda8169
 }
-# hierarchies {
-ALU:inst13|comp:inst3|lpm_compare:lpm_compare_component
-}
 # macro_sequence
 
 # end
@@ -21427,9 +20982,6 @@ data
 # include_file {
 ..|..|..|..|..|altera|90|quartus|libraries|megafunctions|aglobal90.inc
 99832fdf63412df51d7531202d74e75
-}
-# hierarchies {
-ALU:inst13|and_gate:inst5|lpm_and:lpm_and_component
 }
 # macro_sequence
 
@@ -21507,10 +21059,6 @@ f172666ca13e5e31e17e3f6cb35af52
 ..|..|..|..|..|altera|90|quartus|libraries|megafunctions|bypassff.inc
 8e8df160d449a63ec15dc86ecf2b373f
 }
-# hierarchies {
-sign_extend_16to32:inst10|mux21:inst|lpm_mux:lpm_mux_component
-immediate_sel:inst4|sign_extend_16to32:inst|mux21:inst|lpm_mux:lpm_mux_component
-}
 # macro_sequence
 
 # end
@@ -21547,10 +21095,6 @@ result
 -1
 3
 }
-# hierarchies {
-sign_extend_16to32:inst10|zero_const:inst2|lpm_constant:lpm_constant_component
-immediate_sel:inst4|sign_extend_16to32:inst|zero_const:inst2|lpm_constant:lpm_constant_component
-}
 # macro_sequence
 
 # end
@@ -21586,10 +21130,6 @@ USR
 result
 -1
 3
-}
-# hierarchies {
-sign_extend_16to32:inst10|all_one_const:inst4|lpm_constant:lpm_constant_component
-immediate_sel:inst4|sign_extend_16to32:inst|all_one_const:inst4|lpm_constant:lpm_constant_component
 }
 # macro_sequence
 
@@ -21666,10 +21206,6 @@ data
 f172666ca13e5e31e17e3f6cb35af52
 ..|..|..|..|..|altera|90|quartus|libraries|megafunctions|bypassff.inc
 8e8df160d449a63ec15dc86ecf2b373f
-}
-# hierarchies {
-immediate_sel:inst4|mux21_6bit:inst8|lpm_mux:lpm_mux_component
-immediate_sel:inst4|mux21_6bit:inst9|lpm_mux:lpm_mux_component
 }
 # macro_sequence
 
@@ -21789,10 +21325,6 @@ c08f604aefba5b4f1f554e565113c6
 ..|..|..|..|..|altera|90|quartus|libraries|megafunctions|addcore.inc
 ff795e21e4847824c03218724f1a1252
 }
-# hierarchies {
-immediate_sel:inst4|sub_6bit:inst12|lpm_add_sub:lpm_add_sub_component
-immediate_sel:inst4|sub2_6bit:inst13|lpm_add_sub:lpm_add_sub_component
-}
 # macro_sequence
 
 # end
@@ -21868,16 +21400,6 @@ data
 f172666ca13e5e31e17e3f6cb35af52
 ..|..|..|..|..|altera|90|quartus|libraries|megafunctions|bypassff.inc
 8e8df160d449a63ec15dc86ecf2b373f
-}
-# hierarchies {
-main_mem:inst7|mux41_8bit:inst4|lpm_mux:lpm_mux_component
-main_mem:inst7|mux41_8bit:inst30|lpm_mux:lpm_mux_component
-main_mem:inst7|mux41_8bit:inst31|lpm_mux:lpm_mux_component
-main_mem:inst7|mux41_8bit:inst32|lpm_mux:lpm_mux_component
-main_mem:inst7|mux41_8bit:inst29|lpm_mux:lpm_mux_component
-main_mem:inst7|mux41_8bit:inst6|lpm_mux:lpm_mux_component
-main_mem:inst7|mux41_8bit:inst5|lpm_mux:lpm_mux_component
-main_mem:inst7|mux41_8bit:inst7|lpm_mux:lpm_mux_component
 }
 # macro_sequence
 
@@ -22179,12 +21701,6 @@ e66a83eccf6717bed97c99d891ad085
 ..|..|..|..|..|altera|90|quartus|libraries|megafunctions|stratix_ram_block.inc
 2263a3bdfffeb150af977ee13902f70
 }
-# hierarchies {
-main_mem:inst7|main_mem2_8bit:inst1|altsyncram:altsyncram_component
-main_mem:inst7|main_mem3_8bit:inst2|altsyncram:altsyncram_component
-main_mem:inst7|main_mem4_8bit:inst3|altsyncram:altsyncram_component
-main_mem:inst7|main_mem1_8bit:inst|altsyncram:altsyncram_component
-}
 # macro_sequence
 
 # end
@@ -22259,9 +21775,6 @@ b1d5939399e5c04dfe1d209af8cc490
 99832fdf63412df51d7531202d74e75
 ..|..|..|..|..|altera|90|quartus|libraries|megafunctions|lpm_constant.inc
 dcde44eee59335c1e2fe75d574f9646
-}
-# hierarchies {
-main_mem:inst7|dec24:inst19|lpm_decode:lpm_decode_component
 }
 # macro_sequence
 
@@ -22338,12 +21851,6 @@ data
 f172666ca13e5e31e17e3f6cb35af52
 ..|..|..|..|..|altera|90|quartus|libraries|megafunctions|bypassff.inc
 8e8df160d449a63ec15dc86ecf2b373f
-}
-# hierarchies {
-main_mem:inst7|mux21_5bit:inst27|lpm_mux:lpm_mux_component
-main_mem:inst7|mux21_5bit:inst28|lpm_mux:lpm_mux_component
-main_mem:inst7|mux21_5bit:inst26|lpm_mux:lpm_mux_component
-mux21_5bit:inst6|lpm_mux:lpm_mux_component
 }
 # macro_sequence
 
@@ -22465,9 +21972,6 @@ c08f604aefba5b4f1f554e565113c6
 8e8df160d449a63ec15dc86ecf2b373f
 ..|..|..|..|..|altera|90|quartus|libraries|megafunctions|addcore.inc
 ff795e21e4847824c03218724f1a1252
-}
-# hierarchies {
-main_mem:inst7|adder_5bit:inst21|lpm_add_sub:lpm_add_sub_component
 }
 # macro_sequence
 
@@ -22684,13 +22188,8 @@ clock
 97d9d437829a4e214661a824cb57479
 }
 # hierarchies {
-IF_ID:inst5|D_FF_32:inst
-ID_EX:inst12|D_FF_32:inst4
-ID_EX:inst12|D_FF_32:D1
-ID_EX:inst12|D_FF_32:D
-EX_MEM:inst16|D_FF_32:inst1
-EX_MEM:inst16|D_FF_32:inst
-EX_MEM:inst16|D_FF_32:inst7
+D_FF_32:inst
+D_FF_32:inst1
 }
 # macro_sequence
 
@@ -22951,13 +22450,8 @@ clock
 dcde44eee59335c1e2fe75d574f9646
 }
 # hierarchies {
-IF_ID:inst5|D_FF_32:inst|lpm_ff:lpm_ff_component
-ID_EX:inst12|D_FF_32:inst4|lpm_ff:lpm_ff_component
-ID_EX:inst12|D_FF_32:D1|lpm_ff:lpm_ff_component
-ID_EX:inst12|D_FF_32:D|lpm_ff:lpm_ff_component
-EX_MEM:inst16|D_FF_32:inst1|lpm_ff:lpm_ff_component
-EX_MEM:inst16|D_FF_32:inst|lpm_ff:lpm_ff_component
-EX_MEM:inst16|D_FF_32:inst7|lpm_ff:lpm_ff_component
+D_FF_32:inst|lpm_ff:lpm_ff_component
+D_FF_32:inst1|lpm_ff:lpm_ff_component
 }
 # macro_sequence
 
@@ -22991,10 +22485,6 @@ VERILOG_CONSTANT_LOOP_LIMIT
 5000
 VERILOG_NON_CONSTANT_LOOP_LIMIT
 250
-}
-# hierarchies {
-IF_ID:inst5|D_FF_4:inst1
-ID_EX:inst12|D_FF_4:inst13
 }
 # macro_sequence
 
@@ -23068,10 +22558,6 @@ clock
 ..|..|..|..|..|altera|90|quartus|libraries|megafunctions|lpm_constant.inc
 dcde44eee59335c1e2fe75d574f9646
 }
-# hierarchies {
-IF_ID:inst5|D_FF_4:inst1|lpm_ff:lpm_ff_component
-ID_EX:inst12|D_FF_4:inst13|lpm_ff:lpm_ff_component
-}
 # macro_sequence
 
 # end
@@ -23088,9 +22574,6 @@ IF_ID.bdf
 # internal_option {
 BLOCK_DESIGN_NAMING
 AUTO
-}
-# hierarchies {
-IF_ID:inst5
 }
 # macro_sequence
 
@@ -23145,9 +22628,7 @@ clock
 97d9d437829a4e214661a824cb57479
 }
 # hierarchies {
-ID_EX:inst12|D_FF_5:inst7
-ID_EX:inst12|D_FF_5:inst6
-EX_MEM:inst16|D_FF_5:inst9
+D_FF_5:inst2
 }
 # macro_sequence
 
@@ -23246,9 +22727,7 @@ dcde44eee59335c1e2fe75d574f9646
 99832fdf63412df51d7531202d74e75
 }
 # hierarchies {
-ID_EX:inst12|D_FF_5:inst7|lpm_ff:lpm_ff_component
-ID_EX:inst12|D_FF_5:inst6|lpm_ff:lpm_ff_component
-EX_MEM:inst16|D_FF_5:inst9|lpm_ff:lpm_ff_component
+D_FF_5:inst2|lpm_ff:lpm_ff_component
 }
 # macro_sequence
 
@@ -23267,9 +22746,6 @@ ID_EX.bdf
 BLOCK_DESIGN_NAMING
 AUTO
 }
-# hierarchies {
-ID_EX:inst12
-}
 # macro_sequence
 
 # end
@@ -23287,21 +22763,278 @@ EX_MEM.bdf
 BLOCK_DESIGN_NAMING
 AUTO
 }
-# hierarchies {
-EX_MEM:inst16
+# macro_sequence
+
+# end
+# entity
+D_FF_32
+# storage
+db|CPU.(284).cnf
+db|CPU.(284).cnf
+# case_insensitive
+# source_file
+D_FF_32.tdf
+28171c49f9ea6258a0ce249edc56983
+7
+# used_port {
+q9
+-1
+3
+q8
+-1
+3
+q7
+-1
+3
+q6
+-1
+3
+q5
+-1
+3
+q4
+-1
+3
+q31
+-1
+3
+q30
+-1
+3
+q3
+-1
+3
+q29
+-1
+3
+q28
+-1
+3
+q27
+-1
+3
+q26
+-1
+3
+q25
+-1
+3
+q24
+-1
+3
+q23
+-1
+3
+q22
+-1
+3
+q21
+-1
+3
+q20
+-1
+3
+q2
+-1
+3
+q19
+-1
+3
+q18
+-1
+3
+q17
+-1
+3
+q16
+-1
+3
+q15
+-1
+3
+q14
+-1
+3
+q13
+-1
+3
+q12
+-1
+3
+q11
+-1
+3
+q10
+-1
+3
+q1
+-1
+3
+q0
+-1
+3
+data9
+-1
+3
+data8
+-1
+3
+data7
+-1
+3
+data6
+-1
+3
+data5
+-1
+3
+data4
+-1
+3
+data31
+-1
+3
+data30
+-1
+3
+data3
+-1
+3
+data29
+-1
+3
+data28
+-1
+3
+data27
+-1
+3
+data26
+-1
+3
+data25
+-1
+3
+data24
+-1
+3
+data23
+-1
+3
+data22
+-1
+3
+data21
+-1
+3
+data20
+-1
+3
+data2
+-1
+3
+data19
+-1
+3
+data18
+-1
+3
+data17
+-1
+3
+data16
+-1
+3
+data15
+-1
+3
+data14
+-1
+3
+data13
+-1
+3
+data12
+-1
+3
+data11
+-1
+3
+data10
+-1
+3
+data1
+-1
+3
+data0
+-1
+3
+}
+# include_file {
+..|..|..|..|..|altera|90|quartus|libraries|megafunctions|lpm_ff.inc
+97d9d437829a4e214661a824cb57479
 }
 # macro_sequence
 
 # end
 # entity
-CPU
+D_FF_5
+# storage
+db|CPU.(285).cnf
+db|CPU.(285).cnf
+# case_insensitive
+# source_file
+D_FF_5.tdf
+67f31ad2e5a51595b1e34c20787e781b
+7
+# used_port {
+q4
+-1
+3
+q3
+-1
+3
+q2
+-1
+3
+q1
+-1
+3
+q0
+-1
+3
+data4
+-1
+3
+data3
+-1
+3
+data2
+-1
+3
+data1
+-1
+3
+data0
+-1
+3
+}
+# include_file {
+..|..|..|..|..|altera|90|quartus|libraries|megafunctions|lpm_ff.inc
+97d9d437829a4e214661a824cb57479
+}
+# macro_sequence
+
+# end
+# entity
+MEM_WB
 # storage
 db|CPU.(282).cnf
 db|CPU.(282).cnf
 # case_insensitive
 # source_file
-CPU.bdf
-b741ff3092edcba6fbc1327a1b6248e
+MEM_WB.bdf
+18a51b25e1f5667509e4a8c2305910
 26
 # internal_option {
 BLOCK_DESIGN_NAMING
@@ -23309,6 +23042,117 @@ AUTO
 }
 # hierarchies {
 |
+}
+# macro_sequence
+
+# end
+# entity
+D_FF_8
+# storage
+db|CPU.(283).cnf
+db|CPU.(283).cnf
+# logic_option {
+AUTO_RAM_RECOGNITION
+ON
+}
+# case_sensitive
+# source_file
+D_FF_8.v
+1dd5fc855b114ae115c12797b4cc4cc
+8
+# internal_option {
+HDL_INITIAL_FANOUT_LIMIT
+OFF
+AUTO_RESOURCE_SHARING
+OFF
+AUTO_RAM_RECOGNITION
+ON
+AUTO_ROM_RECOGNITION
+ON
+IGNORE_VERILOG_INITIAL_CONSTRUCTS
+OFF
+VERILOG_CONSTANT_LOOP_LIMIT
+5000
+VERILOG_NON_CONSTANT_LOOP_LIMIT
+250
+}
+# hierarchies {
+D_FF_8:inst3
+}
+# macro_sequence
+
+# end
+# entity
+lpm_ff
+# storage
+db|CPU.(286).cnf
+db|CPU.(286).cnf
+# case_insensitive
+# source_file
+..|..|..|..|..|altera|90|quartus|libraries|megafunctions|lpm_ff.tdf
+851d7a03647c4809c457044d4c66412
+7
+# user_parameter {
+LPM_WIDTH
+8
+PARAMETER_SIGNED_DEC
+USR
+LPM_AVALUE
+UNUSED
+PARAMETER_UNKNOWN
+DEF
+LPM_SVALUE
+UNUSED
+PARAMETER_UNKNOWN
+DEF
+LPM_FFTYPE
+DFF
+PARAMETER_UNKNOWN
+USR
+DEVICE_FAMILY
+Stratix II
+PARAMETER_UNKNOWN
+USR
+CBXI_PARAMETER
+NOTHING
+PARAMETER_UNKNOWN
+DEF
+AUTO_CARRY_CHAINS
+ON
+AUTO_CARRY
+USR
+IGNORE_CARRY_BUFFERS
+OFF
+IGNORE_CARRY
+USR
+AUTO_CASCADE_CHAINS
+ON
+AUTO_CASCADE
+USR
+IGNORE_CASCADE_BUFFERS
+OFF
+IGNORE_CASCADE
+USR
+}
+# used_port {
+q
+-1
+3
+data
+-1
+3
+clock
+-1
+3
+}
+# include_file {
+..|..|..|..|..|altera|90|quartus|libraries|megafunctions|lpm_constant.inc
+dcde44eee59335c1e2fe75d574f9646
+..|..|..|..|..|altera|90|quartus|libraries|megafunctions|aglobal90.inc
+99832fdf63412df51d7531202d74e75
+}
+# hierarchies {
+D_FF_8:inst3|lpm_ff:lpm_ff_component
 }
 # macro_sequence
 

@@ -1,5 +1,5 @@
 Flow report for CPU
-Fri Jul 17 13:52:47 2020
+Fri Jul 17 23:11:21 2020
 Quartus II Version 9.0 Build 132 02/25/2009 SJ Web Edition
 
 
@@ -38,20 +38,20 @@ applicable agreement for further details.
 +-------------------------------------------------------------------------+
 ; Flow Summary                                                            ;
 +-------------------------------+-----------------------------------------+
-; Flow Status                   ; Successful - Fri Jul 17 13:52:37 2020   ;
+; Flow Status                   ; Successful - Fri Jul 17 23:11:21 2020   ;
 ; Quartus II Version            ; 9.0 Build 132 02/25/2009 SJ Web Edition ;
 ; Revision Name                 ; CPU                                     ;
-; Top-level Entity Name         ; CPU                                     ;
+; Top-level Entity Name         ; MEM_WB                                  ;
 ; Family                        ; Stratix II                              ;
 ; Met timing requirements       ; Yes                                     ;
-; Logic utilization             ; 19 %                                    ;
-;     Combinational ALUTs       ; 2,174 / 12,480 ( 17 % )                 ;
-;     Dedicated logic registers ; 132 / 12,480 ( 1 % )                    ;
-; Total registers               ; 132                                     ;
-; Total pins                    ; 188 / 343 ( 55 % )                      ;
+; Logic utilization             ; < 1 %                                   ;
+;     Combinational ALUTs       ; 0 / 12,480 ( 0 % )                      ;
+;     Dedicated logic registers ; 77 / 12,480 ( < 1 % )                   ;
+; Total registers               ; 77                                      ;
+; Total pins                    ; 155 / 343 ( 45 % )                      ;
 ; Total virtual pins            ; 0                                       ;
-; Total block memory bits       ; 8,704 / 419,328 ( 2 % )                 ;
-; DSP block 9-bit elements      ; 2 / 96 ( 2 % )                          ;
+; Total block memory bits       ; 0 / 419,328 ( 0 % )                     ;
+; DSP block 9-bit elements      ; 0 / 96 ( 0 % )                          ;
 ; Total PLLs                    ; 0 / 6 ( 0 % )                           ;
 ; Total DLLs                    ; 0 / 2 ( 0 % )                           ;
 ; Device                        ; EP2S15F484C3                            ;
@@ -64,7 +64,7 @@ applicable agreement for further details.
 +-------------------+---------------------+
 ; Option            ; Setting             ;
 +-------------------+---------------------+
-; Start date & time ; 07/17/2020 13:51:34 ;
+; Start date & time ; 07/17/2020 23:11:00 ;
 ; Main task         ; Compilation         ;
 ; Revision Name     ; CPU                 ;
 +-------------------+---------------------+
@@ -75,7 +75,7 @@ applicable agreement for further details.
 +------------------------------------+-----------------------------+---------------+-------------+----------------+
 ; Assignment Name                    ; Value                       ; Default Value ; Entity Name ; Section Id     ;
 +------------------------------------+-----------------------------+---------------+-------------+----------------+
-; COMPILER_SIGNATURE_ID              ; 52234445371.159497769404416 ; --            ; --          ; --             ;
+; COMPILER_SIGNATURE_ID              ; 52234445371.159501125903124 ; --            ; --          ; --             ;
 ; IP_TOOL_NAME                       ; LPM_COUNTER                 ; --            ; --          ; --             ;
 ; IP_TOOL_NAME                       ; LPM_COUNTER                 ; --            ; --          ; --             ;
 ; IP_TOOL_NAME                       ; LPM_DECODE                  ; --            ; --          ; --             ;
@@ -119,6 +119,8 @@ applicable agreement for further details.
 ; IP_TOOL_NAME                       ; LPM_FF                      ; --            ; --          ; --             ;
 ; IP_TOOL_NAME                       ; LPM_FF                      ; --            ; --          ; --             ;
 ; IP_TOOL_NAME                       ; LPM_FF                      ; --            ; --          ; --             ;
+; IP_TOOL_NAME                       ; LPM_FF                      ; --            ; --          ; --             ;
+; IP_TOOL_VERSION                    ; 9.0                         ; --            ; --          ; --             ;
 ; IP_TOOL_VERSION                    ; 9.0                         ; --            ; --          ; --             ;
 ; IP_TOOL_VERSION                    ; 9.0                         ; --            ; --          ; --             ;
 ; IP_TOOL_VERSION                    ; 9.0                         ; --            ; --          ; --             ;
@@ -291,8 +293,12 @@ applicable agreement for further details.
 ; MISC_FILE                          ; D_FF_5.tdf                  ; --            ; --          ; --             ;
 ; MISC_FILE                          ; D_FF_5.bsf                  ; --            ; --          ; --             ;
 ; MISC_FILE                          ; D_FF_5.cmp                  ; --            ; --          ; --             ;
-; PARTITION_COLOR                    ; 16764057                    ; --            ; --          ; Top            ;
-; PARTITION_NETLIST_TYPE             ; SOURCE                      ; --            ; --          ; Top            ;
+; MISC_FILE                          ; D_FF_8.bsf                  ; --            ; --          ; --             ;
+; MISC_FILE                          ; D_FF_8_bb.v                 ; --            ; --          ; --             ;
+; MISC_FILE                          ; D_FF_8.cmp                  ; --            ; --          ; --             ;
+; PARTITION_COLOR                    ; 16764057                    ; --            ; MEM_WB      ; Top            ;
+; PARTITION_NETLIST_TYPE             ; SOURCE                      ; --            ; MEM_WB      ; Top            ;
+; TOP_LEVEL_ENTITY                   ; MEM_WB                      ; CPU           ; --          ; --             ;
 ; USE_GENERATED_PHYSICAL_CONSTRAINTS ; Off                         ; --            ; --          ; eda_blast_fpga ;
 +------------------------------------+-----------------------------+---------------+-------------+----------------+
 
@@ -302,11 +308,11 @@ applicable agreement for further details.
 +-------------------------+--------------+-------------------------+---------------------+------------------------------------+
 ; Module Name             ; Elapsed Time ; Average Processors Used ; Peak Virtual Memory ; Total CPU Time (on all processors) ;
 +-------------------------+--------------+-------------------------+---------------------+------------------------------------+
-; Analysis & Synthesis    ; 00:00:28     ; 1.0                     ; 291 MB              ; 00:00:26                           ;
-; Fitter                  ; 00:00:15     ; 1.0                     ; 296 MB              ; 00:00:15                           ;
-; Assembler               ; 00:00:05     ; 1.0                     ; 261 MB              ; 00:00:05                           ;
-; Classic Timing Analyzer ; 00:00:03     ; 1.0                     ; 206 MB              ; 00:00:03                           ;
-; Total                   ; 00:00:51     ; --                      ; --                  ; 00:00:49                           ;
+; Analysis & Synthesis    ; 00:00:07     ; 1.0                     ; 243 MB              ; 00:00:04                           ;
+; Fitter                  ; 00:00:06     ; 1.0                     ; 285 MB              ; 00:00:06                           ;
+; Assembler               ; 00:00:04     ; 1.0                     ; 255 MB              ; 00:00:04                           ;
+; Classic Timing Analyzer ; 00:00:02     ; 1.0                     ; 186 MB              ; 00:00:02                           ;
+; Total                   ; 00:00:19     ; --                      ; --                  ; 00:00:16                           ;
 +-------------------------+--------------+-------------------------+---------------------+------------------------------------+
 
 

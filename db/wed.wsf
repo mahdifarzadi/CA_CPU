@@ -3324,7 +3324,7 @@ VECTOR("C:/Users/Mohammad/Desktop/mem/CR_CPU/db/CPU.sim.cvwf")
 		ZEND = 3344512;
 		NUMERATOR = 952;
 		DENOMINATOR = 3344512;
-		TOP_INDEX = 35;
+		TOP_INDEX = 0;
 	}
 	CLOCK{
 		PERIOD = 10000;
@@ -3343,16 +3343,8 @@ VECTOR("C:/Users/Mohammad/Desktop/mem/CR_CPU/db/CPU.sim.cvwf")
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "clock_reg";
-		INDEX = 1;
-		FORMAT = E;
-		SCALE = 1;
-		VISIBLE = Y;
-		FLAG = N;
-	}
-	LINE{
 		SIGNAL = "ins";
-		INDEX = 2;
+		INDEX = 1;
 		FORMAT = T;
 		SCALE = 1;
 		VISIBLE = Y;
@@ -3360,7 +3352,7 @@ VECTOR("C:/Users/Mohammad/Desktop/mem/CR_CPU/db/CPU.sim.cvwf")
 	}
 	LINE{
 		SIGNAL = "ins[31]";
-		INDEX = 3;
+		INDEX = 2;
 		FORMAT = E;
 		SCALE = 1;
 		VISIBLE = Y;
@@ -3368,7 +3360,7 @@ VECTOR("C:/Users/Mohammad/Desktop/mem/CR_CPU/db/CPU.sim.cvwf")
 	}
 	LINE{
 		SIGNAL = "ins[30]";
-		INDEX = 4;
+		INDEX = 3;
 		FORMAT = E;
 		SCALE = 1;
 		VISIBLE = Y;
@@ -3376,7 +3368,7 @@ VECTOR("C:/Users/Mohammad/Desktop/mem/CR_CPU/db/CPU.sim.cvwf")
 	}
 	LINE{
 		SIGNAL = "ins[29]";
-		INDEX = 5;
+		INDEX = 4;
 		FORMAT = E;
 		SCALE = 1;
 		VISIBLE = Y;
@@ -3384,7 +3376,7 @@ VECTOR("C:/Users/Mohammad/Desktop/mem/CR_CPU/db/CPU.sim.cvwf")
 	}
 	LINE{
 		SIGNAL = "ins[28]";
-		INDEX = 6;
+		INDEX = 5;
 		FORMAT = E;
 		SCALE = 1;
 		VISIBLE = Y;
@@ -3392,7 +3384,7 @@ VECTOR("C:/Users/Mohammad/Desktop/mem/CR_CPU/db/CPU.sim.cvwf")
 	}
 	LINE{
 		SIGNAL = "ins[27]";
-		INDEX = 7;
+		INDEX = 6;
 		FORMAT = E;
 		SCALE = 1;
 		VISIBLE = Y;
@@ -3400,7 +3392,7 @@ VECTOR("C:/Users/Mohammad/Desktop/mem/CR_CPU/db/CPU.sim.cvwf")
 	}
 	LINE{
 		SIGNAL = "ins[26]";
-		INDEX = 8;
+		INDEX = 7;
 		FORMAT = E;
 		SCALE = 1;
 		VISIBLE = Y;
@@ -3408,7 +3400,7 @@ VECTOR("C:/Users/Mohammad/Desktop/mem/CR_CPU/db/CPU.sim.cvwf")
 	}
 	LINE{
 		SIGNAL = "ins[25]";
-		INDEX = 9;
+		INDEX = 8;
 		FORMAT = E;
 		SCALE = 1;
 		VISIBLE = Y;
@@ -3416,7 +3408,7 @@ VECTOR("C:/Users/Mohammad/Desktop/mem/CR_CPU/db/CPU.sim.cvwf")
 	}
 	LINE{
 		SIGNAL = "ins[24]";
-		INDEX = 10;
+		INDEX = 9;
 		FORMAT = E;
 		SCALE = 1;
 		VISIBLE = Y;
@@ -3424,7 +3416,7 @@ VECTOR("C:/Users/Mohammad/Desktop/mem/CR_CPU/db/CPU.sim.cvwf")
 	}
 	LINE{
 		SIGNAL = "ins[23]";
-		INDEX = 11;
+		INDEX = 10;
 		FORMAT = E;
 		SCALE = 1;
 		VISIBLE = Y;
@@ -3432,7 +3424,7 @@ VECTOR("C:/Users/Mohammad/Desktop/mem/CR_CPU/db/CPU.sim.cvwf")
 	}
 	LINE{
 		SIGNAL = "ins[22]";
-		INDEX = 12;
+		INDEX = 11;
 		FORMAT = E;
 		SCALE = 1;
 		VISIBLE = Y;
@@ -3440,7 +3432,7 @@ VECTOR("C:/Users/Mohammad/Desktop/mem/CR_CPU/db/CPU.sim.cvwf")
 	}
 	LINE{
 		SIGNAL = "ins[21]";
-		INDEX = 13;
+		INDEX = 12;
 		FORMAT = E;
 		SCALE = 1;
 		VISIBLE = Y;
@@ -3448,7 +3440,7 @@ VECTOR("C:/Users/Mohammad/Desktop/mem/CR_CPU/db/CPU.sim.cvwf")
 	}
 	LINE{
 		SIGNAL = "ins[20]";
-		INDEX = 14;
+		INDEX = 13;
 		FORMAT = E;
 		SCALE = 1;
 		VISIBLE = Y;
@@ -3456,7 +3448,7 @@ VECTOR("C:/Users/Mohammad/Desktop/mem/CR_CPU/db/CPU.sim.cvwf")
 	}
 	LINE{
 		SIGNAL = "ins[19]";
-		INDEX = 15;
+		INDEX = 14;
 		FORMAT = E;
 		SCALE = 1;
 		VISIBLE = Y;
@@ -3464,7 +3456,7 @@ VECTOR("C:/Users/Mohammad/Desktop/mem/CR_CPU/db/CPU.sim.cvwf")
 	}
 	LINE{
 		SIGNAL = "ins[18]";
-		INDEX = 16;
+		INDEX = 15;
 		FORMAT = E;
 		SCALE = 1;
 		VISIBLE = Y;
@@ -3472,7 +3464,7 @@ VECTOR("C:/Users/Mohammad/Desktop/mem/CR_CPU/db/CPU.sim.cvwf")
 	}
 	LINE{
 		SIGNAL = "ins[17]";
-		INDEX = 17;
+		INDEX = 16;
 		FORMAT = E;
 		SCALE = 1;
 		VISIBLE = Y;
@@ -3480,7 +3472,7 @@ VECTOR("C:/Users/Mohammad/Desktop/mem/CR_CPU/db/CPU.sim.cvwf")
 	}
 	LINE{
 		SIGNAL = "ins[16]";
-		INDEX = 18;
+		INDEX = 17;
 		FORMAT = E;
 		SCALE = 1;
 		VISIBLE = Y;
@@ -3488,7 +3480,7 @@ VECTOR("C:/Users/Mohammad/Desktop/mem/CR_CPU/db/CPU.sim.cvwf")
 	}
 	LINE{
 		SIGNAL = "ins[15]";
-		INDEX = 19;
+		INDEX = 18;
 		FORMAT = E;
 		SCALE = 1;
 		VISIBLE = Y;
@@ -3496,7 +3488,7 @@ VECTOR("C:/Users/Mohammad/Desktop/mem/CR_CPU/db/CPU.sim.cvwf")
 	}
 	LINE{
 		SIGNAL = "ins[14]";
-		INDEX = 20;
+		INDEX = 19;
 		FORMAT = E;
 		SCALE = 1;
 		VISIBLE = Y;
@@ -3504,7 +3496,7 @@ VECTOR("C:/Users/Mohammad/Desktop/mem/CR_CPU/db/CPU.sim.cvwf")
 	}
 	LINE{
 		SIGNAL = "ins[13]";
-		INDEX = 21;
+		INDEX = 20;
 		FORMAT = E;
 		SCALE = 1;
 		VISIBLE = Y;
@@ -3512,7 +3504,7 @@ VECTOR("C:/Users/Mohammad/Desktop/mem/CR_CPU/db/CPU.sim.cvwf")
 	}
 	LINE{
 		SIGNAL = "ins[12]";
-		INDEX = 22;
+		INDEX = 21;
 		FORMAT = E;
 		SCALE = 1;
 		VISIBLE = Y;
@@ -3520,7 +3512,7 @@ VECTOR("C:/Users/Mohammad/Desktop/mem/CR_CPU/db/CPU.sim.cvwf")
 	}
 	LINE{
 		SIGNAL = "ins[11]";
-		INDEX = 23;
+		INDEX = 22;
 		FORMAT = E;
 		SCALE = 1;
 		VISIBLE = Y;
@@ -3528,7 +3520,7 @@ VECTOR("C:/Users/Mohammad/Desktop/mem/CR_CPU/db/CPU.sim.cvwf")
 	}
 	LINE{
 		SIGNAL = "ins[10]";
-		INDEX = 24;
+		INDEX = 23;
 		FORMAT = E;
 		SCALE = 1;
 		VISIBLE = Y;
@@ -3536,7 +3528,7 @@ VECTOR("C:/Users/Mohammad/Desktop/mem/CR_CPU/db/CPU.sim.cvwf")
 	}
 	LINE{
 		SIGNAL = "ins[9]";
-		INDEX = 25;
+		INDEX = 24;
 		FORMAT = E;
 		SCALE = 1;
 		VISIBLE = Y;
@@ -3544,7 +3536,7 @@ VECTOR("C:/Users/Mohammad/Desktop/mem/CR_CPU/db/CPU.sim.cvwf")
 	}
 	LINE{
 		SIGNAL = "ins[8]";
-		INDEX = 26;
+		INDEX = 25;
 		FORMAT = E;
 		SCALE = 1;
 		VISIBLE = Y;
@@ -3552,7 +3544,7 @@ VECTOR("C:/Users/Mohammad/Desktop/mem/CR_CPU/db/CPU.sim.cvwf")
 	}
 	LINE{
 		SIGNAL = "ins[7]";
-		INDEX = 27;
+		INDEX = 26;
 		FORMAT = E;
 		SCALE = 1;
 		VISIBLE = Y;
@@ -3560,7 +3552,7 @@ VECTOR("C:/Users/Mohammad/Desktop/mem/CR_CPU/db/CPU.sim.cvwf")
 	}
 	LINE{
 		SIGNAL = "ins[6]";
-		INDEX = 28;
+		INDEX = 27;
 		FORMAT = E;
 		SCALE = 1;
 		VISIBLE = Y;
@@ -3568,7 +3560,7 @@ VECTOR("C:/Users/Mohammad/Desktop/mem/CR_CPU/db/CPU.sim.cvwf")
 	}
 	LINE{
 		SIGNAL = "ins[5]";
-		INDEX = 29;
+		INDEX = 28;
 		FORMAT = E;
 		SCALE = 1;
 		VISIBLE = Y;
@@ -3576,7 +3568,7 @@ VECTOR("C:/Users/Mohammad/Desktop/mem/CR_CPU/db/CPU.sim.cvwf")
 	}
 	LINE{
 		SIGNAL = "ins[4]";
-		INDEX = 30;
+		INDEX = 29;
 		FORMAT = E;
 		SCALE = 1;
 		VISIBLE = Y;
@@ -3584,7 +3576,7 @@ VECTOR("C:/Users/Mohammad/Desktop/mem/CR_CPU/db/CPU.sim.cvwf")
 	}
 	LINE{
 		SIGNAL = "ins[3]";
-		INDEX = 31;
+		INDEX = 30;
 		FORMAT = E;
 		SCALE = 1;
 		VISIBLE = Y;
@@ -3592,7 +3584,7 @@ VECTOR("C:/Users/Mohammad/Desktop/mem/CR_CPU/db/CPU.sim.cvwf")
 	}
 	LINE{
 		SIGNAL = "ins[2]";
-		INDEX = 32;
+		INDEX = 31;
 		FORMAT = E;
 		SCALE = 1;
 		VISIBLE = Y;
@@ -3600,7 +3592,7 @@ VECTOR("C:/Users/Mohammad/Desktop/mem/CR_CPU/db/CPU.sim.cvwf")
 	}
 	LINE{
 		SIGNAL = "ins[1]";
-		INDEX = 33;
+		INDEX = 32;
 		FORMAT = E;
 		SCALE = 1;
 		VISIBLE = Y;
@@ -3608,7 +3600,7 @@ VECTOR("C:/Users/Mohammad/Desktop/mem/CR_CPU/db/CPU.sim.cvwf")
 	}
 	LINE{
 		SIGNAL = "ins[0]";
-		INDEX = 34;
+		INDEX = 33;
 		FORMAT = E;
 		SCALE = 1;
 		VISIBLE = Y;
@@ -3616,7 +3608,7 @@ VECTOR("C:/Users/Mohammad/Desktop/mem/CR_CPU/db/CPU.sim.cvwf")
 	}
 	LINE{
 		SIGNAL = "out";
-		INDEX = 35;
+		INDEX = 34;
 		FORMAT = T;
 		SCALE = 1;
 		VISIBLE = Y;
@@ -3624,7 +3616,7 @@ VECTOR("C:/Users/Mohammad/Desktop/mem/CR_CPU/db/CPU.sim.cvwf")
 	}
 	LINE{
 		SIGNAL = "out[31]";
-		INDEX = 36;
+		INDEX = 35;
 		FORMAT = E;
 		SCALE = 1;
 		VISIBLE = Y;
@@ -3632,7 +3624,7 @@ VECTOR("C:/Users/Mohammad/Desktop/mem/CR_CPU/db/CPU.sim.cvwf")
 	}
 	LINE{
 		SIGNAL = "out[30]";
-		INDEX = 37;
+		INDEX = 36;
 		FORMAT = E;
 		SCALE = 1;
 		VISIBLE = Y;
@@ -3640,7 +3632,7 @@ VECTOR("C:/Users/Mohammad/Desktop/mem/CR_CPU/db/CPU.sim.cvwf")
 	}
 	LINE{
 		SIGNAL = "out[29]";
-		INDEX = 38;
+		INDEX = 37;
 		FORMAT = E;
 		SCALE = 1;
 		VISIBLE = Y;
@@ -3648,7 +3640,7 @@ VECTOR("C:/Users/Mohammad/Desktop/mem/CR_CPU/db/CPU.sim.cvwf")
 	}
 	LINE{
 		SIGNAL = "out[28]";
-		INDEX = 39;
+		INDEX = 38;
 		FORMAT = E;
 		SCALE = 1;
 		VISIBLE = Y;
@@ -3656,7 +3648,7 @@ VECTOR("C:/Users/Mohammad/Desktop/mem/CR_CPU/db/CPU.sim.cvwf")
 	}
 	LINE{
 		SIGNAL = "out[27]";
-		INDEX = 40;
+		INDEX = 39;
 		FORMAT = E;
 		SCALE = 1;
 		VISIBLE = Y;
@@ -3664,7 +3656,7 @@ VECTOR("C:/Users/Mohammad/Desktop/mem/CR_CPU/db/CPU.sim.cvwf")
 	}
 	LINE{
 		SIGNAL = "out[26]";
-		INDEX = 41;
+		INDEX = 40;
 		FORMAT = E;
 		SCALE = 1;
 		VISIBLE = Y;
@@ -3672,7 +3664,7 @@ VECTOR("C:/Users/Mohammad/Desktop/mem/CR_CPU/db/CPU.sim.cvwf")
 	}
 	LINE{
 		SIGNAL = "out[25]";
-		INDEX = 42;
+		INDEX = 41;
 		FORMAT = E;
 		SCALE = 1;
 		VISIBLE = Y;
@@ -3680,7 +3672,7 @@ VECTOR("C:/Users/Mohammad/Desktop/mem/CR_CPU/db/CPU.sim.cvwf")
 	}
 	LINE{
 		SIGNAL = "out[24]";
-		INDEX = 43;
+		INDEX = 42;
 		FORMAT = E;
 		SCALE = 1;
 		VISIBLE = Y;
@@ -3688,7 +3680,7 @@ VECTOR("C:/Users/Mohammad/Desktop/mem/CR_CPU/db/CPU.sim.cvwf")
 	}
 	LINE{
 		SIGNAL = "out[23]";
-		INDEX = 44;
+		INDEX = 43;
 		FORMAT = E;
 		SCALE = 1;
 		VISIBLE = Y;
@@ -3696,7 +3688,7 @@ VECTOR("C:/Users/Mohammad/Desktop/mem/CR_CPU/db/CPU.sim.cvwf")
 	}
 	LINE{
 		SIGNAL = "out[22]";
-		INDEX = 45;
+		INDEX = 44;
 		FORMAT = E;
 		SCALE = 1;
 		VISIBLE = Y;
@@ -3704,7 +3696,7 @@ VECTOR("C:/Users/Mohammad/Desktop/mem/CR_CPU/db/CPU.sim.cvwf")
 	}
 	LINE{
 		SIGNAL = "out[21]";
-		INDEX = 46;
+		INDEX = 45;
 		FORMAT = E;
 		SCALE = 1;
 		VISIBLE = Y;
@@ -3712,7 +3704,7 @@ VECTOR("C:/Users/Mohammad/Desktop/mem/CR_CPU/db/CPU.sim.cvwf")
 	}
 	LINE{
 		SIGNAL = "out[20]";
-		INDEX = 47;
+		INDEX = 46;
 		FORMAT = E;
 		SCALE = 1;
 		VISIBLE = Y;
@@ -3720,7 +3712,7 @@ VECTOR("C:/Users/Mohammad/Desktop/mem/CR_CPU/db/CPU.sim.cvwf")
 	}
 	LINE{
 		SIGNAL = "out[19]";
-		INDEX = 48;
+		INDEX = 47;
 		FORMAT = E;
 		SCALE = 1;
 		VISIBLE = Y;
@@ -3728,7 +3720,7 @@ VECTOR("C:/Users/Mohammad/Desktop/mem/CR_CPU/db/CPU.sim.cvwf")
 	}
 	LINE{
 		SIGNAL = "out[18]";
-		INDEX = 49;
+		INDEX = 48;
 		FORMAT = E;
 		SCALE = 1;
 		VISIBLE = Y;
@@ -3736,7 +3728,7 @@ VECTOR("C:/Users/Mohammad/Desktop/mem/CR_CPU/db/CPU.sim.cvwf")
 	}
 	LINE{
 		SIGNAL = "out[17]";
-		INDEX = 50;
+		INDEX = 49;
 		FORMAT = E;
 		SCALE = 1;
 		VISIBLE = Y;
@@ -3744,7 +3736,7 @@ VECTOR("C:/Users/Mohammad/Desktop/mem/CR_CPU/db/CPU.sim.cvwf")
 	}
 	LINE{
 		SIGNAL = "out[16]";
-		INDEX = 51;
+		INDEX = 50;
 		FORMAT = E;
 		SCALE = 1;
 		VISIBLE = Y;
@@ -3752,7 +3744,7 @@ VECTOR("C:/Users/Mohammad/Desktop/mem/CR_CPU/db/CPU.sim.cvwf")
 	}
 	LINE{
 		SIGNAL = "out[15]";
-		INDEX = 52;
+		INDEX = 51;
 		FORMAT = E;
 		SCALE = 1;
 		VISIBLE = Y;
@@ -3760,7 +3752,7 @@ VECTOR("C:/Users/Mohammad/Desktop/mem/CR_CPU/db/CPU.sim.cvwf")
 	}
 	LINE{
 		SIGNAL = "out[14]";
-		INDEX = 53;
+		INDEX = 52;
 		FORMAT = E;
 		SCALE = 1;
 		VISIBLE = Y;
@@ -3768,7 +3760,7 @@ VECTOR("C:/Users/Mohammad/Desktop/mem/CR_CPU/db/CPU.sim.cvwf")
 	}
 	LINE{
 		SIGNAL = "out[13]";
-		INDEX = 54;
+		INDEX = 53;
 		FORMAT = E;
 		SCALE = 1;
 		VISIBLE = Y;
@@ -3776,7 +3768,7 @@ VECTOR("C:/Users/Mohammad/Desktop/mem/CR_CPU/db/CPU.sim.cvwf")
 	}
 	LINE{
 		SIGNAL = "out[12]";
-		INDEX = 55;
+		INDEX = 54;
 		FORMAT = E;
 		SCALE = 1;
 		VISIBLE = Y;
@@ -3784,7 +3776,7 @@ VECTOR("C:/Users/Mohammad/Desktop/mem/CR_CPU/db/CPU.sim.cvwf")
 	}
 	LINE{
 		SIGNAL = "out[11]";
-		INDEX = 56;
+		INDEX = 55;
 		FORMAT = E;
 		SCALE = 1;
 		VISIBLE = Y;
@@ -3792,7 +3784,7 @@ VECTOR("C:/Users/Mohammad/Desktop/mem/CR_CPU/db/CPU.sim.cvwf")
 	}
 	LINE{
 		SIGNAL = "out[10]";
-		INDEX = 57;
+		INDEX = 56;
 		FORMAT = E;
 		SCALE = 1;
 		VISIBLE = Y;
@@ -3800,7 +3792,7 @@ VECTOR("C:/Users/Mohammad/Desktop/mem/CR_CPU/db/CPU.sim.cvwf")
 	}
 	LINE{
 		SIGNAL = "out[9]";
-		INDEX = 58;
+		INDEX = 57;
 		FORMAT = E;
 		SCALE = 1;
 		VISIBLE = Y;
@@ -3808,7 +3800,7 @@ VECTOR("C:/Users/Mohammad/Desktop/mem/CR_CPU/db/CPU.sim.cvwf")
 	}
 	LINE{
 		SIGNAL = "out[8]";
-		INDEX = 59;
+		INDEX = 58;
 		FORMAT = E;
 		SCALE = 1;
 		VISIBLE = Y;
@@ -3816,7 +3808,7 @@ VECTOR("C:/Users/Mohammad/Desktop/mem/CR_CPU/db/CPU.sim.cvwf")
 	}
 	LINE{
 		SIGNAL = "out[7]";
-		INDEX = 60;
+		INDEX = 59;
 		FORMAT = E;
 		SCALE = 1;
 		VISIBLE = Y;
@@ -3824,7 +3816,7 @@ VECTOR("C:/Users/Mohammad/Desktop/mem/CR_CPU/db/CPU.sim.cvwf")
 	}
 	LINE{
 		SIGNAL = "out[6]";
-		INDEX = 61;
+		INDEX = 60;
 		FORMAT = E;
 		SCALE = 1;
 		VISIBLE = Y;
@@ -3832,7 +3824,7 @@ VECTOR("C:/Users/Mohammad/Desktop/mem/CR_CPU/db/CPU.sim.cvwf")
 	}
 	LINE{
 		SIGNAL = "out[5]";
-		INDEX = 62;
+		INDEX = 61;
 		FORMAT = E;
 		SCALE = 1;
 		VISIBLE = Y;
@@ -3840,7 +3832,7 @@ VECTOR("C:/Users/Mohammad/Desktop/mem/CR_CPU/db/CPU.sim.cvwf")
 	}
 	LINE{
 		SIGNAL = "out[4]";
-		INDEX = 63;
+		INDEX = 62;
 		FORMAT = E;
 		SCALE = 1;
 		VISIBLE = Y;
@@ -3848,7 +3840,7 @@ VECTOR("C:/Users/Mohammad/Desktop/mem/CR_CPU/db/CPU.sim.cvwf")
 	}
 	LINE{
 		SIGNAL = "out[3]";
-		INDEX = 64;
+		INDEX = 63;
 		FORMAT = E;
 		SCALE = 1;
 		VISIBLE = Y;
@@ -3856,7 +3848,7 @@ VECTOR("C:/Users/Mohammad/Desktop/mem/CR_CPU/db/CPU.sim.cvwf")
 	}
 	LINE{
 		SIGNAL = "out[2]";
-		INDEX = 65;
+		INDEX = 64;
 		FORMAT = E;
 		SCALE = 1;
 		VISIBLE = Y;
@@ -3864,7 +3856,7 @@ VECTOR("C:/Users/Mohammad/Desktop/mem/CR_CPU/db/CPU.sim.cvwf")
 	}
 	LINE{
 		SIGNAL = "out[1]";
-		INDEX = 66;
+		INDEX = 65;
 		FORMAT = E;
 		SCALE = 1;
 		VISIBLE = Y;
@@ -3872,7 +3864,7 @@ VECTOR("C:/Users/Mohammad/Desktop/mem/CR_CPU/db/CPU.sim.cvwf")
 	}
 	LINE{
 		SIGNAL = "out[0]";
-		INDEX = 67;
+		INDEX = 66;
 		FORMAT = E;
 		SCALE = 1;
 		VISIBLE = Y;
@@ -3880,7 +3872,7 @@ VECTOR("C:/Users/Mohammad/Desktop/mem/CR_CPU/db/CPU.sim.cvwf")
 	}
 	LINE{
 		SIGNAL = "out_mem";
-		INDEX = 68;
+		INDEX = 67;
 		FORMAT = T;
 		SCALE = 1;
 		VISIBLE = Y;
@@ -3888,7 +3880,7 @@ VECTOR("C:/Users/Mohammad/Desktop/mem/CR_CPU/db/CPU.sim.cvwf")
 	}
 	LINE{
 		SIGNAL = "out_mem[31]";
-		INDEX = 69;
+		INDEX = 68;
 		FORMAT = E;
 		SCALE = 1;
 		VISIBLE = Y;
@@ -3896,7 +3888,7 @@ VECTOR("C:/Users/Mohammad/Desktop/mem/CR_CPU/db/CPU.sim.cvwf")
 	}
 	LINE{
 		SIGNAL = "out_mem[30]";
-		INDEX = 70;
+		INDEX = 69;
 		FORMAT = E;
 		SCALE = 1;
 		VISIBLE = Y;
@@ -3904,7 +3896,7 @@ VECTOR("C:/Users/Mohammad/Desktop/mem/CR_CPU/db/CPU.sim.cvwf")
 	}
 	LINE{
 		SIGNAL = "out_mem[29]";
-		INDEX = 71;
+		INDEX = 70;
 		FORMAT = E;
 		SCALE = 1;
 		VISIBLE = Y;
@@ -3912,7 +3904,7 @@ VECTOR("C:/Users/Mohammad/Desktop/mem/CR_CPU/db/CPU.sim.cvwf")
 	}
 	LINE{
 		SIGNAL = "out_mem[28]";
-		INDEX = 72;
+		INDEX = 71;
 		FORMAT = E;
 		SCALE = 1;
 		VISIBLE = Y;
@@ -3920,7 +3912,7 @@ VECTOR("C:/Users/Mohammad/Desktop/mem/CR_CPU/db/CPU.sim.cvwf")
 	}
 	LINE{
 		SIGNAL = "out_mem[27]";
-		INDEX = 73;
+		INDEX = 72;
 		FORMAT = E;
 		SCALE = 1;
 		VISIBLE = Y;
@@ -3928,7 +3920,7 @@ VECTOR("C:/Users/Mohammad/Desktop/mem/CR_CPU/db/CPU.sim.cvwf")
 	}
 	LINE{
 		SIGNAL = "out_mem[26]";
-		INDEX = 74;
+		INDEX = 73;
 		FORMAT = E;
 		SCALE = 1;
 		VISIBLE = Y;
@@ -3936,7 +3928,7 @@ VECTOR("C:/Users/Mohammad/Desktop/mem/CR_CPU/db/CPU.sim.cvwf")
 	}
 	LINE{
 		SIGNAL = "out_mem[25]";
-		INDEX = 75;
+		INDEX = 74;
 		FORMAT = E;
 		SCALE = 1;
 		VISIBLE = Y;
@@ -3944,7 +3936,7 @@ VECTOR("C:/Users/Mohammad/Desktop/mem/CR_CPU/db/CPU.sim.cvwf")
 	}
 	LINE{
 		SIGNAL = "out_mem[24]";
-		INDEX = 76;
+		INDEX = 75;
 		FORMAT = E;
 		SCALE = 1;
 		VISIBLE = Y;
@@ -3952,7 +3944,7 @@ VECTOR("C:/Users/Mohammad/Desktop/mem/CR_CPU/db/CPU.sim.cvwf")
 	}
 	LINE{
 		SIGNAL = "out_mem[23]";
-		INDEX = 77;
+		INDEX = 76;
 		FORMAT = E;
 		SCALE = 1;
 		VISIBLE = Y;
@@ -3960,7 +3952,7 @@ VECTOR("C:/Users/Mohammad/Desktop/mem/CR_CPU/db/CPU.sim.cvwf")
 	}
 	LINE{
 		SIGNAL = "out_mem[22]";
-		INDEX = 78;
+		INDEX = 77;
 		FORMAT = E;
 		SCALE = 1;
 		VISIBLE = Y;
@@ -3968,7 +3960,7 @@ VECTOR("C:/Users/Mohammad/Desktop/mem/CR_CPU/db/CPU.sim.cvwf")
 	}
 	LINE{
 		SIGNAL = "out_mem[21]";
-		INDEX = 79;
+		INDEX = 78;
 		FORMAT = E;
 		SCALE = 1;
 		VISIBLE = Y;
@@ -3976,7 +3968,7 @@ VECTOR("C:/Users/Mohammad/Desktop/mem/CR_CPU/db/CPU.sim.cvwf")
 	}
 	LINE{
 		SIGNAL = "out_mem[20]";
-		INDEX = 80;
+		INDEX = 79;
 		FORMAT = E;
 		SCALE = 1;
 		VISIBLE = Y;
@@ -3984,7 +3976,7 @@ VECTOR("C:/Users/Mohammad/Desktop/mem/CR_CPU/db/CPU.sim.cvwf")
 	}
 	LINE{
 		SIGNAL = "out_mem[19]";
-		INDEX = 81;
+		INDEX = 80;
 		FORMAT = E;
 		SCALE = 1;
 		VISIBLE = Y;
@@ -3992,7 +3984,7 @@ VECTOR("C:/Users/Mohammad/Desktop/mem/CR_CPU/db/CPU.sim.cvwf")
 	}
 	LINE{
 		SIGNAL = "out_mem[18]";
-		INDEX = 82;
+		INDEX = 81;
 		FORMAT = E;
 		SCALE = 1;
 		VISIBLE = Y;
@@ -4000,7 +3992,7 @@ VECTOR("C:/Users/Mohammad/Desktop/mem/CR_CPU/db/CPU.sim.cvwf")
 	}
 	LINE{
 		SIGNAL = "out_mem[17]";
-		INDEX = 83;
+		INDEX = 82;
 		FORMAT = E;
 		SCALE = 1;
 		VISIBLE = Y;
@@ -4008,7 +4000,7 @@ VECTOR("C:/Users/Mohammad/Desktop/mem/CR_CPU/db/CPU.sim.cvwf")
 	}
 	LINE{
 		SIGNAL = "out_mem[16]";
-		INDEX = 84;
+		INDEX = 83;
 		FORMAT = E;
 		SCALE = 1;
 		VISIBLE = Y;
@@ -4016,7 +4008,7 @@ VECTOR("C:/Users/Mohammad/Desktop/mem/CR_CPU/db/CPU.sim.cvwf")
 	}
 	LINE{
 		SIGNAL = "out_mem[15]";
-		INDEX = 85;
+		INDEX = 84;
 		FORMAT = E;
 		SCALE = 1;
 		VISIBLE = Y;
@@ -4024,7 +4016,7 @@ VECTOR("C:/Users/Mohammad/Desktop/mem/CR_CPU/db/CPU.sim.cvwf")
 	}
 	LINE{
 		SIGNAL = "out_mem[14]";
-		INDEX = 86;
+		INDEX = 85;
 		FORMAT = E;
 		SCALE = 1;
 		VISIBLE = Y;
@@ -4032,7 +4024,7 @@ VECTOR("C:/Users/Mohammad/Desktop/mem/CR_CPU/db/CPU.sim.cvwf")
 	}
 	LINE{
 		SIGNAL = "out_mem[13]";
-		INDEX = 87;
+		INDEX = 86;
 		FORMAT = E;
 		SCALE = 1;
 		VISIBLE = Y;
@@ -4040,7 +4032,7 @@ VECTOR("C:/Users/Mohammad/Desktop/mem/CR_CPU/db/CPU.sim.cvwf")
 	}
 	LINE{
 		SIGNAL = "out_mem[12]";
-		INDEX = 88;
+		INDEX = 87;
 		FORMAT = E;
 		SCALE = 1;
 		VISIBLE = Y;
@@ -4048,7 +4040,7 @@ VECTOR("C:/Users/Mohammad/Desktop/mem/CR_CPU/db/CPU.sim.cvwf")
 	}
 	LINE{
 		SIGNAL = "out_mem[11]";
-		INDEX = 89;
+		INDEX = 88;
 		FORMAT = E;
 		SCALE = 1;
 		VISIBLE = Y;
@@ -4056,7 +4048,7 @@ VECTOR("C:/Users/Mohammad/Desktop/mem/CR_CPU/db/CPU.sim.cvwf")
 	}
 	LINE{
 		SIGNAL = "out_mem[10]";
-		INDEX = 90;
+		INDEX = 89;
 		FORMAT = E;
 		SCALE = 1;
 		VISIBLE = Y;
@@ -4064,7 +4056,7 @@ VECTOR("C:/Users/Mohammad/Desktop/mem/CR_CPU/db/CPU.sim.cvwf")
 	}
 	LINE{
 		SIGNAL = "out_mem[9]";
-		INDEX = 91;
+		INDEX = 90;
 		FORMAT = E;
 		SCALE = 1;
 		VISIBLE = Y;
@@ -4072,7 +4064,7 @@ VECTOR("C:/Users/Mohammad/Desktop/mem/CR_CPU/db/CPU.sim.cvwf")
 	}
 	LINE{
 		SIGNAL = "out_mem[8]";
-		INDEX = 92;
+		INDEX = 91;
 		FORMAT = E;
 		SCALE = 1;
 		VISIBLE = Y;
@@ -4080,7 +4072,7 @@ VECTOR("C:/Users/Mohammad/Desktop/mem/CR_CPU/db/CPU.sim.cvwf")
 	}
 	LINE{
 		SIGNAL = "out_mem[7]";
-		INDEX = 93;
+		INDEX = 92;
 		FORMAT = E;
 		SCALE = 1;
 		VISIBLE = Y;
@@ -4088,7 +4080,7 @@ VECTOR("C:/Users/Mohammad/Desktop/mem/CR_CPU/db/CPU.sim.cvwf")
 	}
 	LINE{
 		SIGNAL = "out_mem[6]";
-		INDEX = 94;
+		INDEX = 93;
 		FORMAT = E;
 		SCALE = 1;
 		VISIBLE = Y;
@@ -4096,7 +4088,7 @@ VECTOR("C:/Users/Mohammad/Desktop/mem/CR_CPU/db/CPU.sim.cvwf")
 	}
 	LINE{
 		SIGNAL = "out_mem[5]";
-		INDEX = 95;
+		INDEX = 94;
 		FORMAT = E;
 		SCALE = 1;
 		VISIBLE = Y;
@@ -4104,7 +4096,7 @@ VECTOR("C:/Users/Mohammad/Desktop/mem/CR_CPU/db/CPU.sim.cvwf")
 	}
 	LINE{
 		SIGNAL = "out_mem[4]";
-		INDEX = 96;
+		INDEX = 95;
 		FORMAT = E;
 		SCALE = 1;
 		VISIBLE = Y;
@@ -4112,7 +4104,7 @@ VECTOR("C:/Users/Mohammad/Desktop/mem/CR_CPU/db/CPU.sim.cvwf")
 	}
 	LINE{
 		SIGNAL = "out_mem[3]";
-		INDEX = 97;
+		INDEX = 96;
 		FORMAT = E;
 		SCALE = 1;
 		VISIBLE = Y;
@@ -4120,7 +4112,7 @@ VECTOR("C:/Users/Mohammad/Desktop/mem/CR_CPU/db/CPU.sim.cvwf")
 	}
 	LINE{
 		SIGNAL = "out_mem[2]";
-		INDEX = 98;
+		INDEX = 97;
 		FORMAT = E;
 		SCALE = 1;
 		VISIBLE = Y;
@@ -4128,7 +4120,7 @@ VECTOR("C:/Users/Mohammad/Desktop/mem/CR_CPU/db/CPU.sim.cvwf")
 	}
 	LINE{
 		SIGNAL = "out_mem[1]";
-		INDEX = 99;
+		INDEX = 98;
 		FORMAT = E;
 		SCALE = 1;
 		VISIBLE = Y;
@@ -4136,7 +4128,7 @@ VECTOR("C:/Users/Mohammad/Desktop/mem/CR_CPU/db/CPU.sim.cvwf")
 	}
 	LINE{
 		SIGNAL = "out_mem[0]";
-		INDEX = 100;
+		INDEX = 99;
 		FORMAT = E;
 		SCALE = 1;
 		VISIBLE = Y;
@@ -4144,7 +4136,7 @@ VECTOR("C:/Users/Mohammad/Desktop/mem/CR_CPU/db/CPU.sim.cvwf")
 	}
 	LINE{
 		SIGNAL = "pc";
-		INDEX = 101;
+		INDEX = 100;
 		FORMAT = T;
 		SCALE = 1;
 		VISIBLE = Y;
@@ -4152,7 +4144,7 @@ VECTOR("C:/Users/Mohammad/Desktop/mem/CR_CPU/db/CPU.sim.cvwf")
 	}
 	LINE{
 		SIGNAL = "pc[3]";
-		INDEX = 102;
+		INDEX = 101;
 		FORMAT = E;
 		SCALE = 1;
 		VISIBLE = Y;
@@ -4160,7 +4152,7 @@ VECTOR("C:/Users/Mohammad/Desktop/mem/CR_CPU/db/CPU.sim.cvwf")
 	}
 	LINE{
 		SIGNAL = "pc[2]";
-		INDEX = 103;
+		INDEX = 102;
 		FORMAT = E;
 		SCALE = 1;
 		VISIBLE = Y;
@@ -4168,7 +4160,7 @@ VECTOR("C:/Users/Mohammad/Desktop/mem/CR_CPU/db/CPU.sim.cvwf")
 	}
 	LINE{
 		SIGNAL = "pc[1]";
-		INDEX = 104;
+		INDEX = 103;
 		FORMAT = E;
 		SCALE = 1;
 		VISIBLE = Y;
@@ -4176,7 +4168,7 @@ VECTOR("C:/Users/Mohammad/Desktop/mem/CR_CPU/db/CPU.sim.cvwf")
 	}
 	LINE{
 		SIGNAL = "pc[0]";
-		INDEX = 105;
+		INDEX = 104;
 		FORMAT = E;
 		SCALE = 1;
 		VISIBLE = Y;
@@ -4184,7 +4176,7 @@ VECTOR("C:/Users/Mohammad/Desktop/mem/CR_CPU/db/CPU.sim.cvwf")
 	}
 	LINE{
 		SIGNAL = "qa";
-		INDEX = 106;
+		INDEX = 105;
 		FORMAT = T;
 		SCALE = 1;
 		VISIBLE = Y;
@@ -4192,7 +4184,7 @@ VECTOR("C:/Users/Mohammad/Desktop/mem/CR_CPU/db/CPU.sim.cvwf")
 	}
 	LINE{
 		SIGNAL = "qa[31]";
-		INDEX = 107;
+		INDEX = 106;
 		FORMAT = E;
 		SCALE = 1;
 		VISIBLE = Y;
@@ -4200,7 +4192,7 @@ VECTOR("C:/Users/Mohammad/Desktop/mem/CR_CPU/db/CPU.sim.cvwf")
 	}
 	LINE{
 		SIGNAL = "qa[30]";
-		INDEX = 108;
+		INDEX = 107;
 		FORMAT = E;
 		SCALE = 1;
 		VISIBLE = Y;
@@ -4208,7 +4200,7 @@ VECTOR("C:/Users/Mohammad/Desktop/mem/CR_CPU/db/CPU.sim.cvwf")
 	}
 	LINE{
 		SIGNAL = "qa[29]";
-		INDEX = 109;
+		INDEX = 108;
 		FORMAT = E;
 		SCALE = 1;
 		VISIBLE = Y;
@@ -4216,7 +4208,7 @@ VECTOR("C:/Users/Mohammad/Desktop/mem/CR_CPU/db/CPU.sim.cvwf")
 	}
 	LINE{
 		SIGNAL = "qa[28]";
-		INDEX = 110;
+		INDEX = 109;
 		FORMAT = E;
 		SCALE = 1;
 		VISIBLE = Y;
@@ -4224,7 +4216,7 @@ VECTOR("C:/Users/Mohammad/Desktop/mem/CR_CPU/db/CPU.sim.cvwf")
 	}
 	LINE{
 		SIGNAL = "qa[27]";
-		INDEX = 111;
+		INDEX = 110;
 		FORMAT = E;
 		SCALE = 1;
 		VISIBLE = Y;
@@ -4232,7 +4224,7 @@ VECTOR("C:/Users/Mohammad/Desktop/mem/CR_CPU/db/CPU.sim.cvwf")
 	}
 	LINE{
 		SIGNAL = "qa[26]";
-		INDEX = 112;
+		INDEX = 111;
 		FORMAT = E;
 		SCALE = 1;
 		VISIBLE = Y;
@@ -4240,7 +4232,7 @@ VECTOR("C:/Users/Mohammad/Desktop/mem/CR_CPU/db/CPU.sim.cvwf")
 	}
 	LINE{
 		SIGNAL = "qa[25]";
-		INDEX = 113;
+		INDEX = 112;
 		FORMAT = E;
 		SCALE = 1;
 		VISIBLE = Y;
@@ -4248,7 +4240,7 @@ VECTOR("C:/Users/Mohammad/Desktop/mem/CR_CPU/db/CPU.sim.cvwf")
 	}
 	LINE{
 		SIGNAL = "qa[24]";
-		INDEX = 114;
+		INDEX = 113;
 		FORMAT = E;
 		SCALE = 1;
 		VISIBLE = Y;
@@ -4256,7 +4248,7 @@ VECTOR("C:/Users/Mohammad/Desktop/mem/CR_CPU/db/CPU.sim.cvwf")
 	}
 	LINE{
 		SIGNAL = "qa[23]";
-		INDEX = 115;
+		INDEX = 114;
 		FORMAT = E;
 		SCALE = 1;
 		VISIBLE = Y;
@@ -4264,7 +4256,7 @@ VECTOR("C:/Users/Mohammad/Desktop/mem/CR_CPU/db/CPU.sim.cvwf")
 	}
 	LINE{
 		SIGNAL = "qa[22]";
-		INDEX = 116;
+		INDEX = 115;
 		FORMAT = E;
 		SCALE = 1;
 		VISIBLE = Y;
@@ -4272,7 +4264,7 @@ VECTOR("C:/Users/Mohammad/Desktop/mem/CR_CPU/db/CPU.sim.cvwf")
 	}
 	LINE{
 		SIGNAL = "qa[21]";
-		INDEX = 117;
+		INDEX = 116;
 		FORMAT = E;
 		SCALE = 1;
 		VISIBLE = Y;
@@ -4280,7 +4272,7 @@ VECTOR("C:/Users/Mohammad/Desktop/mem/CR_CPU/db/CPU.sim.cvwf")
 	}
 	LINE{
 		SIGNAL = "qa[20]";
-		INDEX = 118;
+		INDEX = 117;
 		FORMAT = E;
 		SCALE = 1;
 		VISIBLE = Y;
@@ -4288,7 +4280,7 @@ VECTOR("C:/Users/Mohammad/Desktop/mem/CR_CPU/db/CPU.sim.cvwf")
 	}
 	LINE{
 		SIGNAL = "qa[19]";
-		INDEX = 119;
+		INDEX = 118;
 		FORMAT = E;
 		SCALE = 1;
 		VISIBLE = Y;
@@ -4296,7 +4288,7 @@ VECTOR("C:/Users/Mohammad/Desktop/mem/CR_CPU/db/CPU.sim.cvwf")
 	}
 	LINE{
 		SIGNAL = "qa[18]";
-		INDEX = 120;
+		INDEX = 119;
 		FORMAT = E;
 		SCALE = 1;
 		VISIBLE = Y;
@@ -4304,7 +4296,7 @@ VECTOR("C:/Users/Mohammad/Desktop/mem/CR_CPU/db/CPU.sim.cvwf")
 	}
 	LINE{
 		SIGNAL = "qa[17]";
-		INDEX = 121;
+		INDEX = 120;
 		FORMAT = E;
 		SCALE = 1;
 		VISIBLE = Y;
@@ -4312,7 +4304,7 @@ VECTOR("C:/Users/Mohammad/Desktop/mem/CR_CPU/db/CPU.sim.cvwf")
 	}
 	LINE{
 		SIGNAL = "qa[16]";
-		INDEX = 122;
+		INDEX = 121;
 		FORMAT = E;
 		SCALE = 1;
 		VISIBLE = Y;
@@ -4320,7 +4312,7 @@ VECTOR("C:/Users/Mohammad/Desktop/mem/CR_CPU/db/CPU.sim.cvwf")
 	}
 	LINE{
 		SIGNAL = "qa[15]";
-		INDEX = 123;
+		INDEX = 122;
 		FORMAT = E;
 		SCALE = 1;
 		VISIBLE = Y;
@@ -4328,7 +4320,7 @@ VECTOR("C:/Users/Mohammad/Desktop/mem/CR_CPU/db/CPU.sim.cvwf")
 	}
 	LINE{
 		SIGNAL = "qa[14]";
-		INDEX = 124;
+		INDEX = 123;
 		FORMAT = E;
 		SCALE = 1;
 		VISIBLE = Y;
@@ -4336,7 +4328,7 @@ VECTOR("C:/Users/Mohammad/Desktop/mem/CR_CPU/db/CPU.sim.cvwf")
 	}
 	LINE{
 		SIGNAL = "qa[13]";
-		INDEX = 125;
+		INDEX = 124;
 		FORMAT = E;
 		SCALE = 1;
 		VISIBLE = Y;
@@ -4344,7 +4336,7 @@ VECTOR("C:/Users/Mohammad/Desktop/mem/CR_CPU/db/CPU.sim.cvwf")
 	}
 	LINE{
 		SIGNAL = "qa[12]";
-		INDEX = 126;
+		INDEX = 125;
 		FORMAT = E;
 		SCALE = 1;
 		VISIBLE = Y;
@@ -4352,7 +4344,7 @@ VECTOR("C:/Users/Mohammad/Desktop/mem/CR_CPU/db/CPU.sim.cvwf")
 	}
 	LINE{
 		SIGNAL = "qa[11]";
-		INDEX = 127;
+		INDEX = 126;
 		FORMAT = E;
 		SCALE = 1;
 		VISIBLE = Y;
@@ -4360,7 +4352,7 @@ VECTOR("C:/Users/Mohammad/Desktop/mem/CR_CPU/db/CPU.sim.cvwf")
 	}
 	LINE{
 		SIGNAL = "qa[10]";
-		INDEX = 128;
+		INDEX = 127;
 		FORMAT = E;
 		SCALE = 1;
 		VISIBLE = Y;
@@ -4368,7 +4360,7 @@ VECTOR("C:/Users/Mohammad/Desktop/mem/CR_CPU/db/CPU.sim.cvwf")
 	}
 	LINE{
 		SIGNAL = "qa[9]";
-		INDEX = 129;
+		INDEX = 128;
 		FORMAT = E;
 		SCALE = 1;
 		VISIBLE = Y;
@@ -4376,7 +4368,7 @@ VECTOR("C:/Users/Mohammad/Desktop/mem/CR_CPU/db/CPU.sim.cvwf")
 	}
 	LINE{
 		SIGNAL = "qa[8]";
-		INDEX = 130;
+		INDEX = 129;
 		FORMAT = E;
 		SCALE = 1;
 		VISIBLE = Y;
@@ -4384,7 +4376,7 @@ VECTOR("C:/Users/Mohammad/Desktop/mem/CR_CPU/db/CPU.sim.cvwf")
 	}
 	LINE{
 		SIGNAL = "qa[7]";
-		INDEX = 131;
+		INDEX = 130;
 		FORMAT = E;
 		SCALE = 1;
 		VISIBLE = Y;
@@ -4392,7 +4384,7 @@ VECTOR("C:/Users/Mohammad/Desktop/mem/CR_CPU/db/CPU.sim.cvwf")
 	}
 	LINE{
 		SIGNAL = "qa[6]";
-		INDEX = 132;
+		INDEX = 131;
 		FORMAT = E;
 		SCALE = 1;
 		VISIBLE = Y;
@@ -4400,7 +4392,7 @@ VECTOR("C:/Users/Mohammad/Desktop/mem/CR_CPU/db/CPU.sim.cvwf")
 	}
 	LINE{
 		SIGNAL = "qa[5]";
-		INDEX = 133;
+		INDEX = 132;
 		FORMAT = E;
 		SCALE = 1;
 		VISIBLE = Y;
@@ -4408,7 +4400,7 @@ VECTOR("C:/Users/Mohammad/Desktop/mem/CR_CPU/db/CPU.sim.cvwf")
 	}
 	LINE{
 		SIGNAL = "qa[4]";
-		INDEX = 134;
+		INDEX = 133;
 		FORMAT = E;
 		SCALE = 1;
 		VISIBLE = Y;
@@ -4416,7 +4408,7 @@ VECTOR("C:/Users/Mohammad/Desktop/mem/CR_CPU/db/CPU.sim.cvwf")
 	}
 	LINE{
 		SIGNAL = "qa[3]";
-		INDEX = 135;
+		INDEX = 134;
 		FORMAT = E;
 		SCALE = 1;
 		VISIBLE = Y;
@@ -4424,7 +4416,7 @@ VECTOR("C:/Users/Mohammad/Desktop/mem/CR_CPU/db/CPU.sim.cvwf")
 	}
 	LINE{
 		SIGNAL = "qa[2]";
-		INDEX = 136;
+		INDEX = 135;
 		FORMAT = E;
 		SCALE = 1;
 		VISIBLE = Y;
@@ -4432,7 +4424,7 @@ VECTOR("C:/Users/Mohammad/Desktop/mem/CR_CPU/db/CPU.sim.cvwf")
 	}
 	LINE{
 		SIGNAL = "qa[1]";
-		INDEX = 137;
+		INDEX = 136;
 		FORMAT = E;
 		SCALE = 1;
 		VISIBLE = Y;
@@ -4440,7 +4432,7 @@ VECTOR("C:/Users/Mohammad/Desktop/mem/CR_CPU/db/CPU.sim.cvwf")
 	}
 	LINE{
 		SIGNAL = "qa[0]";
-		INDEX = 138;
+		INDEX = 137;
 		FORMAT = E;
 		SCALE = 1;
 		VISIBLE = Y;
@@ -4448,7 +4440,7 @@ VECTOR("C:/Users/Mohammad/Desktop/mem/CR_CPU/db/CPU.sim.cvwf")
 	}
 	LINE{
 		SIGNAL = "qa8";
-		INDEX = 139;
+		INDEX = 138;
 		FORMAT = T;
 		SCALE = 1;
 		VISIBLE = Y;
@@ -4456,7 +4448,7 @@ VECTOR("C:/Users/Mohammad/Desktop/mem/CR_CPU/db/CPU.sim.cvwf")
 	}
 	LINE{
 		SIGNAL = "qa8[7]";
-		INDEX = 140;
+		INDEX = 139;
 		FORMAT = E;
 		SCALE = 1;
 		VISIBLE = Y;
@@ -4464,7 +4456,7 @@ VECTOR("C:/Users/Mohammad/Desktop/mem/CR_CPU/db/CPU.sim.cvwf")
 	}
 	LINE{
 		SIGNAL = "qa8[6]";
-		INDEX = 141;
+		INDEX = 140;
 		FORMAT = E;
 		SCALE = 1;
 		VISIBLE = Y;
@@ -4472,7 +4464,7 @@ VECTOR("C:/Users/Mohammad/Desktop/mem/CR_CPU/db/CPU.sim.cvwf")
 	}
 	LINE{
 		SIGNAL = "qa8[5]";
-		INDEX = 142;
+		INDEX = 141;
 		FORMAT = E;
 		SCALE = 1;
 		VISIBLE = Y;
@@ -4480,7 +4472,7 @@ VECTOR("C:/Users/Mohammad/Desktop/mem/CR_CPU/db/CPU.sim.cvwf")
 	}
 	LINE{
 		SIGNAL = "qa8[4]";
-		INDEX = 143;
+		INDEX = 142;
 		FORMAT = E;
 		SCALE = 1;
 		VISIBLE = Y;
@@ -4488,7 +4480,7 @@ VECTOR("C:/Users/Mohammad/Desktop/mem/CR_CPU/db/CPU.sim.cvwf")
 	}
 	LINE{
 		SIGNAL = "qa8[3]";
-		INDEX = 144;
+		INDEX = 143;
 		FORMAT = E;
 		SCALE = 1;
 		VISIBLE = Y;
@@ -4496,7 +4488,7 @@ VECTOR("C:/Users/Mohammad/Desktop/mem/CR_CPU/db/CPU.sim.cvwf")
 	}
 	LINE{
 		SIGNAL = "qa8[2]";
-		INDEX = 145;
+		INDEX = 144;
 		FORMAT = E;
 		SCALE = 1;
 		VISIBLE = Y;
@@ -4504,7 +4496,7 @@ VECTOR("C:/Users/Mohammad/Desktop/mem/CR_CPU/db/CPU.sim.cvwf")
 	}
 	LINE{
 		SIGNAL = "qa8[1]";
-		INDEX = 146;
+		INDEX = 145;
 		FORMAT = E;
 		SCALE = 1;
 		VISIBLE = Y;
@@ -4512,7 +4504,7 @@ VECTOR("C:/Users/Mohammad/Desktop/mem/CR_CPU/db/CPU.sim.cvwf")
 	}
 	LINE{
 		SIGNAL = "qa8[0]";
-		INDEX = 147;
+		INDEX = 146;
 		FORMAT = E;
 		SCALE = 1;
 		VISIBLE = Y;
@@ -4520,7 +4512,7 @@ VECTOR("C:/Users/Mohammad/Desktop/mem/CR_CPU/db/CPU.sim.cvwf")
 	}
 	LINE{
 		SIGNAL = "qb";
-		INDEX = 148;
+		INDEX = 147;
 		FORMAT = T;
 		SCALE = 1;
 		VISIBLE = Y;
@@ -4528,7 +4520,7 @@ VECTOR("C:/Users/Mohammad/Desktop/mem/CR_CPU/db/CPU.sim.cvwf")
 	}
 	LINE{
 		SIGNAL = "qb[31]";
-		INDEX = 149;
+		INDEX = 148;
 		FORMAT = E;
 		SCALE = 1;
 		VISIBLE = Y;
@@ -4536,7 +4528,7 @@ VECTOR("C:/Users/Mohammad/Desktop/mem/CR_CPU/db/CPU.sim.cvwf")
 	}
 	LINE{
 		SIGNAL = "qb[30]";
-		INDEX = 150;
+		INDEX = 149;
 		FORMAT = E;
 		SCALE = 1;
 		VISIBLE = Y;
@@ -4544,7 +4536,7 @@ VECTOR("C:/Users/Mohammad/Desktop/mem/CR_CPU/db/CPU.sim.cvwf")
 	}
 	LINE{
 		SIGNAL = "qb[29]";
-		INDEX = 151;
+		INDEX = 150;
 		FORMAT = E;
 		SCALE = 1;
 		VISIBLE = Y;
@@ -4552,7 +4544,7 @@ VECTOR("C:/Users/Mohammad/Desktop/mem/CR_CPU/db/CPU.sim.cvwf")
 	}
 	LINE{
 		SIGNAL = "qb[28]";
-		INDEX = 152;
+		INDEX = 151;
 		FORMAT = E;
 		SCALE = 1;
 		VISIBLE = Y;
@@ -4560,7 +4552,7 @@ VECTOR("C:/Users/Mohammad/Desktop/mem/CR_CPU/db/CPU.sim.cvwf")
 	}
 	LINE{
 		SIGNAL = "qb[27]";
-		INDEX = 153;
+		INDEX = 152;
 		FORMAT = E;
 		SCALE = 1;
 		VISIBLE = Y;
@@ -4568,7 +4560,7 @@ VECTOR("C:/Users/Mohammad/Desktop/mem/CR_CPU/db/CPU.sim.cvwf")
 	}
 	LINE{
 		SIGNAL = "qb[26]";
-		INDEX = 154;
+		INDEX = 153;
 		FORMAT = E;
 		SCALE = 1;
 		VISIBLE = Y;
@@ -4576,7 +4568,7 @@ VECTOR("C:/Users/Mohammad/Desktop/mem/CR_CPU/db/CPU.sim.cvwf")
 	}
 	LINE{
 		SIGNAL = "qb[25]";
-		INDEX = 155;
+		INDEX = 154;
 		FORMAT = E;
 		SCALE = 1;
 		VISIBLE = Y;
@@ -4584,7 +4576,7 @@ VECTOR("C:/Users/Mohammad/Desktop/mem/CR_CPU/db/CPU.sim.cvwf")
 	}
 	LINE{
 		SIGNAL = "qb[24]";
-		INDEX = 156;
+		INDEX = 155;
 		FORMAT = E;
 		SCALE = 1;
 		VISIBLE = Y;
@@ -4592,7 +4584,7 @@ VECTOR("C:/Users/Mohammad/Desktop/mem/CR_CPU/db/CPU.sim.cvwf")
 	}
 	LINE{
 		SIGNAL = "qb[23]";
-		INDEX = 157;
+		INDEX = 156;
 		FORMAT = E;
 		SCALE = 1;
 		VISIBLE = Y;
@@ -4600,7 +4592,7 @@ VECTOR("C:/Users/Mohammad/Desktop/mem/CR_CPU/db/CPU.sim.cvwf")
 	}
 	LINE{
 		SIGNAL = "qb[22]";
-		INDEX = 158;
+		INDEX = 157;
 		FORMAT = E;
 		SCALE = 1;
 		VISIBLE = Y;
@@ -4608,7 +4600,7 @@ VECTOR("C:/Users/Mohammad/Desktop/mem/CR_CPU/db/CPU.sim.cvwf")
 	}
 	LINE{
 		SIGNAL = "qb[21]";
-		INDEX = 159;
+		INDEX = 158;
 		FORMAT = E;
 		SCALE = 1;
 		VISIBLE = Y;
@@ -4616,7 +4608,7 @@ VECTOR("C:/Users/Mohammad/Desktop/mem/CR_CPU/db/CPU.sim.cvwf")
 	}
 	LINE{
 		SIGNAL = "qb[20]";
-		INDEX = 160;
+		INDEX = 159;
 		FORMAT = E;
 		SCALE = 1;
 		VISIBLE = Y;
@@ -4624,7 +4616,7 @@ VECTOR("C:/Users/Mohammad/Desktop/mem/CR_CPU/db/CPU.sim.cvwf")
 	}
 	LINE{
 		SIGNAL = "qb[19]";
-		INDEX = 161;
+		INDEX = 160;
 		FORMAT = E;
 		SCALE = 1;
 		VISIBLE = Y;
@@ -4632,7 +4624,7 @@ VECTOR("C:/Users/Mohammad/Desktop/mem/CR_CPU/db/CPU.sim.cvwf")
 	}
 	LINE{
 		SIGNAL = "qb[18]";
-		INDEX = 162;
+		INDEX = 161;
 		FORMAT = E;
 		SCALE = 1;
 		VISIBLE = Y;
@@ -4640,7 +4632,7 @@ VECTOR("C:/Users/Mohammad/Desktop/mem/CR_CPU/db/CPU.sim.cvwf")
 	}
 	LINE{
 		SIGNAL = "qb[17]";
-		INDEX = 163;
+		INDEX = 162;
 		FORMAT = E;
 		SCALE = 1;
 		VISIBLE = Y;
@@ -4648,7 +4640,7 @@ VECTOR("C:/Users/Mohammad/Desktop/mem/CR_CPU/db/CPU.sim.cvwf")
 	}
 	LINE{
 		SIGNAL = "qb[16]";
-		INDEX = 164;
+		INDEX = 163;
 		FORMAT = E;
 		SCALE = 1;
 		VISIBLE = Y;
@@ -4656,7 +4648,7 @@ VECTOR("C:/Users/Mohammad/Desktop/mem/CR_CPU/db/CPU.sim.cvwf")
 	}
 	LINE{
 		SIGNAL = "qb[15]";
-		INDEX = 165;
+		INDEX = 164;
 		FORMAT = E;
 		SCALE = 1;
 		VISIBLE = Y;
@@ -4664,7 +4656,7 @@ VECTOR("C:/Users/Mohammad/Desktop/mem/CR_CPU/db/CPU.sim.cvwf")
 	}
 	LINE{
 		SIGNAL = "qb[14]";
-		INDEX = 166;
+		INDEX = 165;
 		FORMAT = E;
 		SCALE = 1;
 		VISIBLE = Y;
@@ -4672,7 +4664,7 @@ VECTOR("C:/Users/Mohammad/Desktop/mem/CR_CPU/db/CPU.sim.cvwf")
 	}
 	LINE{
 		SIGNAL = "qb[13]";
-		INDEX = 167;
+		INDEX = 166;
 		FORMAT = E;
 		SCALE = 1;
 		VISIBLE = Y;
@@ -4680,7 +4672,7 @@ VECTOR("C:/Users/Mohammad/Desktop/mem/CR_CPU/db/CPU.sim.cvwf")
 	}
 	LINE{
 		SIGNAL = "qb[12]";
-		INDEX = 168;
+		INDEX = 167;
 		FORMAT = E;
 		SCALE = 1;
 		VISIBLE = Y;
@@ -4688,7 +4680,7 @@ VECTOR("C:/Users/Mohammad/Desktop/mem/CR_CPU/db/CPU.sim.cvwf")
 	}
 	LINE{
 		SIGNAL = "qb[11]";
-		INDEX = 169;
+		INDEX = 168;
 		FORMAT = E;
 		SCALE = 1;
 		VISIBLE = Y;
@@ -4696,7 +4688,7 @@ VECTOR("C:/Users/Mohammad/Desktop/mem/CR_CPU/db/CPU.sim.cvwf")
 	}
 	LINE{
 		SIGNAL = "qb[10]";
-		INDEX = 170;
+		INDEX = 169;
 		FORMAT = E;
 		SCALE = 1;
 		VISIBLE = Y;
@@ -4704,7 +4696,7 @@ VECTOR("C:/Users/Mohammad/Desktop/mem/CR_CPU/db/CPU.sim.cvwf")
 	}
 	LINE{
 		SIGNAL = "qb[9]";
-		INDEX = 171;
+		INDEX = 170;
 		FORMAT = E;
 		SCALE = 1;
 		VISIBLE = Y;
@@ -4712,7 +4704,7 @@ VECTOR("C:/Users/Mohammad/Desktop/mem/CR_CPU/db/CPU.sim.cvwf")
 	}
 	LINE{
 		SIGNAL = "qb[8]";
-		INDEX = 172;
+		INDEX = 171;
 		FORMAT = E;
 		SCALE = 1;
 		VISIBLE = Y;
@@ -4720,7 +4712,7 @@ VECTOR("C:/Users/Mohammad/Desktop/mem/CR_CPU/db/CPU.sim.cvwf")
 	}
 	LINE{
 		SIGNAL = "qb[7]";
-		INDEX = 173;
+		INDEX = 172;
 		FORMAT = E;
 		SCALE = 1;
 		VISIBLE = Y;
@@ -4728,7 +4720,7 @@ VECTOR("C:/Users/Mohammad/Desktop/mem/CR_CPU/db/CPU.sim.cvwf")
 	}
 	LINE{
 		SIGNAL = "qb[6]";
-		INDEX = 174;
+		INDEX = 173;
 		FORMAT = E;
 		SCALE = 1;
 		VISIBLE = Y;
@@ -4736,7 +4728,7 @@ VECTOR("C:/Users/Mohammad/Desktop/mem/CR_CPU/db/CPU.sim.cvwf")
 	}
 	LINE{
 		SIGNAL = "qb[5]";
-		INDEX = 175;
+		INDEX = 174;
 		FORMAT = E;
 		SCALE = 1;
 		VISIBLE = Y;
@@ -4744,7 +4736,7 @@ VECTOR("C:/Users/Mohammad/Desktop/mem/CR_CPU/db/CPU.sim.cvwf")
 	}
 	LINE{
 		SIGNAL = "qb[4]";
-		INDEX = 176;
+		INDEX = 175;
 		FORMAT = E;
 		SCALE = 1;
 		VISIBLE = Y;
@@ -4752,7 +4744,7 @@ VECTOR("C:/Users/Mohammad/Desktop/mem/CR_CPU/db/CPU.sim.cvwf")
 	}
 	LINE{
 		SIGNAL = "qb[3]";
-		INDEX = 177;
+		INDEX = 176;
 		FORMAT = E;
 		SCALE = 1;
 		VISIBLE = Y;
@@ -4760,7 +4752,7 @@ VECTOR("C:/Users/Mohammad/Desktop/mem/CR_CPU/db/CPU.sim.cvwf")
 	}
 	LINE{
 		SIGNAL = "qb[2]";
-		INDEX = 178;
+		INDEX = 177;
 		FORMAT = E;
 		SCALE = 1;
 		VISIBLE = Y;
@@ -4768,7 +4760,7 @@ VECTOR("C:/Users/Mohammad/Desktop/mem/CR_CPU/db/CPU.sim.cvwf")
 	}
 	LINE{
 		SIGNAL = "qb[1]";
-		INDEX = 179;
+		INDEX = 178;
 		FORMAT = E;
 		SCALE = 1;
 		VISIBLE = Y;
@@ -4776,7 +4768,7 @@ VECTOR("C:/Users/Mohammad/Desktop/mem/CR_CPU/db/CPU.sim.cvwf")
 	}
 	LINE{
 		SIGNAL = "qb[0]";
-		INDEX = 180;
+		INDEX = 179;
 		FORMAT = E;
 		SCALE = 1;
 		VISIBLE = Y;
@@ -4784,7 +4776,7 @@ VECTOR("C:/Users/Mohammad/Desktop/mem/CR_CPU/db/CPU.sim.cvwf")
 	}
 	LINE{
 		SIGNAL = "qb8";
-		INDEX = 181;
+		INDEX = 180;
 		FORMAT = T;
 		SCALE = 1;
 		VISIBLE = Y;
@@ -4792,7 +4784,7 @@ VECTOR("C:/Users/Mohammad/Desktop/mem/CR_CPU/db/CPU.sim.cvwf")
 	}
 	LINE{
 		SIGNAL = "qb8[7]";
-		INDEX = 182;
+		INDEX = 181;
 		FORMAT = E;
 		SCALE = 1;
 		VISIBLE = Y;
@@ -4800,7 +4792,7 @@ VECTOR("C:/Users/Mohammad/Desktop/mem/CR_CPU/db/CPU.sim.cvwf")
 	}
 	LINE{
 		SIGNAL = "qb8[6]";
-		INDEX = 183;
+		INDEX = 182;
 		FORMAT = E;
 		SCALE = 1;
 		VISIBLE = Y;
@@ -4808,7 +4800,7 @@ VECTOR("C:/Users/Mohammad/Desktop/mem/CR_CPU/db/CPU.sim.cvwf")
 	}
 	LINE{
 		SIGNAL = "qb8[5]";
-		INDEX = 184;
+		INDEX = 183;
 		FORMAT = E;
 		SCALE = 1;
 		VISIBLE = Y;
@@ -4816,7 +4808,7 @@ VECTOR("C:/Users/Mohammad/Desktop/mem/CR_CPU/db/CPU.sim.cvwf")
 	}
 	LINE{
 		SIGNAL = "qb8[4]";
-		INDEX = 185;
+		INDEX = 184;
 		FORMAT = E;
 		SCALE = 1;
 		VISIBLE = Y;
@@ -4824,7 +4816,7 @@ VECTOR("C:/Users/Mohammad/Desktop/mem/CR_CPU/db/CPU.sim.cvwf")
 	}
 	LINE{
 		SIGNAL = "qb8[3]";
-		INDEX = 186;
+		INDEX = 185;
 		FORMAT = E;
 		SCALE = 1;
 		VISIBLE = Y;
@@ -4832,7 +4824,7 @@ VECTOR("C:/Users/Mohammad/Desktop/mem/CR_CPU/db/CPU.sim.cvwf")
 	}
 	LINE{
 		SIGNAL = "qb8[2]";
-		INDEX = 187;
+		INDEX = 186;
 		FORMAT = E;
 		SCALE = 1;
 		VISIBLE = Y;
@@ -4840,7 +4832,7 @@ VECTOR("C:/Users/Mohammad/Desktop/mem/CR_CPU/db/CPU.sim.cvwf")
 	}
 	LINE{
 		SIGNAL = "qb8[1]";
-		INDEX = 188;
+		INDEX = 187;
 		FORMAT = E;
 		SCALE = 1;
 		VISIBLE = Y;
@@ -4848,7 +4840,7 @@ VECTOR("C:/Users/Mohammad/Desktop/mem/CR_CPU/db/CPU.sim.cvwf")
 	}
 	LINE{
 		SIGNAL = "qb8[0]";
-		INDEX = 189;
+		INDEX = 188;
 		FORMAT = E;
 		SCALE = 1;
 		VISIBLE = Y;
@@ -4856,7 +4848,7 @@ VECTOR("C:/Users/Mohammad/Desktop/mem/CR_CPU/db/CPU.sim.cvwf")
 	}
 	LINE{
 		SIGNAL = "ins_mem_en";
-		INDEX = 190;
+		INDEX = 189;
 		FORMAT = E;
 		SCALE = 1;
 		VISIBLE = Y;
@@ -4864,7 +4856,7 @@ VECTOR("C:/Users/Mohammad/Desktop/mem/CR_CPU/db/CPU.sim.cvwf")
 	}
 	LINE{
 		SIGNAL = "pc_count";
-		INDEX = 191;
+		INDEX = 190;
 		FORMAT = E;
 		SCALE = 1;
 		VISIBLE = Y;
@@ -4872,7 +4864,7 @@ VECTOR("C:/Users/Mohammad/Desktop/mem/CR_CPU/db/CPU.sim.cvwf")
 	}
 	LINE{
 		SIGNAL = "reg_rd_en_a";
-		INDEX = 192;
+		INDEX = 191;
 		FORMAT = E;
 		SCALE = 1;
 		VISIBLE = Y;
@@ -4880,7 +4872,7 @@ VECTOR("C:/Users/Mohammad/Desktop/mem/CR_CPU/db/CPU.sim.cvwf")
 	}
 	LINE{
 		SIGNAL = "reg_rd_en_b";
-		INDEX = 193;
+		INDEX = 192;
 		FORMAT = E;
 		SCALE = 1;
 		VISIBLE = Y;
@@ -4888,7 +4880,7 @@ VECTOR("C:/Users/Mohammad/Desktop/mem/CR_CPU/db/CPU.sim.cvwf")
 	}
 	LINE{
 		SIGNAL = "reg_wr_en";
-		INDEX = 194;
+		INDEX = 193;
 		FORMAT = E;
 		SCALE = 1;
 		VISIBLE = Y;
@@ -4896,15 +4888,15 @@ VECTOR("C:/Users/Mohammad/Desktop/mem/CR_CPU/db/CPU.sim.cvwf")
 	}
 	LINE{
 		SIGNAL = "sel_mem_data";
-		INDEX = 195;
+		INDEX = 194;
 		FORMAT = E;
 		SCALE = 1;
 		VISIBLE = Y;
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "word";
-		INDEX = 196;
+		SIGNAL = "word_out";
+		INDEX = 195;
 		FORMAT = E;
 		SCALE = 1;
 		VISIBLE = Y;
