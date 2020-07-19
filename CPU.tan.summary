@@ -5,19 +5,29 @@ Timing Analyzer Summary
 Type           : Worst-case tco
 Slack          : N/A
 Required Time  : None
-Actual Time    : 100.772 ns
-From           : CU_mp:inst2|micro_mem:inst1|altsyncram:altsyncram_component|altsyncram_7881:auto_generated|ram_block1a0~porta_address_reg7
-To             : out[31]
+Actual Time    : 4.799 ns
+From           : sequencer2:inst9|counter_1bit:inst1|lpm_counter:lpm_counter_component|cntr_nlh:auto_generated|safe_q[0]
+To             : ins_mem_en
 From Clock     : clock
+To Clock       : --
+Failed Paths   : 0
+
+Type           : Worst-case tpd
+Slack          : N/A
+Required Time  : None
+Actual Time    : 9.751 ns
+From           : opcode[0]
+To             : reg_lui
+From Clock     : --
 To Clock       : --
 Failed Paths   : 0
 
 Type           : Clock Setup: 'clock'
 Slack          : N/A
 Required Time  : None
-Actual Time    : 5.22 MHz ( period = 191.568 ns )
-From           : CU_mp:inst2|micro_mem:inst1|altsyncram:altsyncram_component|altsyncram_7881:auto_generated|ram_block1a0~porta_address_reg7
-To             : registers_mem:inst9|regs3_8bit:inst18|alt3pram:alt3pram_component|altdpram:altdpram_component2|altsyncram:ram_block|altsyncram_2ep1:auto_generated|ram_block1a0~porta_datain_reg15
+Actual Time    : Restricted to 500.00 MHz ( period = 2.000 ns )
+From           : sequencer2:inst9|counter_1bit:inst1|lpm_counter:lpm_counter_component|cntr_nlh:auto_generated|safe_q[0]
+To             : sequencer2:inst9|counter_1bit:inst1|lpm_counter:lpm_counter_component|cntr_nlh:auto_generated|safe_q[0]
 From Clock     : clock
 To Clock       : clock
 Failed Paths   : 0
