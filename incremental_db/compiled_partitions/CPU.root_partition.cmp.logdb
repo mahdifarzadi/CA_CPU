@@ -1,2 +1,6 @@
 v1
+<<<<<<< HEAD
 REGISTER_PACKING,REG_PACK_TYPE_FINISHED,ADATA,0,reg_rd_en_a,reg_rd_en_a,
+=======
+REGISTER_PACKING,REG_PACK_TYPE_FINISHED,ADATA,0,ALU_result_out[31],ALU_result_out[31],
+>>>>>>> cea1f349326de6c5a53c28d3450add5a8831be17

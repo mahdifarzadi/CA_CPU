@@ -4105,9 +4105,15 @@ VECTOR("F:/dev/CR_CPU/db/CPU.sim.cvwf")
 {
 	ZOOM{
 		ZBEGIN = 0;
+<<<<<<< HEAD
 		ZEND = 976562;
 		NUMERATOR = 817;
 		DENOMINATOR = 976562;
+=======
+		ZEND = 3344512;
+		NUMERATOR = 952;
+		DENOMINATOR = 3344512;
+>>>>>>> cea1f349326de6c5a53c28d3450add5a8831be17
 		TOP_INDEX = 0;
 	}
 	CLOCK{
