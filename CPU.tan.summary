@@ -2,34 +2,34 @@
 Timing Analyzer Summary
 --------------------------------------------------------------------------------------
 
-Type           : Worst-case tsu
-Slack          : N/A
-Required Time  : None
-Actual Time    : 4.060 ns
-From           : mem_data[1]
-To             : D_FF_32:inst2|lpm_ff:lpm_ff_component|dffs[1]
-From Clock     : --
-To Clock       : clock
-Failed Paths   : 0
-
 Type           : Worst-case tco
 Slack          : N/A
 Required Time  : None
-Actual Time    : 6.886 ns
-From           : D_FF_32:inst1|lpm_ff:lpm_ff_component|dffs[4]
-To             : ALU_out[4]
+Actual Time    : 12.566 ns
+From           : instructions_mem:inst|altsyncram:altsyncram_component|altsyncram_ad91:auto_generated|ram_block1a14~porta_address_reg7
+To             : ID_in[2]
 From Clock     : clock
 To Clock       : --
 Failed Paths   : 0
 
-Type           : Worst-case th
+Type           : Clock Setup: 'clock'
 Slack          : N/A
 Required Time  : None
-Actual Time    : -1.786 ns
-From           : mem_data[4]
-To             : D_FF_32:inst2|lpm_ff:lpm_ff_component|dffs[4]
-From Clock     : --
+Actual Time    : 10.57 MHz ( period = 94.602 ns )
+From           : ID_EX:inst12|D_FF_1:inst2|lpm_ff:lpm_ff_component|dffs[0]
+To             : EX_MEM:inst16|D_FF_32:inst|lpm_ff:lpm_ff_component|dffs[31]
+From Clock     : clock
 To Clock       : clock
+Failed Paths   : 0
+
+Type           : Clock Setup: 'clock_reg'
+Slack          : N/A
+Required Time  : None
+Actual Time    : Restricted to 500.00 MHz ( period = 2.000 ns )
+From           : registers_mem:inst9|regs2_8bit:inst17|alt3pram:alt3pram_component|altdpram:altdpram_component1|altsyncram:ram_block|altsyncram_2ep1:auto_generated|ram_block1a0~porta_datain_reg7
+To             : registers_mem:inst9|regs2_8bit:inst17|alt3pram:alt3pram_component|altdpram:altdpram_component1|altsyncram:ram_block|altsyncram_2ep1:auto_generated|ram_block1a7~porta_memory_reg0
+From Clock     : clock_reg
+To Clock       : clock_reg
 Failed Paths   : 0
 
 Type           : Total number of failed paths
