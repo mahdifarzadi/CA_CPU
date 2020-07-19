@@ -2,33 +2,33 @@
 Timing Analyzer Summary
 --------------------------------------------------------------------------------------
 
-Type           : Worst-case tsu
-Slack          : N/A
-Required Time  : None
-Actual Time    : 3.331 ns
-From           : read_data[14]
-To             : D_FF_32:inst1|lpm_ff:lpm_ff_component|dffs[14]
-From Clock     : --
-To Clock       : clock
-Failed Paths   : 0
-
 Type           : Worst-case tco
 Slack          : N/A
 Required Time  : None
-Actual Time    : 6.912 ns
-From           : D_FF_32:inst1|lpm_ff:lpm_ff_component|dffs[13]
-To             : read_data_out[13]
+Actual Time    : 4.799 ns
+From           : sequencer2:inst9|counter_1bit:inst1|lpm_counter:lpm_counter_component|cntr_nlh:auto_generated|safe_q[0]
+To             : ins_mem_en
 From Clock     : clock
 To Clock       : --
 Failed Paths   : 0
 
-Type           : Worst-case th
+Type           : Worst-case tpd
 Slack          : N/A
 Required Time  : None
-Actual Time    : -1.788 ns
-From           : ALU_result[28]
-To             : D_FF_32:inst|lpm_ff:lpm_ff_component|dffs[28]
+Actual Time    : 9.751 ns
+From           : opcode[0]
+To             : reg_lui
 From Clock     : --
+To Clock       : --
+Failed Paths   : 0
+
+Type           : Clock Setup: 'clock'
+Slack          : N/A
+Required Time  : None
+Actual Time    : Restricted to 500.00 MHz ( period = 2.000 ns )
+From           : sequencer2:inst9|counter_1bit:inst1|lpm_counter:lpm_counter_component|cntr_nlh:auto_generated|safe_q[0]
+To             : sequencer2:inst9|counter_1bit:inst1|lpm_counter:lpm_counter_component|cntr_nlh:auto_generated|safe_q[0]
+From Clock     : clock
 To Clock       : clock
 Failed Paths   : 0
 

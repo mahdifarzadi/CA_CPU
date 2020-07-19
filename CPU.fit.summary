@@ -1,15 +1,15 @@
-Fitter Status : Successful - Fri Jul 17 23:11:12 2020
+Fitter Status : Successful - Sun Jul 19 13:06:26 2020
 Quartus II Version : 9.0 Build 132 02/25/2009 SJ Web Edition
 Revision Name : CPU
-Top-level Entity Name : MEM_WB
+Top-level Entity Name : CU_mp_pipline
 Family : Stratix II
 Device : EP2S15F484C3
 Timing Models : Final
 Logic utilization : < 1 %
-    Combinational ALUTs : 0 / 12,480 ( 0 % )
-    Dedicated logic registers : 77 / 12,480 ( < 1 % )
-Total registers : 77
-Total pins : 155 / 343 ( 45 % )
+    Combinational ALUTs : 12 / 12,480 ( < 1 % )
+    Dedicated logic registers : 1 / 12,480 ( < 1 % )
+Total registers : 1
+Total pins : 23 / 343 ( 7 % )
 Total virtual pins : 0
 Total block memory bits : 0 / 419,328 ( 0 % )
 DSP block 9-bit elements : 0 / 96 ( 0 % )
