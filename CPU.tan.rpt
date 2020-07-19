@@ -1,5 +1,5 @@
 Classic Timing Analyzer report for CPU
-Sun Jul 19 13:06:32 2020
+Sun Jul 19 15:22:07 2020
 Quartus II Version 9.0 Build 132 02/25/2009 SJ Web Edition
 
 
@@ -11,9 +11,9 @@ Quartus II Version 9.0 Build 132 02/25/2009 SJ Web Edition
   3. Timing Analyzer Settings
   4. Clock Settings Summary
   5. Parallel Compilation
-  6. Clock Setup: 'clock'
+  6. tsu
   7. tco
-  8. tpd
+  8. th
   9. Timing Analyzer Messages
 
 
@@ -37,16 +37,16 @@ applicable agreement for further details.
 
 
 
-+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Timing Analyzer Summary                                                                                                                                                                                                                                                                                                                                          ;
-+------------------------------+-------+---------------+------------------------------------------------+---------------------------------------------------------------------------------------------------------+---------------------------------------------------------------------------------------------------------+------------+----------+--------------+
-; Type                         ; Slack ; Required Time ; Actual Time                                    ; From                                                                                                    ; To                                                                                                      ; From Clock ; To Clock ; Failed Paths ;
-+------------------------------+-------+---------------+------------------------------------------------+---------------------------------------------------------------------------------------------------------+---------------------------------------------------------------------------------------------------------+------------+----------+--------------+
-; Worst-case tco               ; N/A   ; None          ; 4.799 ns                                       ; sequencer2:inst9|counter_1bit:inst1|lpm_counter:lpm_counter_component|cntr_nlh:auto_generated|safe_q[0] ; ins_mem_en                                                                                              ; clock      ; --       ; 0            ;
-; Worst-case tpd               ; N/A   ; None          ; 9.751 ns                                       ; opcode[0]                                                                                               ; reg_lui                                                                                                 ; --         ; --       ; 0            ;
-; Clock Setup: 'clock'         ; N/A   ; None          ; Restricted to 500.00 MHz ( period = 2.000 ns ) ; sequencer2:inst9|counter_1bit:inst1|lpm_counter:lpm_counter_component|cntr_nlh:auto_generated|safe_q[0] ; sequencer2:inst9|counter_1bit:inst1|lpm_counter:lpm_counter_component|cntr_nlh:auto_generated|safe_q[0] ; clock      ; clock    ; 0            ;
-; Total number of failed paths ;       ;               ;                                                ;                                                                                                         ;                                                                                                         ;            ;          ; 0            ;
-+------------------------------+-------+---------------+------------------------------------------------+---------------------------------------------------------------------------------------------------------+---------------------------------------------------------------------------------------------------------+------------+----------+--------------+
++-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Timing Analyzer Summary                                                                                                                                                                                   ;
++------------------------------+-------+---------------+-------------+-----------------------------------------------+-----------------------------------------------+------------+----------+--------------+
+; Type                         ; Slack ; Required Time ; Actual Time ; From                                          ; To                                            ; From Clock ; To Clock ; Failed Paths ;
++------------------------------+-------+---------------+-------------+-----------------------------------------------+-----------------------------------------------+------------+----------+--------------+
+; Worst-case tsu               ; N/A   ; None          ; 4.060 ns    ; mem_data[1]                                   ; D_FF_32:inst2|lpm_ff:lpm_ff_component|dffs[1] ; --         ; clock    ; 0            ;
+; Worst-case tco               ; N/A   ; None          ; 6.886 ns    ; D_FF_32:inst1|lpm_ff:lpm_ff_component|dffs[4] ; ALU_out[4]                                    ; clock      ; --       ; 0            ;
+; Worst-case th                ; N/A   ; None          ; -1.786 ns   ; mem_data[4]                                   ; D_FF_32:inst2|lpm_ff:lpm_ff_component|dffs[4] ; --         ; clock    ; 0            ;
+; Total number of failed paths ;       ;               ;             ;                                               ;                                               ;            ;          ; 0            ;
++------------------------------+-------+---------------+-------------+-----------------------------------------------+-----------------------------------------------+------------+----------+--------------+
 
 
 +--------------------------------------------------------------------------------------------------------------------+
@@ -99,95 +99,321 @@ Parallel compilation was disabled, but you have multiple processors available. E
 +----------------------------+--------+
 
 
-+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Clock Setup: 'clock'                                                                                                                                                                                                                                                                                                                                                                   ;
-+-------+------------------------------------------------+---------------------------------------------------------------------------------------------------------+---------------------------------------------------------------------------------------------------------+------------+----------+-----------------------------+---------------------------+-------------------------+
-; Slack ; Actual fmax (period)                           ; From                                                                                                    ; To                                                                                                      ; From Clock ; To Clock ; Required Setup Relationship ; Required Longest P2P Time ; Actual Longest P2P Time ;
-+-------+------------------------------------------------+---------------------------------------------------------------------------------------------------------+---------------------------------------------------------------------------------------------------------+------------+----------+-----------------------------+---------------------------+-------------------------+
-; N/A   ; Restricted to 500.00 MHz ( period = 2.000 ns ) ; sequencer2:inst9|counter_1bit:inst1|lpm_counter:lpm_counter_component|cntr_nlh:auto_generated|safe_q[0] ; sequencer2:inst9|counter_1bit:inst1|lpm_counter:lpm_counter_component|cntr_nlh:auto_generated|safe_q[0] ; clock      ; clock    ; None                        ; None                      ; 0.396 ns                ;
-+-------+------------------------------------------------+---------------------------------------------------------------------------------------------------------+---------------------------------------------------------------------------------------------------------+------------+----------+-----------------------------+---------------------------+-------------------------+
++----------------------------------------------------------------------------------------------------------------+
+; tsu                                                                                                            ;
++-------+--------------+------------+----------------+------------------------------------------------+----------+
+; Slack ; Required tsu ; Actual tsu ; From           ; To                                             ; To Clock ;
++-------+--------------+------------+----------------+------------------------------------------------+----------+
+; N/A   ; None         ; 4.060 ns   ; mem_data[1]    ; D_FF_32:inst2|lpm_ff:lpm_ff_component|dffs[1]  ; clock    ;
+; N/A   ; None         ; 3.555 ns   ; ins_in[16]     ; D_FF_32:inst|lpm_ff:lpm_ff_component|dffs[16]  ; clock    ;
+; N/A   ; None         ; 3.283 ns   ; ins_in[30]     ; D_FF_32:inst|lpm_ff:lpm_ff_component|dffs[30]  ; clock    ;
+; N/A   ; None         ; 3.275 ns   ; mem_data[11]   ; D_FF_32:inst2|lpm_ff:lpm_ff_component|dffs[11] ; clock    ;
+; N/A   ; None         ; 3.187 ns   ; ins_in[27]     ; D_FF_32:inst|lpm_ff:lpm_ff_component|dffs[27]  ; clock    ;
+; N/A   ; None         ; 3.184 ns   ; ins_in[22]     ; D_FF_32:inst|lpm_ff:lpm_ff_component|dffs[22]  ; clock    ;
+; N/A   ; None         ; 3.149 ns   ; ins_in[11]     ; D_FF_32:inst|lpm_ff:lpm_ff_component|dffs[11]  ; clock    ;
+; N/A   ; None         ; 3.142 ns   ; mem_data[9]    ; D_FF_32:inst2|lpm_ff:lpm_ff_component|dffs[9]  ; clock    ;
+; N/A   ; None         ; 3.133 ns   ; ALU_result[28] ; D_FF_32:inst1|lpm_ff:lpm_ff_component|dffs[28] ; clock    ;
+; N/A   ; None         ; 3.074 ns   ; ins_in[5]      ; D_FF_32:inst|lpm_ff:lpm_ff_component|dffs[5]   ; clock    ;
+; N/A   ; None         ; 3.048 ns   ; mem_data[28]   ; D_FF_32:inst2|lpm_ff:lpm_ff_component|dffs[28] ; clock    ;
+; N/A   ; None         ; 3.029 ns   ; mem_data[18]   ; D_FF_32:inst2|lpm_ff:lpm_ff_component|dffs[18] ; clock    ;
+; N/A   ; None         ; 2.898 ns   ; ins_in[26]     ; D_FF_32:inst|lpm_ff:lpm_ff_component|dffs[26]  ; clock    ;
+; N/A   ; None         ; 2.801 ns   ; ins_in[3]      ; D_FF_32:inst|lpm_ff:lpm_ff_component|dffs[3]   ; clock    ;
+; N/A   ; None         ; 2.795 ns   ; ALU_result[25] ; D_FF_32:inst1|lpm_ff:lpm_ff_component|dffs[25] ; clock    ;
+; N/A   ; None         ; 2.678 ns   ; ins_in[1]      ; D_FF_32:inst|lpm_ff:lpm_ff_component|dffs[1]   ; clock    ;
+; N/A   ; None         ; 2.656 ns   ; ins_in[28]     ; D_FF_32:inst|lpm_ff:lpm_ff_component|dffs[28]  ; clock    ;
+; N/A   ; None         ; 2.597 ns   ; mem_data[22]   ; D_FF_32:inst2|lpm_ff:lpm_ff_component|dffs[22] ; clock    ;
+; N/A   ; None         ; 2.558 ns   ; mem_data[6]    ; D_FF_32:inst2|lpm_ff:lpm_ff_component|dffs[6]  ; clock    ;
+; N/A   ; None         ; 2.551 ns   ; mem_data[2]    ; D_FF_32:inst2|lpm_ff:lpm_ff_component|dffs[2]  ; clock    ;
+; N/A   ; None         ; 2.533 ns   ; ALU_result[29] ; D_FF_32:inst1|lpm_ff:lpm_ff_component|dffs[29] ; clock    ;
+; N/A   ; None         ; 2.527 ns   ; ins_in[7]      ; D_FF_32:inst|lpm_ff:lpm_ff_component|dffs[7]   ; clock    ;
+; N/A   ; None         ; 2.518 ns   ; ins_in[14]     ; D_FF_32:inst|lpm_ff:lpm_ff_component|dffs[14]  ; clock    ;
+; N/A   ; None         ; 2.515 ns   ; ins_in[31]     ; D_FF_32:inst|lpm_ff:lpm_ff_component|dffs[31]  ; clock    ;
+; N/A   ; None         ; 2.512 ns   ; mem_data[3]    ; D_FF_32:inst2|lpm_ff:lpm_ff_component|dffs[3]  ; clock    ;
+; N/A   ; None         ; 2.506 ns   ; ALU_result[22] ; D_FF_32:inst1|lpm_ff:lpm_ff_component|dffs[22] ; clock    ;
+; N/A   ; None         ; 2.502 ns   ; ALU_result[17] ; D_FF_32:inst1|lpm_ff:lpm_ff_component|dffs[17] ; clock    ;
+; N/A   ; None         ; 2.501 ns   ; mem_data[20]   ; D_FF_32:inst2|lpm_ff:lpm_ff_component|dffs[20] ; clock    ;
+; N/A   ; None         ; 2.498 ns   ; mem_data[27]   ; D_FF_32:inst2|lpm_ff:lpm_ff_component|dffs[27] ; clock    ;
+; N/A   ; None         ; 2.495 ns   ; mem_data[5]    ; D_FF_32:inst2|lpm_ff:lpm_ff_component|dffs[5]  ; clock    ;
+; N/A   ; None         ; 2.495 ns   ; mem_data[16]   ; D_FF_32:inst2|lpm_ff:lpm_ff_component|dffs[16] ; clock    ;
+; N/A   ; None         ; 2.491 ns   ; ins_in[10]     ; D_FF_32:inst|lpm_ff:lpm_ff_component|dffs[10]  ; clock    ;
+; N/A   ; None         ; 2.490 ns   ; ins_in[15]     ; D_FF_32:inst|lpm_ff:lpm_ff_component|dffs[15]  ; clock    ;
+; N/A   ; None         ; 2.489 ns   ; mem_data[15]   ; D_FF_32:inst2|lpm_ff:lpm_ff_component|dffs[15] ; clock    ;
+; N/A   ; None         ; 2.486 ns   ; ALU_result[15] ; D_FF_32:inst1|lpm_ff:lpm_ff_component|dffs[15] ; clock    ;
+; N/A   ; None         ; 2.481 ns   ; mem_data[8]    ; D_FF_32:inst2|lpm_ff:lpm_ff_component|dffs[8]  ; clock    ;
+; N/A   ; None         ; 2.481 ns   ; ALU_result[12] ; D_FF_32:inst1|lpm_ff:lpm_ff_component|dffs[12] ; clock    ;
+; N/A   ; None         ; 2.475 ns   ; mem_data[0]    ; D_FF_32:inst2|lpm_ff:lpm_ff_component|dffs[0]  ; clock    ;
+; N/A   ; None         ; 2.474 ns   ; mem_data[12]   ; D_FF_32:inst2|lpm_ff:lpm_ff_component|dffs[12] ; clock    ;
+; N/A   ; None         ; 2.472 ns   ; ins_in[8]      ; D_FF_32:inst|lpm_ff:lpm_ff_component|dffs[8]   ; clock    ;
+; N/A   ; None         ; 2.463 ns   ; ins_in[18]     ; D_FF_32:inst|lpm_ff:lpm_ff_component|dffs[18]  ; clock    ;
+; N/A   ; None         ; 2.452 ns   ; ins_in[17]     ; D_FF_32:inst|lpm_ff:lpm_ff_component|dffs[17]  ; clock    ;
+; N/A   ; None         ; 2.452 ns   ; ALU_result[2]  ; D_FF_32:inst1|lpm_ff:lpm_ff_component|dffs[2]  ; clock    ;
+; N/A   ; None         ; 2.451 ns   ; mem_data[17]   ; D_FF_32:inst2|lpm_ff:lpm_ff_component|dffs[17] ; clock    ;
+; N/A   ; None         ; 2.448 ns   ; mem_data[26]   ; D_FF_32:inst2|lpm_ff:lpm_ff_component|dffs[26] ; clock    ;
+; N/A   ; None         ; 2.439 ns   ; ALU_result[19] ; D_FF_32:inst1|lpm_ff:lpm_ff_component|dffs[19] ; clock    ;
+; N/A   ; None         ; 2.438 ns   ; ALU_result[9]  ; D_FF_32:inst1|lpm_ff:lpm_ff_component|dffs[9]  ; clock    ;
+; N/A   ; None         ; 2.435 ns   ; ins_in[19]     ; D_FF_32:inst|lpm_ff:lpm_ff_component|dffs[19]  ; clock    ;
+; N/A   ; None         ; 2.434 ns   ; ALU_result[16] ; D_FF_32:inst1|lpm_ff:lpm_ff_component|dffs[16] ; clock    ;
+; N/A   ; None         ; 2.431 ns   ; ALU_result[13] ; D_FF_32:inst1|lpm_ff:lpm_ff_component|dffs[13] ; clock    ;
+; N/A   ; None         ; 2.423 ns   ; mem_data[23]   ; D_FF_32:inst2|lpm_ff:lpm_ff_component|dffs[23] ; clock    ;
+; N/A   ; None         ; 2.420 ns   ; mem_data[24]   ; D_FF_32:inst2|lpm_ff:lpm_ff_component|dffs[24] ; clock    ;
+; N/A   ; None         ; 2.411 ns   ; mem_data[10]   ; D_FF_32:inst2|lpm_ff:lpm_ff_component|dffs[10] ; clock    ;
+; N/A   ; None         ; 2.407 ns   ; ins_in[24]     ; D_FF_32:inst|lpm_ff:lpm_ff_component|dffs[24]  ; clock    ;
+; N/A   ; None         ; 2.405 ns   ; ALU_result[3]  ; D_FF_32:inst1|lpm_ff:lpm_ff_component|dffs[3]  ; clock    ;
+; N/A   ; None         ; 2.399 ns   ; mem_data[13]   ; D_FF_32:inst2|lpm_ff:lpm_ff_component|dffs[13] ; clock    ;
+; N/A   ; None         ; 2.398 ns   ; ALU_result[4]  ; D_FF_32:inst1|lpm_ff:lpm_ff_component|dffs[4]  ; clock    ;
+; N/A   ; None         ; 2.397 ns   ; ALU_result[31] ; D_FF_32:inst1|lpm_ff:lpm_ff_component|dffs[31] ; clock    ;
+; N/A   ; None         ; 2.368 ns   ; ins_in[6]      ; D_FF_32:inst|lpm_ff:lpm_ff_component|dffs[6]   ; clock    ;
+; N/A   ; None         ; 2.357 ns   ; ALU_result[5]  ; D_FF_32:inst1|lpm_ff:lpm_ff_component|dffs[5]  ; clock    ;
+; N/A   ; None         ; 2.348 ns   ; ins_in[25]     ; D_FF_32:inst|lpm_ff:lpm_ff_component|dffs[25]  ; clock    ;
+; N/A   ; None         ; 2.345 ns   ; ALU_result[27] ; D_FF_32:inst1|lpm_ff:lpm_ff_component|dffs[27] ; clock    ;
+; N/A   ; None         ; 2.343 ns   ; ALU_result[26] ; D_FF_32:inst1|lpm_ff:lpm_ff_component|dffs[26] ; clock    ;
+; N/A   ; None         ; 2.332 ns   ; mem_data[31]   ; D_FF_32:inst2|lpm_ff:lpm_ff_component|dffs[31] ; clock    ;
+; N/A   ; None         ; 2.317 ns   ; ALU_result[20] ; D_FF_32:inst1|lpm_ff:lpm_ff_component|dffs[20] ; clock    ;
+; N/A   ; None         ; 2.308 ns   ; ins_in[0]      ; D_FF_32:inst|lpm_ff:lpm_ff_component|dffs[0]   ; clock    ;
+; N/A   ; None         ; 2.261 ns   ; ALU_result[18] ; D_FF_32:inst1|lpm_ff:lpm_ff_component|dffs[18] ; clock    ;
+; N/A   ; None         ; 2.258 ns   ; ALU_result[23] ; D_FF_32:inst1|lpm_ff:lpm_ff_component|dffs[23] ; clock    ;
+; N/A   ; None         ; 2.254 ns   ; ALU_result[1]  ; D_FF_32:inst1|lpm_ff:lpm_ff_component|dffs[1]  ; clock    ;
+; N/A   ; None         ; 2.254 ns   ; ALU_result[8]  ; D_FF_32:inst1|lpm_ff:lpm_ff_component|dffs[8]  ; clock    ;
+; N/A   ; None         ; 2.249 ns   ; mem_data[7]    ; D_FF_32:inst2|lpm_ff:lpm_ff_component|dffs[7]  ; clock    ;
+; N/A   ; None         ; 2.233 ns   ; mem_data[14]   ; D_FF_32:inst2|lpm_ff:lpm_ff_component|dffs[14] ; clock    ;
+; N/A   ; None         ; 2.232 ns   ; ALU_result[21] ; D_FF_32:inst1|lpm_ff:lpm_ff_component|dffs[21] ; clock    ;
+; N/A   ; None         ; 2.226 ns   ; mem_data[25]   ; D_FF_32:inst2|lpm_ff:lpm_ff_component|dffs[25] ; clock    ;
+; N/A   ; None         ; 2.218 ns   ; ALU_result[24] ; D_FF_32:inst1|lpm_ff:lpm_ff_component|dffs[24] ; clock    ;
+; N/A   ; None         ; 2.201 ns   ; ins_in[12]     ; D_FF_32:inst|lpm_ff:lpm_ff_component|dffs[12]  ; clock    ;
+; N/A   ; None         ; 2.194 ns   ; ALU_result[30] ; D_FF_32:inst1|lpm_ff:lpm_ff_component|dffs[30] ; clock    ;
+; N/A   ; None         ; 2.188 ns   ; ALU_result[0]  ; D_FF_32:inst1|lpm_ff:lpm_ff_component|dffs[0]  ; clock    ;
+; N/A   ; None         ; 2.183 ns   ; ins_in[2]      ; D_FF_32:inst|lpm_ff:lpm_ff_component|dffs[2]   ; clock    ;
+; N/A   ; None         ; 2.173 ns   ; ALU_result[10] ; D_FF_32:inst1|lpm_ff:lpm_ff_component|dffs[10] ; clock    ;
+; N/A   ; None         ; 2.170 ns   ; ins_in[9]      ; D_FF_32:inst|lpm_ff:lpm_ff_component|dffs[9]   ; clock    ;
+; N/A   ; None         ; 2.140 ns   ; mem_data[29]   ; D_FF_32:inst2|lpm_ff:lpm_ff_component|dffs[29] ; clock    ;
+; N/A   ; None         ; 2.122 ns   ; ins_in[20]     ; D_FF_32:inst|lpm_ff:lpm_ff_component|dffs[20]  ; clock    ;
+; N/A   ; None         ; 2.103 ns   ; mem_data[19]   ; D_FF_32:inst2|lpm_ff:lpm_ff_component|dffs[19] ; clock    ;
+; N/A   ; None         ; 2.101 ns   ; ALU_result[7]  ; D_FF_32:inst1|lpm_ff:lpm_ff_component|dffs[7]  ; clock    ;
+; N/A   ; None         ; 2.098 ns   ; ALU_result[11] ; D_FF_32:inst1|lpm_ff:lpm_ff_component|dffs[11] ; clock    ;
+; N/A   ; None         ; 2.093 ns   ; ALU_result[14] ; D_FF_32:inst1|lpm_ff:lpm_ff_component|dffs[14] ; clock    ;
+; N/A   ; None         ; 2.091 ns   ; ins_in[29]     ; D_FF_32:inst|lpm_ff:lpm_ff_component|dffs[29]  ; clock    ;
+; N/A   ; None         ; 2.079 ns   ; mem_data[21]   ; D_FF_32:inst2|lpm_ff:lpm_ff_component|dffs[21] ; clock    ;
+; N/A   ; None         ; 2.071 ns   ; ins_in[4]      ; D_FF_32:inst|lpm_ff:lpm_ff_component|dffs[4]   ; clock    ;
+; N/A   ; None         ; 2.063 ns   ; ALU_result[6]  ; D_FF_32:inst1|lpm_ff:lpm_ff_component|dffs[6]  ; clock    ;
+; N/A   ; None         ; 2.060 ns   ; ins_in[23]     ; D_FF_32:inst|lpm_ff:lpm_ff_component|dffs[23]  ; clock    ;
+; N/A   ; None         ; 2.057 ns   ; mem_data[30]   ; D_FF_32:inst2|lpm_ff:lpm_ff_component|dffs[30] ; clock    ;
+; N/A   ; None         ; 2.052 ns   ; ins_in[21]     ; D_FF_32:inst|lpm_ff:lpm_ff_component|dffs[21]  ; clock    ;
+; N/A   ; None         ; 2.041 ns   ; ins_in[13]     ; D_FF_32:inst|lpm_ff:lpm_ff_component|dffs[13]  ; clock    ;
+; N/A   ; None         ; 2.025 ns   ; mem_data[4]    ; D_FF_32:inst2|lpm_ff:lpm_ff_component|dffs[4]  ; clock    ;
++-------+--------------+------------+----------------+------------------------------------------------+----------+
 
 
-+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; tco                                                                                                                                                                   ;
-+-------+--------------+------------+---------------------------------------------------------------------------------------------------------+------------+------------+
-; Slack ; Required tco ; Actual tco ; From                                                                                                    ; To         ; From Clock ;
-+-------+--------------+------------+---------------------------------------------------------------------------------------------------------+------------+------------+
-; N/A   ; None         ; 4.799 ns   ; sequencer2:inst9|counter_1bit:inst1|lpm_counter:lpm_counter_component|cntr_nlh:auto_generated|safe_q[0] ; ins_mem_en ; clock      ;
-; N/A   ; None         ; 4.587 ns   ; sequencer2:inst9|counter_1bit:inst1|lpm_counter:lpm_counter_component|cntr_nlh:auto_generated|safe_q[0] ; pc_count   ; clock      ;
-+-------+--------------+------------+---------------------------------------------------------------------------------------------------------+------------+------------+
++--------------------------------------------------------------------------------------------------------------------+
+; tco                                                                                                                ;
++-------+--------------+------------+------------------------------------------------+------------------+------------+
+; Slack ; Required tco ; Actual tco ; From                                           ; To               ; From Clock ;
++-------+--------------+------------+------------------------------------------------+------------------+------------+
+; N/A   ; None         ; 6.886 ns   ; D_FF_32:inst1|lpm_ff:lpm_ff_component|dffs[4]  ; ALU_out[4]       ; clock      ;
+; N/A   ; None         ; 6.855 ns   ; D_FF_32:inst|lpm_ff:lpm_ff_component|dffs[18]  ; ins_out[18]      ; clock      ;
+; N/A   ; None         ; 6.839 ns   ; D_FF_32:inst2|lpm_ff:lpm_ff_component|dffs[15] ; mem_data_out[15] ; clock      ;
+; N/A   ; None         ; 6.698 ns   ; D_FF_32:inst|lpm_ff:lpm_ff_component|dffs[7]   ; ins_out[7]       ; clock      ;
+; N/A   ; None         ; 6.509 ns   ; D_FF_32:inst1|lpm_ff:lpm_ff_component|dffs[1]  ; ALU_out[1]       ; clock      ;
+; N/A   ; None         ; 6.333 ns   ; D_FF_32:inst|lpm_ff:lpm_ff_component|dffs[24]  ; wr_addr[3]       ; clock      ;
+; N/A   ; None         ; 6.313 ns   ; D_FF_32:inst|lpm_ff:lpm_ff_component|dffs[24]  ; ins_out[24]      ; clock      ;
+; N/A   ; None         ; 5.836 ns   ; D_FF_32:inst1|lpm_ff:lpm_ff_component|dffs[13] ; ALU_out[13]      ; clock      ;
+; N/A   ; None         ; 5.821 ns   ; D_FF_32:inst|lpm_ff:lpm_ff_component|dffs[15]  ; ins_out[15]      ; clock      ;
+; N/A   ; None         ; 5.818 ns   ; D_FF_32:inst2|lpm_ff:lpm_ff_component|dffs[3]  ; mem_data_out[3]  ; clock      ;
+; N/A   ; None         ; 5.814 ns   ; D_FF_32:inst|lpm_ff:lpm_ff_component|dffs[6]   ; ins_out[6]       ; clock      ;
+; N/A   ; None         ; 5.654 ns   ; D_FF_32:inst1|lpm_ff:lpm_ff_component|dffs[28] ; ALU_out[28]      ; clock      ;
+; N/A   ; None         ; 5.591 ns   ; D_FF_32:inst2|lpm_ff:lpm_ff_component|dffs[5]  ; mem_data_out[5]  ; clock      ;
+; N/A   ; None         ; 5.583 ns   ; D_FF_32:inst|lpm_ff:lpm_ff_component|dffs[11]  ; ins_out[11]      ; clock      ;
+; N/A   ; None         ; 5.552 ns   ; D_FF_32:inst|lpm_ff:lpm_ff_component|dffs[26]  ; ins_out[26]      ; clock      ;
+; N/A   ; None         ; 5.524 ns   ; D_FF_32:inst2|lpm_ff:lpm_ff_component|dffs[16] ; mem_data_out[16] ; clock      ;
+; N/A   ; None         ; 5.518 ns   ; D_FF_32:inst1|lpm_ff:lpm_ff_component|dffs[21] ; ALU_out[21]      ; clock      ;
+; N/A   ; None         ; 5.508 ns   ; D_FF_32:inst|lpm_ff:lpm_ff_component|dffs[12]  ; ins_out[12]      ; clock      ;
+; N/A   ; None         ; 5.502 ns   ; D_FF_32:inst2|lpm_ff:lpm_ff_component|dffs[31] ; mem_data_out[31] ; clock      ;
+; N/A   ; None         ; 5.493 ns   ; D_FF_32:inst2|lpm_ff:lpm_ff_component|dffs[12] ; mem_data_out[12] ; clock      ;
+; N/A   ; None         ; 5.448 ns   ; D_FF_32:inst1|lpm_ff:lpm_ff_component|dffs[12] ; ALU_out[12]      ; clock      ;
+; N/A   ; None         ; 5.421 ns   ; D_FF_32:inst1|lpm_ff:lpm_ff_component|dffs[22] ; ALU_out[22]      ; clock      ;
+; N/A   ; None         ; 5.373 ns   ; D_FF_32:inst2|lpm_ff:lpm_ff_component|dffs[9]  ; mem_data_out[9]  ; clock      ;
+; N/A   ; None         ; 5.373 ns   ; D_FF_32:inst1|lpm_ff:lpm_ff_component|dffs[2]  ; ALU_out[2]       ; clock      ;
+; N/A   ; None         ; 5.367 ns   ; D_FF_32:inst2|lpm_ff:lpm_ff_component|dffs[28] ; mem_data_out[28] ; clock      ;
+; N/A   ; None         ; 5.335 ns   ; D_FF_32:inst2|lpm_ff:lpm_ff_component|dffs[18] ; mem_data_out[18] ; clock      ;
+; N/A   ; None         ; 5.329 ns   ; D_FF_32:inst1|lpm_ff:lpm_ff_component|dffs[23] ; ALU_out[23]      ; clock      ;
+; N/A   ; None         ; 5.327 ns   ; D_FF_32:inst2|lpm_ff:lpm_ff_component|dffs[24] ; mem_data_out[24] ; clock      ;
+; N/A   ; None         ; 5.320 ns   ; D_FF_32:inst|lpm_ff:lpm_ff_component|dffs[19]  ; ins_out[19]      ; clock      ;
+; N/A   ; None         ; 5.315 ns   ; D_FF_32:inst|lpm_ff:lpm_ff_component|dffs[23]  ; ins_out[23]      ; clock      ;
+; N/A   ; None         ; 5.295 ns   ; D_FF_32:inst|lpm_ff:lpm_ff_component|dffs[23]  ; wr_addr[2]       ; clock      ;
+; N/A   ; None         ; 5.275 ns   ; D_FF_32:inst2|lpm_ff:lpm_ff_component|dffs[7]  ; mem_data_out[7]  ; clock      ;
+; N/A   ; None         ; 5.229 ns   ; D_FF_32:inst2|lpm_ff:lpm_ff_component|dffs[17] ; mem_data_out[17] ; clock      ;
+; N/A   ; None         ; 5.212 ns   ; D_FF_32:inst1|lpm_ff:lpm_ff_component|dffs[5]  ; ALU_out[5]       ; clock      ;
+; N/A   ; None         ; 5.210 ns   ; D_FF_32:inst|lpm_ff:lpm_ff_component|dffs[8]   ; ins_out[8]       ; clock      ;
+; N/A   ; None         ; 5.210 ns   ; D_FF_32:inst|lpm_ff:lpm_ff_component|dffs[10]  ; ins_out[10]      ; clock      ;
+; N/A   ; None         ; 5.210 ns   ; D_FF_32:inst|lpm_ff:lpm_ff_component|dffs[16]  ; ins_out[16]      ; clock      ;
+; N/A   ; None         ; 5.194 ns   ; D_FF_32:inst2|lpm_ff:lpm_ff_component|dffs[25] ; mem_data_out[25] ; clock      ;
+; N/A   ; None         ; 5.186 ns   ; D_FF_32:inst|lpm_ff:lpm_ff_component|dffs[14]  ; ins_out[14]      ; clock      ;
+; N/A   ; None         ; 5.183 ns   ; D_FF_32:inst|lpm_ff:lpm_ff_component|dffs[5]   ; ins_out[5]       ; clock      ;
+; N/A   ; None         ; 5.176 ns   ; D_FF_32:inst|lpm_ff:lpm_ff_component|dffs[3]   ; ins_out[3]       ; clock      ;
+; N/A   ; None         ; 5.173 ns   ; D_FF_32:inst|lpm_ff:lpm_ff_component|dffs[30]  ; ins_out[30]      ; clock      ;
+; N/A   ; None         ; 5.167 ns   ; D_FF_32:inst1|lpm_ff:lpm_ff_component|dffs[16] ; ALU_out[16]      ; clock      ;
+; N/A   ; None         ; 5.162 ns   ; D_FF_32:inst2|lpm_ff:lpm_ff_component|dffs[23] ; mem_data_out[23] ; clock      ;
+; N/A   ; None         ; 5.153 ns   ; D_FF_32:inst1|lpm_ff:lpm_ff_component|dffs[29] ; ALU_out[29]      ; clock      ;
+; N/A   ; None         ; 5.129 ns   ; D_FF_32:inst1|lpm_ff:lpm_ff_component|dffs[11] ; ALU_out[11]      ; clock      ;
+; N/A   ; None         ; 5.111 ns   ; D_FF_32:inst1|lpm_ff:lpm_ff_component|dffs[19] ; ALU_out[19]      ; clock      ;
+; N/A   ; None         ; 5.109 ns   ; D_FF_32:inst2|lpm_ff:lpm_ff_component|dffs[14] ; mem_data_out[14] ; clock      ;
+; N/A   ; None         ; 5.109 ns   ; D_FF_32:inst|lpm_ff:lpm_ff_component|dffs[27]  ; ins_out[27]      ; clock      ;
+; N/A   ; None         ; 5.096 ns   ; D_FF_32:inst2|lpm_ff:lpm_ff_component|dffs[6]  ; mem_data_out[6]  ; clock      ;
+; N/A   ; None         ; 5.083 ns   ; D_FF_32:inst|lpm_ff:lpm_ff_component|dffs[0]   ; ins_out[0]       ; clock      ;
+; N/A   ; None         ; 5.074 ns   ; D_FF_32:inst2|lpm_ff:lpm_ff_component|dffs[13] ; mem_data_out[13] ; clock      ;
+; N/A   ; None         ; 5.073 ns   ; D_FF_32:inst|lpm_ff:lpm_ff_component|dffs[4]   ; ins_out[4]       ; clock      ;
+; N/A   ; None         ; 5.071 ns   ; D_FF_32:inst|lpm_ff:lpm_ff_component|dffs[13]  ; ins_out[13]      ; clock      ;
+; N/A   ; None         ; 5.067 ns   ; D_FF_32:inst|lpm_ff:lpm_ff_component|dffs[21]  ; wr_addr[0]       ; clock      ;
+; N/A   ; None         ; 5.067 ns   ; D_FF_32:inst2|lpm_ff:lpm_ff_component|dffs[4]  ; mem_data_out[4]  ; clock      ;
+; N/A   ; None         ; 5.067 ns   ; D_FF_32:inst1|lpm_ff:lpm_ff_component|dffs[9]  ; ALU_out[9]       ; clock      ;
+; N/A   ; None         ; 5.064 ns   ; D_FF_32:inst2|lpm_ff:lpm_ff_component|dffs[10] ; mem_data_out[10] ; clock      ;
+; N/A   ; None         ; 5.063 ns   ; D_FF_32:inst2|lpm_ff:lpm_ff_component|dffs[1]  ; mem_data_out[1]  ; clock      ;
+; N/A   ; None         ; 5.062 ns   ; D_FF_32:inst1|lpm_ff:lpm_ff_component|dffs[26] ; ALU_out[26]      ; clock      ;
+; N/A   ; None         ; 5.060 ns   ; D_FF_32:inst|lpm_ff:lpm_ff_component|dffs[31]  ; ins_out[31]      ; clock      ;
+; N/A   ; None         ; 5.059 ns   ; D_FF_32:inst|lpm_ff:lpm_ff_component|dffs[17]  ; ins_out[17]      ; clock      ;
+; N/A   ; None         ; 5.059 ns   ; D_FF_32:inst|lpm_ff:lpm_ff_component|dffs[22]  ; ins_out[22]      ; clock      ;
+; N/A   ; None         ; 5.057 ns   ; D_FF_32:inst2|lpm_ff:lpm_ff_component|dffs[26] ; mem_data_out[26] ; clock      ;
+; N/A   ; None         ; 5.056 ns   ; D_FF_32:inst|lpm_ff:lpm_ff_component|dffs[1]   ; ins_out[1]       ; clock      ;
+; N/A   ; None         ; 5.056 ns   ; D_FF_32:inst1|lpm_ff:lpm_ff_component|dffs[8]  ; ALU_out[8]       ; clock      ;
+; N/A   ; None         ; 5.053 ns   ; D_FF_32:inst2|lpm_ff:lpm_ff_component|dffs[19] ; mem_data_out[19] ; clock      ;
+; N/A   ; None         ; 5.052 ns   ; D_FF_32:inst2|lpm_ff:lpm_ff_component|dffs[20] ; mem_data_out[20] ; clock      ;
+; N/A   ; None         ; 5.052 ns   ; D_FF_32:inst|lpm_ff:lpm_ff_component|dffs[9]   ; ins_out[9]       ; clock      ;
+; N/A   ; None         ; 5.051 ns   ; D_FF_32:inst1|lpm_ff:lpm_ff_component|dffs[3]  ; ALU_out[3]       ; clock      ;
+; N/A   ; None         ; 5.050 ns   ; D_FF_32:inst1|lpm_ff:lpm_ff_component|dffs[20] ; ALU_out[20]      ; clock      ;
+; N/A   ; None         ; 5.049 ns   ; D_FF_32:inst1|lpm_ff:lpm_ff_component|dffs[25] ; ALU_out[25]      ; clock      ;
+; N/A   ; None         ; 5.047 ns   ; D_FF_32:inst|lpm_ff:lpm_ff_component|dffs[20]  ; ins_out[20]      ; clock      ;
+; N/A   ; None         ; 5.045 ns   ; D_FF_32:inst2|lpm_ff:lpm_ff_component|dffs[0]  ; mem_data_out[0]  ; clock      ;
+; N/A   ; None         ; 5.045 ns   ; D_FF_32:inst2|lpm_ff:lpm_ff_component|dffs[30] ; mem_data_out[30] ; clock      ;
+; N/A   ; None         ; 5.044 ns   ; D_FF_32:inst2|lpm_ff:lpm_ff_component|dffs[11] ; mem_data_out[11] ; clock      ;
+; N/A   ; None         ; 5.043 ns   ; D_FF_32:inst1|lpm_ff:lpm_ff_component|dffs[14] ; ALU_out[14]      ; clock      ;
+; N/A   ; None         ; 5.041 ns   ; D_FF_32:inst1|lpm_ff:lpm_ff_component|dffs[24] ; ALU_out[24]      ; clock      ;
+; N/A   ; None         ; 5.040 ns   ; D_FF_32:inst1|lpm_ff:lpm_ff_component|dffs[0]  ; ALU_out[0]       ; clock      ;
+; N/A   ; None         ; 5.039 ns   ; D_FF_32:inst|lpm_ff:lpm_ff_component|dffs[22]  ; wr_addr[1]       ; clock      ;
+; N/A   ; None         ; 5.039 ns   ; D_FF_32:inst1|lpm_ff:lpm_ff_component|dffs[10] ; ALU_out[10]      ; clock      ;
+; N/A   ; None         ; 5.037 ns   ; D_FF_32:inst|lpm_ff:lpm_ff_component|dffs[21]  ; ins_out[21]      ; clock      ;
+; N/A   ; None         ; 5.034 ns   ; D_FF_32:inst1|lpm_ff:lpm_ff_component|dffs[6]  ; ALU_out[6]       ; clock      ;
+; N/A   ; None         ; 5.034 ns   ; D_FF_32:inst1|lpm_ff:lpm_ff_component|dffs[7]  ; ALU_out[7]       ; clock      ;
+; N/A   ; None         ; 5.032 ns   ; D_FF_32:inst|lpm_ff:lpm_ff_component|dffs[28]  ; ins_out[28]      ; clock      ;
+; N/A   ; None         ; 5.025 ns   ; D_FF_32:inst2|lpm_ff:lpm_ff_component|dffs[21] ; mem_data_out[21] ; clock      ;
+; N/A   ; None         ; 5.020 ns   ; D_FF_32:inst2|lpm_ff:lpm_ff_component|dffs[27] ; mem_data_out[27] ; clock      ;
+; N/A   ; None         ; 5.020 ns   ; D_FF_32:inst1|lpm_ff:lpm_ff_component|dffs[31] ; ALU_out[31]      ; clock      ;
+; N/A   ; None         ; 5.019 ns   ; D_FF_32:inst|lpm_ff:lpm_ff_component|dffs[2]   ; ins_out[2]       ; clock      ;
+; N/A   ; None         ; 5.018 ns   ; D_FF_32:inst|lpm_ff:lpm_ff_component|dffs[25]  ; wr_addr[4]       ; clock      ;
+; N/A   ; None         ; 5.014 ns   ; D_FF_32:inst1|lpm_ff:lpm_ff_component|dffs[30] ; ALU_out[30]      ; clock      ;
+; N/A   ; None         ; 5.011 ns   ; D_FF_32:inst2|lpm_ff:lpm_ff_component|dffs[8]  ; mem_data_out[8]  ; clock      ;
+; N/A   ; None         ; 5.010 ns   ; D_FF_32:inst1|lpm_ff:lpm_ff_component|dffs[17] ; ALU_out[17]      ; clock      ;
+; N/A   ; None         ; 5.009 ns   ; D_FF_32:inst1|lpm_ff:lpm_ff_component|dffs[27] ; ALU_out[27]      ; clock      ;
+; N/A   ; None         ; 5.005 ns   ; D_FF_32:inst2|lpm_ff:lpm_ff_component|dffs[2]  ; mem_data_out[2]  ; clock      ;
+; N/A   ; None         ; 5.004 ns   ; D_FF_32:inst2|lpm_ff:lpm_ff_component|dffs[22] ; mem_data_out[22] ; clock      ;
+; N/A   ; None         ; 5.004 ns   ; D_FF_32:inst|lpm_ff:lpm_ff_component|dffs[29]  ; ins_out[29]      ; clock      ;
+; N/A   ; None         ; 5.004 ns   ; D_FF_32:inst1|lpm_ff:lpm_ff_component|dffs[18] ; ALU_out[18]      ; clock      ;
+; N/A   ; None         ; 5.000 ns   ; D_FF_32:inst2|lpm_ff:lpm_ff_component|dffs[29] ; mem_data_out[29] ; clock      ;
+; N/A   ; None         ; 4.998 ns   ; D_FF_32:inst|lpm_ff:lpm_ff_component|dffs[25]  ; ins_out[25]      ; clock      ;
+; N/A   ; None         ; 4.994 ns   ; D_FF_32:inst1|lpm_ff:lpm_ff_component|dffs[15] ; ALU_out[15]      ; clock      ;
++-------+--------------+------------+------------------------------------------------+------------------+------------+
 
 
-+------------------------------------------------------------------------+
-; tpd                                                                    ;
-+-------+-------------------+-----------------+-----------+--------------+
-; Slack ; Required P2P Time ; Actual P2P Time ; From      ; To           ;
-+-------+-------------------+-----------------+-----------+--------------+
-; N/A   ; None              ; 9.751 ns        ; opcode[0] ; reg_lui      ;
-; N/A   ; None              ; 9.556 ns        ; opcode[4] ; reg_lui      ;
-; N/A   ; None              ; 9.507 ns        ; opcode[2] ; reg_lui      ;
-; N/A   ; None              ; 9.330 ns        ; opcode[1] ; reg_lui      ;
-; N/A   ; None              ; 9.184 ns        ; opcode[0] ; reg_ldi      ;
-; N/A   ; None              ; 9.033 ns        ; opcode[3] ; reg_lui      ;
-; N/A   ; None              ; 8.980 ns        ; opcode[2] ; reg_ldi      ;
-; N/A   ; None              ; 8.838 ns        ; opcode[3] ; reg_ldi      ;
-; N/A   ; None              ; 8.752 ns        ; opcode[4] ; reg_ldi      ;
-; N/A   ; None              ; 8.683 ns        ; opcode[0] ; reg_word     ;
-; N/A   ; None              ; 8.554 ns        ; opcode[2] ; reg_word     ;
-; N/A   ; None              ; 8.552 ns        ; opcode[1] ; reg_ldi      ;
-; N/A   ; None              ; 8.358 ns        ; opcode[4] ; reg_word     ;
-; N/A   ; None              ; 8.338 ns        ; opcode[3] ; reg_word     ;
-; N/A   ; None              ; 8.270 ns        ; opcode[2] ; reg_wr_en_id ;
-; N/A   ; None              ; 8.246 ns        ; opcode[4] ; immediate    ;
-; N/A   ; None              ; 8.086 ns        ; opcode[4] ; reg_wr_en_id ;
-; N/A   ; None              ; 8.047 ns        ; opcode[2] ; mem_word     ;
-; N/A   ; None              ; 8.044 ns        ; opcode[2] ; reg_16bit    ;
-; N/A   ; None              ; 8.039 ns        ; opcode[0] ; sel_mem_rd   ;
-; N/A   ; None              ; 8.039 ns        ; opcode[0] ; mem_wr_en    ;
-; N/A   ; None              ; 8.036 ns        ; opcode[1] ; reg_word     ;
-; N/A   ; None              ; 7.996 ns        ; opcode[5] ; reg_word     ;
-; N/A   ; None              ; 7.950 ns        ; opcode[0] ; mem_rd_en    ;
-; N/A   ; None              ; 7.936 ns        ; opcode[0] ; reg_wr_en_wb ;
-; N/A   ; None              ; 7.930 ns        ; opcode[0] ; sel_mem_wr   ;
-; N/A   ; None              ; 7.882 ns        ; opcode[0] ; reg_rd_en_a  ;
-; N/A   ; None              ; 7.877 ns        ; opcode[1] ; reg_wr_en_id ;
-; N/A   ; None              ; 7.863 ns        ; opcode[4] ; mem_word     ;
-; N/A   ; None              ; 7.860 ns        ; opcode[4] ; reg_16bit    ;
-; N/A   ; None              ; 7.853 ns        ; opcode[0] ; reg_rd_en_b  ;
-; N/A   ; None              ; 7.847 ns        ; opcode[3] ; immediate    ;
-; N/A   ; None              ; 7.844 ns        ; opcode[4] ; sel_mem_rd   ;
-; N/A   ; None              ; 7.844 ns        ; opcode[4] ; mem_wr_en    ;
-; N/A   ; None              ; 7.829 ns        ; opcode[2] ; sel_mem_rd   ;
-; N/A   ; None              ; 7.829 ns        ; opcode[2] ; mem_wr_en    ;
-; N/A   ; None              ; 7.822 ns        ; opcode[2] ; reg_wr_en_wb ;
-; N/A   ; None              ; 7.793 ns        ; opcode[2] ; mem_rd_en    ;
-; N/A   ; None              ; 7.773 ns        ; opcode[2] ; sel_mem_wr   ;
-; N/A   ; None              ; 7.744 ns        ; opcode[2] ; reg_rd_en_b  ;
-; N/A   ; None              ; 7.743 ns        ; opcode[2] ; reg_rd_en_a  ;
-; N/A   ; None              ; 7.651 ns        ; opcode[1] ; reg_16bit    ;
-; N/A   ; None              ; 7.614 ns        ; opcode[4] ; reg_wr_en_wb ;
-; N/A   ; None              ; 7.613 ns        ; opcode[1] ; mem_word     ;
-; N/A   ; None              ; 7.591 ns        ; opcode[3] ; reg_wr_en_wb ;
-; N/A   ; None              ; 7.567 ns        ; opcode[3] ; reg_wr_en_id ;
-; N/A   ; None              ; 7.558 ns        ; opcode[4] ; reg_rd_en_a  ;
-; N/A   ; None              ; 7.537 ns        ; opcode[3] ; reg_rd_en_a  ;
-; N/A   ; None              ; 7.533 ns        ; opcode[4] ; reg_rd_en_b  ;
-; N/A   ; None              ; 7.522 ns        ; opcode[4] ; mem_rd_en    ;
-; N/A   ; None              ; 7.513 ns        ; opcode[3] ; reg_rd_en_b  ;
-; N/A   ; None              ; 7.502 ns        ; opcode[4] ; sel_mem_wr   ;
-; N/A   ; None              ; 7.345 ns        ; opcode[3] ; mem_word     ;
-; N/A   ; None              ; 7.341 ns        ; opcode[3] ; reg_16bit    ;
-; N/A   ; None              ; 7.322 ns        ; opcode[3] ; sel_mem_rd   ;
-; N/A   ; None              ; 7.322 ns        ; opcode[3] ; mem_wr_en    ;
-; N/A   ; None              ; 7.299 ns        ; opcode[1] ; reg_wr_en_wb ;
-; N/A   ; None              ; 7.253 ns        ; opcode[5] ; reg_wr_en_wb ;
-; N/A   ; None              ; 7.235 ns        ; opcode[1] ; reg_rd_en_a  ;
-; N/A   ; None              ; 7.231 ns        ; opcode[3] ; mem_rd_en    ;
-; N/A   ; None              ; 7.221 ns        ; opcode[1] ; reg_rd_en_b  ;
-; N/A   ; None              ; 7.211 ns        ; opcode[3] ; sel_mem_wr   ;
-; N/A   ; None              ; 7.192 ns        ; opcode[5] ; reg_rd_en_a  ;
-; N/A   ; None              ; 7.173 ns        ; opcode[5] ; reg_rd_en_b  ;
-+-------+-------------------+-----------------+-----------+--------------+
++----------------------------------------------------------------------------------------------------------------------+
+; th                                                                                                                   ;
++---------------+-------------+-----------+----------------+------------------------------------------------+----------+
+; Minimum Slack ; Required th ; Actual th ; From           ; To                                             ; To Clock ;
++---------------+-------------+-----------+----------------+------------------------------------------------+----------+
+; N/A           ; None        ; -1.786 ns ; mem_data[4]    ; D_FF_32:inst2|lpm_ff:lpm_ff_component|dffs[4]  ; clock    ;
+; N/A           ; None        ; -1.802 ns ; ins_in[13]     ; D_FF_32:inst|lpm_ff:lpm_ff_component|dffs[13]  ; clock    ;
+; N/A           ; None        ; -1.813 ns ; ins_in[21]     ; D_FF_32:inst|lpm_ff:lpm_ff_component|dffs[21]  ; clock    ;
+; N/A           ; None        ; -1.818 ns ; mem_data[30]   ; D_FF_32:inst2|lpm_ff:lpm_ff_component|dffs[30] ; clock    ;
+; N/A           ; None        ; -1.821 ns ; ins_in[23]     ; D_FF_32:inst|lpm_ff:lpm_ff_component|dffs[23]  ; clock    ;
+; N/A           ; None        ; -1.824 ns ; ALU_result[6]  ; D_FF_32:inst1|lpm_ff:lpm_ff_component|dffs[6]  ; clock    ;
+; N/A           ; None        ; -1.832 ns ; ins_in[4]      ; D_FF_32:inst|lpm_ff:lpm_ff_component|dffs[4]   ; clock    ;
+; N/A           ; None        ; -1.840 ns ; mem_data[21]   ; D_FF_32:inst2|lpm_ff:lpm_ff_component|dffs[21] ; clock    ;
+; N/A           ; None        ; -1.852 ns ; ins_in[29]     ; D_FF_32:inst|lpm_ff:lpm_ff_component|dffs[29]  ; clock    ;
+; N/A           ; None        ; -1.854 ns ; ALU_result[14] ; D_FF_32:inst1|lpm_ff:lpm_ff_component|dffs[14] ; clock    ;
+; N/A           ; None        ; -1.859 ns ; ALU_result[11] ; D_FF_32:inst1|lpm_ff:lpm_ff_component|dffs[11] ; clock    ;
+; N/A           ; None        ; -1.862 ns ; ALU_result[7]  ; D_FF_32:inst1|lpm_ff:lpm_ff_component|dffs[7]  ; clock    ;
+; N/A           ; None        ; -1.864 ns ; mem_data[19]   ; D_FF_32:inst2|lpm_ff:lpm_ff_component|dffs[19] ; clock    ;
+; N/A           ; None        ; -1.883 ns ; ins_in[20]     ; D_FF_32:inst|lpm_ff:lpm_ff_component|dffs[20]  ; clock    ;
+; N/A           ; None        ; -1.901 ns ; mem_data[29]   ; D_FF_32:inst2|lpm_ff:lpm_ff_component|dffs[29] ; clock    ;
+; N/A           ; None        ; -1.931 ns ; ins_in[9]      ; D_FF_32:inst|lpm_ff:lpm_ff_component|dffs[9]   ; clock    ;
+; N/A           ; None        ; -1.934 ns ; ALU_result[10] ; D_FF_32:inst1|lpm_ff:lpm_ff_component|dffs[10] ; clock    ;
+; N/A           ; None        ; -1.944 ns ; ins_in[2]      ; D_FF_32:inst|lpm_ff:lpm_ff_component|dffs[2]   ; clock    ;
+; N/A           ; None        ; -1.949 ns ; ALU_result[0]  ; D_FF_32:inst1|lpm_ff:lpm_ff_component|dffs[0]  ; clock    ;
+; N/A           ; None        ; -1.955 ns ; ALU_result[30] ; D_FF_32:inst1|lpm_ff:lpm_ff_component|dffs[30] ; clock    ;
+; N/A           ; None        ; -1.962 ns ; ins_in[12]     ; D_FF_32:inst|lpm_ff:lpm_ff_component|dffs[12]  ; clock    ;
+; N/A           ; None        ; -1.979 ns ; ALU_result[24] ; D_FF_32:inst1|lpm_ff:lpm_ff_component|dffs[24] ; clock    ;
+; N/A           ; None        ; -1.987 ns ; mem_data[25]   ; D_FF_32:inst2|lpm_ff:lpm_ff_component|dffs[25] ; clock    ;
+; N/A           ; None        ; -1.993 ns ; ALU_result[21] ; D_FF_32:inst1|lpm_ff:lpm_ff_component|dffs[21] ; clock    ;
+; N/A           ; None        ; -1.994 ns ; mem_data[14]   ; D_FF_32:inst2|lpm_ff:lpm_ff_component|dffs[14] ; clock    ;
+; N/A           ; None        ; -2.010 ns ; mem_data[7]    ; D_FF_32:inst2|lpm_ff:lpm_ff_component|dffs[7]  ; clock    ;
+; N/A           ; None        ; -2.015 ns ; ALU_result[1]  ; D_FF_32:inst1|lpm_ff:lpm_ff_component|dffs[1]  ; clock    ;
+; N/A           ; None        ; -2.015 ns ; ALU_result[8]  ; D_FF_32:inst1|lpm_ff:lpm_ff_component|dffs[8]  ; clock    ;
+; N/A           ; None        ; -2.019 ns ; ALU_result[23] ; D_FF_32:inst1|lpm_ff:lpm_ff_component|dffs[23] ; clock    ;
+; N/A           ; None        ; -2.022 ns ; ALU_result[18] ; D_FF_32:inst1|lpm_ff:lpm_ff_component|dffs[18] ; clock    ;
+; N/A           ; None        ; -2.069 ns ; ins_in[0]      ; D_FF_32:inst|lpm_ff:lpm_ff_component|dffs[0]   ; clock    ;
+; N/A           ; None        ; -2.078 ns ; ALU_result[20] ; D_FF_32:inst1|lpm_ff:lpm_ff_component|dffs[20] ; clock    ;
+; N/A           ; None        ; -2.093 ns ; mem_data[31]   ; D_FF_32:inst2|lpm_ff:lpm_ff_component|dffs[31] ; clock    ;
+; N/A           ; None        ; -2.104 ns ; ALU_result[26] ; D_FF_32:inst1|lpm_ff:lpm_ff_component|dffs[26] ; clock    ;
+; N/A           ; None        ; -2.106 ns ; ALU_result[27] ; D_FF_32:inst1|lpm_ff:lpm_ff_component|dffs[27] ; clock    ;
+; N/A           ; None        ; -2.109 ns ; ins_in[25]     ; D_FF_32:inst|lpm_ff:lpm_ff_component|dffs[25]  ; clock    ;
+; N/A           ; None        ; -2.118 ns ; ALU_result[5]  ; D_FF_32:inst1|lpm_ff:lpm_ff_component|dffs[5]  ; clock    ;
+; N/A           ; None        ; -2.129 ns ; ins_in[6]      ; D_FF_32:inst|lpm_ff:lpm_ff_component|dffs[6]   ; clock    ;
+; N/A           ; None        ; -2.158 ns ; ALU_result[31] ; D_FF_32:inst1|lpm_ff:lpm_ff_component|dffs[31] ; clock    ;
+; N/A           ; None        ; -2.159 ns ; ALU_result[4]  ; D_FF_32:inst1|lpm_ff:lpm_ff_component|dffs[4]  ; clock    ;
+; N/A           ; None        ; -2.160 ns ; mem_data[13]   ; D_FF_32:inst2|lpm_ff:lpm_ff_component|dffs[13] ; clock    ;
+; N/A           ; None        ; -2.166 ns ; ALU_result[3]  ; D_FF_32:inst1|lpm_ff:lpm_ff_component|dffs[3]  ; clock    ;
+; N/A           ; None        ; -2.168 ns ; ins_in[24]     ; D_FF_32:inst|lpm_ff:lpm_ff_component|dffs[24]  ; clock    ;
+; N/A           ; None        ; -2.172 ns ; mem_data[10]   ; D_FF_32:inst2|lpm_ff:lpm_ff_component|dffs[10] ; clock    ;
+; N/A           ; None        ; -2.181 ns ; mem_data[24]   ; D_FF_32:inst2|lpm_ff:lpm_ff_component|dffs[24] ; clock    ;
+; N/A           ; None        ; -2.184 ns ; mem_data[23]   ; D_FF_32:inst2|lpm_ff:lpm_ff_component|dffs[23] ; clock    ;
+; N/A           ; None        ; -2.192 ns ; ALU_result[13] ; D_FF_32:inst1|lpm_ff:lpm_ff_component|dffs[13] ; clock    ;
+; N/A           ; None        ; -2.195 ns ; ALU_result[16] ; D_FF_32:inst1|lpm_ff:lpm_ff_component|dffs[16] ; clock    ;
+; N/A           ; None        ; -2.196 ns ; ins_in[19]     ; D_FF_32:inst|lpm_ff:lpm_ff_component|dffs[19]  ; clock    ;
+; N/A           ; None        ; -2.199 ns ; ALU_result[9]  ; D_FF_32:inst1|lpm_ff:lpm_ff_component|dffs[9]  ; clock    ;
+; N/A           ; None        ; -2.200 ns ; ALU_result[19] ; D_FF_32:inst1|lpm_ff:lpm_ff_component|dffs[19] ; clock    ;
+; N/A           ; None        ; -2.209 ns ; mem_data[26]   ; D_FF_32:inst2|lpm_ff:lpm_ff_component|dffs[26] ; clock    ;
+; N/A           ; None        ; -2.212 ns ; mem_data[17]   ; D_FF_32:inst2|lpm_ff:lpm_ff_component|dffs[17] ; clock    ;
+; N/A           ; None        ; -2.213 ns ; ins_in[17]     ; D_FF_32:inst|lpm_ff:lpm_ff_component|dffs[17]  ; clock    ;
+; N/A           ; None        ; -2.213 ns ; ALU_result[2]  ; D_FF_32:inst1|lpm_ff:lpm_ff_component|dffs[2]  ; clock    ;
+; N/A           ; None        ; -2.224 ns ; ins_in[18]     ; D_FF_32:inst|lpm_ff:lpm_ff_component|dffs[18]  ; clock    ;
+; N/A           ; None        ; -2.233 ns ; ins_in[8]      ; D_FF_32:inst|lpm_ff:lpm_ff_component|dffs[8]   ; clock    ;
+; N/A           ; None        ; -2.235 ns ; mem_data[12]   ; D_FF_32:inst2|lpm_ff:lpm_ff_component|dffs[12] ; clock    ;
+; N/A           ; None        ; -2.236 ns ; mem_data[0]    ; D_FF_32:inst2|lpm_ff:lpm_ff_component|dffs[0]  ; clock    ;
+; N/A           ; None        ; -2.242 ns ; mem_data[8]    ; D_FF_32:inst2|lpm_ff:lpm_ff_component|dffs[8]  ; clock    ;
+; N/A           ; None        ; -2.242 ns ; ALU_result[12] ; D_FF_32:inst1|lpm_ff:lpm_ff_component|dffs[12] ; clock    ;
+; N/A           ; None        ; -2.247 ns ; ALU_result[15] ; D_FF_32:inst1|lpm_ff:lpm_ff_component|dffs[15] ; clock    ;
+; N/A           ; None        ; -2.250 ns ; mem_data[15]   ; D_FF_32:inst2|lpm_ff:lpm_ff_component|dffs[15] ; clock    ;
+; N/A           ; None        ; -2.251 ns ; ins_in[15]     ; D_FF_32:inst|lpm_ff:lpm_ff_component|dffs[15]  ; clock    ;
+; N/A           ; None        ; -2.252 ns ; ins_in[10]     ; D_FF_32:inst|lpm_ff:lpm_ff_component|dffs[10]  ; clock    ;
+; N/A           ; None        ; -2.256 ns ; mem_data[5]    ; D_FF_32:inst2|lpm_ff:lpm_ff_component|dffs[5]  ; clock    ;
+; N/A           ; None        ; -2.256 ns ; mem_data[16]   ; D_FF_32:inst2|lpm_ff:lpm_ff_component|dffs[16] ; clock    ;
+; N/A           ; None        ; -2.259 ns ; mem_data[27]   ; D_FF_32:inst2|lpm_ff:lpm_ff_component|dffs[27] ; clock    ;
+; N/A           ; None        ; -2.262 ns ; mem_data[20]   ; D_FF_32:inst2|lpm_ff:lpm_ff_component|dffs[20] ; clock    ;
+; N/A           ; None        ; -2.263 ns ; ALU_result[17] ; D_FF_32:inst1|lpm_ff:lpm_ff_component|dffs[17] ; clock    ;
+; N/A           ; None        ; -2.267 ns ; ALU_result[22] ; D_FF_32:inst1|lpm_ff:lpm_ff_component|dffs[22] ; clock    ;
+; N/A           ; None        ; -2.273 ns ; mem_data[3]    ; D_FF_32:inst2|lpm_ff:lpm_ff_component|dffs[3]  ; clock    ;
+; N/A           ; None        ; -2.276 ns ; ins_in[31]     ; D_FF_32:inst|lpm_ff:lpm_ff_component|dffs[31]  ; clock    ;
+; N/A           ; None        ; -2.279 ns ; ins_in[14]     ; D_FF_32:inst|lpm_ff:lpm_ff_component|dffs[14]  ; clock    ;
+; N/A           ; None        ; -2.288 ns ; ins_in[7]      ; D_FF_32:inst|lpm_ff:lpm_ff_component|dffs[7]   ; clock    ;
+; N/A           ; None        ; -2.294 ns ; ALU_result[29] ; D_FF_32:inst1|lpm_ff:lpm_ff_component|dffs[29] ; clock    ;
+; N/A           ; None        ; -2.312 ns ; mem_data[2]    ; D_FF_32:inst2|lpm_ff:lpm_ff_component|dffs[2]  ; clock    ;
+; N/A           ; None        ; -2.319 ns ; mem_data[6]    ; D_FF_32:inst2|lpm_ff:lpm_ff_component|dffs[6]  ; clock    ;
+; N/A           ; None        ; -2.358 ns ; mem_data[22]   ; D_FF_32:inst2|lpm_ff:lpm_ff_component|dffs[22] ; clock    ;
+; N/A           ; None        ; -2.417 ns ; ins_in[28]     ; D_FF_32:inst|lpm_ff:lpm_ff_component|dffs[28]  ; clock    ;
+; N/A           ; None        ; -2.439 ns ; ins_in[1]      ; D_FF_32:inst|lpm_ff:lpm_ff_component|dffs[1]   ; clock    ;
+; N/A           ; None        ; -2.556 ns ; ALU_result[25] ; D_FF_32:inst1|lpm_ff:lpm_ff_component|dffs[25] ; clock    ;
+; N/A           ; None        ; -2.562 ns ; ins_in[3]      ; D_FF_32:inst|lpm_ff:lpm_ff_component|dffs[3]   ; clock    ;
+; N/A           ; None        ; -2.659 ns ; ins_in[26]     ; D_FF_32:inst|lpm_ff:lpm_ff_component|dffs[26]  ; clock    ;
+; N/A           ; None        ; -2.790 ns ; mem_data[18]   ; D_FF_32:inst2|lpm_ff:lpm_ff_component|dffs[18] ; clock    ;
+; N/A           ; None        ; -2.809 ns ; mem_data[28]   ; D_FF_32:inst2|lpm_ff:lpm_ff_component|dffs[28] ; clock    ;
+; N/A           ; None        ; -2.835 ns ; ins_in[5]      ; D_FF_32:inst|lpm_ff:lpm_ff_component|dffs[5]   ; clock    ;
+; N/A           ; None        ; -2.894 ns ; ALU_result[28] ; D_FF_32:inst1|lpm_ff:lpm_ff_component|dffs[28] ; clock    ;
+; N/A           ; None        ; -2.903 ns ; mem_data[9]    ; D_FF_32:inst2|lpm_ff:lpm_ff_component|dffs[9]  ; clock    ;
+; N/A           ; None        ; -2.910 ns ; ins_in[11]     ; D_FF_32:inst|lpm_ff:lpm_ff_component|dffs[11]  ; clock    ;
+; N/A           ; None        ; -2.945 ns ; ins_in[22]     ; D_FF_32:inst|lpm_ff:lpm_ff_component|dffs[22]  ; clock    ;
+; N/A           ; None        ; -2.948 ns ; ins_in[27]     ; D_FF_32:inst|lpm_ff:lpm_ff_component|dffs[27]  ; clock    ;
+; N/A           ; None        ; -3.036 ns ; mem_data[11]   ; D_FF_32:inst2|lpm_ff:lpm_ff_component|dffs[11] ; clock    ;
+; N/A           ; None        ; -3.044 ns ; ins_in[30]     ; D_FF_32:inst|lpm_ff:lpm_ff_component|dffs[30]  ; clock    ;
+; N/A           ; None        ; -3.316 ns ; ins_in[16]     ; D_FF_32:inst|lpm_ff:lpm_ff_component|dffs[16]  ; clock    ;
+; N/A           ; None        ; -3.821 ns ; mem_data[1]    ; D_FF_32:inst2|lpm_ff:lpm_ff_component|dffs[1]  ; clock    ;
++---------------+-------------+-----------+----------------+------------------------------------------------+----------+
 
 
 +--------------------------+
@@ -196,52 +422,56 @@ Parallel compilation was disabled, but you have multiple processors available. E
 Info: *******************************************************************
 Info: Running Quartus II Classic Timing Analyzer
     Info: Version 9.0 Build 132 02/25/2009 SJ Web Edition
-    Info: Processing started: Sun Jul 19 13:06:30 2020
+    Info: Processing started: Sun Jul 19 15:22:06 2020
 Info: Command: quartus_tan --read_settings_files=off --write_settings_files=off CPU -c CPU --timing_analysis_only
 Warning: Found pins functioning as undefined clocks and/or memory enables
     Info: Assuming node "clock" is an undefined clock
-Info: Clock "clock" Internal fmax is restricted to 500.0 MHz between source register "sequencer2:inst9|counter_1bit:inst1|lpm_counter:lpm_counter_component|cntr_nlh:auto_generated|safe_q[0]" and destination register "sequencer2:inst9|counter_1bit:inst1|lpm_counter:lpm_counter_component|cntr_nlh:auto_generated|safe_q[0]"
-    Info: fmax restricted to clock pin edge rate 2.0 ns. Expand message to see actual delay path.
-        Info: + Longest register to register delay is 0.396 ns
-            Info: 1: + IC(0.000 ns) + CELL(0.000 ns) = 0.000 ns; Loc. = LCFF_X39_Y23_N1; Fanout = 3; REG Node = 'sequencer2:inst9|counter_1bit:inst1|lpm_counter:lpm_counter_component|cntr_nlh:auto_generated|safe_q[0]'
-            Info: 2: + IC(0.000 ns) + CELL(0.241 ns) = 0.241 ns; Loc. = LCCOMB_X39_Y23_N0; Fanout = 1; COMB Node = 'sequencer2:inst9|counter_1bit:inst1|lpm_counter:lpm_counter_component|cntr_nlh:auto_generated|counter_comb_bita0~COMBOUT'
-            Info: 3: + IC(0.000 ns) + CELL(0.155 ns) = 0.396 ns; Loc. = LCFF_X39_Y23_N1; Fanout = 3; REG Node = 'sequencer2:inst9|counter_1bit:inst1|lpm_counter:lpm_counter_component|cntr_nlh:auto_generated|safe_q[0]'
-            Info: Total cell delay = 0.396 ns ( 100.00 % )
-        Info: - Smallest clock skew is 0.000 ns
-            Info: + Shortest clock path from clock "clock" to destination register is 2.012 ns
-                Info: 1: + IC(0.000 ns) + CELL(0.820 ns) = 0.820 ns; Loc. = PIN_G4; Fanout = 1; CLK Node = 'clock'
-                Info: 2: + IC(0.574 ns) + CELL(0.618 ns) = 2.012 ns; Loc. = LCFF_X39_Y23_N1; Fanout = 3; REG Node = 'sequencer2:inst9|counter_1bit:inst1|lpm_counter:lpm_counter_component|cntr_nlh:auto_generated|safe_q[0]'
-                Info: Total cell delay = 1.438 ns ( 71.47 % )
-                Info: Total interconnect delay = 0.574 ns ( 28.53 % )
-            Info: - Longest clock path from clock "clock" to source register is 2.012 ns
-                Info: 1: + IC(0.000 ns) + CELL(0.820 ns) = 0.820 ns; Loc. = PIN_G4; Fanout = 1; CLK Node = 'clock'
-                Info: 2: + IC(0.574 ns) + CELL(0.618 ns) = 2.012 ns; Loc. = LCFF_X39_Y23_N1; Fanout = 3; REG Node = 'sequencer2:inst9|counter_1bit:inst1|lpm_counter:lpm_counter_component|cntr_nlh:auto_generated|safe_q[0]'
-                Info: Total cell delay = 1.438 ns ( 71.47 % )
-                Info: Total interconnect delay = 0.574 ns ( 28.53 % )
-        Info: + Micro clock to output delay of source is 0.094 ns
-        Info: + Micro setup delay of destination is 0.090 ns
-Info: tco from clock "clock" to destination pin "ins_mem_en" through register "sequencer2:inst9|counter_1bit:inst1|lpm_counter:lpm_counter_component|cntr_nlh:auto_generated|safe_q[0]" is 4.799 ns
-    Info: + Longest clock path from clock "clock" to source register is 2.012 ns
-        Info: 1: + IC(0.000 ns) + CELL(0.820 ns) = 0.820 ns; Loc. = PIN_G4; Fanout = 1; CLK Node = 'clock'
-        Info: 2: + IC(0.574 ns) + CELL(0.618 ns) = 2.012 ns; Loc. = LCFF_X39_Y23_N1; Fanout = 3; REG Node = 'sequencer2:inst9|counter_1bit:inst1|lpm_counter:lpm_counter_component|cntr_nlh:auto_generated|safe_q[0]'
-        Info: Total cell delay = 1.438 ns ( 71.47 % )
-        Info: Total interconnect delay = 0.574 ns ( 28.53 % )
+Info: No valid register-to-register data paths exist for clock "clock"
+Info: tsu for register "D_FF_32:inst2|lpm_ff:lpm_ff_component|dffs[1]" (data pin = "mem_data[1]", clock pin = "clock") is 4.060 ns
+    Info: + Longest pin to register delay is 6.454 ns
+        Info: 1: + IC(0.000 ns) + CELL(0.830 ns) = 0.830 ns; Loc. = PIN_E22; Fanout = 1; PIN Node = 'mem_data[1]'
+        Info: 2: + IC(5.416 ns) + CELL(0.053 ns) = 6.299 ns; Loc. = LCCOMB_X30_Y3_N16; Fanout = 1; COMB Node = 'D_FF_32:inst2|lpm_ff:lpm_ff_component|dffs[1]~feeder'
+        Info: 3: + IC(0.000 ns) + CELL(0.155 ns) = 6.454 ns; Loc. = LCFF_X30_Y3_N17; Fanout = 1; REG Node = 'D_FF_32:inst2|lpm_ff:lpm_ff_component|dffs[1]'
+        Info: Total cell delay = 1.038 ns ( 16.08 % )
+        Info: Total interconnect delay = 5.416 ns ( 83.92 % )
+    Info: + Micro setup delay of destination is 0.090 ns
+    Info: - Shortest clock path from clock "clock" to destination register is 2.484 ns
+        Info: 1: + IC(0.000 ns) + CELL(0.854 ns) = 0.854 ns; Loc. = PIN_N20; Fanout = 1; CLK Node = 'clock'
+        Info: 2: + IC(0.343 ns) + CELL(0.000 ns) = 1.197 ns; Loc. = CLKCTRL_G3; Fanout = 96; COMB Node = 'clock~clkctrl'
+        Info: 3: + IC(0.669 ns) + CELL(0.618 ns) = 2.484 ns; Loc. = LCFF_X30_Y3_N17; Fanout = 1; REG Node = 'D_FF_32:inst2|lpm_ff:lpm_ff_component|dffs[1]'
+        Info: Total cell delay = 1.472 ns ( 59.26 % )
+        Info: Total interconnect delay = 1.012 ns ( 40.74 % )
+Info: tco from clock "clock" to destination pin "ALU_out[4]" through register "D_FF_32:inst1|lpm_ff:lpm_ff_component|dffs[4]" is 6.886 ns
+    Info: + Longest clock path from clock "clock" to source register is 2.497 ns
+        Info: 1: + IC(0.000 ns) + CELL(0.854 ns) = 0.854 ns; Loc. = PIN_N20; Fanout = 1; CLK Node = 'clock'
+        Info: 2: + IC(0.343 ns) + CELL(0.000 ns) = 1.197 ns; Loc. = CLKCTRL_G3; Fanout = 96; COMB Node = 'clock~clkctrl'
+        Info: 3: + IC(0.682 ns) + CELL(0.618 ns) = 2.497 ns; Loc. = LCFF_X10_Y2_N1; Fanout = 1; REG Node = 'D_FF_32:inst1|lpm_ff:lpm_ff_component|dffs[4]'
+        Info: Total cell delay = 1.472 ns ( 58.95 % )
+        Info: Total interconnect delay = 1.025 ns ( 41.05 % )
     Info: + Micro clock to output delay of source is 0.094 ns
-    Info: + Longest register to pin delay is 2.693 ns
-        Info: 1: + IC(0.000 ns) + CELL(0.000 ns) = 0.000 ns; Loc. = LCFF_X39_Y23_N1; Fanout = 3; REG Node = 'sequencer2:inst9|counter_1bit:inst1|lpm_counter:lpm_counter_component|cntr_nlh:auto_generated|safe_q[0]'
-        Info: 2: + IC(0.569 ns) + CELL(2.124 ns) = 2.693 ns; Loc. = PIN_G5; Fanout = 0; PIN Node = 'ins_mem_en'
-        Info: Total cell delay = 2.124 ns ( 78.87 % )
-        Info: Total interconnect delay = 0.569 ns ( 21.13 % )
-Info: Longest tpd from source pin "opcode[0]" to destination pin "reg_lui" is 9.751 ns
-    Info: 1: + IC(0.000 ns) + CELL(0.830 ns) = 0.830 ns; Loc. = PIN_W20; Fanout = 8; PIN Node = 'opcode[0]'
-    Info: 2: + IC(4.242 ns) + CELL(0.346 ns) = 5.418 ns; Loc. = LCCOMB_X15_Y1_N6; Fanout = 1; COMB Node = 'dec_gate:inst6|lpm_decode:lpm_decode_component|decode_ltf:auto_generated|w_anode29w[3]'
-    Info: 3: + IC(2.351 ns) + CELL(1.982 ns) = 9.751 ns; Loc. = PIN_C16; Fanout = 0; PIN Node = 'reg_lui'
-    Info: Total cell delay = 3.158 ns ( 32.39 % )
-    Info: Total interconnect delay = 6.593 ns ( 67.61 % )
+    Info: + Longest register to pin delay is 4.295 ns
+        Info: 1: + IC(0.000 ns) + CELL(0.000 ns) = 0.000 ns; Loc. = LCFF_X10_Y2_N1; Fanout = 1; REG Node = 'D_FF_32:inst1|lpm_ff:lpm_ff_component|dffs[4]'
+        Info: 2: + IC(2.313 ns) + CELL(1.982 ns) = 4.295 ns; Loc. = PIN_C18; Fanout = 0; PIN Node = 'ALU_out[4]'
+        Info: Total cell delay = 1.982 ns ( 46.15 % )
+        Info: Total interconnect delay = 2.313 ns ( 53.85 % )
+Info: th for register "D_FF_32:inst2|lpm_ff:lpm_ff_component|dffs[4]" (data pin = "mem_data[4]", clock pin = "clock") is -1.786 ns
+    Info: + Longest clock path from clock "clock" to destination register is 2.497 ns
+        Info: 1: + IC(0.000 ns) + CELL(0.854 ns) = 0.854 ns; Loc. = PIN_N20; Fanout = 1; CLK Node = 'clock'
+        Info: 2: + IC(0.343 ns) + CELL(0.000 ns) = 1.197 ns; Loc. = CLKCTRL_G3; Fanout = 96; COMB Node = 'clock~clkctrl'
+        Info: 3: + IC(0.682 ns) + CELL(0.618 ns) = 2.497 ns; Loc. = LCFF_X39_Y3_N1; Fanout = 1; REG Node = 'D_FF_32:inst2|lpm_ff:lpm_ff_component|dffs[4]'
+        Info: Total cell delay = 1.472 ns ( 58.95 % )
+        Info: Total interconnect delay = 1.025 ns ( 41.05 % )
+    Info: + Micro hold delay of destination is 0.149 ns
+    Info: - Shortest pin to register delay is 4.432 ns
+        Info: 1: + IC(0.000 ns) + CELL(0.780 ns) = 0.780 ns; Loc. = PIN_R8; Fanout = 1; PIN Node = 'mem_data[4]'
+        Info: 2: + IC(3.444 ns) + CELL(0.053 ns) = 4.277 ns; Loc. = LCCOMB_X39_Y3_N0; Fanout = 1; COMB Node = 'D_FF_32:inst2|lpm_ff:lpm_ff_component|dffs[4]~feeder'
+        Info: 3: + IC(0.000 ns) + CELL(0.155 ns) = 4.432 ns; Loc. = LCFF_X39_Y3_N1; Fanout = 1; REG Node = 'D_FF_32:inst2|lpm_ff:lpm_ff_component|dffs[4]'
+        Info: Total cell delay = 0.988 ns ( 22.29 % )
+        Info: Total interconnect delay = 3.444 ns ( 77.71 % )
 Info: Quartus II Classic Timing Analyzer was successful. 0 errors, 1 warning
-    Info: Peak virtual memory: 201 megabytes
-    Info: Processing ended: Sun Jul 19 13:06:32 2020
-    Info: Elapsed time: 00:00:02
+    Info: Peak virtual memory: 203 megabytes
+    Info: Processing ended: Sun Jul 19 15:22:07 2020
+    Info: Elapsed time: 00:00:01
     Info: Total CPU time (on all processors): 00:00:01
 
 

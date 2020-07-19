@@ -42,9 +42,9 @@ module pc (
 	input	  aclr;
 	input	  clock;
 	input	  cnt_en;
-	input	[3:0]  data;
+	input	[7:0]  data;
 	input	  sload;
-	output	[3:0]  q;
+	output	[7:0]  q;
 
 endmodule
 
@@ -68,23 +68,23 @@ endmodule
 // Retrieval info: PRIVATE: SSET NUMERIC "0"
 // Retrieval info: PRIVATE: SSET_ALL1 NUMERIC "1"
 // Retrieval info: PRIVATE: SYNTH_WRAPPER_GEN_POSTFIX STRING "0"
-// Retrieval info: PRIVATE: nBit NUMERIC "4"
+// Retrieval info: PRIVATE: nBit NUMERIC "8"
 // Retrieval info: CONSTANT: LPM_DIRECTION STRING "UP"
 // Retrieval info: CONSTANT: LPM_PORT_UPDOWN STRING "PORT_UNUSED"
 // Retrieval info: CONSTANT: LPM_TYPE STRING "LPM_COUNTER"
-// Retrieval info: CONSTANT: LPM_WIDTH NUMERIC "4"
+// Retrieval info: CONSTANT: LPM_WIDTH NUMERIC "8"
 // Retrieval info: USED_PORT: aclr 0 0 0 0 INPUT NODEFVAL aclr
 // Retrieval info: USED_PORT: clock 0 0 0 0 INPUT NODEFVAL clock
 // Retrieval info: USED_PORT: cnt_en 0 0 0 0 INPUT NODEFVAL cnt_en
-// Retrieval info: USED_PORT: data 0 0 4 0 INPUT NODEFVAL data[3..0]
-// Retrieval info: USED_PORT: q 0 0 4 0 OUTPUT NODEFVAL q[3..0]
+// Retrieval info: USED_PORT: data 0 0 8 0 INPUT NODEFVAL data[7..0]
+// Retrieval info: USED_PORT: q 0 0 8 0 OUTPUT NODEFVAL q[7..0]
 // Retrieval info: USED_PORT: sload 0 0 0 0 INPUT NODEFVAL sload
 // Retrieval info: CONNECT: @clock 0 0 0 0 clock 0 0 0 0
-// Retrieval info: CONNECT: q 0 0 4 0 @q 0 0 4 0
+// Retrieval info: CONNECT: q 0 0 8 0 @q 0 0 8 0
 // Retrieval info: CONNECT: @cnt_en 0 0 0 0 cnt_en 0 0 0 0
 // Retrieval info: CONNECT: @sload 0 0 0 0 sload 0 0 0 0
 // Retrieval info: CONNECT: @aclr 0 0 0 0 aclr 0 0 0 0
-// Retrieval info: CONNECT: @data 0 0 4 0 data 0 0 4 0
+// Retrieval info: CONNECT: @data 0 0 8 0 data 0 0 8 0
 // Retrieval info: LIBRARY: lpm lpm.lpm_components.all
 // Retrieval info: GEN_FILE: TYPE_NORMAL pc.v TRUE
 // Retrieval info: GEN_FILE: TYPE_NORMAL pc.inc TRUE

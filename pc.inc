@@ -18,10 +18,10 @@ FUNCTION pc
 	aclr,
 	clock,
 	cnt_en,
-	data[3..0],
+	data[7..0],
 	sload
 )
 
 RETURNS (
-	q[3..0]
+	q[7..0]
 );
