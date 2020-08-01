@@ -5,9 +5,9 @@ Timing Analyzer Summary
 Type           : Worst-case tco
 Slack          : N/A
 Required Time  : None
-Actual Time    : 98.259 ns
-From           : ID_EX:inst12|D_FF_32:D1|lpm_ff:lpm_ff_component|dffs[1]
-To             : alu_result[28]
+Actual Time    : 98.864 ns
+From           : ID_EX:inst12|D_FF_1:inst2|lpm_ff:lpm_ff_component|dffs[0]~DUPLICATE
+To             : alu_result[31]
 From Clock     : clock
 To Clock       : --
 Failed Paths   : 0
@@ -15,8 +15,8 @@ Failed Paths   : 0
 Type           : Clock Setup: 'clock'
 Slack          : N/A
 Required Time  : None
-Actual Time    : 10.83 MHz ( period = 92.322 ns )
-From           : ID_EX:inst12|D_FF_32:D1|lpm_ff:lpm_ff_component|dffs[1]
+Actual Time    : 10.81 MHz ( period = 92.512 ns )
+From           : ID_EX:inst12|D_FF_1:inst2|lpm_ff:lpm_ff_component|dffs[0]~DUPLICATE
 To             : EX_MEM:inst16|D_FF_32:inst|lpm_ff:lpm_ff_component|dffs[31]
 From Clock     : clock
 To Clock       : clock
