@@ -2,14 +2,34 @@
 Timing Analyzer Summary
 --------------------------------------------------------------------------------------
 
-Type           : Worst-case tpd
+Type           : Worst-case tco
 Slack          : N/A
 Required Time  : None
-Actual Time    : 13.839 ns
-From           : 2_new[1]
-To             : result1[26]
-From Clock     : --
+Actual Time    : 108.266 ns
+From           : ID_EX:inst12|D_FF_32:D1|lpm_ff:lpm_ff_component|dffs[11]
+To             : alu_result[31]
+From Clock     : clock
 To Clock       : --
+Failed Paths   : 0
+
+Type           : Clock Setup: 'clock'
+Slack          : N/A
+Required Time  : None
+Actual Time    : 9.77 MHz ( period = 102.350 ns )
+From           : ID_EX:inst12|D_FF_32:D1|lpm_ff:lpm_ff_component|dffs[11]
+To             : Forward_reg:inst17|D_FF_32:inst3|lpm_ff:lpm_ff_component|dffs[31]
+From Clock     : clock
+To Clock       : clock
+Failed Paths   : 0
+
+Type           : Clock Setup: 'clock_reg'
+Slack          : N/A
+Required Time  : None
+Actual Time    : Restricted to 500.00 MHz ( period = 2.000 ns )
+From           : registers_mem:inst9|regs2_8bit:inst17|alt3pram:alt3pram_component|altdpram:altdpram_component2|altsyncram:ram_block|altsyncram_2ep1:auto_generated|ram_block1a0~porta_datain_reg7
+To             : registers_mem:inst9|regs2_8bit:inst17|alt3pram:alt3pram_component|altdpram:altdpram_component2|altsyncram:ram_block|altsyncram_2ep1:auto_generated|ram_block1a7~porta_memory_reg0
+From Clock     : clock_reg
+To Clock       : clock_reg
 Failed Paths   : 0
 
 Type           : Total number of failed paths
