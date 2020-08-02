@@ -1,0 +1,21 @@
+%  multiple-line comment  
+
+multiple-line comment  %      
+
+-- single-line comment
+
+
+DEPTH = 16;                   -- The size of memory in words
+WIDTH = 32;                    -- The size of data in bits
+ADDRESS_RADIX = HEX;          -- The radix for address values
+DATA_RADIX = BIN;             -- The radix for data values
+CONTENT                       -- start of (address : data pairs)
+BEGIN
+-- test for jump ins
+--         ,    ,    ,         
+00 : 00000100000000000000100000000000;                -- add s0, s0, s1
+01 : 00000100001000010000000000000000;   			  -- add s1, s1, s0
+
+
+
+END;
