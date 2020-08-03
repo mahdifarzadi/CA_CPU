@@ -390,9 +390,9 @@ applicable agreement for further details.
 )
 (pin
 	(output)
-	(rect 792 592 968 608)
+	(rect 584 1064 760 1080)
 	(text "OUTPUT" (rect 1 0 39 10)(font "Arial" (font_size 6)))
-	(text "branch_op" (rect 90 0 140 12)(font "Arial" ))
+	(text "pc_out[7..0]" (rect 90 0 149 12)(font "Arial" ))
 	(pt 0 8)
 	(drawing
 		(line (pt 0 8)(pt 52 8)(line_width 1))
@@ -406,9 +406,9 @@ applicable agreement for further details.
 )
 (pin
 	(output)
-	(rect 584 1064 760 1080)
+	(rect 792 592 968 608)
 	(text "OUTPUT" (rect 1 0 39 10)(font "Arial" (font_size 6)))
-	(text "pc_out[7..0]" (rect 90 0 149 12)(font "Arial" ))
+	(text "bubble_end" (rect 90 0 145 12)(font "Arial" ))
 	(pt 0 8)
 	(drawing
 		(line (pt 0 8)(pt 52 8)(line_width 1))

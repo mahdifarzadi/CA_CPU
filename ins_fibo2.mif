@@ -1,0 +1,28 @@
+%  multiple-line comment  
+
+multiple-line comment  %      
+
+-- single-line comment
+
+
+DEPTH = 16;                   -- The size of memory in words
+WIDTH = 32;                    -- The size of data in bits
+ADDRESS_RADIX = HEX;          -- The radix for address values
+DATA_RADIX = BIN;             -- The radix for data values
+CONTENT                       -- start of (address : data pairs)
+BEGIN
+-- fibo instructions
+--         ,    ,    ,    ,    , 
+00 : 01001000100000000000000000000110;-- ADDI $4, #n              -- memory address : data
+01 : 01001000001000000000000000000000;-- ADDI $1, #0
+02 : 01001000010000000000000000000001;-- ADDI $2, #1
+03 : 00000100011000100000100000000000;--loop: ADD $3, $2, $1
+04 : 01001000001000100000000000000000;-- ADDI $1, $2, #0
+05 : 01001000010000110000000000000000;-- ADDI $2, $3, #0
+06 : 01001100100001000000000000000001;-- SUBI $4, $4, #1
+07 : 01111100000001001111111111111100;-- BLT $0, $4, #loop
+08 : 01100100100001010000000000000000;-- SW $4, $5, #0
+09 : 00000000000000000000000000000000;-- HLT
+
+
+END;

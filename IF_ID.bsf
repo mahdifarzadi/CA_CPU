@@ -166,8 +166,8 @@ applicable agreement for further details.
 	(port
 		(pt 240 240)
 		(output)
-		(text "branch_op" (rect 0 0 61 14)(font "Arial" (font_size 8)))
-		(text "branch_op" (rect 158 235 219 249)(font "Arial" (font_size 8)))
+		(text "bubble_end" (rect 0 0 66 14)(font "Arial" (font_size 8)))
+		(text "bubble_end" (rect 153 235 219 249)(font "Arial" (font_size 8)))
 		(line (pt 240 240)(pt 224 240)(line_width 1))
 	)
 	(port

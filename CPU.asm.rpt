@@ -1,5 +1,5 @@
 Assembler report for CPU
-Tue Aug 04 01:11:59 2020
+Tue Aug 04 03:44:57 2020
 Quartus II Version 9.0 Build 132 02/25/2009 SJ Web Edition
 
 
@@ -38,7 +38,7 @@ applicable agreement for further details.
 +---------------------------------------------------------------+
 ; Assembler Summary                                             ;
 +-----------------------+---------------------------------------+
-; Assembler Status      ; Successful - Tue Aug 04 01:11:59 2020 ;
+; Assembler Status      ; Successful - Tue Aug 04 03:44:57 2020 ;
 ; Revision Name         ; CPU                                   ;
 ; Top-level Entity Name ; CPU_pipeline                          ;
 ; Family                ; Stratix II                            ;
@@ -94,7 +94,7 @@ applicable agreement for further details.
 +----------------+--------------------------------+
 ; Device         ; EP2S15F672C3                   ;
 ; JTAG usercode  ; 0xFFFFFFFF                     ;
-; Checksum       ; 0x0055F85D                     ;
+; Checksum       ; 0x0055FBDD                     ;
 +----------------+--------------------------------+
 
 
@@ -105,7 +105,7 @@ applicable agreement for further details.
 +--------------------+----------------------------+
 ; Device             ; EPC16                      ;
 ; JTAG usercode      ; 0xFFFFFFFF                 ;
-; Checksum           ; 0x1E59480F                 ;
+; Checksum           ; 0x1E4ED9AD                 ;
 ; Compression Ratio  ; 2                          ;
 +--------------------+----------------------------+
 
@@ -116,14 +116,14 @@ applicable agreement for further details.
 Info: *******************************************************************
 Info: Running Quartus II Assembler
     Info: Version 9.0 Build 132 02/25/2009 SJ Web Edition
-    Info: Processing started: Tue Aug 04 01:11:56 2020
+    Info: Processing started: Tue Aug 04 03:44:54 2020
 Info: Command: quartus_asm --read_settings_files=off --write_settings_files=off CPU -c CPU
 Info: Writing out detailed assembly data for power analysis
 Info: Assembler is generating device programming files
 Info: Quartus II Assembler was successful. 0 errors, 0 warnings
     Info: Peak virtual memory: 262 megabytes
-    Info: Processing ended: Tue Aug 04 01:12:00 2020
-    Info: Elapsed time: 00:00:04
+    Info: Processing ended: Tue Aug 04 03:44:57 2020
+    Info: Elapsed time: 00:00:03
     Info: Total CPU time (on all processors): 00:00:03
 
 

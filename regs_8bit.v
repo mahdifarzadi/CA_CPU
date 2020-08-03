@@ -96,7 +96,6 @@ module regs_8bit (
 		alt3pram_component.indata_aclr = "OFF",
 		alt3pram_component.indata_reg = "INCLOCK",
 		alt3pram_component.intended_device_family = "Stratix II",
-		alt3pram_component.lpm_file = "registers1.mif",
 		alt3pram_component.lpm_type = "alt3pram",
 		alt3pram_component.outdata_aclr_a = "OFF",
 		alt3pram_component.outdata_aclr_b = "OFF",
@@ -122,7 +121,7 @@ endmodule
 // ============================================================
 // CNX file retrieval info
 // ============================================================
-// Retrieval info: PRIVATE: BlankMemory NUMERIC "0"
+// Retrieval info: PRIVATE: BlankMemory NUMERIC "1"
 // Retrieval info: PRIVATE: CLRdata NUMERIC "1"
 // Retrieval info: PRIVATE: CLRqa NUMERIC "1"
 // Retrieval info: PRIVATE: CLRqb NUMERIC "1"
@@ -157,7 +156,6 @@ endmodule
 // Retrieval info: CONSTANT: INDATA_ACLR STRING "OFF"
 // Retrieval info: CONSTANT: INDATA_REG STRING "INCLOCK"
 // Retrieval info: CONSTANT: INTENDED_DEVICE_FAMILY STRING "Stratix II"
-// Retrieval info: CONSTANT: LPM_FILE STRING "registers1.mif"
 // Retrieval info: CONSTANT: LPM_TYPE STRING "alt3pram"
 // Retrieval info: CONSTANT: OUTDATA_ACLR_A STRING "OFF"
 // Retrieval info: CONSTANT: OUTDATA_ACLR_B STRING "OFF"

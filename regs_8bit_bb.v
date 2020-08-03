@@ -68,7 +68,7 @@ endmodule
 // ============================================================
 // CNX file retrieval info
 // ============================================================
-// Retrieval info: PRIVATE: BlankMemory NUMERIC "0"
+// Retrieval info: PRIVATE: BlankMemory NUMERIC "1"
 // Retrieval info: PRIVATE: CLRdata NUMERIC "1"
 // Retrieval info: PRIVATE: CLRqa NUMERIC "1"
 // Retrieval info: PRIVATE: CLRqb NUMERIC "1"
@@ -103,7 +103,6 @@ endmodule
 // Retrieval info: CONSTANT: INDATA_ACLR STRING "OFF"
 // Retrieval info: CONSTANT: INDATA_REG STRING "INCLOCK"
 // Retrieval info: CONSTANT: INTENDED_DEVICE_FAMILY STRING "Stratix II"
-// Retrieval info: CONSTANT: LPM_FILE STRING "registers1.mif"
 // Retrieval info: CONSTANT: LPM_TYPE STRING "alt3pram"
 // Retrieval info: CONSTANT: OUTDATA_ACLR_A STRING "OFF"
 // Retrieval info: CONSTANT: OUTDATA_ACLR_B STRING "OFF"
