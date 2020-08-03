@@ -86,7 +86,7 @@
 		<CBX_INST_ENTRY INSTANCE_NAME="|CPU_pipeline|main_mem:inst7|mux21_8bit:inst44|lpm_mux:lpm_mux_component" CBX_FILE_NAME="mux_unc.tdf"/>
 		<CBX_INST_ENTRY INSTANCE_NAME="|CPU_pipeline|registers_mem:inst9|regs2_8bit:inst17|alt3pram:alt3pram_component|altdpram:altdpram_component1|altsyncram:ram_block" CBX_FILE_NAME="altsyncram_2ep1.tdf"/>
 		<CBX_INST_ENTRY INSTANCE_NAME="|CPU_pipeline|jump_sel_8:inst6|adder_8bit_1:inst4|lpm_add_sub:lpm_add_sub_component" CBX_FILE_NAME="add_sub_2ph.tdf"/>
-		<CBX_INST_ENTRY INSTANCE_NAME="|CPU_pipeline|instructions_mem:inst|altsyncram:altsyncram_component" CBX_FILE_NAME="altsyncram_e2a1.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|CPU_pipeline|instructions_mem:inst|altsyncram:altsyncram_component" CBX_FILE_NAME="altsyncram_9s81.tdf"/>
 		<CBX_INST_ENTRY INSTANCE_NAME="|CPU_pipeline|registers_mem:inst9|regs3_8bit:inst18|alt3pram:alt3pram_component|altdpram:altdpram_component1|altsyncram:ram_block" CBX_FILE_NAME="altsyncram_2ep1.tdf"/>
 		<CBX_INST_ENTRY INSTANCE_NAME="|CPU_pipeline|immediate_sel:inst4|sign_extend_16to32:inst|zero_const:inst2|lpm_constant:lpm_constant_component" CBX_FILE_NAME="lpm_constant_9k6.tdf"/>
 	</PROJECT>
