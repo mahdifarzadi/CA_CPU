@@ -1,0 +1,56 @@
+--------------------------------------------------------------------------------------
+Timing Analyzer Summary
+--------------------------------------------------------------------------------------
+
+Type           : Worst-case tsu
+Slack          : N/A
+Required Time  : None
+Actual Time    : 5.112 ns
+From           : datab[17]
+To             : MultiplierPolynomial_altfp_mult_f7j:MultiplierPolynomial_altfp_mult_f7j_component|datab_man_not_zero_ff_p2
+From Clock     : --
+To Clock       : clock
+Failed Paths   : 0
+
+Type           : Worst-case tco
+Slack          : N/A
+Required Time  : None
+Actual Time    : 7.026 ns
+From           : MultiplierPolynomial_altfp_mult_f7j:MultiplierPolynomial_altfp_mult_f7j_component|man_result_ff[10]
+To             : result[10]
+From Clock     : clock
+To Clock       : --
+Failed Paths   : 0
+
+Type           : Worst-case th
+Slack          : N/A
+Required Time  : None
+Actual Time    : -0.047 ns
+From           : dataa[14]
+To             : MultiplierPolynomial_altfp_mult_f7j:MultiplierPolynomial_altfp_mult_f7j_component|lpm_mult:man_product2_mult|mult_lgs:auto_generated|mac_mult3~OBSERVABLEDATAA_REGOUT8
+From Clock     : --
+To Clock       : clock
+Failed Paths   : 0
+
+Type           : Clock Setup: 'clock'
+Slack          : N/A
+Required Time  : None
+Actual Time    : 230.20 MHz ( period = 4.344 ns )
+From           : MultiplierPolynomial_altfp_mult_f7j:MultiplierPolynomial_altfp_mult_f7j_component|lpm_mult:man_product2_mult|mult_lgs:auto_generated|mac_mult4~DATAOUT25
+To             : MultiplierPolynomial_altfp_mult_f7j:MultiplierPolynomial_altfp_mult_f7j_component|sticky_dffe
+From Clock     : clock
+To Clock       : clock
+Failed Paths   : 0
+
+Type           : Total number of failed paths
+Slack          : 
+Required Time  : 
+Actual Time    : 
+From           : 
+To             : 
+From Clock     : 
+To Clock       : 
+Failed Paths   : 0
+
+--------------------------------------------------------------------------------------
+
