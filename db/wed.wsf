@@ -5597,11 +5597,11 @@ VECTOR("C:/Users/Mohammad/Desktop/mem/CR_CPU/db/CPU.sim.cvwf")
 VECTOR("F:/dev/CR_CPU/db/CPU.sim.cvwf")
 {
 	ZOOM{
-		ZBEGIN = 1916562;
-		ZEND = 2416562;
+		ZBEGIN = 2429273;
+		ZEND = 2929273;
 		NUMERATOR = 817;
 		DENOMINATOR = 500000;
-		TOP_INDEX = 12;
+		TOP_INDEX = 0;
 	}
 	CLOCK{
 		PERIOD = 10000;
