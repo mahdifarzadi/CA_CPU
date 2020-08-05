@@ -20,9 +20,9 @@ applicable agreement for further details.
 */
 (header "symbol" (version "1.1"))
 (symbol
-	(rect 16 16 216 112)
+	(rect 16 16 216 144)
 	(text "CO_ID_EX" (rect 5 0 62 14)(font "Arial" (font_size 8)))
-	(text "inst" (rect 8 80 25 92)(font "Arial" ))
+	(text "inst" (rect 8 112 25 124)(font "Arial" ))
 	(port
 		(pt 0 32)
 		(input)
@@ -33,9 +33,23 @@ applicable agreement for further details.
 	(port
 		(pt 0 48)
 		(input)
+		(text "in_a[127..0]" (rect 0 0 66 14)(font "Arial" (font_size 8)))
+		(text "in_a[127..0]" (rect 21 43 87 57)(font "Arial" (font_size 8)))
+		(line (pt 0 48)(pt 16 48)(line_width 3))
+	)
+	(port
+		(pt 0 64)
+		(input)
+		(text "in_b[127..0]" (rect 0 0 66 14)(font "Arial" (font_size 8)))
+		(text "in_b[127..0]" (rect 21 59 87 73)(font "Arial" (font_size 8)))
+		(line (pt 0 64)(pt 16 64)(line_width 3))
+	)
+	(port
+		(pt 0 80)
+		(input)
 		(text "clock" (rect 0 0 29 14)(font "Arial" (font_size 8)))
-		(text "clock" (rect 21 43 50 57)(font "Arial" (font_size 8)))
-		(line (pt 0 48)(pt 16 48)(line_width 1))
+		(text "clock" (rect 21 75 50 89)(font "Arial" (font_size 8)))
+		(line (pt 0 80)(pt 16 80)(line_width 1))
 	)
 	(port
 		(pt 200 32)
@@ -44,7 +58,28 @@ applicable agreement for further details.
 		(text "ins_out[31..0]" (rect 103 27 179 41)(font "Arial" (font_size 8)))
 		(line (pt 200 32)(pt 184 32)(line_width 3))
 	)
+	(port
+		(pt 200 48)
+		(output)
+		(text "select[2..0]" (rect 0 0 62 14)(font "Arial" (font_size 8)))
+		(text "select[2..0]" (rect 117 43 179 57)(font "Arial" (font_size 8)))
+		(line (pt 200 48)(pt 184 48)(line_width 3))
+	)
+	(port
+		(pt 200 64)
+		(output)
+		(text "out_a[127..0]" (rect 0 0 74 14)(font "Arial" (font_size 8)))
+		(text "out_a[127..0]" (rect 105 59 179 73)(font "Arial" (font_size 8)))
+		(line (pt 200 64)(pt 184 64)(line_width 3))
+	)
+	(port
+		(pt 200 80)
+		(output)
+		(text "out_b[127..0]" (rect 0 0 74 14)(font "Arial" (font_size 8)))
+		(text "out_b[127..0]" (rect 105 75 179 89)(font "Arial" (font_size 8)))
+		(line (pt 200 80)(pt 184 80)(line_width 3))
+	)
 	(drawing
-		(rectangle (rect 16 16 184 80)(line_width 1))
+		(rectangle (rect 16 16 184 112)(line_width 1))
 	)
 )

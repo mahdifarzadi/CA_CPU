@@ -72,6 +72,23 @@ applicable agreement for further details.
 	(text "VCC" (rect -1 136 9 156)(font "Arial" (font_size 6))(vertical))
 )
 (pin
+	(input)
+	(rect 24 -80 40 88)
+	(text "INPUT" (rect 6 133 16 161)(font "Arial" (font_size 6))(vertical))
+	(text "data_b1[127..0]" (rect 4 5 16 81)(font "Arial" )(vertical))
+	(pt 8 168)
+	(drawing
+		(line (pt 4 92)(pt 4 117)(line_width 1))
+		(line (pt 12 92)(pt 12 117)(line_width 1))
+		(line (pt 8 121)(pt 8 168)(line_width 1))
+		(line (pt 4 92)(pt 12 92)(line_width 1))
+		(line (pt 12 117)(pt 8 121)(line_width 1))
+		(line (pt 4 117)(pt 8 121)(line_width 1))
+	)
+	(rotate270)
+	(text "VCC" (rect -1 136 9 156)(font "Arial" (font_size 6))(vertical))
+)
+(pin
 	(output)
 	(rect 856 464 1032 480)
 	(text "OUTPUT" (rect 1 0 39 10)(font "Arial" (font_size 6)))

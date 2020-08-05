@@ -1,8 +1,5 @@
 <?xml version="1.0" ?>
 <LOG_ROOT>
 	<PROJECT NAME="CPU">
-		<CBX_INST_ENTRY INSTANCE_NAME="|CO_IF_ID|sign_extend_16to32:inst7|all_one_const:inst4|lpm_constant:lpm_constant_component" CBX_FILE_NAME="lpm_constant_1r6.tdf"/>
-		<CBX_INST_ENTRY INSTANCE_NAME="|CO_IF_ID|sign_extend_16to32:inst7|mux21:inst|lpm_mux:lpm_mux_component" CBX_FILE_NAME="mux_boc.tdf"/>
-		<CBX_INST_ENTRY INSTANCE_NAME="|CO_IF_ID|sign_extend_16to32:inst7|zero_const:inst2|lpm_constant:lpm_constant_component" CBX_FILE_NAME="lpm_constant_9k6.tdf"/>
 	</PROJECT>
 </LOG_ROOT>
