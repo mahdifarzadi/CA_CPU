@@ -15,7 +15,8 @@
 
 FUNCTION dec24 
 (
-	data[1..0]
+	data[1..0],
+	enable
 )
 
 RETURNS (

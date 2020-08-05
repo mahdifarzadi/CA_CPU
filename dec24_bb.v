@@ -33,12 +33,14 @@
 
 module dec24 (
 	data,
+	enable,
 	eq0,
 	eq1,
 	eq2,
 	eq3);
 
 	input	[1:0]  data;
+	input	  enable;
 	output	  eq0;
 	output	  eq1;
 	output	  eq2;
@@ -50,7 +52,7 @@ endmodule
 // CNX file retrieval info
 // ============================================================
 // Retrieval info: PRIVATE: BaseDec NUMERIC "1"
-// Retrieval info: PRIVATE: EnableInput NUMERIC "0"
+// Retrieval info: PRIVATE: EnableInput NUMERIC "1"
 // Retrieval info: PRIVATE: INTENDED_DEVICE_FAMILY STRING "Stratix II"
 // Retrieval info: PRIVATE: LPM_PIPELINE NUMERIC "0"
 // Retrieval info: PRIVATE: Latency NUMERIC "0"
@@ -67,11 +69,13 @@ endmodule
 // Retrieval info: CONSTANT: LPM_WIDTH NUMERIC "2"
 // Retrieval info: USED_PORT: @eq 0 0 LPM_DECODES 0 OUTPUT NODEFVAL @eq[LPM_DECODES-1..0]
 // Retrieval info: USED_PORT: data 0 0 2 0 INPUT NODEFVAL data[1..0]
+// Retrieval info: USED_PORT: enable 0 0 0 0 INPUT NODEFVAL enable
 // Retrieval info: USED_PORT: eq0 0 0 0 0 OUTPUT NODEFVAL eq0
 // Retrieval info: USED_PORT: eq1 0 0 0 0 OUTPUT NODEFVAL eq1
 // Retrieval info: USED_PORT: eq2 0 0 0 0 OUTPUT NODEFVAL eq2
 // Retrieval info: USED_PORT: eq3 0 0 0 0 OUTPUT NODEFVAL eq3
 // Retrieval info: CONNECT: @data 0 0 2 0 data 0 0 2 0
+// Retrieval info: CONNECT: @enable 0 0 0 0 enable 0 0 0 0
 // Retrieval info: CONNECT: eq0 0 0 0 0 @eq 0 0 1 0
 // Retrieval info: CONNECT: eq1 0 0 0 0 @eq 0 0 1 1
 // Retrieval info: CONNECT: eq2 0 0 0 0 @eq 0 0 1 2

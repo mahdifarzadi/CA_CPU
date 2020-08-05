@@ -1,49 +1,8 @@
 <?xml version="1.0" ?>
 <LOG_ROOT>
 	<PROJECT NAME="CPU">
-		<CBX_INST_ENTRY INSTANCE_NAME="|MultiplierPolynomial(scalar)|f:inst3|lpm_mult:lpm_mult_component|mult_gen:auto_generated|alt_mac_mult:mac_mult7" CBX_FILE_NAME="mac_mult_ptg1.tdf"/>
-		<CBX_INST_ENTRY INSTANCE_NAME="|MultiplierPolynomial(scalar)|f:inst6|lpm_mult:lpm_mult_component|mult_gen:auto_generated|alt_mac_out:mac_out8" CBX_FILE_NAME="mac_out_rq82.tdf"/>
-		<CBX_INST_ENTRY INSTANCE_NAME="|MultiplierPolynomial(scalar)|f:inst7|lpm_mult:lpm_mult_component|mult_gen:auto_generated|alt_mac_mult:mac_mult3" CBX_FILE_NAME="mac_mult_otg1.tdf"/>
-		<CBX_INST_ENTRY INSTANCE_NAME="|MultiplierPolynomial(scalar)|f:inst4|lpm_mult:lpm_mult_component|mult_gen:auto_generated|alt_mac_mult:mac_mult7" CBX_FILE_NAME="mac_mult_ptg1.tdf"/>
-		<CBX_INST_ENTRY INSTANCE_NAME="|MultiplierPolynomial(scalar)|f:inst7|lpm_mult:lpm_mult_component|mult_gen:auto_generated|alt_mac_out:mac_out8" CBX_FILE_NAME="mac_out_rq82.tdf"/>
-		<CBX_INST_ENTRY INSTANCE_NAME="|MultiplierPolynomial(scalar)|f:inst5|lpm_mult:lpm_mult_component|mult_gen:auto_generated|alt_mac_mult:mac_mult7" CBX_FILE_NAME="mac_mult_ptg1.tdf"/>
-		<CBX_INST_ENTRY INSTANCE_NAME="|MultiplierPolynomial(scalar)|f:inst8|lpm_mult:lpm_mult_component|mult_gen:auto_generated|alt_mac_out:mac_out8" CBX_FILE_NAME="mac_out_rq82.tdf"/>
-		<CBX_INST_ENTRY INSTANCE_NAME="|MultiplierPolynomial(scalar)|f:inst10|lpm_mult:lpm_mult_component|mult_gen:auto_generated|alt_mac_out:mac_out8" CBX_FILE_NAME="mac_out_rq82.tdf"/>
-		<CBX_INST_ENTRY INSTANCE_NAME="|MultiplierPolynomial(scalar)|f:inst1|lpm_mult:lpm_mult_component|mult_gen:auto_generated|alt_mac_out:mac_out8" CBX_FILE_NAME="mac_out_rq82.tdf"/>
-		<CBX_INST_ENTRY INSTANCE_NAME="|MultiplierPolynomial(scalar)|f:inst2|lpm_mult:lpm_mult_component|mult_gen:auto_generated|alt_mac_mult:mac_mult3" CBX_FILE_NAME="mac_mult_otg1.tdf"/>
-		<CBX_INST_ENTRY INSTANCE_NAME="|MultiplierPolynomial(scalar)|f:inst5|lpm_mult:lpm_mult_component|mult_gen:auto_generated|alt_mac_out:mac_out4" CBX_FILE_NAME="mac_out_hq82.tdf"/>
-		<CBX_INST_ENTRY INSTANCE_NAME="|MultiplierPolynomial(scalar)|f:inst6|lpm_mult:lpm_mult_component|mult_gen:auto_generated|alt_mac_mult:mac_mult7" CBX_FILE_NAME="mac_mult_ptg1.tdf"/>
-		<CBX_INST_ENTRY INSTANCE_NAME="|MultiplierPolynomial(scalar)|f:inst7|lpm_mult:lpm_mult_component" CBX_FILE_NAME="mult_gen.tdf"/>
-		<CBX_INST_ENTRY INSTANCE_NAME="|MultiplierPolynomial(scalar)|f:inst9|lpm_mult:lpm_mult_component|mult_gen:auto_generated|alt_mac_out:mac_out8" CBX_FILE_NAME="mac_out_rq82.tdf"/>
-		<CBX_INST_ENTRY INSTANCE_NAME="|MultiplierPolynomial(scalar)|f:inst2|lpm_mult:lpm_mult_component|mult_gen:auto_generated|alt_mac_out:mac_out8" CBX_FILE_NAME="mac_out_rq82.tdf"/>
-		<CBX_INST_ENTRY INSTANCE_NAME="|MultiplierPolynomial(scalar)|f:inst3|lpm_mult:lpm_mult_component|mult_gen:auto_generated|alt_mac_mult:mac_mult3" CBX_FILE_NAME="mac_mult_otg1.tdf"/>
-		<CBX_INST_ENTRY INSTANCE_NAME="|MultiplierPolynomial(scalar)|f:inst6|lpm_mult:lpm_mult_component|mult_gen:auto_generated|alt_mac_out:mac_out4" CBX_FILE_NAME="mac_out_hq82.tdf"/>
-		<CBX_INST_ENTRY INSTANCE_NAME="|MultiplierPolynomial(scalar)|f:inst7|lpm_mult:lpm_mult_component|mult_gen:auto_generated|alt_mac_mult:mac_mult7" CBX_FILE_NAME="mac_mult_ptg1.tdf"/>
-		<CBX_INST_ENTRY INSTANCE_NAME="|MultiplierPolynomial(scalar)|f:inst8|lpm_mult:lpm_mult_component" CBX_FILE_NAME="mult_gen.tdf"/>
-		<CBX_INST_ENTRY INSTANCE_NAME="|MultiplierPolynomial(scalar)|f:inst10|lpm_mult:lpm_mult_component" CBX_FILE_NAME="mult_gen.tdf"/>
-		<CBX_INST_ENTRY INSTANCE_NAME="|MultiplierPolynomial(scalar)|f:inst1|lpm_mult:lpm_mult_component" CBX_FILE_NAME="mult_gen.tdf"/>
-		<CBX_INST_ENTRY INSTANCE_NAME="|MultiplierPolynomial(scalar)|f:inst3|lpm_mult:lpm_mult_component|mult_gen:auto_generated|alt_mac_out:mac_out8" CBX_FILE_NAME="mac_out_rq82.tdf"/>
-		<CBX_INST_ENTRY INSTANCE_NAME="|MultiplierPolynomial(scalar)|f:inst7|lpm_mult:lpm_mult_component|mult_gen:auto_generated|alt_mac_out:mac_out4" CBX_FILE_NAME="mac_out_hq82.tdf"/>
-		<CBX_INST_ENTRY INSTANCE_NAME="|MultiplierPolynomial(scalar)|f:inst8|lpm_mult:lpm_mult_component|mult_gen:auto_generated|alt_mac_mult:mac_mult7" CBX_FILE_NAME="mac_mult_ptg1.tdf"/>
-		<CBX_INST_ENTRY INSTANCE_NAME="|MultiplierPolynomial(scalar)|f:inst9|lpm_mult:lpm_mult_component" CBX_FILE_NAME="mult_gen.tdf"/>
-		<CBX_INST_ENTRY INSTANCE_NAME="|MultiplierPolynomial(scalar)|f:inst10|lpm_mult:lpm_mult_component|mult_gen:auto_generated|alt_mac_mult:mac_mult7" CBX_FILE_NAME="mac_mult_ptg1.tdf"/>
-		<CBX_INST_ENTRY INSTANCE_NAME="|MultiplierPolynomial(scalar)|f:inst1|lpm_mult:lpm_mult_component|mult_gen:auto_generated|alt_mac_mult:mac_mult7" CBX_FILE_NAME="mac_mult_ptg1.tdf"/>
-		<CBX_INST_ENTRY INSTANCE_NAME="|MultiplierPolynomial(scalar)|f:inst2|lpm_mult:lpm_mult_component" CBX_FILE_NAME="mult_gen.tdf"/>
-		<CBX_INST_ENTRY INSTANCE_NAME="|MultiplierPolynomial(scalar)|f:inst4|lpm_mult:lpm_mult_component|mult_gen:auto_generated|alt_mac_out:mac_out8" CBX_FILE_NAME="mac_out_rq82.tdf"/>
-		<CBX_INST_ENTRY INSTANCE_NAME="|MultiplierPolynomial(scalar)|f:inst5|lpm_mult:lpm_mult_component|mult_gen:auto_generated|alt_mac_mult:mac_mult3" CBX_FILE_NAME="mac_mult_otg1.tdf"/>
-		<CBX_INST_ENTRY INSTANCE_NAME="|MultiplierPolynomial(scalar)|f:inst9|lpm_mult:lpm_mult_component|mult_gen:auto_generated|alt_mac_mult:mac_mult7" CBX_FILE_NAME="mac_mult_ptg1.tdf"/>
-		<CBX_INST_ENTRY INSTANCE_NAME="|MultiplierPolynomial(scalar)|f:inst10|lpm_mult:lpm_mult_component|mult_gen:auto_generated|alt_mac_out:mac_out4" CBX_FILE_NAME="mac_out_hq82.tdf"/>
-		<CBX_INST_ENTRY INSTANCE_NAME="|MultiplierPolynomial(scalar)|f:inst1|lpm_mult:lpm_mult_component|mult_gen:auto_generated|alt_mac_out:mac_out4" CBX_FILE_NAME="mac_out_hq82.tdf"/>
-		<CBX_INST_ENTRY INSTANCE_NAME="|MultiplierPolynomial(scalar)|f:inst2|lpm_mult:lpm_mult_component|mult_gen:auto_generated|alt_mac_mult:mac_mult7" CBX_FILE_NAME="mac_mult_ptg1.tdf"/>
-		<CBX_INST_ENTRY INSTANCE_NAME="|MultiplierPolynomial(scalar)|f:inst3|lpm_mult:lpm_mult_component" CBX_FILE_NAME="mult_gen.tdf"/>
-		<CBX_INST_ENTRY INSTANCE_NAME="|MultiplierPolynomial(scalar)|f:inst5|lpm_mult:lpm_mult_component|mult_gen:auto_generated|alt_mac_out:mac_out8" CBX_FILE_NAME="mac_out_rq82.tdf"/>
-		<CBX_INST_ENTRY INSTANCE_NAME="|MultiplierPolynomial(scalar)|f:inst6|lpm_mult:lpm_mult_component|mult_gen:auto_generated|alt_mac_mult:mac_mult3" CBX_FILE_NAME="mac_mult_otg1.tdf"/>
-		<CBX_INST_ENTRY INSTANCE_NAME="|MultiplierPolynomial(scalar)|f:inst2|lpm_mult:lpm_mult_component|mult_gen:auto_generated|alt_mac_out:mac_out4" CBX_FILE_NAME="mac_out_hq82.tdf"/>
-		<CBX_INST_ENTRY INSTANCE_NAME="|MultiplierPolynomial(scalar)|f:inst4|lpm_mult:lpm_mult_component" CBX_FILE_NAME="mult_gen.tdf"/>
-		<CBX_INST_ENTRY INSTANCE_NAME="|MultiplierPolynomial(scalar)|f:inst3|lpm_mult:lpm_mult_component|mult_gen:auto_generated|alt_mac_out:mac_out4" CBX_FILE_NAME="mac_out_hq82.tdf"/>
-		<CBX_INST_ENTRY INSTANCE_NAME="|MultiplierPolynomial(scalar)|f:inst5|lpm_mult:lpm_mult_component" CBX_FILE_NAME="mult_gen.tdf"/>
-		<CBX_INST_ENTRY INSTANCE_NAME="|MultiplierPolynomial(scalar)|f:inst10|lpm_mult:lpm_mult_component|mult_gen:auto_generated|alt_mac_mult:mac_mult3" CBX_FILE_NAME="mac_mult_otg1.tdf"/>
-		<CBX_INST_ENTRY INSTANCE_NAME="|MultiplierPolynomial(scalar)|f:inst1|lpm_mult:lpm_mult_component|mult_gen:auto_generated|alt_mac_mult:mac_mult3" CBX_FILE_NAME="mac_mult_otg1.tdf"/>
-		<CBX_INST_ENTRY INSTANCE_NAME="|MultiplierPolynomial(scalar)|f:inst6|lpm_mult:lpm_mult_component" CBX_FILE_NAME="mult_gen.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|CO_IF_ID|sign_extend_16to32:inst7|all_one_const:inst4|lpm_constant:lpm_constant_component" CBX_FILE_NAME="lpm_constant_1r6.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|CO_IF_ID|sign_extend_16to32:inst7|mux21:inst|lpm_mux:lpm_mux_component" CBX_FILE_NAME="mux_boc.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|CO_IF_ID|sign_extend_16to32:inst7|zero_const:inst2|lpm_constant:lpm_constant_component" CBX_FILE_NAME="lpm_constant_9k6.tdf"/>
 	</PROJECT>
 </LOG_ROOT>

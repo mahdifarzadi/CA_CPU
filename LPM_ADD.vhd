@@ -42,16 +42,16 @@ USE lpm.all;
 ENTITY LPM_ADD IS
 	PORT
 	(
-		dataa		: IN STD_LOGIC_VECTOR (65 DOWNTO 0);
-		datab		: IN STD_LOGIC_VECTOR (65 DOWNTO 0);
-		result		: OUT STD_LOGIC_VECTOR (65 DOWNTO 0)
+		dataa		: IN STD_LOGIC_VECTOR (31 DOWNTO 0);
+		datab		: IN STD_LOGIC_VECTOR (31 DOWNTO 0);
+		result		: OUT STD_LOGIC_VECTOR (31 DOWNTO 0)
 	);
 END LPM_ADD;
 
 
 ARCHITECTURE SYN OF lpm_add IS
 
-	SIGNAL sub_wire0	: STD_LOGIC_VECTOR (65 DOWNTO 0);
+	SIGNAL sub_wire0	: STD_LOGIC_VECTOR (31 DOWNTO 0);
 
 
 
@@ -64,14 +64,14 @@ ARCHITECTURE SYN OF lpm_add IS
 		lpm_width		: NATURAL
 	);
 	PORT (
-			dataa	: IN STD_LOGIC_VECTOR (65 DOWNTO 0);
-			datab	: IN STD_LOGIC_VECTOR (65 DOWNTO 0);
-			result	: OUT STD_LOGIC_VECTOR (65 DOWNTO 0)
+			dataa	: IN STD_LOGIC_VECTOR (31 DOWNTO 0);
+			datab	: IN STD_LOGIC_VECTOR (31 DOWNTO 0);
+			result	: OUT STD_LOGIC_VECTOR (31 DOWNTO 0)
 	);
 	END COMPONENT;
 
 BEGIN
-	result    <= sub_wire0(65 DOWNTO 0);
+	result    <= sub_wire0(31 DOWNTO 0);
 
 	lpm_add_sub_component : lpm_add_sub
 	GENERIC MAP (
@@ -79,7 +79,7 @@ BEGIN
 		lpm_hint => "ONE_INPUT_IS_CONSTANT=NO,CIN_USED=NO",
 		lpm_representation => "UNSIGNED",
 		lpm_type => "LPM_ADD_SUB",
-		lpm_width => 66
+		lpm_width => 32
 	)
 	PORT MAP (
 		dataa => dataa,
@@ -112,18 +112,18 @@ END SYN;
 -- Retrieval info: PRIVATE: WhichConstant NUMERIC "0"
 -- Retrieval info: PRIVATE: aclr NUMERIC "0"
 -- Retrieval info: PRIVATE: clken NUMERIC "0"
--- Retrieval info: PRIVATE: nBit NUMERIC "66"
+-- Retrieval info: PRIVATE: nBit NUMERIC "32"
 -- Retrieval info: CONSTANT: LPM_DIRECTION STRING "ADD"
 -- Retrieval info: CONSTANT: LPM_HINT STRING "ONE_INPUT_IS_CONSTANT=NO,CIN_USED=NO"
 -- Retrieval info: CONSTANT: LPM_REPRESENTATION STRING "UNSIGNED"
 -- Retrieval info: CONSTANT: LPM_TYPE STRING "LPM_ADD_SUB"
--- Retrieval info: CONSTANT: LPM_WIDTH NUMERIC "66"
--- Retrieval info: USED_PORT: dataa 0 0 66 0 INPUT NODEFVAL dataa[65..0]
--- Retrieval info: USED_PORT: datab 0 0 66 0 INPUT NODEFVAL datab[65..0]
--- Retrieval info: USED_PORT: result 0 0 66 0 OUTPUT NODEFVAL result[65..0]
--- Retrieval info: CONNECT: result 0 0 66 0 @result 0 0 66 0
--- Retrieval info: CONNECT: @dataa 0 0 66 0 dataa 0 0 66 0
--- Retrieval info: CONNECT: @datab 0 0 66 0 datab 0 0 66 0
+-- Retrieval info: CONSTANT: LPM_WIDTH NUMERIC "32"
+-- Retrieval info: USED_PORT: dataa 0 0 32 0 INPUT NODEFVAL dataa[31..0]
+-- Retrieval info: USED_PORT: datab 0 0 32 0 INPUT NODEFVAL datab[31..0]
+-- Retrieval info: USED_PORT: result 0 0 32 0 OUTPUT NODEFVAL result[31..0]
+-- Retrieval info: CONNECT: result 0 0 32 0 @result 0 0 32 0
+-- Retrieval info: CONNECT: @dataa 0 0 32 0 dataa 0 0 32 0
+-- Retrieval info: CONNECT: @datab 0 0 32 0 datab 0 0 32 0
 -- Retrieval info: LIBRARY: lpm lpm.lpm_components.all
 -- Retrieval info: GEN_FILE: TYPE_NORMAL LPM_ADD.vhd TRUE
 -- Retrieval info: GEN_FILE: TYPE_NORMAL LPM_ADD.inc TRUE

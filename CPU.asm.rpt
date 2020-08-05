@@ -1,5 +1,5 @@
 Assembler report for CPU
-Tue Aug 04 22:50:37 2020
+Wed Aug 05 06:54:34 2020
 Quartus II Version 9.0 Build 132 02/25/2009 SJ Web Edition
 
 
@@ -38,11 +38,11 @@ applicable agreement for further details.
 +---------------------------------------------------------------+
 ; Assembler Summary                                             ;
 +-----------------------+---------------------------------------+
-; Assembler Status      ; Successful - Tue Aug 04 22:50:37 2020 ;
+; Assembler Status      ; Successful - Wed Aug 05 06:54:34 2020 ;
 ; Revision Name         ; CPU                                   ;
-; Top-level Entity Name ; CPU_pipeline                          ;
-; Family                ; Stratix II                            ;
-; Device                ; EP2S15F672C3                          ;
+; Top-level Entity Name ; CO_IF_ID                              ;
+; Family                ; Cyclone II                            ;
+; Device                ; EP2C5F256C6                           ;
 +-----------------------+---------------------------------------+
 
 
@@ -68,8 +68,7 @@ applicable agreement for further details.
 ; Hexadecimal Output File count direction                                     ; Up       ; Up            ;
 ; Release clears before tri-states                                            ; Off      ; Off           ;
 ; Auto-restart configuration after error                                      ; On       ; On            ;
-; Maintain Compatibility with All Stratix II MRAM Versions                    ; Off      ; Off           ;
-; Use Checkered Pattern as Uninitialized RAM Content                          ; Off      ; Off           ;
+; Maintain Compatibility with All Cyclone II M4K Versions                     ; On       ; On            ;
 ; Generate Serial Vector Format File (.svf) for Target Device                 ; Off      ; Off           ;
 ; Generate a JEDEC STAPL Format File (.jam) for Target Device                 ; Off      ; Off           ;
 ; Generate a compressed Jam STAPL Byte Code 2.0 File (.jbc) for Target Device ; Off      ; Off           ;
@@ -92,9 +91,9 @@ applicable agreement for further details.
 +----------------+--------------------------------+
 ; Option         ; Setting                        ;
 +----------------+--------------------------------+
-; Device         ; EP2S15F672C3                   ;
+; Device         ; EP2C5F256C6                    ;
 ; JTAG usercode  ; 0xFFFFFFFF                     ;
-; Checksum       ; 0x0055FBDD                     ;
+; Checksum       ; 0x00079EA9                     ;
 +----------------+--------------------------------+
 
 
@@ -103,10 +102,10 @@ applicable agreement for further details.
 +--------------------+----------------------------+
 ; Option             ; Setting                    ;
 +--------------------+----------------------------+
-; Device             ; EPC16                      ;
-; JTAG usercode      ; 0xFFFFFFFF                 ;
-; Checksum           ; 0x1E4ED9AD                 ;
-; Compression Ratio  ; 2                          ;
+; Device             ; EPCS4                      ;
+; JTAG usercode      ; 0x00000000                 ;
+; Checksum           ; 0x07514E28                 ;
+; Compression Ratio  ; 3                          ;
 +--------------------+----------------------------+
 
 
@@ -116,14 +115,14 @@ applicable agreement for further details.
 Info: *******************************************************************
 Info: Running Quartus II Assembler
     Info: Version 9.0 Build 132 02/25/2009 SJ Web Edition
-    Info: Processing started: Tue Aug 04 22:50:33 2020
+    Info: Processing started: Wed Aug 05 06:54:31 2020
 Info: Command: quartus_asm --read_settings_files=off --write_settings_files=off CPU -c CPU
 Info: Writing out detailed assembly data for power analysis
 Info: Assembler is generating device programming files
 Info: Quartus II Assembler was successful. 0 errors, 0 warnings
-    Info: Peak virtual memory: 262 megabytes
-    Info: Processing ended: Tue Aug 04 22:50:37 2020
-    Info: Elapsed time: 00:00:04
-    Info: Total CPU time (on all processors): 00:00:03
+    Info: Peak virtual memory: 221 megabytes
+    Info: Processing ended: Wed Aug 05 06:54:34 2020
+    Info: Elapsed time: 00:00:03
+    Info: Total CPU time (on all processors): 00:00:02
 
 

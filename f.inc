@@ -15,10 +15,10 @@
 
 FUNCTION f 
 (
-	dataa[31..0],
-	datab[31..0]
+	dataa[15..0],
+	datab[15..0]
 )
 
 RETURNS (
-	result[63..0]
+	result[31..0]
 );

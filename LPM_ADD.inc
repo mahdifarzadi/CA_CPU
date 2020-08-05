@@ -15,10 +15,10 @@
 
 FUNCTION LPM_ADD 
 (
-	dataa[65..0],
-	datab[65..0]
+	dataa[31..0],
+	datab[31..0]
 )
 
 RETURNS (
-	result[65..0]
+	result[31..0]
 );

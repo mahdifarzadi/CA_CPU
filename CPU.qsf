@@ -18,7 +18,7 @@
 #
 # Quartus II
 # Version 9.0 Build 132 02/25/2009 SJ Web Edition
-# Date created = 23:51:11  June 30, 2020
+# Date created = 03:29:39  August 05, 2020
 #
 # -------------------------------------------------------------------------- #
 #
@@ -36,13 +36,12 @@
 # -------------------------------------------------------------------------- #
 
 
-set_global_assignment -name FAMILY "Cyclone III"
-set_global_assignment -name DEVICE AUTO
-set_global_assignment -name TOP_LEVEL_ENTITY "MultiplierPolynomial(scalar)"
+
+# Project-Wide Assignments
+# ========================
 set_global_assignment -name ORIGINAL_QUARTUS_VERSION 9.0
 set_global_assignment -name PROJECT_CREATION_TIME_DATE "23:51:11  JUNE 30, 2020"
 set_global_assignment -name LAST_QUARTUS_VERSION 9.0
-set_global_assignment -name USE_GENERATED_PHYSICAL_CONSTRAINTS OFF -section_id eda_blast_fpga
 set_global_assignment -name VECTOR_WAVEFORM_FILE CPU.vwf
 set_global_assignment -name BDF_FILE adder_10_10.bdf
 set_global_assignment -name BDF_FILE AdderPolynomial.bdf
@@ -76,15 +75,90 @@ set_global_assignment -name BDF_FILE sign_extend_16to32.bdf
 set_global_assignment -name BDF_FILE test_cu_pipline.bdf
 set_global_assignment -name BDF_FILE test_mux.bdf
 set_global_assignment -name BDF_FILE test_reg_mem.bdf
-set_global_assignment -name PARTITION_NETLIST_TYPE SOURCE -section_id Top
-set_global_assignment -name PARTITION_COLOR 16764057 -section_id Top
-set_global_assignment -name LL_ROOT_REGION ON -section_id "Root Region"
-set_global_assignment -name LL_MEMBER_STATE LOCKED -section_id "Root Region"
-set_instance_assignment -name PARTITION_HIERARCHY root_partition -to | -section_id Top
+set_global_assignment -name MISC_FILE "F:/dev/CR_CPU/CPU.dpf"
+
+# Classic Timing Assignments
+# ==========================
+
+# Analysis & Synthesis Assignments
+# ================================
+set_global_assignment -name FAMILY "Cyclone II"
+set_global_assignment -name TOP_LEVEL_ENTITY CO_IF_ID
+
+# Fitter Assignments
+# ==================
+set_global_assignment -name DEVICE AUTO
 set_global_assignment -name OPTIMIZE_HOLD_TIMING OFF
 set_global_assignment -name OPTIMIZE_MULTI_CORNER_TIMING OFF
 set_global_assignment -name OPTIMIZE_POWER_DURING_FITTING "NORMAL COMPILATION"
-set_global_assignment -name MISC_FILE "F:/dev/CR_CPU/CPU.dpf"
-set_global_assignment -name USE_CONFIGURATION_DEVICE ON
 set_global_assignment -name FITTER_EFFORT "FAST FIT"
+
+# Assembler Assignments
+# =====================
+
+# Incremental Compilation Assignments
+# ===================================
 set_global_assignment -name INCREMENTAL_COMPILATION OFF
+
+# start EDA_TOOL_SETTINGS(eda_blast_fpga)
+# ---------------------------------------
+
+	# Analysis & Synthesis Assignments
+	# ================================
+set_global_assignment -name USE_GENERATED_PHYSICAL_CONSTRAINTS OFF -section_id eda_blast_fpga
+
+# end EDA_TOOL_SETTINGS(eda_blast_fpga)
+# -------------------------------------
+
+# --------------------------
+# start ENTITY(CPU_pipeline)
+
+# end ENTITY(CPU_pipeline)
+# ------------------------
+
+# -----------------------------------------
+# start ENTITY(MultiplierPolynomial(multi))
+
+# end ENTITY(MultiplierPolynomial(multi))
+# ---------------------------------------
+
+# ------------------------------------------
+# start ENTITY(MultiplierPolynomial(scalar))
+
+	# start LOGICLOCK_REGION(Root Region)
+	# -----------------------------------
+
+		# LogicLock Region Assignments
+		# ============================
+
+	# end LOGICLOCK_REGION(Root Region)
+	# ---------------------------------
+
+	# start DESIGN_PARTITION(Top)
+	# ---------------------------
+
+		# Incremental Compilation Assignments
+		# ===================================
+
+	# end DESIGN_PARTITION(Top)
+	# -------------------------
+
+# end ENTITY(MultiplierPolynomial(scalar))
+# ----------------------------------------
+set_global_assignment -name STRATIX_DEVICE_IO_STANDARD "3.3-V LVTTL"
+set_global_assignment -name BDF_FILE adder_4_4.bdf
+set_global_assignment -name BDF_FILE adder_3_3.bdf
+set_global_assignment -name BDF_FILE MultiplierPolynomial_scalar.bdf
+set_global_assignment -name BDF_FILE MultiplierPolynomial_multi.bdf
+set_global_assignment -name QIP_FILE mux61_128bit.qip
+set_global_assignment -name BDF_FILE CO.bdf
+set_global_assignment -name QIP_FILE co_reg_mem.qip
+set_global_assignment -name BDF_FILE co_registers_mem.bdf
+set_global_assignment -name BDF_FILE CO_CU.bdf
+set_global_assignment -name BDF_FILE CO_IF_ID.bdf
+set_global_assignment -name BDF_FILE CO_ID_EX.bdf
+set_global_assignment -name LL_ROOT_REGION ON -section_id "Root Region"
+set_global_assignment -name LL_MEMBER_STATE LOCKED -section_id "Root Region"
+set_global_assignment -name PARTITION_NETLIST_TYPE SOURCE -section_id Top
+set_global_assignment -name PARTITION_COLOR 16764057 -section_id Top
+set_instance_assignment -name PARTITION_HIERARCHY root_partition -to | -section_id Top

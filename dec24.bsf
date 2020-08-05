@@ -24,11 +24,18 @@ applicable agreement for further details.
 	(text "dec24" (rect 47 1 88 17)(font "Arial" (font_size 10)))
 	(text "inst" (rect 8 96 25 108)(font "Arial" ))
 	(port
-		(pt 0 56)
+		(pt 0 48)
 		(input)
 		(text "data[1..0]" (rect 0 0 53 14)(font "Arial" (font_size 8)))
-		(text "data[1..0]" (rect 20 50 65 63)(font "Arial" (font_size 8)))
-		(line (pt 0 56)(pt 16 56)(line_width 3))
+		(text "data[1..0]" (rect 20 42 65 55)(font "Arial" (font_size 8)))
+		(line (pt 0 48)(pt 16 48)(line_width 3))
+	)
+	(port
+		(pt 0 64)
+		(input)
+		(text "enable" (rect 0 0 37 14)(font "Arial" (font_size 8)))
+		(text "enable" (rect 20 58 53 71)(font "Arial" (font_size 8)))
+		(line (pt 0 64)(pt 16 64)(line_width 1))
 	)
 	(port
 		(pt 128 32)
