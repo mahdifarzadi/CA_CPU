@@ -34,23 +34,23 @@
 module dec_7 (
 	data,
 	enable,
-	eq0,
-	eq1,
-	eq2,
-	eq3,
-	eq4,
-	eq5,
-	eq6);
+	eq32,
+	eq33,
+	eq34,
+	eq35,
+	eq36,
+	eq37,
+	eq38);
 
 	input	[5:0]  data;
 	input	  enable;
-	output	  eq0;
-	output	  eq1;
-	output	  eq2;
-	output	  eq3;
-	output	  eq4;
-	output	  eq5;
-	output	  eq6;
+	output	  eq32;
+	output	  eq33;
+	output	  eq34;
+	output	  eq35;
+	output	  eq36;
+	output	  eq37;
+	output	  eq38;
 
 endmodule
 
@@ -65,8 +65,8 @@ endmodule
 // Retrieval info: PRIVATE: SYNTH_WRAPPER_GEN_POSTFIX STRING "0"
 // Retrieval info: PRIVATE: aclr NUMERIC "0"
 // Retrieval info: PRIVATE: clken NUMERIC "0"
-// Retrieval info: PRIVATE: eq0 NUMERIC "1"
-// Retrieval info: PRIVATE: eq1 NUMERIC "1"
+// Retrieval info: PRIVATE: eq0 NUMERIC "0"
+// Retrieval info: PRIVATE: eq1 NUMERIC "0"
 // Retrieval info: PRIVATE: eq10 NUMERIC "0"
 // Retrieval info: PRIVATE: eq11 NUMERIC "0"
 // Retrieval info: PRIVATE: eq12 NUMERIC "0"
@@ -77,7 +77,7 @@ endmodule
 // Retrieval info: PRIVATE: eq17 NUMERIC "0"
 // Retrieval info: PRIVATE: eq18 NUMERIC "0"
 // Retrieval info: PRIVATE: eq19 NUMERIC "0"
-// Retrieval info: PRIVATE: eq2 NUMERIC "1"
+// Retrieval info: PRIVATE: eq2 NUMERIC "0"
 // Retrieval info: PRIVATE: eq20 NUMERIC "0"
 // Retrieval info: PRIVATE: eq21 NUMERIC "0"
 // Retrieval info: PRIVATE: eq22 NUMERIC "0"
@@ -88,18 +88,18 @@ endmodule
 // Retrieval info: PRIVATE: eq27 NUMERIC "0"
 // Retrieval info: PRIVATE: eq28 NUMERIC "0"
 // Retrieval info: PRIVATE: eq29 NUMERIC "0"
-// Retrieval info: PRIVATE: eq3 NUMERIC "1"
+// Retrieval info: PRIVATE: eq3 NUMERIC "0"
 // Retrieval info: PRIVATE: eq30 NUMERIC "0"
 // Retrieval info: PRIVATE: eq31 NUMERIC "0"
-// Retrieval info: PRIVATE: eq32 NUMERIC "0"
-// Retrieval info: PRIVATE: eq33 NUMERIC "0"
-// Retrieval info: PRIVATE: eq34 NUMERIC "0"
-// Retrieval info: PRIVATE: eq35 NUMERIC "0"
-// Retrieval info: PRIVATE: eq36 NUMERIC "0"
-// Retrieval info: PRIVATE: eq37 NUMERIC "0"
-// Retrieval info: PRIVATE: eq38 NUMERIC "0"
+// Retrieval info: PRIVATE: eq32 NUMERIC "1"
+// Retrieval info: PRIVATE: eq33 NUMERIC "1"
+// Retrieval info: PRIVATE: eq34 NUMERIC "1"
+// Retrieval info: PRIVATE: eq35 NUMERIC "1"
+// Retrieval info: PRIVATE: eq36 NUMERIC "1"
+// Retrieval info: PRIVATE: eq37 NUMERIC "1"
+// Retrieval info: PRIVATE: eq38 NUMERIC "1"
 // Retrieval info: PRIVATE: eq39 NUMERIC "0"
-// Retrieval info: PRIVATE: eq4 NUMERIC "1"
+// Retrieval info: PRIVATE: eq4 NUMERIC "0"
 // Retrieval info: PRIVATE: eq40 NUMERIC "0"
 // Retrieval info: PRIVATE: eq41 NUMERIC "0"
 // Retrieval info: PRIVATE: eq42 NUMERIC "0"
@@ -110,7 +110,7 @@ endmodule
 // Retrieval info: PRIVATE: eq47 NUMERIC "0"
 // Retrieval info: PRIVATE: eq48 NUMERIC "0"
 // Retrieval info: PRIVATE: eq49 NUMERIC "0"
-// Retrieval info: PRIVATE: eq5 NUMERIC "1"
+// Retrieval info: PRIVATE: eq5 NUMERIC "0"
 // Retrieval info: PRIVATE: eq50 NUMERIC "0"
 // Retrieval info: PRIVATE: eq51 NUMERIC "0"
 // Retrieval info: PRIVATE: eq52 NUMERIC "0"
@@ -121,7 +121,7 @@ endmodule
 // Retrieval info: PRIVATE: eq57 NUMERIC "0"
 // Retrieval info: PRIVATE: eq58 NUMERIC "0"
 // Retrieval info: PRIVATE: eq59 NUMERIC "0"
-// Retrieval info: PRIVATE: eq6 NUMERIC "1"
+// Retrieval info: PRIVATE: eq6 NUMERIC "0"
 // Retrieval info: PRIVATE: eq60 NUMERIC "0"
 // Retrieval info: PRIVATE: eq61 NUMERIC "0"
 // Retrieval info: PRIVATE: eq62 NUMERIC "0"
@@ -136,22 +136,22 @@ endmodule
 // Retrieval info: USED_PORT: @eq 0 0 LPM_DECODES 0 OUTPUT NODEFVAL @eq[LPM_DECODES-1..0]
 // Retrieval info: USED_PORT: data 0 0 6 0 INPUT NODEFVAL data[5..0]
 // Retrieval info: USED_PORT: enable 0 0 0 0 INPUT NODEFVAL enable
-// Retrieval info: USED_PORT: eq0 0 0 0 0 OUTPUT NODEFVAL eq0
-// Retrieval info: USED_PORT: eq1 0 0 0 0 OUTPUT NODEFVAL eq1
-// Retrieval info: USED_PORT: eq2 0 0 0 0 OUTPUT NODEFVAL eq2
-// Retrieval info: USED_PORT: eq3 0 0 0 0 OUTPUT NODEFVAL eq3
-// Retrieval info: USED_PORT: eq4 0 0 0 0 OUTPUT NODEFVAL eq4
-// Retrieval info: USED_PORT: eq5 0 0 0 0 OUTPUT NODEFVAL eq5
-// Retrieval info: USED_PORT: eq6 0 0 0 0 OUTPUT NODEFVAL eq6
+// Retrieval info: USED_PORT: eq32 0 0 0 0 OUTPUT NODEFVAL eq32
+// Retrieval info: USED_PORT: eq33 0 0 0 0 OUTPUT NODEFVAL eq33
+// Retrieval info: USED_PORT: eq34 0 0 0 0 OUTPUT NODEFVAL eq34
+// Retrieval info: USED_PORT: eq35 0 0 0 0 OUTPUT NODEFVAL eq35
+// Retrieval info: USED_PORT: eq36 0 0 0 0 OUTPUT NODEFVAL eq36
+// Retrieval info: USED_PORT: eq37 0 0 0 0 OUTPUT NODEFVAL eq37
+// Retrieval info: USED_PORT: eq38 0 0 0 0 OUTPUT NODEFVAL eq38
 // Retrieval info: CONNECT: @data 0 0 6 0 data 0 0 6 0
 // Retrieval info: CONNECT: @enable 0 0 0 0 enable 0 0 0 0
-// Retrieval info: CONNECT: eq0 0 0 0 0 @eq 0 0 1 0
-// Retrieval info: CONNECT: eq1 0 0 0 0 @eq 0 0 1 1
-// Retrieval info: CONNECT: eq2 0 0 0 0 @eq 0 0 1 2
-// Retrieval info: CONNECT: eq3 0 0 0 0 @eq 0 0 1 3
-// Retrieval info: CONNECT: eq4 0 0 0 0 @eq 0 0 1 4
-// Retrieval info: CONNECT: eq5 0 0 0 0 @eq 0 0 1 5
-// Retrieval info: CONNECT: eq6 0 0 0 0 @eq 0 0 1 6
+// Retrieval info: CONNECT: eq32 0 0 0 0 @eq 0 0 1 32
+// Retrieval info: CONNECT: eq33 0 0 0 0 @eq 0 0 1 33
+// Retrieval info: CONNECT: eq34 0 0 0 0 @eq 0 0 1 34
+// Retrieval info: CONNECT: eq35 0 0 0 0 @eq 0 0 1 35
+// Retrieval info: CONNECT: eq36 0 0 0 0 @eq 0 0 1 36
+// Retrieval info: CONNECT: eq37 0 0 0 0 @eq 0 0 1 37
+// Retrieval info: CONNECT: eq38 0 0 0 0 @eq 0 0 1 38
 // Retrieval info: LIBRARY: lpm lpm.lpm_components.all
 // Retrieval info: GEN_FILE: TYPE_NORMAL dec_7.v TRUE
 // Retrieval info: GEN_FILE: TYPE_NORMAL dec_7.inc TRUE

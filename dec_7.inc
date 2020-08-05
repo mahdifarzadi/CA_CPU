@@ -20,11 +20,11 @@ FUNCTION dec_7
 )
 
 RETURNS (
-	eq0,
-	eq1,
-	eq2,
-	eq3,
-	eq4,
-	eq5,
-	eq6
+	eq32,
+	eq33,
+	eq34,
+	eq35,
+	eq36,
+	eq37,
+	eq38
 );

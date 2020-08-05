@@ -198,6 +198,13 @@ applicable agreement for further details.
 		(text "branch" (rect 155 331 195 345)(font "Arial" (font_size 8)))
 		(line (pt 216 336)(pt 200 336)(line_width 1))
 	)
+	(port
+		(pt 216 352)
+		(output)
+		(text "co_en" (rect 0 0 35 14)(font "Arial" (font_size 8)))
+		(text "co_en" (rect 160 347 195 361)(font "Arial" (font_size 8)))
+		(line (pt 216 352)(pt 200 352)(line_width 1))
+	)
 	(drawing
 		(rectangle (rect 16 16 200 368)(line_width 1))
 	)
