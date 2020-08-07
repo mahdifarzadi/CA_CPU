@@ -1,5 +1,5 @@
 Assembler report for CPU
-Wed Aug 05 23:59:18 2020
+Sat Aug 08 00:47:37 2020
 Quartus II Version 9.0 Build 132 02/25/2009 SJ Web Edition
 
 
@@ -10,8 +10,8 @@ Quartus II Version 9.0 Build 132 02/25/2009 SJ Web Edition
   2. Assembler Summary
   3. Assembler Settings
   4. Assembler Generated Files
-  5. Assembler Device Options: F:/dev/CR_CPU/CPU.sof
-  6. Assembler Device Options: F:/dev/CR_CPU/CPU.pof
+  5. Assembler Device Options: C:/Users/Mohammad/Desktop/mem/CR_CPU/CPU.sof
+  6. Assembler Device Options: C:/Users/Mohammad/Desktop/mem/CR_CPU/CPU.pof
   7. Assembler Messages
 
 
@@ -38,11 +38,11 @@ applicable agreement for further details.
 +---------------------------------------------------------------+
 ; Assembler Summary                                             ;
 +-----------------------+---------------------------------------+
-; Assembler Status      ; Successful - Wed Aug 05 23:59:18 2020 ;
+; Assembler Status      ; Successful - Sat Aug 08 00:47:37 2020 ;
 ; Revision Name         ; CPU                                   ;
-; Top-level Entity Name ; CPU_pipeline                          ;
+; Top-level Entity Name ; reg_selector                          ;
 ; Family                ; Cyclone II                            ;
-; Device                ; EP2C70F896C6                          ;
+; Device                ; EP2C15AF484C6                         ;
 +-----------------------+---------------------------------------+
 
 
@@ -76,37 +76,37 @@ applicable agreement for further details.
 +-----------------------------------------------------------------------------+----------+---------------+
 
 
-+---------------------------+
-; Assembler Generated Files ;
-+---------------------------+
-; File Name                 ;
-+---------------------------+
-; F:/dev/CR_CPU/CPU.sof     ;
-; F:/dev/CR_CPU/CPU.pof     ;
-+---------------------------+
++----------------------------------------------+
+; Assembler Generated Files                    ;
++----------------------------------------------+
+; File Name                                    ;
++----------------------------------------------+
+; C:/Users/Mohammad/Desktop/mem/CR_CPU/CPU.sof ;
+; C:/Users/Mohammad/Desktop/mem/CR_CPU/CPU.pof ;
++----------------------------------------------+
 
 
-+-------------------------------------------------+
-; Assembler Device Options: F:/dev/CR_CPU/CPU.sof ;
-+----------------+--------------------------------+
-; Option         ; Setting                        ;
-+----------------+--------------------------------+
-; Device         ; EP2C70F896C6                   ;
-; JTAG usercode  ; 0xFFFFFFFF                     ;
-; Checksum       ; 0x010D310D                     ;
-+----------------+--------------------------------+
++------------------------------------------------------------------------+
+; Assembler Device Options: C:/Users/Mohammad/Desktop/mem/CR_CPU/CPU.sof ;
++----------------+-------------------------------------------------------+
+; Option         ; Setting                                               ;
++----------------+-------------------------------------------------------+
+; Device         ; EP2C15AF484C6                                         ;
+; JTAG usercode  ; 0xFFFFFFFF                                            ;
+; Checksum       ; 0x001D739C                                            ;
++----------------+-------------------------------------------------------+
 
 
-+-------------------------------------------------+
-; Assembler Device Options: F:/dev/CR_CPU/CPU.pof ;
-+--------------------+----------------------------+
-; Option             ; Setting                    ;
-+--------------------+----------------------------+
-; Device             ; EPCS16                     ;
-; JTAG usercode      ; 0x00000000                 ;
-; Checksum           ; 0x1763A6F6                 ;
-; Compression Ratio  ; 2                          ;
-+--------------------+----------------------------+
++------------------------------------------------------------------------+
+; Assembler Device Options: C:/Users/Mohammad/Desktop/mem/CR_CPU/CPU.pof ;
++--------------------+---------------------------------------------------+
+; Option             ; Setting                                           ;
++--------------------+---------------------------------------------------+
+; Device             ; EPCS16                                            ;
+; JTAG usercode      ; 0x00000000                                        ;
+; Checksum           ; 0x1DD334A1                                        ;
+; Compression Ratio  ; 3                                                 ;
++--------------------+---------------------------------------------------+
 
 
 +--------------------+
@@ -115,14 +115,14 @@ applicable agreement for further details.
 Info: *******************************************************************
 Info: Running Quartus II Assembler
     Info: Version 9.0 Build 132 02/25/2009 SJ Web Edition
-    Info: Processing started: Wed Aug 05 23:59:12 2020
+    Info: Processing started: Sat Aug 08 00:47:33 2020
 Info: Command: quartus_asm --read_settings_files=off --write_settings_files=off CPU -c CPU
 Info: Writing out detailed assembly data for power analysis
 Info: Assembler is generating device programming files
 Info: Quartus II Assembler was successful. 0 errors, 0 warnings
-    Info: Peak virtual memory: 385 megabytes
-    Info: Processing ended: Wed Aug 05 23:59:18 2020
-    Info: Elapsed time: 00:00:06
-    Info: Total CPU time (on all processors): 00:00:05
+    Info: Peak virtual memory: 251 megabytes
+    Info: Processing ended: Sat Aug 08 00:47:37 2020
+    Info: Elapsed time: 00:00:04
+    Info: Total CPU time (on all processors): 00:00:04
 
 
