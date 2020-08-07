@@ -73,43 +73,43 @@ CHIP  "CPU"  ASSIGNED TO AN: EP2C70F896C6
 Pin Name/Usage               : Location  : Dir.   : I/O Standard      : Voltage : I/O Bank  : User Assignment
 -------------------------------------------------------------------------------------------------------------
 GND                          : A2        : gnd    :                   :         :           :                
-ins_ex[13]                   : A3        : output : 3.3-V LVTTL       :         : 3         : N              
+ins_mem[16]                  : A3        : output : 3.3-V LVTTL       :         : 3         : N              
 VCCIO3                       : A4        : power  :                   : 3.3V    : 3         :                
-ins_ex[3]                    : A5        : output : 3.3-V LVTTL       :         : 3         : N              
-reg_a[7]                     : A6        : output : 3.3-V LVTTL       :         : 3         : N              
-reg_a[13]                    : A7        : output : 3.3-V LVTTL       :         : 3         : N              
-alu_result[19]               : A8        : output : 3.3-V LVTTL       :         : 3         : N              
-reg_a[25]                    : A9        : output : 3.3-V LVTTL       :         : 3         : N              
-reg_b[22]                    : A10       : output : 3.3-V LVTTL       :         : 3         : N              
-reg_b[29]                    : A11       : output : 3.3-V LVTTL       :         : 3         : N              
-reg_b[5]                     : A12       : output : 3.3-V LVTTL       :         : 3         : N              
+ins_if[14]                   : A5        : output : 3.3-V LVTTL       :         : 3         : N              
+co_data128[0]                : A6        : output : 3.3-V LVTTL       :         : 3         : N              
+reg_b[4]                     : A7        : output : 3.3-V LVTTL       :         : 3         : N              
+ins_id[5]                    : A8        : output : 3.3-V LVTTL       :         : 3         : N              
+ins_ex[4]                    : A9        : output : 3.3-V LVTTL       :         : 3         : N              
+ins_mem[24]                  : A10       : output : 3.3-V LVTTL       :         : 3         : N              
+ins_mem[5]                   : A11       : output : 3.3-V LVTTL       :         : 3         : N              
+co_data128[32]               : A12       : output : 3.3-V LVTTL       :         : 3         : N              
 GND                          : A13       : gnd    :                   :         :           :                
-pc_load                      : A14       : output : 3.3-V LVTTL       :         : 3         : N              
+co_data128[13]               : A14       : output : 3.3-V LVTTL       :         : 3         : N              
 VCCIO3                       : A15       : power  :                   : 3.3V    : 3         :                
 VCCIO4                       : A16       : power  :                   : 3.3V    : 4         :                
-co_data32[17]                : A17       : output : 3.3-V LVTTL       :         : 4         : N              
+co_alu128[111]               : A17       : output : 3.3-V LVTTL       :         : 4         : N              
 GND                          : A18       : gnd    :                   :         :           :                
-co_data128[77]               : A19       : output : 3.3-V LVTTL       :         : 4         : N              
-co_alu128[33]                : A20       : output : 3.3-V LVTTL       :         : 4         : N              
-co_data128[121]              : A21       : output : 3.3-V LVTTL       :         : 4         : N              
-co_alu128[8]                 : A22       : output : 3.3-V LVTTL       :         : 4         : N              
-co_data128[43]               : A23       : output : 3.3-V LVTTL       :         : 4         : N              
-co_alu128[75]                : A24       : output : 3.3-V LVTTL       :         : 4         : N              
-co_data128[70]               : A25       : output : 3.3-V LVTTL       :         : 4         : N              
-co_data128[82]               : A26       : output : 3.3-V LVTTL       :         : 4         : N              
+co_alu128[33]                : A19       : output : 3.3-V LVTTL       :         : 4         : N              
+co_data128[117]              : A20       : output : 3.3-V LVTTL       :         : 4         : N              
+co_data128[109]              : A21       : output : 3.3-V LVTTL       :         : 4         : N              
+co_data128[59]               : A22       : output : 3.3-V LVTTL       :         : 4         : N              
+ins_id[0]                    : A23       : output : 3.3-V LVTTL       :         : 4         : N              
+co_alu128[96]                : A24       : output : 3.3-V LVTTL       :         : 4         : N              
+co_alu128[50]                : A25       : output : 3.3-V LVTTL       :         : 4         : N              
+co_alu128[46]                : A26       : output : 3.3-V LVTTL       :         : 4         : N              
 VCCIO4                       : A27       : power  :                   : 3.3V    : 4         :                
-co_alu128[3]                 : A28       : output : 3.3-V LVTTL       :         : 4         : N              
+co_alu128[45]                : A28       : output : 3.3-V LVTTL       :         : 4         : N              
 GND                          : A29       : gnd    :                   :         :           :                
-reg_ldi                      : AA1       : output : 3.3-V LVTTL       :         : 1         : N              
-ins_mem[2]                   : AA2       : output : 3.3-V LVTTL       :         : 1         : N              
-ins_ex[10]                   : AA3       : output : 3.3-V LVTTL       :         : 1         : N              
-ins_ex[8]                    : AA4       : output : 3.3-V LVTTL       :         : 1         : N              
-ins_id[26]                   : AA5       : output : 3.3-V LVTTL       :         : 1         : N              
-ins_if[2]                    : AA6       : output : 3.3-V LVTTL       :         : 1         : N              
-co_data128[117]              : AA7       : output : 3.3-V LVTTL       :         : 1         : N              
-co_alu128[25]                : AA8       : output : 3.3-V LVTTL       :         : 1         : N              
-alu_result[16]               : AA9       : output : 3.3-V LVTTL       :         : 1         : N              
-ins_mem[14]                  : AA10      : output : 3.3-V LVTTL       :         : 1         : N              
+reg_b[5]                     : AA1       : output : 3.3-V LVTTL       :         : 1         : N              
+reg_b[8]                     : AA2       : output : 3.3-V LVTTL       :         : 1         : N              
+reg_a[4]                     : AA3       : output : 3.3-V LVTTL       :         : 1         : N              
+reg_b[24]                    : AA4       : output : 3.3-V LVTTL       :         : 1         : N              
+reg_a[14]                    : AA5       : output : 3.3-V LVTTL       :         : 1         : N              
+reg_a[28]                    : AA6       : output : 3.3-V LVTTL       :         : 1         : N              
+out_wb[21]                   : AA7       : output : 3.3-V LVTTL       :         : 1         : N              
+alu_result[3]                : AA8       : output : 3.3-V LVTTL       :         : 1         : N              
+GND*                         : AA9       :        :                   :         : 1         :                
+ins_mem[11]                  : AA10      : output : 3.3-V LVTTL       :         : 1         : N              
 GND                          : AA11      : gnd    :                   :         :           :                
 GND                          : AA12      : gnd    :                   :         :           :                
 VCCINT                       : AA13      : power  :                   : 1.2V    :           :                
@@ -122,530 +122,530 @@ GND                          : AA19      : gnd    :                   :         
 GND                          : AA20      : gnd    :                   :         :           :                
 GND_PLL4                     : AA21      : gnd    :                   :         :           :                
 GND_PLL4                     : AA22      : gnd    :                   :         :           :                
-co_data128[64]               : AA23      : output : 3.3-V LVTTL       :         : 6         : N              
-co_data128[96]               : AA24      : output : 3.3-V LVTTL       :         : 6         : N              
-co_data32[12]                : AA25      : output : 3.3-V LVTTL       :         : 6         : N              
-alu_result[22]               : AA26      : output : 3.3-V LVTTL       :         : 6         : N              
-co_data128[101]              : AA27      : output : 3.3-V LVTTL       :         : 6         : N              
-co_data128[110]              : AA28      : output : 3.3-V LVTTL       :         : 6         : N              
-co_data128[116]              : AA29      : output : 3.3-V LVTTL       :         : 6         : N              
-co_data32[27]                : AA30      : output : 3.3-V LVTTL       :         : 6         : N              
-ins_ex[7]                    : AB1       : output : 3.3-V LVTTL       :         : 1         : N              
-ins_ex[6]                    : AB2       : output : 3.3-V LVTTL       :         : 1         : N              
+co_data128[124]              : AA23      : output : 3.3-V LVTTL       :         : 6         : N              
+ins_mem[19]                  : AA24      : output : 3.3-V LVTTL       :         : 6         : N              
+co_alu128[94]                : AA25      : output : 3.3-V LVTTL       :         : 6         : N              
+co_alu128[73]                : AA26      : output : 3.3-V LVTTL       :         : 6         : N              
+ins_id[28]                   : AA27      : output : 3.3-V LVTTL       :         : 6         : N              
+alu_result[11]               : AA28      : output : 3.3-V LVTTL       :         : 6         : N              
+co_data128[18]               : AA29      : output : 3.3-V LVTTL       :         : 6         : N              
+ins_mem[6]                   : AA30      : output : 3.3-V LVTTL       :         : 6         : N              
+reg_a[17]                    : AB1       : output : 3.3-V LVTTL       :         : 1         : N              
+reg_b[17]                    : AB2       : output : 3.3-V LVTTL       :         : 1         : N              
 VCCIO1                       : AB3       : power  :                   : 3.3V    : 1         :                
 GND                          : AB4       : gnd    :                   :         :           :                
-alu_result[25]               : AB5       : output : 3.3-V LVTTL       :         : 1         : N              
-co_alu128[105]               : AB6       : output : 3.3-V LVTTL       :         : 1         : N              
+ins_mem[14]                  : AB5       : output : 3.3-V LVTTL       :         : 1         : N              
+alu_result[31]               : AB6       : output : 3.3-V LVTTL       :         : 1         : N              
 GND*                         : AB7       :        :                   :         : 1         :                
 GND_PLL1                     : AB8       : gnd    :                   :         :           :                
 VCCD_PLL1                    : AB9       : power  :                   : 1.2V    :           :                
 GND                          : AB10      : gnd    :                   :         :           :                
 VCCIO8                       : AB11      : power  :                   : 3.3V    : 8         :                
-ins_id[27]                   : AB12      : output : 3.3-V LVTTL       :         : 8         : N              
-ins_id[28]                   : AB13      : output : 3.3-V LVTTL       :         : 8         : N              
+out_wb[28]                   : AB12      : output : 3.3-V LVTTL       :         : 8         : N              
+out_wb[0]                    : AB13      : output : 3.3-V LVTTL       :         : 8         : N              
 GND                          : AB14      : gnd    :                   :         :           :                
 VCCIO8                       : AB15      : power  :                   : 3.3V    : 8         :                
 VCCIO7                       : AB16      : power  :                   : 3.3V    : 7         :                
 GND                          : AB17      : gnd    :                   :         :           :                
-co_data128[111]              : AB18      : output : 3.3-V LVTTL       :         : 7         : N              
-co_data128[78]               : AB19      : output : 3.3-V LVTTL       :         : 7         : N              
+co_data128[6]                : AB18      : output : 3.3-V LVTTL       :         : 7         : N              
+co_alu128[93]                : AB19      : output : 3.3-V LVTTL       :         : 7         : N              
 VCCIO7                       : AB20      : power  :                   : 3.3V    : 7         :                
 GND                          : AB21      : gnd    :                   :         :           :                
 VCCD_PLL4                    : AB22      : power  :                   : 1.2V    :           :                
 GND*                         : AB23      :        :                   :         : 6         :                
 GND*                         : AB24      :        :                   :         : 6         :                
-co_alu128[45]                : AB25      : output : 3.3-V LVTTL       :         : 6         : N              
-co_data128[16]               : AB26      : output : 3.3-V LVTTL       :         : 6         : N              
+ins_mem[30]                  : AB25      : output : 3.3-V LVTTL       :         : 6         : N              
+ins_id[26]                   : AB26      : output : 3.3-V LVTTL       :         : 6         : N              
 GND                          : AB27      : gnd    :                   :         :           :                
 VCCIO6                       : AB28      : power  :                   : 3.3V    : 6         :                
-co_data32[20]                : AB29      : output : 3.3-V LVTTL       :         : 6         : N              
-co_data128[29]               : AB30      : output : 3.3-V LVTTL       :         : 6         : N              
-co_alu128[102]               : AC1       : output : 3.3-V LVTTL       :         : 1         : N              
-co_data128[38]               : AC2       : output : 3.3-V LVTTL       :         : 1         : N              
-out_wb[12]                   : AC3       : output : 3.3-V LVTTL       :         : 1         : N              
-out_wb[28]                   : AC4       : output : 3.3-V LVTTL       :         : 1         : N              
-ins_id[31]                   : AC5       : output : 3.3-V LVTTL       :         : 1         : N              
-alu_result[27]               : AC6       : output : 3.3-V LVTTL       :         : 1         : N              
+ins_id[4]                    : AB29      : output : 3.3-V LVTTL       :         : 6         : N              
+out_wb[18]                   : AB30      : output : 3.3-V LVTTL       :         : 6         : N              
+out_wb[2]                    : AC1       : output : 3.3-V LVTTL       :         : 1         : N              
+reg_a[19]                    : AC2       : output : 3.3-V LVTTL       :         : 1         : N              
+immediate                    : AC3       : output : 3.3-V LVTTL       :         : 1         : N              
+alu_result[24]               : AC4       : output : 3.3-V LVTTL       :         : 1         : N              
+ins_ex[5]                    : AC5       : output : 3.3-V LVTTL       :         : 1         : N              
+alu_result[20]               : AC6       : output : 3.3-V LVTTL       :         : 1         : N              
 GND*                         : AC7       :        :                   :         : 1         :                
 GND_PLL1                     : AC8       : gnd    :                   :         :           :                
 VCCA_PLL1                    : AC9       : power  :                   : 1.2V    :           :                
 GNDA_PLL1                    : AC10      : gnd    :                   :         :           :                
-co_alu128[87]                : AC11      : output : 3.3-V LVTTL       :         : 8         : N              
-out_wb[7]                    : AC12      : output : 3.3-V LVTTL       :         : 8         : N              
-ins_if[16]                   : AC13      : output : 3.3-V LVTTL       :         : 8         : N              
-co_data32[22]                : AC14      : output : 3.3-V LVTTL       :         : 8         : N              
+reg_b[6]                     : AC11      : output : 3.3-V LVTTL       :         : 8         : N              
+ins_id[16]                   : AC12      : output : 3.3-V LVTTL       :         : 8         : N              
+ins_ex[6]                    : AC13      : output : 3.3-V LVTTL       :         : 8         : N              
+ins_mem[27]                  : AC14      : output : 3.3-V LVTTL       :         : 8         : N              
 GND+                         : AC15      :        :                   :         : 7         :                
-co_data128[7]                : AC16      : output : 3.3-V LVTTL       :         : 7         : N              
-co_data128[120]              : AC17      : output : 3.3-V LVTTL       :         : 7         : N              
-ins_if[26]                   : AC18      : output : 3.3-V LVTTL       :         : 7         : N              
-co_data128[23]               : AC19      : output : 3.3-V LVTTL       :         : 7         : N              
-co_alu128[74]                : AC20      : output : 3.3-V LVTTL       :         : 7         : N              
-co_alu128[15]                : AC21      : output : 3.3-V LVTTL       :         : 7         : N              
+alu_result[13]               : AC16      : output : 3.3-V LVTTL       :         : 7         : N              
+co_alu128[54]                : AC17      : output : 3.3-V LVTTL       :         : 7         : N              
+co_data128[52]               : AC18      : output : 3.3-V LVTTL       :         : 7         : N              
+co_data128[75]               : AC19      : output : 3.3-V LVTTL       :         : 7         : N              
+co_alu128[98]                : AC20      : output : 3.3-V LVTTL       :         : 7         : N              
+co_alu128[70]                : AC21      : output : 3.3-V LVTTL       :         : 7         : N              
 VCCA_PLL4                    : AC22      : power  :                   : 1.2V    :           :                
 GND*                         : AC23      :        :                   :         : 6         :                
 GND*                         : AC24      :        :                   :         : 6         :                
-GND*                         : AC25      :        :                   :         : 6         :                
-co_data128[112]              : AC26      : output : 3.3-V LVTTL       :         : 6         : N              
-co_alu128[39]                : AC27      : output : 3.3-V LVTTL       :         : 6         : N              
-co_data32[23]                : AC28      : output : 3.3-V LVTTL       :         : 6         : N              
-co_data128[102]              : AC29      : output : 3.3-V LVTTL       :         : 6         : N              
-co_alu128[101]               : AC30      : output : 3.3-V LVTTL       :         : 6         : N              
-out_wb[29]                   : AD1       : output : 3.3-V LVTTL       :         : 1         : N              
-alu_result[8]                : AD2       : output : 3.3-V LVTTL       :         : 1         : N              
-ins_if[27]                   : AD3       : output : 3.3-V LVTTL       :         : 1         : N              
-out_wb[10]                   : AD4       : output : 3.3-V LVTTL       :         : 1         : N              
-ins_mem[9]                   : AD5       : output : 3.3-V LVTTL       :         : 1         : N              
-ins_ex[28]                   : AD6       : output : 3.3-V LVTTL       :         : 1         : N              
+ins_id[30]                   : AC25      : output : 3.3-V LVTTL       :         : 6         : N              
+co_data128[93]               : AC26      : output : 3.3-V LVTTL       :         : 6         : N              
+co_data128[78]               : AC27      : output : 3.3-V LVTTL       :         : 6         : N              
+co_data32[11]                : AC28      : output : 3.3-V LVTTL       :         : 6         : N              
+ins_ex[11]                   : AC29      : output : 3.3-V LVTTL       :         : 6         : N              
+co_data128[103]              : AC30      : output : 3.3-V LVTTL       :         : 6         : N              
+ins_mem[21]                  : AD1       : output : 3.3-V LVTTL       :         : 1         : N              
+ins_ex[26]                   : AD2       : output : 3.3-V LVTTL       :         : 1         : N              
+ins_ex[10]                   : AD3       : output : 3.3-V LVTTL       :         : 1         : N              
+ins_mem[9]                   : AD4       : output : 3.3-V LVTTL       :         : 1         : N              
+out_wb[16]                   : AD5       : output : 3.3-V LVTTL       :         : 1         : N              
+GND*                         : AD6       :        :                   :         : 1         :                
 GND*                         : AD7       :        :                   :         : 1         :                
-alu_result[14]               : AD8       : output : 3.3-V LVTTL       :         : 8         : N              
-alu_result[20]               : AD9       : output : 3.3-V LVTTL       :         : 8         : N              
-reg_b[14]                    : AD10      : output : 3.3-V LVTTL       :         : 8         : N              
-co_data128[115]              : AD11      : output : 3.3-V LVTTL       :         : 8         : N              
-alu_result[0]                : AD12      : output : 3.3-V LVTTL       :         : 8         : N              
-ins_if[28]                   : AD13      : output : 3.3-V LVTTL       :         : 8         : N              
-co_alu128[18]                : AD14      : output : 3.3-V LVTTL       :         : 8         : N              
+reg_16bit                    : AD8       : output : 3.3-V LVTTL       :         : 8         : N              
+reg_a[31]                    : AD9       : output : 3.3-V LVTTL       :         : 8         : N              
+reg_a[22]                    : AD10      : output : 3.3-V LVTTL       :         : 8         : N              
+reg_a[30]                    : AD11      : output : 3.3-V LVTTL       :         : 8         : N              
+ins_mem[15]                  : AD12      : output : 3.3-V LVTTL       :         : 8         : N              
+sel_mem_wr                   : AD13      : output : 3.3-V LVTTL       :         : 8         : N              
+ins_if[13]                   : AD14      : output : 3.3-V LVTTL       :         : 8         : N              
 GND+                         : AD15      :        :                   :         : 7         :                
-co_data128[108]              : AD16      : output : 3.3-V LVTTL       :         : 7         : N              
-co_data32[13]                : AD17      : output : 3.3-V LVTTL       :         : 7         : N              
-co_data128[72]               : AD18      : output : 3.3-V LVTTL       :         : 7         : N              
-co_data128[126]              : AD19      : output : 3.3-V LVTTL       :         : 7         : N              
-co_data128[39]               : AD20      : output : 3.3-V LVTTL       :         : 7         : N              
-co_alu128[80]                : AD21      : output : 3.3-V LVTTL       :         : 7         : N              
-co_alu128[56]                : AD22      : output : 3.3-V LVTTL       :         : 7         : N              
+out_wb[12]                   : AD16      : output : 3.3-V LVTTL       :         : 7         : N              
+co_alu128[108]               : AD17      : output : 3.3-V LVTTL       :         : 7         : N              
+co_data128[115]              : AD18      : output : 3.3-V LVTTL       :         : 7         : N              
+alu_result[9]                : AD19      : output : 3.3-V LVTTL       :         : 7         : N              
+co_alu128[100]               : AD20      : output : 3.3-V LVTTL       :         : 7         : N              
+co_alu128[92]                : AD21      : output : 3.3-V LVTTL       :         : 7         : N              
+co_alu128[81]                : AD22      : output : 3.3-V LVTTL       :         : 7         : N              
 GNDA_PLL4                    : AD23      : gnd    :                   :         :           :                
 GND*                         : AD24      :        :                   :         : 6         :                
 ~LVDS195p/nCEO~              : AD25      : output : 3.3-V LVTTL       :         : 6         : N              
-co_data128[3]                : AD26      : output : 3.3-V LVTTL       :         : 6         : N              
-co_alu128[72]                : AD27      : output : 3.3-V LVTTL       :         : 6         : N              
-co_alu128[97]                : AD28      : output : 3.3-V LVTTL       :         : 6         : N              
-co_alu128[54]                : AD29      : output : 3.3-V LVTTL       :         : 6         : N              
-co_alu128[61]                : AD30      : output : 3.3-V LVTTL       :         : 6         : N              
-ins_mem[28]                  : AE1       : output : 3.3-V LVTTL       :         : 1         : N              
-alu_result[12]               : AE2       : output : 3.3-V LVTTL       :         : 1         : N              
-ins_mem[29]                  : AE3       : output : 3.3-V LVTTL       :         : 1         : N              
-alu_result[11]               : AE4       : output : 3.3-V LVTTL       :         : 1         : N              
+co_data32[18]                : AD26      : output : 3.3-V LVTTL       :         : 6         : N              
+co_data128[29]               : AD27      : output : 3.3-V LVTTL       :         : 6         : N              
+co_alu128[68]                : AD28      : output : 3.3-V LVTTL       :         : 6         : N              
+co_data128[123]              : AD29      : output : 3.3-V LVTTL       :         : 6         : N              
+co_data128[70]               : AD30      : output : 3.3-V LVTTL       :         : 6         : N              
+reg_a[29]                    : AE1       : output : 3.3-V LVTTL       :         : 1         : N              
+alu_result[17]               : AE2       : output : 3.3-V LVTTL       :         : 1         : N              
+ins_mem[7]                   : AE3       : output : 3.3-V LVTTL       :         : 1         : N              
+out_wb[5]                    : AE4       : output : 3.3-V LVTTL       :         : 1         : N              
 VCCIO1                       : AE5       : power  :                   : 3.3V    : 1         :                
 GND                          : AE6       : gnd    :                   :         :           :                
-alu_result[5]                : AE7       : output : 3.3-V LVTTL       :         : 8         : N              
-GND*                         : AE8       :        :                   :         : 8         :                
+reg_b[21]                    : AE7       : output : 3.3-V LVTTL       :         : 8         : N              
+ins_mem[22]                  : AE8       : output : 3.3-V LVTTL       :         : 8         : N              
 GND                          : AE9       : gnd    :                   :         :           :                
 VCCIO8                       : AE10      : power  :                   : 3.3V    : 8         :                
-ins_mem[10]                  : AE11      : output : 3.3-V LVTTL       :         : 8         : N              
-ins_ex[12]                   : AE12      : output : 3.3-V LVTTL       :         : 8         : N              
-pc[4]                        : AE13      : output : 3.3-V LVTTL       :         : 8         : N              
+ins_ex[0]                    : AE11      : output : 3.3-V LVTTL       :         : 8         : N              
+alu_result[26]               : AE12      : output : 3.3-V LVTTL       :         : 8         : N              
+reg_lui                      : AE13      : output : 3.3-V LVTTL       :         : 8         : N              
 GND                          : AE14      : gnd    :                   :         :           :                
-co_alu128[7]                 : AE15      : output : 3.3-V LVTTL       :         : 8         : N              
-co_alu128[53]                : AE16      : output : 3.3-V LVTTL       :         : 7         : N              
-co_data128[103]              : AE17      : output : 3.3-V LVTTL       :         : 7         : N              
+ins_ex[14]                   : AE15      : output : 3.3-V LVTTL       :         : 8         : N              
+out_wb[7]                    : AE16      : output : 3.3-V LVTTL       :         : 7         : N              
+co_data128[62]               : AE17      : output : 3.3-V LVTTL       :         : 7         : N              
 GND                          : AE18      : gnd    :                   :         :           :                
-co_data128[84]               : AE19      : output : 3.3-V LVTTL       :         : 7         : N              
-co_data32[2]                 : AE20      : output : 3.3-V LVTTL       :         : 7         : N              
+co_alu128[116]               : AE19      : output : 3.3-V LVTTL       :         : 7         : N              
+co_data32[24]                : AE20      : output : 3.3-V LVTTL       :         : 7         : N              
 VCCIO7                       : AE21      : power  :                   : 3.3V    : 7         :                
 GND                          : AE22      : gnd    :                   :         :           :                
 GND*                         : AE23      :        :                   :         : 7         :                
-GND*                         : AE24      :        :                   :         : 7         :                
+ins_ex[30]                   : AE24      : output : 3.3-V LVTTL       :         : 7         : N              
 GND                          : AE25      : gnd    :                   :         :           :                
 VCCIO6                       : AE26      : power  :                   : 3.3V    : 6         :                
-co_data128[65]               : AE27      : output : 3.3-V LVTTL       :         : 6         : N              
-co_alu128[1]                 : AE28      : output : 3.3-V LVTTL       :         : 6         : N              
-co_data128[93]               : AE29      : output : 3.3-V LVTTL       :         : 6         : N              
-co_data32[7]                 : AE30      : output : 3.3-V LVTTL       :         : 6         : N              
-co_alu128[86]                : AF1       : output : 3.3-V LVTTL       :         : 1         : N              
-co_data32[9]                 : AF2       : output : 3.3-V LVTTL       :         : 1         : N              
-co_alu128[31]                : AF3       : output : 3.3-V LVTTL       :         : 1         : N              
-co_alu128[111]               : AF4       : output : 3.3-V LVTTL       :         : 1         : N              
+co_alu128[90]                : AE27      : output : 3.3-V LVTTL       :         : 6         : N              
+co_alu128[103]               : AE28      : output : 3.3-V LVTTL       :         : 6         : N              
+co_data128[83]               : AE29      : output : 3.3-V LVTTL       :         : 6         : N              
+alu_result[27]               : AE30      : output : 3.3-V LVTTL       :         : 6         : N              
+alu_result[19]               : AF1       : output : 3.3-V LVTTL       :         : 1         : N              
+out_wb[4]                    : AF2       : output : 3.3-V LVTTL       :         : 1         : N              
+out_wb[27]                   : AF3       : output : 3.3-V LVTTL       :         : 1         : N              
+ins_mem[3]                   : AF4       : output : 3.3-V LVTTL       :         : 1         : N              
 GND                          : AF5       : gnd    :                   :         :           :                
 VCCIO8                       : AF6       : power  :                   : 3.3V    : 8         :                
-co_alu128[29]                : AF7       : output : 3.3-V LVTTL       :         : 8         : N              
-co_alu128[79]                : AF8       : output : 3.3-V LVTTL       :         : 8         : N              
-co_alu128[16]                : AF9       : output : 3.3-V LVTTL       :         : 8         : N              
-alu_result[18]               : AF10      : output : 3.3-V LVTTL       :         : 8         : N              
-alu_result[31]               : AF11      : output : 3.3-V LVTTL       :         : 8         : N              
-ins_ex[4]                    : AF12      : output : 3.3-V LVTTL       :         : 8         : N              
+reg_b[31]                    : AF7       : output : 3.3-V LVTTL       :         : 8         : N              
+reg_b[13]                    : AF8       : output : 3.3-V LVTTL       :         : 8         : N              
+reg_a[26]                    : AF9       : output : 3.3-V LVTTL       :         : 8         : N              
+reg_a[11]                    : AF10      : output : 3.3-V LVTTL       :         : 8         : N              
+alu_result[1]                : AF11      : output : 3.3-V LVTTL       :         : 8         : N              
+out_wb[8]                    : AF12      : output : 3.3-V LVTTL       :         : 8         : N              
 VCCIO8                       : AF13      : power  :                   : 3.3V    : 8         :                
-co_data128[87]               : AF14      : output : 3.3-V LVTTL       :         : 8         : N              
-co_alu128[66]                : AF15      : output : 3.3-V LVTTL       :         : 8         : N              
-co_data128[46]               : AF16      : output : 3.3-V LVTTL       :         : 7         : N              
-co_data128[49]               : AF17      : output : 3.3-V LVTTL       :         : 7         : N              
-co_data128[100]              : AF18      : output : 3.3-V LVTTL       :         : 7         : N              
+ins_mem[2]                   : AF14      : output : 3.3-V LVTTL       :         : 8         : N              
+ins_if[3]                    : AF15      : output : 3.3-V LVTTL       :         : 8         : N              
+out_wb[31]                   : AF16      : output : 3.3-V LVTTL       :         : 7         : N              
+co_data128[114]              : AF17      : output : 3.3-V LVTTL       :         : 7         : N              
+co_alu128[75]                : AF18      : output : 3.3-V LVTTL       :         : 7         : N              
 VCCIO7                       : AF19      : power  :                   : 3.3V    : 7         :                
-co_data128[28]               : AF20      : output : 3.3-V LVTTL       :         : 7         : N              
-co_data32[10]                : AF21      : output : 3.3-V LVTTL       :         : 7         : N              
-co_alu128[71]                : AF22      : output : 3.3-V LVTTL       :         : 7         : N              
-GND*                         : AF23      :        :                   :         : 7         :                
-co_alu128[47]                : AF24      : output : 3.3-V LVTTL       :         : 7         : N              
+co_data32[14]                : AF20      : output : 3.3-V LVTTL       :         : 7         : N              
+co_data128[101]              : AF21      : output : 3.3-V LVTTL       :         : 7         : N              
+co_alu128[114]               : AF22      : output : 3.3-V LVTTL       :         : 7         : N              
+co_data128[110]              : AF23      : output : 3.3-V LVTTL       :         : 7         : N              
+co_alu128[1]                 : AF24      : output : 3.3-V LVTTL       :         : 7         : N              
 VCCIO7                       : AF25      : power  :                   : 3.3V    : 7         :                
 GND                          : AF26      : gnd    :                   :         :           :                
-ins_ex[26]                   : AF27      : output : 3.3-V LVTTL       :         : 6         : N              
+GND*                         : AF27      :        :                   :         : 6         :                
 GND*                         : AF28      :        :                   :         : 6         :                
-co_alu128[120]               : AF29      : output : 3.3-V LVTTL       :         : 6         : N              
-co_data128[122]              : AF30      : output : 3.3-V LVTTL       :         : 6         : N              
+co_data128[25]               : AF29      : output : 3.3-V LVTTL       :         : 6         : N              
+co_data128[107]              : AF30      : output : 3.3-V LVTTL       :         : 6         : N              
 VCCIO1                       : AG1       : power  :                   : 3.3V    : 1         :                
-ins_ex[18]                   : AG2       : output : 3.3-V LVTTL       :         : 1         : N              
-co_alu128[92]                : AG3       : output : 3.3-V LVTTL       :         : 1         : N              
-GND*                         : AG4       :        :                   :         : 8         :                
-ins_mem[31]                  : AG5       : output : 3.3-V LVTTL       :         : 8         : N              
+out_wb[11]                   : AG2       : output : 3.3-V LVTTL       :         : 1         : N              
+alu_result[10]               : AG3       : output : 3.3-V LVTTL       :         : 1         : N              
+alu_result[0]                : AG4       : output : 3.3-V LVTTL       :         : 8         : N              
+ins_ex[21]                   : AG5       : output : 3.3-V LVTTL       :         : 8         : N              
 out_wb[9]                    : AG6       : output : 3.3-V LVTTL       :         : 8         : N              
-co_alu128[6]                 : AG7       : output : 3.3-V LVTTL       :         : 8         : N              
-out_wb[25]                   : AG8       : output : 3.3-V LVTTL       :         : 8         : N              
-reg_a[2]                     : AG9       : output : 3.3-V LVTTL       :         : 8         : N              
-reg_a[3]                     : AG10      : output : 3.3-V LVTTL       :         : 8         : N              
+reg_b[14]                    : AG7       : output : 3.3-V LVTTL       :         : 8         : N              
+reg_a[24]                    : AG8       : output : 3.3-V LVTTL       :         : 8         : N              
+load_wb                      : AG9       : output : 3.3-V LVTTL       :         : 8         : N              
+out_wb[19]                   : AG10      : output : 3.3-V LVTTL       :         : 8         : N              
 GND                          : AG11      : gnd    :                   :         :           :                
-co_alu128[30]                : AG12      : output : 3.3-V LVTTL       :         : 8         : N              
-co_alu128[14]                : AG13      : output : 3.3-V LVTTL       :         : 8         : N              
-co_data128[79]               : AG14      : output : 3.3-V LVTTL       :         : 8         : N              
+ins_ex[7]                    : AG12      : output : 3.3-V LVTTL       :         : 8         : N              
+out_wb[23]                   : AG13      : output : 3.3-V LVTTL       :         : 8         : N              
+ins_ex[28]                   : AG14      : output : 3.3-V LVTTL       :         : 8         : N              
 GND+                         : AG15      :        :                   :         : 8         :                
-co_data128[119]              : AG16      : output : 3.3-V LVTTL       :         : 7         : N              
-co_data128[118]              : AG17      : output : 3.3-V LVTTL       :         : 7         : N              
-co_alu128[63]                : AG18      : output : 3.3-V LVTTL       :         : 7         : N              
-co_data128[0]                : AG19      : output : 3.3-V LVTTL       :         : 7         : N              
-co_alu128[62]                : AG20      : output : 3.3-V LVTTL       :         : 7         : N              
+out_wb[6]                    : AG16      : output : 3.3-V LVTTL       :         : 7         : N              
+co_data128[94]               : AG17      : output : 3.3-V LVTTL       :         : 7         : N              
+co_alu128[82]                : AG18      : output : 3.3-V LVTTL       :         : 7         : N              
+co_data128[34]               : AG19      : output : 3.3-V LVTTL       :         : 7         : N              
+co_data128[90]               : AG20      : output : 3.3-V LVTTL       :         : 7         : N              
 GND                          : AG21      : gnd    :                   :         :           :                
-co_data32[18]                : AG22      : output : 3.3-V LVTTL       :         : 7         : N              
-co_alu128[125]               : AG23      : output : 3.3-V LVTTL       :         : 7         : N              
-co_data32[8]                 : AG24      : output : 3.3-V LVTTL       :         : 7         : N              
-ins_mem[26]                  : AG25      : output : 3.3-V LVTTL       :         : 7         : N              
+co_data128[116]              : AG22      : output : 3.3-V LVTTL       :         : 7         : N              
+co_alu128[62]                : AG23      : output : 3.3-V LVTTL       :         : 7         : N              
+co_alu128[101]               : AG24      : output : 3.3-V LVTTL       :         : 7         : N              
+co_alu128[110]               : AG25      : output : 3.3-V LVTTL       :         : 7         : N              
 GND*                         : AG26      :        :                   :         : 7         :                
-GND*                         : AG27      :        :                   :         : 7         :                
-co_data128[62]               : AG28      : output : 3.3-V LVTTL       :         : 6         : N              
-co_alu128[21]                : AG29      : output : 3.3-V LVTTL       :         : 6         : N              
+ins_ex[17]                   : AG27      : output : 3.3-V LVTTL       :         : 7         : N              
+co_alu128[66]                : AG28      : output : 3.3-V LVTTL       :         : 6         : N              
+co_alu128[48]                : AG29      : output : 3.3-V LVTTL       :         : 6         : N              
 VCCIO6                       : AG30      : power  :                   : 3.3V    : 6         :                
-ins_mem[18]                  : AH1       : output : 3.3-V LVTTL       :         : 1         : N              
-ins_mem[11]                  : AH2       : output : 3.3-V LVTTL       :         : 1         : N              
-ins_ex[5]                    : AH3       : output : 3.3-V LVTTL       :         : 8         : N              
-ins_if[31]                   : AH4       : output : 3.3-V LVTTL       :         : 8         : N              
-alu_result[15]               : AH5       : output : 3.3-V LVTTL       :         : 8         : N              
+ins_ex[18]                   : AH1       : output : 3.3-V LVTTL       :         : 1         : N              
+alu_result[5]                : AH2       : output : 3.3-V LVTTL       :         : 1         : N              
+ins_mem[13]                  : AH3       : output : 3.3-V LVTTL       :         : 8         : N              
+reg_b[29]                    : AH4       : output : 3.3-V LVTTL       :         : 8         : N              
+reg_wr_en_id                 : AH5       : output : 3.3-V LVTTL       :         : 8         : N              
 GND                          : AH6       : gnd    :                   :         :           :                
-alu_result[3]                : AH7       : output : 3.3-V LVTTL       :         : 8         : N              
+reg_b[9]                     : AH7       : output : 3.3-V LVTTL       :         : 8         : N              
 VCCIO8                       : AH8       : power  :                   : 3.3V    : 8         :                
-ins_id[10]                   : AH9       : output : 3.3-V LVTTL       :         : 8         : N              
-ins_mem[12]                  : AH10      : output : 3.3-V LVTTL       :         : 8         : N              
+ins_ex[8]                    : AH9       : output : 3.3-V LVTTL       :         : 8         : N              
+ins_ex[22]                   : AH10      : output : 3.3-V LVTTL       :         : 8         : N              
 VCCIO8                       : AH11      : power  :                   : 3.3V    : 8         :                
-co_data128[69]               : AH12      : output : 3.3-V LVTTL       :         : 8         : N              
-co_data32[19]                : AH13      : output : 3.3-V LVTTL       :         : 8         : N              
+ins_if[29]                   : AH12      : output : 3.3-V LVTTL       :         : 8         : N              
+out_wb[1]                    : AH13      : output : 3.3-V LVTTL       :         : 8         : N              
 GND+                         : AH14      :        :                   :         : 8         :                
-co_data128[51]               : AH15      : output : 3.3-V LVTTL       :         : 8         : N              
-co_data128[27]               : AH16      : output : 3.3-V LVTTL       :         : 7         : N              
-co_alu128[124]               : AH17      : output : 3.3-V LVTTL       :         : 7         : N              
-co_alu128[48]                : AH18      : output : 3.3-V LVTTL       :         : 7         : N              
-co_alu128[58]                : AH19      : output : 3.3-V LVTTL       :         : 7         : N              
-co_data128[21]               : AH20      : output : 3.3-V LVTTL       :         : 7         : N              
+co_alu128[119]               : AH15      : output : 3.3-V LVTTL       :         : 8         : N              
+co_alu128[67]                : AH16      : output : 3.3-V LVTTL       :         : 7         : N              
+co_data128[121]              : AH17      : output : 3.3-V LVTTL       :         : 7         : N              
+co_data128[92]               : AH18      : output : 3.3-V LVTTL       :         : 7         : N              
+co_alu128[78]                : AH19      : output : 3.3-V LVTTL       :         : 7         : N              
+co_data128[82]               : AH20      : output : 3.3-V LVTTL       :         : 7         : N              
 VCCIO7                       : AH21      : power  :                   : 3.3V    : 7         :                
-co_data128[123]              : AH22      : output : 3.3-V LVTTL       :         : 7         : N              
+co_alu128[113]               : AH22      : output : 3.3-V LVTTL       :         : 7         : N              
 VCCIO7                       : AH23      : power  :                   : 3.3V    : 7         :                
-co_data128[56]               : AH24      : output : 3.3-V LVTTL       :         : 7         : N              
+co_alu128[63]                : AH24      : output : 3.3-V LVTTL       :         : 7         : N              
 GND                          : AH25      : gnd    :                   :         :           :                
-co_data32[4]                 : AH26      : output : 3.3-V LVTTL       :         : 7         : N              
-co_data32[24]                : AH27      : output : 3.3-V LVTTL       :         : 7         : N              
-co_data128[52]               : AH28      : output : 3.3-V LVTTL       :         : 6         : N              
-co_alu128[28]                : AH29      : output : 3.3-V LVTTL       :         : 6         : N              
-co_alu128[122]               : AH30      : output : 3.3-V LVTTL       :         : 6         : N              
+co_alu128[115]               : AH26      : output : 3.3-V LVTTL       :         : 7         : N              
+GND*                         : AH27      :        :                   :         : 7         :                
+co_data128[56]               : AH28      : output : 3.3-V LVTTL       :         : 6         : N              
+GND*                         : AH29      :        :                   :         : 6         :                
+co_data128[88]               : AH30      : output : 3.3-V LVTTL       :         : 6         : N              
 GND                          : AJ1       : gnd    :                   :         :           :                
-alu_result[7]                : AJ2       : output : 3.3-V LVTTL       :         : 8         : N              
-alu_result[9]                : AJ3       : output : 3.3-V LVTTL       :         : 8         : N              
-alu_result[10]               : AJ4       : output : 3.3-V LVTTL       :         : 8         : N              
-ins_if[20]                   : AJ5       : output : 3.3-V LVTTL       :         : 8         : N              
-alu_result[23]               : AJ6       : output : 3.3-V LVTTL       :         : 8         : N              
-alu_result[2]                : AJ7       : output : 3.3-V LVTTL       :         : 8         : N              
-reg_a[27]                    : AJ8       : output : 3.3-V LVTTL       :         : 8         : N              
-ins_ex[29]                   : AJ9       : output : 3.3-V LVTTL       :         : 8         : N              
-alu_result[4]                : AJ10      : output : 3.3-V LVTTL       :         : 8         : N              
-reg_b[4]                     : AJ11      : output : 3.3-V LVTTL       :         : 8         : N              
-co_alu128[64]                : AJ12      : output : 3.3-V LVTTL       :         : 8         : N              
-co_alu128[27]                : AJ13      : output : 3.3-V LVTTL       :         : 8         : N              
-co_data128[83]               : AJ14      : output : 3.3-V LVTTL       :         : 8         : N              
-co_alu128[83]                : AJ15      : output : 3.3-V LVTTL       :         : 8         : N              
-co_data128[10]               : AJ16      : output : 3.3-V LVTTL       :         : 7         : N              
-co_data32[14]                : AJ17      : output : 3.3-V LVTTL       :         : 7         : N              
-co_data128[125]              : AJ18      : output : 3.3-V LVTTL       :         : 7         : N              
-co_data32[11]                : AJ19      : output : 3.3-V LVTTL       :         : 7         : N              
-co_alu128[40]                : AJ20      : output : 3.3-V LVTTL       :         : 7         : N              
-co_alu128[110]               : AJ21      : output : 3.3-V LVTTL       :         : 7         : N              
-co_data128[97]               : AJ22      : output : 3.3-V LVTTL       :         : 7         : N              
-co_alu128[119]               : AJ23      : output : 3.3-V LVTTL       :         : 7         : N              
-co_data32[29]                : AJ24      : output : 3.3-V LVTTL       :         : 7         : N              
-co_data128[124]              : AJ25      : output : 3.3-V LVTTL       :         : 7         : N              
-co_alu128[103]               : AJ26      : output : 3.3-V LVTTL       :         : 7         : N              
-co_alu128[51]                : AJ27      : output : 3.3-V LVTTL       :         : 7         : N              
-co_alu128[89]                : AJ28      : output : 3.3-V LVTTL       :         : 7         : N              
-co_data128[9]                : AJ29      : output : 3.3-V LVTTL       :         : 6         : N              
+out_wb[20]                   : AJ2       : output : 3.3-V LVTTL       :         : 8         : N              
+alu_result[7]                : AJ3       : output : 3.3-V LVTTL       :         : 8         : N              
+out_wb[25]                   : AJ4       : output : 3.3-V LVTTL       :         : 8         : N              
+reg_a[18]                    : AJ5       : output : 3.3-V LVTTL       :         : 8         : N              
+reg_a[5]                     : AJ6       : output : 3.3-V LVTTL       :         : 8         : N              
+reg_a[25]                    : AJ7       : output : 3.3-V LVTTL       :         : 8         : N              
+ins_ex[9]                    : AJ8       : output : 3.3-V LVTTL       :         : 8         : N              
+ins_mem[1]                   : AJ9       : output : 3.3-V LVTTL       :         : 8         : N              
+ins_mem[23]                  : AJ10      : output : 3.3-V LVTTL       :         : 8         : N              
+reg_ldi                      : AJ11      : output : 3.3-V LVTTL       :         : 8         : N              
+alu_result[2]                : AJ12      : output : 3.3-V LVTTL       :         : 8         : N              
+ins_mem[29]                  : AJ13      : output : 3.3-V LVTTL       :         : 8         : N              
+co_data32[25]                : AJ14      : output : 3.3-V LVTTL       :         : 8         : N              
+ins_if[4]                    : AJ15      : output : 3.3-V LVTTL       :         : 8         : N              
+co_done                      : AJ16      : output : 3.3-V LVTTL       :         : 7         : N              
+co_data128[81]               : AJ17      : output : 3.3-V LVTTL       :         : 7         : N              
+co_data128[76]               : AJ18      : output : 3.3-V LVTTL       :         : 7         : N              
+co_alu128[107]               : AJ19      : output : 3.3-V LVTTL       :         : 7         : N              
+co_data32[21]                : AJ20      : output : 3.3-V LVTTL       :         : 7         : N              
+co_alu128[28]                : AJ21      : output : 3.3-V LVTTL       :         : 7         : N              
+co_data128[125]              : AJ22      : output : 3.3-V LVTTL       :         : 7         : N              
+co_data128[122]              : AJ23      : output : 3.3-V LVTTL       :         : 7         : N              
+ins_mem[17]                  : AJ24      : output : 3.3-V LVTTL       :         : 7         : N              
+co_data128[57]               : AJ25      : output : 3.3-V LVTTL       :         : 7         : N              
+co_data128[102]              : AJ26      : output : 3.3-V LVTTL       :         : 7         : N              
+co_alu128[74]                : AJ27      : output : 3.3-V LVTTL       :         : 7         : N              
+co_alu128[84]                : AJ28      : output : 3.3-V LVTTL       :         : 7         : N              
+co_alu128[124]               : AJ29      : output : 3.3-V LVTTL       :         : 6         : N              
 GND                          : AJ30      : gnd    :                   :         :           :                
 GND                          : AK2       : gnd    :                   :         :           :                
-ins_mem[4]                   : AK3       : output : 3.3-V LVTTL       :         : 8         : N              
+ins_mem[25]                  : AK3       : output : 3.3-V LVTTL       :         : 8         : N              
 VCCIO8                       : AK4       : power  :                   : 3.3V    : 8         :                
-out_wb[22]                   : AK5       : output : 3.3-V LVTTL       :         : 8         : N              
-co_data128[22]               : AK6       : output : 3.3-V LVTTL       :         : 8         : N              
-alu_result[26]               : AK7       : output : 3.3-V LVTTL       :         : 8         : N              
-ins_ex[15]                   : AK8       : output : 3.3-V LVTTL       :         : 8         : N              
-ins_mem[7]                   : AK9       : output : 3.3-V LVTTL       :         : 8         : N              
-reg_a[1]                     : AK10      : output : 3.3-V LVTTL       :         : 8         : N              
-co_done                      : AK11      : output : 3.3-V LVTTL       :         : 8         : N              
-co_alu128[2]                 : AK12      : output : 3.3-V LVTTL       :         : 8         : N              
+reg_b[20]                    : AK5       : output : 3.3-V LVTTL       :         : 8         : N              
+reg_a[6]                     : AK6       : output : 3.3-V LVTTL       :         : 8         : N              
+ins_id[18]                   : AK7       : output : 3.3-V LVTTL       :         : 8         : N              
+load_mem                     : AK8       : output : 3.3-V LVTTL       :         : 8         : N              
+ins_mem[12]                  : AK9       : output : 3.3-V LVTTL       :         : 8         : N              
+out_wb[29]                   : AK10      : output : 3.3-V LVTTL       :         : 8         : N              
+out_wb[17]                   : AK11      : output : 3.3-V LVTTL       :         : 8         : N              
+ins_ex[27]                   : AK12      : output : 3.3-V LVTTL       :         : 8         : N              
 GND                          : AK13      : gnd    :                   :         :           :                
-co_data128[73]               : AK14      : output : 3.3-V LVTTL       :         : 8         : N              
+ins_ex[2]                    : AK14      : output : 3.3-V LVTTL       :         : 8         : N              
 VCCIO8                       : AK15      : power  :                   : 3.3V    : 8         :                
 VCCIO7                       : AK16      : power  :                   : 3.3V    : 7         :                
-co_data32[0]                 : AK17      : output : 3.3-V LVTTL       :         : 7         : N              
+co_alu128[64]                : AK17      : output : 3.3-V LVTTL       :         : 7         : N              
 GND                          : AK18      : gnd    :                   :         :           :                
-co_data128[95]               : AK19      : output : 3.3-V LVTTL       :         : 7         : N              
-co_alu128[0]                 : AK20      : output : 3.3-V LVTTL       :         : 7         : N              
-co_data128[47]               : AK21      : output : 3.3-V LVTTL       :         : 7         : N              
-co_alu128[37]                : AK22      : output : 3.3-V LVTTL       :         : 7         : N              
-co_alu128[108]               : AK23      : output : 3.3-V LVTTL       :         : 7         : N              
-co_alu128[59]                : AK24      : output : 3.3-V LVTTL       :         : 7         : N              
-co_data128[98]               : AK25      : output : 3.3-V LVTTL       :         : 7         : N              
-co_data128[71]               : AK26      : output : 3.3-V LVTTL       :         : 7         : N              
+co_data32[17]                : AK19      : output : 3.3-V LVTTL       :         : 7         : N              
+co_alu128[102]               : AK20      : output : 3.3-V LVTTL       :         : 7         : N              
+co_data128[38]               : AK21      : output : 3.3-V LVTTL       :         : 7         : N              
+co_data128[58]               : AK22      : output : 3.3-V LVTTL       :         : 7         : N              
+co_data128[54]               : AK23      : output : 3.3-V LVTTL       :         : 7         : N              
+co_data128[127]              : AK24      : output : 3.3-V LVTTL       :         : 7         : N              
+co_data128[30]               : AK25      : output : 3.3-V LVTTL       :         : 7         : N              
+co_data128[89]               : AK26      : output : 3.3-V LVTTL       :         : 7         : N              
 VCCIO7                       : AK27      : power  :                   : 3.3V    : 7         :                
-co_data128[40]               : AK28      : output : 3.3-V LVTTL       :         : 7         : N              
+ins_ex[19]                   : AK28      : output : 3.3-V LVTTL       :         : 7         : N              
 GND                          : AK29      : gnd    :                   :         :           :                
 GND                          : B1        : gnd    :                   :         :           :                
-ins_mem[30]                  : B2        : output : 3.3-V LVTTL       :         : 2         : N              
-out_wb[19]                   : B3        : output : 3.3-V LVTTL       :         : 3         : N              
-ins_mem[24]                  : B4        : output : 3.3-V LVTTL       :         : 3         : N              
-ins_ex[2]                    : B5        : output : 3.3-V LVTTL       :         : 3         : N              
-ins_ex[23]                   : B6        : output : 3.3-V LVTTL       :         : 3         : N              
-ins_id[16]                   : B7        : output : 3.3-V LVTTL       :         : 3         : N              
-reg_b[21]                    : B8        : output : 3.3-V LVTTL       :         : 3         : N              
-reg_a[21]                    : B9        : output : 3.3-V LVTTL       :         : 3         : N              
-out_wb[0]                    : B10       : output : 3.3-V LVTTL       :         : 3         : N              
-reg_b[16]                    : B11       : output : 3.3-V LVTTL       :         : 3         : N              
-mem_rd_en                    : B12       : output : 3.3-V LVTTL       :         : 3         : N              
-reg_b[7]                     : B13       : output : 3.3-V LVTTL       :         : 3         : N              
-co_alu128[22]                : B14       : output : 3.3-V LVTTL       :         : 3         : N              
-co_alu128[17]                : B15       : output : 3.3-V LVTTL       :         : 3         : N              
-co_alu128[60]                : B16       : output : 3.3-V LVTTL       :         : 4         : N              
-co_data128[11]               : B17       : output : 3.3-V LVTTL       :         : 4         : N              
-co_data128[81]               : B18       : output : 3.3-V LVTTL       :         : 4         : N              
-co_alu128[43]                : B19       : output : 3.3-V LVTTL       :         : 4         : N              
-ins_id[5]                    : B20       : output : 3.3-V LVTTL       :         : 4         : N              
-co_data128[92]               : B21       : output : 3.3-V LVTTL       :         : 4         : N              
-ins_if[15]                   : B22       : output : 3.3-V LVTTL       :         : 4         : N              
-co_data32[21]                : B23       : output : 3.3-V LVTTL       :         : 4         : N              
-co_alu128[82]                : B24       : output : 3.3-V LVTTL       :         : 4         : N              
-co_data32[31]                : B25       : output : 3.3-V LVTTL       :         : 4         : N              
-co_alu128[32]                : B26       : output : 3.3-V LVTTL       :         : 4         : N              
-co_data32[1]                 : B27       : output : 3.3-V LVTTL       :         : 4         : N              
-co_alu128[73]                : B28       : output : 3.3-V LVTTL       :         : 4         : N              
-ins_if[18]                   : B29       : output : 3.3-V LVTTL       :         : 4         : N              
+ins_if[19]                   : B2        : output : 3.3-V LVTTL       :         : 2         : N              
+ins_ex[20]                   : B3        : output : 3.3-V LVTTL       :         : 3         : N              
+ins_if[7]                    : B4        : output : 3.3-V LVTTL       :         : 3         : N              
+alu_result[23]               : B5        : output : 3.3-V LVTTL       :         : 3         : N              
+ins_if[11]                   : B6        : output : 3.3-V LVTTL       :         : 3         : N              
+ins_id[15]                   : B7        : output : 3.3-V LVTTL       :         : 3         : N              
+ins_id[8]                    : B8        : output : 3.3-V LVTTL       :         : 3         : N              
+ins_if[30]                   : B9        : output : 3.3-V LVTTL       :         : 3         : N              
+ins_ex[23]                   : B10       : output : 3.3-V LVTTL       :         : 3         : N              
+co_alu128[87]                : B11       : output : 3.3-V LVTTL       :         : 3         : N              
+co_alu128[3]                 : B12       : output : 3.3-V LVTTL       :         : 3         : N              
+co_alu128[19]                : B13       : output : 3.3-V LVTTL       :         : 3         : N              
+co_alu128[7]                 : B14       : output : 3.3-V LVTTL       :         : 3         : N              
+co_data128[3]                : B15       : output : 3.3-V LVTTL       :         : 3         : N              
+co_alu128[15]                : B16       : output : 3.3-V LVTTL       :         : 4         : N              
+co_data128[36]               : B17       : output : 3.3-V LVTTL       :         : 4         : N              
+co_data32[2]                 : B18       : output : 3.3-V LVTTL       :         : 4         : N              
+co_data128[61]               : B19       : output : 3.3-V LVTTL       :         : 4         : N              
+co_data128[111]              : B20       : output : 3.3-V LVTTL       :         : 4         : N              
+co_data128[74]               : B21       : output : 3.3-V LVTTL       :         : 4         : N              
+co_alu128[26]                : B22       : output : 3.3-V LVTTL       :         : 4         : N              
+co_data128[35]               : B23       : output : 3.3-V LVTTL       :         : 4         : N              
+co_data128[120]              : B24       : output : 3.3-V LVTTL       :         : 4         : N              
+co_alu128[39]                : B25       : output : 3.3-V LVTTL       :         : 4         : N              
+co_data128[97]               : B26       : output : 3.3-V LVTTL       :         : 4         : N              
+co_alu128[49]                : B27       : output : 3.3-V LVTTL       :         : 4         : N              
+co_alu128[85]                : B28       : output : 3.3-V LVTTL       :         : 4         : N              
+co_data32[31]                : B29       : output : 3.3-V LVTTL       :         : 4         : N              
 GND                          : B30       : gnd    :                   :         :           :                
-ins_id[30]                   : C1        : output : 3.3-V LVTTL       :         : 2         : N              
-out_wb[24]                   : C2        : output : 3.3-V LVTTL       :         : 2         : N              
-out_wb[20]                   : C3        : output : 3.3-V LVTTL       :         : 2         : N              
-ins_mem[22]                  : C4        : output : 3.3-V LVTTL       :         : 3         : N              
-ins_if[0]                    : C5        : output : 3.3-V LVTTL       :         : 3         : N              
+ins_if[5]                    : C1        : output : 3.3-V LVTTL       :         : 2         : N              
+co_data32[13]                : C2        : output : 3.3-V LVTTL       :         : 2         : N              
+ins_if[12]                   : C3        : output : 3.3-V LVTTL       :         : 2         : N              
+co_alu128[25]                : C4        : output : 3.3-V LVTTL       :         : 3         : N              
+co_alu128[0]                 : C5        : output : 3.3-V LVTTL       :         : 3         : N              
 GND                          : C6        : gnd    :                   :         :           :                
-out_wb[27]                   : C7        : output : 3.3-V LVTTL       :         : 3         : N              
+reg_a[10]                    : C7        : output : 3.3-V LVTTL       :         : 3         : N              
 VCCIO3                       : C8        : power  :                   : 3.3V    : 3         :                
-alu_result[13]               : C9        : output : 3.3-V LVTTL       :         : 3         : N              
-alu_result[6]                : C10       : output : 3.3-V LVTTL       :         : 3         : N              
+co_data128[23]               : C9        : output : 3.3-V LVTTL       :         : 3         : N              
+ins_if[16]                   : C10       : output : 3.3-V LVTTL       :         : 3         : N              
 VCCIO3                       : C11       : power  :                   : 3.3V    : 3         :                
-reg_b[17]                    : C12       : output : 3.3-V LVTTL       :         : 3         : N              
-jr                           : C13       : output : 3.3-V LVTTL       :         : 3         : N              
-ins_id[23]                   : C14       : output : 3.3-V LVTTL       :         : 3         : N              
-co_data128[6]                : C15       : output : 3.3-V LVTTL       :         : 3         : N              
-co_data128[12]               : C16       : output : 3.3-V LVTTL       :         : 4         : N              
-co_data128[30]               : C17       : output : 3.3-V LVTTL       :         : 4         : N              
-co_data32[28]                : C18       : output : 3.3-V LVTTL       :         : 4         : N              
-co_data128[80]               : C19       : output : 3.3-V LVTTL       :         : 4         : N              
+mem_word                     : C12       : output : 3.3-V LVTTL       :         : 3         : N              
+co_alu128[8]                 : C13       : output : 3.3-V LVTTL       :         : 3         : N              
+co_data128[19]               : C14       : output : 3.3-V LVTTL       :         : 3         : N              
+co_data128[31]               : C15       : output : 3.3-V LVTTL       :         : 3         : N              
+co_data128[22]               : C16       : output : 3.3-V LVTTL       :         : 4         : N              
+co_alu128[37]                : C17       : output : 3.3-V LVTTL       :         : 4         : N              
+co_data128[72]               : C18       : output : 3.3-V LVTTL       :         : 4         : N              
+co_data128[63]               : C19       : output : 3.3-V LVTTL       :         : 4         : N              
 VCCIO4                       : C20       : power  :                   : 3.3V    : 4         :                
-ins_if[1]                    : C21       : output : 3.3-V LVTTL       :         : 4         : N              
-co_alu128[90]                : C22       : output : 3.3-V LVTTL       :         : 4         : N              
+pc[5]                        : C21       : output : 3.3-V LVTTL       :         : 4         : N              
+branch                       : C22       : output : 3.3-V LVTTL       :         : 4         : N              
 VCCIO4                       : C23       : power  :                   : 3.3V    : 4         :                
-co_alu128[77]                : C24       : output : 3.3-V LVTTL       :         : 4         : N              
+co_alu128[47]                : C24       : output : 3.3-V LVTTL       :         : 4         : N              
 GND                          : C25       : gnd    :                   :         :           :                
-co_alu128[100]               : C26       : output : 3.3-V LVTTL       :         : 4         : N              
-co_data128[48]               : C27       : output : 3.3-V LVTTL       :         : 4         : N              
-ins_ex[20]                   : C28       : output : 3.3-V LVTTL       :         : 4         : N              
-co_alu128[88]                : C29       : output : 3.3-V LVTTL       :         : 5         : N              
-co_alu128[126]               : C30       : output : 3.3-V LVTTL       :         : 5         : N              
+co_alu128[123]               : C26       : output : 3.3-V LVTTL       :         : 4         : N              
+co_data128[85]               : C27       : output : 3.3-V LVTTL       :         : 4         : N              
+co_data128[91]               : C28       : output : 3.3-V LVTTL       :         : 4         : N              
+co_data128[79]               : C29       : output : 3.3-V LVTTL       :         : 5         : N              
+co_alu128[69]                : C30       : output : 3.3-V LVTTL       :         : 5         : N              
 VCCIO2                       : D1        : power  :                   : 3.3V    : 2         :                
-ins_if[30]                   : D2        : output : 3.3-V LVTTL       :         : 2         : N              
-ins_if[10]                   : D3        : output : 3.3-V LVTTL       :         : 2         : N              
-ins_mem[8]                   : D4        : output : 3.3-V LVTTL       :         : 3         : N              
-out_wb[16]                   : D5        : output : 3.3-V LVTTL       :         : 3         : N              
-ins_mem_en                   : D6        : output : 3.3-V LVTTL       :         : 3         : N              
-out_wb[1]                    : D7        : output : 3.3-V LVTTL       :         : 3         : N              
-reg_rd_en_b                  : D8        : output : 3.3-V LVTTL       :         : 3         : N              
-reg_word                     : D9        : output : 3.3-V LVTTL       :         : 3         : N              
-reg_a[18]                    : D10       : output : 3.3-V LVTTL       :         : 3         : N              
+ins_if[9]                    : D2        : output : 3.3-V LVTTL       :         : 2         : N              
+ins_if[15]                   : D3        : output : 3.3-V LVTTL       :         : 2         : N              
+ins_if[21]                   : D4        : output : 3.3-V LVTTL       :         : 3         : N              
+GND*                         : D5        :        :                   :         : 3         :                
+reg_b[12]                    : D6        : output : 3.3-V LVTTL       :         : 3         : N              
+ins_ex[24]                   : D7        : output : 3.3-V LVTTL       :         : 3         : N              
+ins_id[11]                   : D8        : output : 3.3-V LVTTL       :         : 3         : N              
+alu_result[28]               : D9        : output : 3.3-V LVTTL       :         : 3         : N              
+ins_ex[25]                   : D10       : output : 3.3-V LVTTL       :         : 3         : N              
 GND                          : D11       : gnd    :                   :         :           :                
-ins_id[0]                    : D12       : output : 3.3-V LVTTL       :         : 3         : N              
-reg_a[0]                     : D13       : output : 3.3-V LVTTL       :         : 3         : N              
-pc[6]                        : D14       : output : 3.3-V LVTTL       :         : 3         : N              
-pc[0]                        : D15       : output : 3.3-V LVTTL       :         : 3         : N              
+ins_if[1]                    : D12       : output : 3.3-V LVTTL       :         : 3         : N              
+branch_op                    : D13       : output : 3.3-V LVTTL       :         : 3         : N              
+co_alu128[10]                : D14       : output : 3.3-V LVTTL       :         : 3         : N              
+co_alu128[22]                : D15       : output : 3.3-V LVTTL       :         : 3         : N              
 GND+                         : D16       :        :                   :         : 4         :                
-co_data128[15]               : D17       : output : 3.3-V LVTTL       :         : 4         : N              
-co_data128[25]               : D18       : output : 3.3-V LVTTL       :         : 4         : N              
-ins_if[17]                   : D19       : output : 3.3-V LVTTL       :         : 4         : N              
+co_data32[5]                 : D17       : output : 3.3-V LVTTL       :         : 4         : N              
+co_data32[6]                 : D18       : output : 3.3-V LVTTL       :         : 4         : N              
+co_data128[49]               : D19       : output : 3.3-V LVTTL       :         : 4         : N              
 GND                          : D20       : gnd    :                   :         :           :                
-ins_if[6]                    : D21       : output : 3.3-V LVTTL       :         : 4         : N              
-co_alu128[52]                : D22       : output : 3.3-V LVTTL       :         : 4         : N              
-co_data128[109]              : D23       : output : 3.3-V LVTTL       :         : 4         : N              
-co_alu128[121]               : D24       : output : 3.3-V LVTTL       :         : 4         : N              
-co_alu128[114]               : D25       : output : 3.3-V LVTTL       :         : 4         : N              
-co_alu128[34]                : D26       : output : 3.3-V LVTTL       :         : 4         : N              
-co_data128[32]               : D27       : output : 3.3-V LVTTL       :         : 4         : N              
-co_data128[76]               : D28       : output : 3.3-V LVTTL       :         : 5         : N              
+co_data128[17]               : D21       : output : 3.3-V LVTTL       :         : 4         : N              
+ins_id[7]                    : D22       : output : 3.3-V LVTTL       :         : 4         : N              
+co_data128[10]               : D23       : output : 3.3-V LVTTL       :         : 4         : N              
+co_data128[73]               : D24       : output : 3.3-V LVTTL       :         : 4         : N              
+co_alu128[104]               : D25       : output : 3.3-V LVTTL       :         : 4         : N              
+co_alu128[109]               : D26       : output : 3.3-V LVTTL       :         : 4         : N              
+co_alu128[97]                : D27       : output : 3.3-V LVTTL       :         : 4         : N              
+co_alu128[34]                : D28       : output : 3.3-V LVTTL       :         : 5         : N              
 co_alu128[117]               : D29       : output : 3.3-V LVTTL       :         : 5         : N              
 VCCIO5                       : D30       : power  :                   : 3.3V    : 5         :                
-ins_mem[23]                  : E1        : output : 3.3-V LVTTL       :         : 2         : N              
-out_wb[2]                    : E2        : output : 3.3-V LVTTL       :         : 2         : N              
-out_wb[3]                    : E3        : output : 3.3-V LVTTL       :         : 2         : N              
-ins_ex[30]                   : E4        : output : 3.3-V LVTTL       :         : 2         : N              
+alu_result[4]                : E1        : output : 3.3-V LVTTL       :         : 2         : N              
+co_alu128[2]                 : E2        : output : 3.3-V LVTTL       :         : 2         : N              
+co_data128[104]              : E3        : output : 3.3-V LVTTL       :         : 2         : N              
+co_data128[24]               : E4        : output : 3.3-V LVTTL       :         : 2         : N              
 GND                          : E5        : gnd    :                   :         :           :                
 VCCIO3                       : E6        : power  :                   : 3.3V    : 3         :                
-GND*                         : E7        :        :                   :         : 3         :                
-ins_mem[19]                  : E8        : output : 3.3-V LVTTL       :         : 3         : N              
-out_wb[5]                    : E9        : output : 3.3-V LVTTL       :         : 3         : N              
-ins_mem[1]                   : E10       : output : 3.3-V LVTTL       :         : 3         : N              
-reg_a[22]                    : E11       : output : 3.3-V LVTTL       :         : 3         : N              
-reg_b[25]                    : E12       : output : 3.3-V LVTTL       :         : 3         : N              
-reg_a[6]                     : E13       : output : 3.3-V LVTTL       :         : 3         : N              
-ins_if[21]                   : E14       : output : 3.3-V LVTTL       :         : 3         : N              
-co_data128[5]                : E15       : output : 3.3-V LVTTL       :         : 3         : N              
+ins_if[23]                   : E7        : output : 3.3-V LVTTL       :         : 3         : N              
+alu_result[8]                : E8        : output : 3.3-V LVTTL       :         : 3         : N              
+reg_rd_en_a                  : E9        : output : 3.3-V LVTTL       :         : 3         : N              
+ins_id[19]                   : E10       : output : 3.3-V LVTTL       :         : 3         : N              
+ins_mem[0]                   : E11       : output : 3.3-V LVTTL       :         : 3         : N              
+ins_ex[1]                    : E12       : output : 3.3-V LVTTL       :         : 3         : N              
+ins_if[8]                    : E13       : output : 3.3-V LVTTL       :         : 3         : N              
+co_alu128[40]                : E14       : output : 3.3-V LVTTL       :         : 3         : N              
+co_data128[7]                : E15       : output : 3.3-V LVTTL       :         : 3         : N              
 GND+                         : E16       :        :                   :         : 4         :                
-co_alu128[36]                : E17       : output : 3.3-V LVTTL       :         : 4         : N              
+co_data32[9]                 : E17       : output : 3.3-V LVTTL       :         : 4         : N              
 VCCIO4                       : E18       : power  :                   : 3.3V    : 4         :                
-ins_if[14]                   : E19       : output : 3.3-V LVTTL       :         : 4         : N              
-ins_id[13]                   : E20       : output : 3.3-V LVTTL       :         : 4         : N              
-co_data32[5]                 : E21       : output : 3.3-V LVTTL       :         : 4         : N              
-co_data128[36]               : E22       : output : 3.3-V LVTTL       :         : 4         : N              
-co_alu128[57]                : E23       : output : 3.3-V LVTTL       :         : 4         : N              
-GND*                         : E24       :        :                   :         : 4         :                
+co_data128[48]               : E19       : output : 3.3-V LVTTL       :         : 4         : N              
+co_data128[44]               : E20       : output : 3.3-V LVTTL       :         : 4         : N              
+co_data32[12]                : E21       : output : 3.3-V LVTTL       :         : 4         : N              
+co_data128[42]               : E22       : output : 3.3-V LVTTL       :         : 4         : N              
+co_alu128[79]                : E23       : output : 3.3-V LVTTL       :         : 4         : N              
+co_alu128[65]                : E24       : output : 3.3-V LVTTL       :         : 4         : N              
 VCCIO4                       : E25       : power  :                   : 3.3V    : 4         :                
 GND                          : E26       : gnd    :                   :         :           :                
-ins_if[19]                   : E27       : output : 3.3-V LVTTL       :         : 5         : N              
-co_alu128[13]                : E28       : output : 3.3-V LVTTL       :         : 5         : N              
-co_alu128[113]               : E29       : output : 3.3-V LVTTL       :         : 5         : N              
-co_data128[44]               : E30       : output : 3.3-V LVTTL       :         : 5         : N              
-reg_b[30]                    : F1        : output : 3.3-V LVTTL       :         : 2         : N              
-reg_b[12]                    : F2        : output : 3.3-V LVTTL       :         : 2         : N              
+co_alu128[95]                : E27       : output : 3.3-V LVTTL       :         : 5         : N              
+co_data32[27]                : E28       : output : 3.3-V LVTTL       :         : 5         : N              
+co_data128[126]              : E29       : output : 3.3-V LVTTL       :         : 5         : N              
+co_data128[11]               : E30       : output : 3.3-V LVTTL       :         : 5         : N              
+sel_mem_rd                   : F1        : output : 3.3-V LVTTL       :         : 2         : N              
+alu_result[12]               : F2        : output : 3.3-V LVTTL       :         : 2         : N              
 GND*                         : F3        :        :                   :         : 2         :                
 GND*                         : F4        :        :                   :         : 2         :                
 VCCIO2                       : F5        : power  :                   : 3.3V    : 2         :                
 GND                          : F6        : gnd    :                   :         :           :                
-alu_result[29]               : F7        : output : 3.3-V LVTTL       :         : 3         : N              
-ins_mem[17]                  : F8        : output : 3.3-V LVTTL       :         : 3         : N              
+GND*                         : F7        :        :                   :         : 3         :                
+ins_if[22]                   : F8        : output : 3.3-V LVTTL       :         : 3         : N              
 GND                          : F9        : gnd    :                   :         :           :                
 VCCIO3                       : F10       : power  :                   : 3.3V    : 3         :                
-out_wb[17]                   : F11       : output : 3.3-V LVTTL       :         : 3         : N              
-ins_ex[22]                   : F12       : output : 3.3-V LVTTL       :         : 3         : N              
-ins_id[15]                   : F13       : output : 3.3-V LVTTL       :         : 3         : N              
+out_wb[30]                   : F11       : output : 3.3-V LVTTL       :         : 3         : N              
+ins_id[27]                   : F12       : output : 3.3-V LVTTL       :         : 3         : N              
+co_alu128[14]                : F13       : output : 3.3-V LVTTL       :         : 3         : N              
 GND                          : F14       : gnd    :                   :         :           :                
 VCCIO3                       : F15       : power  :                   : 3.3V    : 3         :                
-co_data128[94]               : F16       : output : 3.3-V LVTTL       :         : 4         : N              
+co_data32[3]                 : F16       : output : 3.3-V LVTTL       :         : 4         : N              
 GND                          : F17       : gnd    :                   :         :           :                
-co_alu128[76]                : F18       : output : 3.3-V LVTTL       :         : 4         : N              
-ins_if[9]                    : F19       : output : 3.3-V LVTTL       :         : 4         : N              
-co_alu128[4]                 : F20       : output : 3.3-V LVTTL       :         : 4         : N              
+co_data128[50]               : F18       : output : 3.3-V LVTTL       :         : 4         : N              
+co_data32[26]                : F19       : output : 3.3-V LVTTL       :         : 4         : N              
+co_data128[26]               : F20       : output : 3.3-V LVTTL       :         : 4         : N              
 VCCIO4                       : F21       : power  :                   : 3.3V    : 4         :                
 GND                          : F22       : gnd    :                   :         :           :                
 GND*                         : F23       :        :                   :         : 4         :                
-GND*                         : F24       :        :                   :         : 4         :                
+co_data32[20]                : F24       : output : 3.3-V LVTTL       :         : 4         : N              
 GND                          : F25       : gnd    :                   :         :           :                
 VCCIO5                       : F26       : power  :                   : 3.3V    : 5         :                
-co_alu128[49]                : F27       : output : 3.3-V LVTTL       :         : 5         : N              
-ins_if[7]                    : F28       : output : 3.3-V LVTTL       :         : 5         : N              
-co_data128[105]              : F29       : output : 3.3-V LVTTL       :         : 5         : N              
-co_data128[33]               : F30       : output : 3.3-V LVTTL       :         : 5         : N              
-ins_mem[21]                  : G1        : output : 3.3-V LVTTL       :         : 2         : N              
-ins_mem[3]                   : G2        : output : 3.3-V LVTTL       :         : 2         : N              
-ins_ex[19]                   : G3        : output : 3.3-V LVTTL       :         : 2         : N              
-alu_result[17]               : G4        : output : 3.3-V LVTTL       :         : 2         : N              
-alu_result[30]               : G5        : output : 3.3-V LVTTL       :         : 2         : N              
-GND*                         : G6        :        :                   :         : 2         :                
+co_alu128[88]                : F27       : output : 3.3-V LVTTL       :         : 5         : N              
+GND*                         : F28       :        :                   :         : 5         :                
+co_data32[28]                : F29       : output : 3.3-V LVTTL       :         : 5         : N              
+co_alu128[127]               : F30       : output : 3.3-V LVTTL       :         : 5         : N              
+ins_if[2]                    : G1        : output : 3.3-V LVTTL       :         : 2         : N              
+ins_mem[26]                  : G2        : output : 3.3-V LVTTL       :         : 2         : N              
+ins_mem[31]                  : G3        : output : 3.3-V LVTTL       :         : 2         : N              
+ins_ex[31]                   : G4        : output : 3.3-V LVTTL       :         : 2         : N              
+GND*                         : G5        :        :                   :         : 2         :                
+co_data128[87]               : G6        : output : 3.3-V LVTTL       :         : 2         : N              
 ~ASDO~ / RESERVED_INPUT_WITH_WEAK_PULLUP : G7        : input  : 3.3-V LVTTL       :         : 2         : N              
 GNDA_PLL3                    : G8        : gnd    :                   :         :           :                
-ins_ex[1]                    : G9        : output : 3.3-V LVTTL       :         : 3         : N              
-reg_lui                      : G10       : output : 3.3-V LVTTL       :         : 3         : N              
-out_wb[15]                   : G11       : output : 3.3-V LVTTL       :         : 3         : N              
-reg_a[24]                    : G12       : output : 3.3-V LVTTL       :         : 3         : N              
-reg_a[29]                    : G13       : output : 3.3-V LVTTL       :         : 3         : N              
-sel_mem_rd                   : G14       : output : 3.3-V LVTTL       :         : 3         : N              
+alu_result[21]               : G9        : output : 3.3-V LVTTL       :         : 3         : N              
+ins_ex[16]                   : G10       : output : 3.3-V LVTTL       :         : 3         : N              
+co_alu128[31]                : G11       : output : 3.3-V LVTTL       :         : 3         : N              
+co_alu128[9]                 : G12       : output : 3.3-V LVTTL       :         : 3         : N              
+ins_mem[28]                  : G13       : output : 3.3-V LVTTL       :         : 3         : N              
+co_data32[4]                 : G14       : output : 3.3-V LVTTL       :         : 3         : N              
 GND+                         : G15       :        :                   :         : 3         :                
-co_alu128[38]                : G16       : output : 3.3-V LVTTL       :         : 4         : N              
-co_alu128[127]               : G17       : output : 3.3-V LVTTL       :         : 4         : N              
-co_data128[113]              : G18       : output : 3.3-V LVTTL       :         : 4         : N              
-co_alu128[46]                : G19       : output : 3.3-V LVTTL       :         : 4         : N              
-co_alu128[81]                : G20       : output : 3.3-V LVTTL       :         : 4         : N              
-co_alu128[104]               : G21       : output : 3.3-V LVTTL       :         : 4         : N              
-GND*                         : G22       :        :                   :         : 4         :                
+co_alu128[5]                 : G16       : output : 3.3-V LVTTL       :         : 4         : N              
+co_alu128[56]                : G17       : output : 3.3-V LVTTL       :         : 4         : N              
+co_data32[30]                : G18       : output : 3.3-V LVTTL       :         : 4         : N              
+co_data128[67]               : G19       : output : 3.3-V LVTTL       :         : 4         : N              
+co_alu128[32]                : G20       : output : 3.3-V LVTTL       :         : 4         : N              
+co_alu128[106]               : G21       : output : 3.3-V LVTTL       :         : 4         : N              
+co_data128[1]                : G22       : output : 3.3-V LVTTL       :         : 4         : N              
 GNDA_PLL2                    : G23       : gnd    :                   :         :           :                
-co_alu128[70]                : G24       : output : 3.3-V LVTTL       :         : 5         : N              
-co_alu128[24]                : G25       : output : 3.3-V LVTTL       :         : 5         : N              
-co_alu128[44]                : G26       : output : 3.3-V LVTTL       :         : 5         : N              
-co_data128[67]               : G27       : output : 3.3-V LVTTL       :         : 5         : N              
-co_data128[53]               : G28       : output : 3.3-V LVTTL       :         : 5         : N              
-co_data128[35]               : G29       : output : 3.3-V LVTTL       :         : 5         : N              
-ins_if[11]                   : G30       : output : 3.3-V LVTTL       :         : 5         : N              
-ins_ex[25]                   : H1        : output : 3.3-V LVTTL       :         : 2         : N              
-reg_a[23]                    : H2        : output : 3.3-V LVTTL       :         : 2         : N              
-reg_wr_en_wb                 : H3        : output : 3.3-V LVTTL       :         : 2         : N              
-out_wb[11]                   : H4        : output : 3.3-V LVTTL       :         : 2         : N              
-GND*                         : H5        :        :                   :         : 2         :                
-co_alu128[69]                : H6        : output : 3.3-V LVTTL       :         : 2         : N              
+GND*                         : G24       :        :                   :         : 5         :                
+co_data128[47]               : G25       : output : 3.3-V LVTTL       :         : 5         : N              
+co_alu128[27]                : G26       : output : 3.3-V LVTTL       :         : 5         : N              
+co_alu128[91]                : G27       : output : 3.3-V LVTTL       :         : 5         : N              
+co_data128[112]              : G28       : output : 3.3-V LVTTL       :         : 5         : N              
+co_alu128[11]                : G29       : output : 3.3-V LVTTL       :         : 5         : N              
+co_data32[29]                : G30       : output : 3.3-V LVTTL       :         : 5         : N              
+alu_result[18]               : H1        : output : 3.3-V LVTTL       :         : 2         : N              
+ins_ex[13]                   : H2        : output : 3.3-V LVTTL       :         : 2         : N              
+ins_if[17]                   : H3        : output : 3.3-V LVTTL       :         : 2         : N              
+co_data128[21]               : H4        : output : 3.3-V LVTTL       :         : 2         : N              
+ins_id[31]                   : H5        : output : 3.3-V LVTTL       :         : 2         : N              
+co_alu128[18]                : H6        : output : 3.3-V LVTTL       :         : 2         : N              
 GND*                         : H7        :        :                   :         : 2         :                
 GND*                         : H8        :        :                   :         : 2         :                
 VCCA_PLL3                    : H9        : power  :                   : 1.2V    :           :                
-out_wb[30]                   : H10       : output : 3.3-V LVTTL       :         : 3         : N              
-out_wb[31]                   : H11       : output : 3.3-V LVTTL       :         : 3         : N              
-ins_id[2]                    : H12       : output : 3.3-V LVTTL       :         : 3         : N              
-reg_b[1]                     : H13       : output : 3.3-V LVTTL       :         : 3         : N              
-ins_if[22]                   : H14       : output : 3.3-V LVTTL       :         : 3         : N              
+ins_if[6]                    : H10       : output : 3.3-V LVTTL       :         : 3         : N              
+ins_id[14]                   : H11       : output : 3.3-V LVTTL       :         : 3         : N              
+ins_if[10]                   : H12       : output : 3.3-V LVTTL       :         : 3         : N              
+ins_mem_en                   : H13       : output : 3.3-V LVTTL       :         : 3         : N              
+co_data128[55]               : H14       : output : 3.3-V LVTTL       :         : 3         : N              
 GND+                         : H15       :        :                   :         : 3         :                
-co_alu128[23]                : H16       : output : 3.3-V LVTTL       :         : 4         : N              
-co_data128[50]               : H17       : output : 3.3-V LVTTL       :         : 4         : N              
-ins_id[12]                   : H18       : output : 3.3-V LVTTL       :         : 4         : N              
-ins_if[4]                    : H19       : output : 3.3-V LVTTL       :         : 4         : N              
-co_data128[75]               : H20       : output : 3.3-V LVTTL       :         : 4         : N              
-co_data128[68]               : H21       : output : 3.3-V LVTTL       :         : 4         : N              
+co_data128[9]                : H16       : output : 3.3-V LVTTL       :         : 4         : N              
+co_data128[98]               : H17       : output : 3.3-V LVTTL       :         : 4         : N              
+co_alu128[44]                : H18       : output : 3.3-V LVTTL       :         : 4         : N              
+co_data128[71]               : H19       : output : 3.3-V LVTTL       :         : 4         : N              
+co_alu128[89]                : H20       : output : 3.3-V LVTTL       :         : 4         : N              
+co_alu128[126]               : H21       : output : 3.3-V LVTTL       :         : 4         : N              
 VCCA_PLL2                    : H22       : power  :                   : 1.2V    :           :                
-ins_mem[20]                  : H23       : output : 3.3-V LVTTL       :         : 5         : N              
+GND*                         : H23       :        :                   :         : 5         :                
 GND*                         : H24       :        :                   :         : 5         :                
-GND*                         : H25       :        :                   :         : 5         :                
-co_data128[107]              : H26       : output : 3.3-V LVTTL       :         : 5         : N              
-co_data128[89]               : H27       : output : 3.3-V LVTTL       :         : 5         : N              
-co_alu128[26]                : H28       : output : 3.3-V LVTTL       :         : 5         : N              
-co_data128[85]               : H29       : output : 3.3-V LVTTL       :         : 5         : N              
-co_alu128[10]                : H30       : output : 3.3-V LVTTL       :         : 5         : N              
-ins_id[24]                   : J1        : output : 3.3-V LVTTL       :         : 2         : N              
-reg_b[20]                    : J2        : output : 3.3-V LVTTL       :         : 2         : N              
+co_alu128[23]                : H25       : output : 3.3-V LVTTL       :         : 5         : N              
+co_data128[113]              : H26       : output : 3.3-V LVTTL       :         : 5         : N              
+co_alu128[58]                : H27       : output : 3.3-V LVTTL       :         : 5         : N              
+co_data128[2]                : H28       : output : 3.3-V LVTTL       :         : 5         : N              
+co_alu128[36]                : H29       : output : 3.3-V LVTTL       :         : 5         : N              
+co_data128[64]               : H30       : output : 3.3-V LVTTL       :         : 5         : N              
+out_wb[13]                   : J1        : output : 3.3-V LVTTL       :         : 2         : N              
+ins_mem[20]                  : J2        : output : 3.3-V LVTTL       :         : 2         : N              
 VCCIO2                       : J3        : power  :                   : 3.3V    : 2         :                
 GND                          : J4        : gnd    :                   :         :           :                
-alu_result[28]               : J5        : output : 3.3-V LVTTL       :         : 2         : N              
-ins_ex[17]                   : J6        : output : 3.3-V LVTTL       :         : 2         : N              
-alu_result[1]                : J7        : output : 3.3-V LVTTL       :         : 2         : N              
+ins_if[27]                   : J5        : output : 3.3-V LVTTL       :         : 2         : N              
+co_alu128[112]               : J6        : output : 3.3-V LVTTL       :         : 2         : N              
+ins_if[28]                   : J7        : output : 3.3-V LVTTL       :         : 2         : N              
 GND_PLL3                     : J8        : gnd    :                   :         :           :                
 VCCD_PLL3                    : J9        : power  :                   : 1.2V    :           :                
 GND                          : J10       : gnd    :                   :         :           :                
 VCCIO3                       : J11       : power  :                   : 3.3V    : 3         :                
-reg_a[19]                    : J12       : output : 3.3-V LVTTL       :         : 3         : N              
-reg_a[17]                    : J13       : output : 3.3-V LVTTL       :         : 3         : N              
+reg_b[16]                    : J12       : output : 3.3-V LVTTL       :         : 3         : N              
+co_data128[4]                : J13       : output : 3.3-V LVTTL       :         : 3         : N              
 GND                          : J14       : gnd    :                   :         :           :                
 VCCIO3                       : J15       : power  :                   : 3.3V    : 3         :                
 VCCIO4                       : J16       : power  :                   : 3.3V    : 4         :                
 GND                          : J17       : gnd    :                   :         :           :                
-co_data128[54]               : J18       : output : 3.3-V LVTTL       :         : 4         : N              
-co_alu128[96]                : J19       : output : 3.3-V LVTTL       :         : 4         : N              
+co_data128[80]               : J18       : output : 3.3-V LVTTL       :         : 4         : N              
+co_alu128[38]                : J19       : output : 3.3-V LVTTL       :         : 4         : N              
 VCCIO4                       : J20       : power  :                   : 3.3V    : 4         :                
 GND                          : J21       : gnd    :                   :         :           :                
 VCCD_PLL2                    : J22       : power  :                   : 1.2V    :           :                
 VCCIO5                       : J23       : power  :                   : 3.3V    : 5         :                
-co_data32[6]                 : J24       : output : 3.3-V LVTTL       :         : 5         : N              
-co_data128[1]                : J25       : output : 3.3-V LVTTL       :         : 5         : N              
-reg_wr_en_id                 : J26       : output : 3.3-V LVTTL       :         : 5         : N              
+co_data128[27]               : J24       : output : 3.3-V LVTTL       :         : 5         : N              
+co_alu128[118]               : J25       : output : 3.3-V LVTTL       :         : 5         : N              
+co_data128[46]               : J26       : output : 3.3-V LVTTL       :         : 5         : N              
 GND                          : J27       : gnd    :                   :         :           :                
 VCCIO5                       : J28       : power  :                   : 3.3V    : 5         :                
-ins_id[9]                    : J29       : output : 3.3-V LVTTL       :         : 5         : N              
-ins_id[7]                    : J30       : output : 3.3-V LVTTL       :         : 5         : N              
-reg_b[24]                    : K1        : output : 3.3-V LVTTL       :         : 2         : N              
-reg_b[6]                     : K2        : output : 3.3-V LVTTL       :         : 2         : N              
-ins_ex[24]                   : K3        : output : 3.3-V LVTTL       :         : 2         : N              
-reg_b[2]                     : K4        : output : 3.3-V LVTTL       :         : 2         : N              
-ins_id[21]                   : K5        : output : 3.3-V LVTTL       :         : 2         : N              
-ins_ex[21]                   : K6        : output : 3.3-V LVTTL       :         : 2         : N              
-out_wb[18]                   : K7        : output : 3.3-V LVTTL       :         : 2         : N              
-ins_ex[16]                   : K8        : output : 3.3-V LVTTL       :         : 2         : N              
+pc_load                      : J29       : output : 3.3-V LVTTL       :         : 5         : N              
+co_data128[15]               : J30       : output : 3.3-V LVTTL       :         : 5         : N              
+ins_ex[3]                    : K1        : output : 3.3-V LVTTL       :         : 2         : N              
+reg_b[0]                     : K2        : output : 3.3-V LVTTL       :         : 2         : N              
+co_data128[8]                : K3        : output : 3.3-V LVTTL       :         : 2         : N              
+co_data128[41]               : K4        : output : 3.3-V LVTTL       :         : 2         : N              
+ins_if[20]                   : K5        : output : 3.3-V LVTTL       :         : 2         : N              
+co_data128[37]               : K6        : output : 3.3-V LVTTL       :         : 2         : N              
+ins_if[18]                   : K7        : output : 3.3-V LVTTL       :         : 2         : N              
+ins_if[31]                   : K8        : output : 3.3-V LVTTL       :         : 2         : N              
 ~nCSO~ / RESERVED_INPUT_WITH_WEAK_PULLUP : K9        : input  : 3.3-V LVTTL       :         : 2         : N              
 GND_PLL3                     : K10       : gnd    :                   :         :           :                
 GND                          : K11       : gnd    :                   :         :           :                
@@ -660,24 +660,24 @@ GND                          : K19       : gnd    :                   :         
 GND                          : K20       : gnd    :                   :         :           :                
 GND_PLL2                     : K21       : gnd    :                   :         :           :                
 GND_PLL2                     : K22       : gnd    :                   :         :           :                
-ins_if[5]                    : K23       : output : 3.3-V LVTTL       :         : 5         : N              
-co_alu128[19]                : K24       : output : 3.3-V LVTTL       :         : 5         : N              
-co_data128[106]              : K25       : output : 3.3-V LVTTL       :         : 5         : N              
-co_data32[26]                : K26       : output : 3.3-V LVTTL       :         : 5         : N              
-ins_if[13]                   : K27       : output : 3.3-V LVTTL       :         : 5         : N              
-ins_if[12]                   : K28       : output : 3.3-V LVTTL       :         : 5         : N              
-branch_op                    : K29       : output : 3.3-V LVTTL       :         : 5         : N              
-ins_id[11]                   : K30       : output : 3.3-V LVTTL       :         : 5         : N              
-reg_a[8]                     : L1        : output : 3.3-V LVTTL       :         : 2         : N              
-reg_b[0]                     : L2        : output : 3.3-V LVTTL       :         : 2         : N              
-reg_b[3]                     : L3        : output : 3.3-V LVTTL       :         : 2         : N              
-out_wb[13]                   : L4        : output : 3.3-V LVTTL       :         : 2         : N              
-ins_id[29]                   : L5        : output : 3.3-V LVTTL       :         : 2         : N              
-ins_id[22]                   : L6        : output : 3.3-V LVTTL       :         : 2         : N              
-ins_mem[13]                  : L7        : output : 3.3-V LVTTL       :         : 2         : N              
-out_wb[14]                   : L8        : output : 3.3-V LVTTL       :         : 2         : N              
-pc[7]                        : L9        : output : 3.3-V LVTTL       :         : 2         : N              
-out_wb[6]                    : L10       : output : 3.3-V LVTTL       :         : 2         : N              
+co_alu128[71]                : K23       : output : 3.3-V LVTTL       :         : 5         : N              
+co_data32[7]                 : K24       : output : 3.3-V LVTTL       :         : 5         : N              
+pc[2]                        : K25       : output : 3.3-V LVTTL       :         : 5         : N              
+co_alu128[72]                : K26       : output : 3.3-V LVTTL       :         : 5         : N              
+co_data32[19]                : K27       : output : 3.3-V LVTTL       :         : 5         : N              
+co_alu128[20]                : K28       : output : 3.3-V LVTTL       :         : 5         : N              
+pc[7]                        : K29       : output : 3.3-V LVTTL       :         : 5         : N              
+pc[1]                        : K30       : output : 3.3-V LVTTL       :         : 5         : N              
+reg_a[13]                    : L1        : output : 3.3-V LVTTL       :         : 2         : N              
+co_alu128[17]                : L2        : output : 3.3-V LVTTL       :         : 2         : N              
+ins_id[1]                    : L3        : output : 3.3-V LVTTL       :         : 2         : N              
+ins_id[12]                   : L4        : output : 3.3-V LVTTL       :         : 2         : N              
+ins_mem[10]                  : L5        : output : 3.3-V LVTTL       :         : 2         : N              
+alu_result[15]               : L6        : output : 3.3-V LVTTL       :         : 2         : N              
+ins_if[26]                   : L7        : output : 3.3-V LVTTL       :         : 2         : N              
+ins_if[25]                   : L8        : output : 3.3-V LVTTL       :         : 2         : N              
+ins_id[29]                   : L9        : output : 3.3-V LVTTL       :         : 2         : N              
+co_alu128[21]                : L10       : output : 3.3-V LVTTL       :         : 2         : N              
 VCCIO2                       : L11       : power  :                   : 3.3V    : 2         :                
 GND                          : L12       : gnd    :                   :         :           :                
 VCCINT                       : L13       : power  :                   : 1.2V    :           :                
@@ -688,26 +688,26 @@ VCCINT                       : L17       : power  :                   : 1.2V    
 VCCINT                       : L18       : power  :                   : 1.2V    :           :                
 VCCINT                       : L19       : power  :                   : 1.2V    :           :                
 VCCIO5                       : L20       : power  :                   : 3.3V    : 5         :                
-co_alu128[67]                : L21       : output : 3.3-V LVTTL       :         : 5         : N              
-co_data128[57]               : L22       : output : 3.3-V LVTTL       :         : 5         : N              
+co_data128[16]               : L21       : output : 3.3-V LVTTL       :         : 5         : N              
+co_alu128[80]                : L22       : output : 3.3-V LVTTL       :         : 5         : N              
 GND                          : L23       : gnd    :                   :         :           :                
-co_alu128[112]               : L24       : output : 3.3-V LVTTL       :         : 5         : N              
-reg_16bit                    : L25       : output : 3.3-V LVTTL       :         : 5         : N              
-co_data128[114]              : L26       : output : 3.3-V LVTTL       :         : 5         : N              
-ins_id[4]                    : L27       : output : 3.3-V LVTTL       :         : 5         : N              
-co_data128[45]               : L28       : output : 3.3-V LVTTL       :         : 5         : N              
-pc[2]                        : L29       : output : 3.3-V LVTTL       :         : 5         : N              
-pc[1]                        : L30       : output : 3.3-V LVTTL       :         : 5         : N              
-reg_b[9]                     : M1        : output : 3.3-V LVTTL       :         : 2         : N              
-reg_a[26]                    : M2        : output : 3.3-V LVTTL       :         : 2         : N              
-reg_a[20]                    : M3        : output : 3.3-V LVTTL       :         : 2         : N              
-reg_b[8]                     : M4        : output : 3.3-V LVTTL       :         : 2         : N              
-reg_b[28]                    : M5        : output : 3.3-V LVTTL       :         : 2         : N              
-ins_if[24]                   : M6        : output : 3.3-V LVTTL       :         : 2         : N              
-branch                       : M7        : output : 3.3-V LVTTL       :         : 2         : N              
-ins_mem[16]                  : M8        : output : 3.3-V LVTTL       :         : 2         : N              
-out_wb[8]                    : M9        : output : 3.3-V LVTTL       :         : 2         : N              
-out_wb[26]                   : M10       : output : 3.3-V LVTTL       :         : 2         : N              
+co_data128[100]              : L24       : output : 3.3-V LVTTL       :         : 5         : N              
+co_data128[14]               : L25       : output : 3.3-V LVTTL       :         : 5         : N              
+pc[6]                        : L26       : output : 3.3-V LVTTL       :         : 5         : N              
+pc[3]                        : L27       : output : 3.3-V LVTTL       :         : 5         : N              
+pc[4]                        : L28       : output : 3.3-V LVTTL       :         : 5         : N              
+jr                           : L29       : output : 3.3-V LVTTL       :         : 5         : N              
+co_data128[20]               : L30       : output : 3.3-V LVTTL       :         : 5         : N              
+ins_id[9]                    : M1        : output : 3.3-V LVTTL       :         : 2         : N              
+co_alu128[12]                : M2        : output : 3.3-V LVTTL       :         : 2         : N              
+out_wb[22]                   : M3        : output : 3.3-V LVTTL       :         : 2         : N              
+co_alu128[4]                 : M4        : output : 3.3-V LVTTL       :         : 2         : N              
+co_data128[96]               : M5        : output : 3.3-V LVTTL       :         : 2         : N              
+reg_b[1]                     : M6        : output : 3.3-V LVTTL       :         : 2         : N              
+co_data128[40]               : M7        : output : 3.3-V LVTTL       :         : 2         : N              
+co_alu128[16]                : M8        : output : 3.3-V LVTTL       :         : 2         : N              
+ins_mem[8]                   : M9        : output : 3.3-V LVTTL       :         : 2         : N              
+co_data32[0]                 : M10       : output : 3.3-V LVTTL       :         : 2         : N              
 GND                          : M11       : gnd    :                   :         :           :                
 VCCINT                       : M12       : power  :                   : 1.2V    :           :                
 VCCINT                       : M13       : power  :                   : 1.2V    :           :                
@@ -718,26 +718,26 @@ VCCINT                       : M17       : power  :                   : 1.2V    
 VCCINT                       : M18       : power  :                   : 1.2V    :           :                
 VCCINT                       : M19       : power  :                   : 1.2V    :           :                
 GND                          : M20       : gnd    :                   :         :           :                
-co_data128[55]               : M21       : output : 3.3-V LVTTL       :         : 5         : N              
-co_data32[30]                : M22       : output : 3.3-V LVTTL       :         : 5         : N              
-co_data128[4]                : M23       : output : 3.3-V LVTTL       :         : 5         : N              
-co_data128[86]               : M24       : output : 3.3-V LVTTL       :         : 5         : N              
-co_data128[17]               : M25       : output : 3.3-V LVTTL       :         : 5         : N              
-co_alu128[35]                : M26       : output : 3.3-V LVTTL       :         : 5         : N              
-co_data128[90]               : M27       : output : 3.3-V LVTTL       :         : 5         : N              
-pc[3]                        : M28       : output : 3.3-V LVTTL       :         : 5         : N              
-co_data128[26]               : M29       : output : 3.3-V LVTTL       :         : 5         : N              
-co_data128[8]                : M30       : output : 3.3-V LVTTL       :         : 5         : N              
+co_data128[43]               : M21       : output : 3.3-V LVTTL       :         : 5         : N              
+co_data128[68]               : M22       : output : 3.3-V LVTTL       :         : 5         : N              
+co_data128[33]               : M23       : output : 3.3-V LVTTL       :         : 5         : N              
+co_data128[99]               : M24       : output : 3.3-V LVTTL       :         : 5         : N              
+pc[0]                        : M25       : output : 3.3-V LVTTL       :         : 5         : N              
+ins_id[6]                    : M26       : output : 3.3-V LVTTL       :         : 5         : N              
+co_alu128[59]                : M27       : output : 3.3-V LVTTL       :         : 5         : N              
+co_alu128[24]                : M28       : output : 3.3-V LVTTL       :         : 5         : N              
+co_alu128[52]                : M29       : output : 3.3-V LVTTL       :         : 5         : N              
+co_alu128[42]                : M30       : output : 3.3-V LVTTL       :         : 5         : N              
 GND                          : N1        : gnd    :                   :         :           :                
-reg_b[13]                    : N2        : output : 3.3-V LVTTL       :         : 2         : N              
-reg_b[23]                    : N3        : output : 3.3-V LVTTL       :         : 2         : N              
-reg_b[11]                    : N4        : output : 3.3-V LVTTL       :         : 2         : N              
+co_data128[39]               : N2        : output : 3.3-V LVTTL       :         : 2         : N              
+ins_id[10]                   : N3        : output : 3.3-V LVTTL       :         : 2         : N              
+mem_rd_en                    : N4        : output : 3.3-V LVTTL       :         : 2         : N              
 VCCIO2                       : N5        : power  :                   : 3.3V    : 2         :                
 GND                          : N6        : gnd    :                   :         :           :                
-reg_b[19]                    : N7        : output : 3.3-V LVTTL       :         : 2         : N              
-ins_id[3]                    : N8        : output : 3.3-V LVTTL       :         : 2         : N              
-pc[5]                        : N9        : output : 3.3-V LVTTL       :         : 2         : N              
-ins_id[25]                   : N10       : output : 3.3-V LVTTL       :         : 2         : N              
+reg_b[3]                     : N7        : output : 3.3-V LVTTL       :         : 2         : N              
+ins_id[24]                   : N8        : output : 3.3-V LVTTL       :         : 2         : N              
+co_alu128[120]               : N9        : output : 3.3-V LVTTL       :         : 2         : N              
+out_wb[15]                   : N10       : output : 3.3-V LVTTL       :         : 2         : N              
 VCCINT                       : N11       : power  :                   : 1.2V    :           :                
 VCCINT                       : N12       : power  :                   : 1.2V    :           :                
 GND                          : N13       : gnd    :                   :         :           :                
@@ -748,25 +748,25 @@ GND                          : N17       : gnd    :                   :         
 GND                          : N18       : gnd    :                   :         :           :                
 VCCINT                       : N19       : power  :                   : 1.2V    :           :                
 VCCINT                       : N20       : power  :                   : 1.2V    :           :                
-pc_count                     : N21       : output : 3.3-V LVTTL       :         : 5         : N              
-co_alu128[41]                : N22       : output : 3.3-V LVTTL       :         : 5         : N              
-ins_id[14]                   : N23       : output : 3.3-V LVTTL       :         : 5         : N              
-co_alu128[85]                : N24       : output : 3.3-V LVTTL       :         : 5         : N              
-co_alu128[55]                : N25       : output : 3.3-V LVTTL       :         : 5         : N              
+co_data128[45]               : N21       : output : 3.3-V LVTTL       :         : 5         : N              
+co_data128[12]               : N22       : output : 3.3-V LVTTL       :         : 5         : N              
+co_data32[23]                : N23       : output : 3.3-V LVTTL       :         : 5         : N              
+co_data128[106]              : N24       : output : 3.3-V LVTTL       :         : 5         : N              
+co_alu128[43]                : N25       : output : 3.3-V LVTTL       :         : 5         : N              
 GND                          : N26       : gnd    :                   :         :           :                
 VCCIO5                       : N27       : power  :                   : 3.3V    : 5         :                
-co_alu128[65]                : N28       : output : 3.3-V LVTTL       :         : 5         : N              
-co_alu128[9]                 : N29       : output : 3.3-V LVTTL       :         : 5         : N              
+co_alu128[61]                : N28       : output : 3.3-V LVTTL       :         : 5         : N              
+co_data128[105]              : N29       : output : 3.3-V LVTTL       :         : 5         : N              
 GND                          : N30       : gnd    :                   :         :           :                
-reg_a[12]                    : P1        : output : 3.3-V LVTTL       :         : 2         : N              
-ins_id[17]                   : P2        : output : 3.3-V LVTTL       :         : 2         : N              
-ins_id[20]                   : P3        : output : 3.3-V LVTTL       :         : 2         : N              
-ins_id[18]                   : P4        : output : 3.3-V LVTTL       :         : 2         : N              
+ins_id[25]                   : P1        : output : 3.3-V LVTTL       :         : 2         : N              
+reg_a[15]                    : P2        : output : 3.3-V LVTTL       :         : 2         : N              
+ins_id[13]                   : P3        : output : 3.3-V LVTTL       :         : 2         : N              
+co_data128[5]                : P4        : output : 3.3-V LVTTL       :         : 2         : N              
 TCK                          : P5        : input  :                   :         : 2         :                
-reg_b[18]                    : P6        : output : 3.3-V LVTTL       :         : 2         : N              
-ins_id[19]                   : P7        : output : 3.3-V LVTTL       :         : 2         : N              
+co_data128[60]               : P6        : output : 3.3-V LVTTL       :         : 2         : N              
+co_data32[10]                : P7        : output : 3.3-V LVTTL       :         : 2         : N              
 TDI                          : P8        : input  :                   :         : 2         :                
-reg_b[26]                    : P9        : output : 3.3-V LVTTL       :         : 2         : N              
+co_alu128[13]                : P9        : output : 3.3-V LVTTL       :         : 2         : N              
 GND                          : P10       : gnd    :                   :         :           :                
 VCCINT                       : P11       : power  :                   : 1.2V    :           :                
 VCCINT                       : P12       : power  :                   : 1.2V    :           :                
@@ -779,15 +779,15 @@ GND                          : P18       : gnd    :                   :         
 VCCINT                       : P19       : power  :                   : 1.2V    :           :                
 VCCINT                       : P20       : power  :                   : 1.2V    :           :                
 GND                          : P21       : gnd    :                   :         :           :                
-ins_id[1]                    : P22       : output : 3.3-V LVTTL       :         : 5         : N              
-co_alu128[11]                : P23       : output : 3.3-V LVTTL       :         : 5         : N              
-reg_a[28]                    : P24       : output : 3.3-V LVTTL       :         : 5         : N              
-co_data32[25]                : P25       : output : 3.3-V LVTTL       :         : 5         : N              
-ins_if[25]                   : P26       : output : 3.3-V LVTTL       :         : 5         : N              
-ins_if[23]                   : P27       : output : 3.3-V LVTTL       :         : 5         : N              
-ins_if[8]                    : P28       : output : 3.3-V LVTTL       :         : 5         : N              
-reg_a[30]                    : P29       : output : 3.3-V LVTTL       :         : 5         : N              
-ins_if[3]                    : P30       : output : 3.3-V LVTTL       :         : 5         : N              
+co_alu128[55]                : P22       : output : 3.3-V LVTTL       :         : 5         : N              
+co_alu128[60]                : P23       : output : 3.3-V LVTTL       :         : 5         : N              
+co_data32[16]                : P24       : output : 3.3-V LVTTL       :         : 5         : N              
+co_data32[8]                 : P25       : output : 3.3-V LVTTL       :         : 5         : N              
+co_alu128[35]                : P26       : output : 3.3-V LVTTL       :         : 5         : N              
+co_alu128[41]                : P27       : output : 3.3-V LVTTL       :         : 5         : N              
+co_data32[1]                 : P28       : output : 3.3-V LVTTL       :         : 5         : N              
+co_data128[77]               : P29       : output : 3.3-V LVTTL       :         : 5         : N              
+co_data32[15]                : P30       : output : 3.3-V LVTTL       :         : 5         : N              
 VCCIO2                       : R1        : power  :                   : 3.3V    : 2         :                
 GND+                         : R2        :        :                   :         : 2         :                
 GND+                         : R3        :        :                   :         : 2         :                
@@ -809,24 +809,24 @@ GND                          : R18       : gnd    :                   :         
 VCCINT                       : R19       : power  :                   : 1.2V    :           :                
 GND                          : R20       : gnd    :                   :         :           :                
 VCCIO5                       : R21       : power  :                   : 3.3V    : 5         :                
-ins_mem[25]                  : R22       : output : 3.3-V LVTTL       :         : 5         : N              
-co_data128[58]               : R23       : output : 3.3-V LVTTL       :         : 5         : N              
-co_alu128[68]                : R24       : output : 3.3-V LVTTL       :         : 5         : N              
-co_alu128[84]                : R25       : output : 3.3-V LVTTL       :         : 5         : N              
-co_alu128[107]               : R26       : output : 3.3-V LVTTL       :         : 5         : N              
-co_alu128[94]                : R27       : output : 3.3-V LVTTL       :         : 5         : N              
+co_alu128[99]                : R22       : output : 3.3-V LVTTL       :         : 5         : N              
+co_alu128[57]                : R23       : output : 3.3-V LVTTL       :         : 5         : N              
+co_data128[95]               : R24       : output : 3.3-V LVTTL       :         : 5         : N              
+co_alu128[51]                : R25       : output : 3.3-V LVTTL       :         : 5         : N              
+co_data32[22]                : R26       : output : 3.3-V LVTTL       :         : 5         : N              
+co_alu128[30]                : R27       : output : 3.3-V LVTTL       :         : 5         : N              
 GND+                         : R28       :        :                   :         : 5         :                
 GND+                         : R29       :        :                   :         : 5         :                
 VCCIO5                       : R30       : power  :                   : 3.3V    : 5         :                
 VCCIO1                       : T1        : power  :                   : 3.3V    : 1         :                
 clock                        : T2        : input  : 3.3-V LVTTL       :         : 1         : N              
 clock_reg                    : T3        : input  : 3.3-V LVTTL       :         : 1         : N              
-co_data128[31]               : T4        : output : 3.3-V LVTTL       :         : 1         : N              
-mem_word                     : T5        : output : 3.3-V LVTTL       :         : 1         : N              
-reg_a[11]                    : T6        : output : 3.3-V LVTTL       :         : 1         : N              
-reg_a[10]                    : T7        : output : 3.3-V LVTTL       :         : 1         : N              
-reg_a[16]                    : T8        : output : 3.3-V LVTTL       :         : 1         : N              
-reg_a[15]                    : T9        : output : 3.3-V LVTTL       :         : 1         : N              
+reg_a[0]                     : T4        : output : 3.3-V LVTTL       :         : 1         : N              
+reg_rd_en_b                  : T5        : output : 3.3-V LVTTL       :         : 1         : N              
+ins_id[20]                   : T6        : output : 3.3-V LVTTL       :         : 1         : N              
+reg_a[12]                    : T7        : output : 3.3-V LVTTL       :         : 1         : N              
+reg_word                     : T8        : output : 3.3-V LVTTL       :         : 1         : N              
+reg_b[25]                    : T9        : output : 3.3-V LVTTL       :         : 1         : N              
 VCCIO1                       : T10       : power  :                   : 3.3V    : 1         :                
 GND                          : T11       : gnd    :                   :         :           :                
 VCCINT                       : T12       : power  :                   : 1.2V    :           :                
@@ -839,24 +839,24 @@ GND                          : T18       : gnd    :                   :         
 VCCINT                       : T19       : power  :                   : 1.2V    :           :                
 GND                          : T20       : gnd    :                   :         :           :                
 VCCIO6                       : T21       : power  :                   : 3.3V    : 6         :                
-co_data128[13]               : T22       : output : 3.3-V LVTTL       :         : 5         : N              
-co_alu128[109]               : T23       : output : 3.3-V LVTTL       :         : 5         : N              
+co_data128[86]               : T22       : output : 3.3-V LVTTL       :         : 5         : N              
+co_data128[118]              : T23       : output : 3.3-V LVTTL       :         : 5         : N              
 GND+                         : T24       :        :                   :         : 6         :                
 GND+                         : T25       :        :                   :         : 6         :                
-co_data128[18]               : T26       : output : 3.3-V LVTTL       :         : 6         : N              
-co_data32[16]                : T27       : output : 3.3-V LVTTL       :         : 6         : N              
-co_data128[104]              : T28       : output : 3.3-V LVTTL       :         : 6         : N              
-co_data128[63]               : T29       : output : 3.3-V LVTTL       :         : 6         : N              
+co_data128[108]              : T26       : output : 3.3-V LVTTL       :         : 6         : N              
+co_data128[69]               : T27       : output : 3.3-V LVTTL       :         : 6         : N              
+co_data128[28]               : T28       : output : 3.3-V LVTTL       :         : 6         : N              
+co_alu128[83]                : T29       : output : 3.3-V LVTTL       :         : 6         : N              
 VCCIO6                       : T30       : power  :                   : 3.3V    : 6         :                
-reg_b[27]                    : U1        : output : 3.3-V LVTTL       :         : 1         : N              
-reg_a[9]                     : U2        : output : 3.3-V LVTTL       :         : 1         : N              
-reg_b[31]                    : U3        : output : 3.3-V LVTTL       :         : 1         : N              
-mem_wr_en                    : U4        : output : 3.3-V LVTTL       :         : 1         : N              
-reg_b[10]                    : U5        : output : 3.3-V LVTTL       :         : 1         : N              
-reg_a[31]                    : U6        : output : 3.3-V LVTTL       :         : 1         : N              
-sel_mem_wr                   : U7        : output : 3.3-V LVTTL       :         : 1         : N              
-ins_ex[14]                   : U8        : output : 3.3-V LVTTL       :         : 1         : N              
-reg_a[5]                     : U9        : output : 3.3-V LVTTL       :         : 1         : N              
+ins_id[23]                   : U1        : output : 3.3-V LVTTL       :         : 1         : N              
+ins_id[17]                   : U2        : output : 3.3-V LVTTL       :         : 1         : N              
+reg_b[30]                    : U3        : output : 3.3-V LVTTL       :         : 1         : N              
+reg_b[15]                    : U4        : output : 3.3-V LVTTL       :         : 1         : N              
+ins_id[22]                   : U5        : output : 3.3-V LVTTL       :         : 1         : N              
+reg_b[27]                    : U6        : output : 3.3-V LVTTL       :         : 1         : N              
+reg_b[7]                     : U7        : output : 3.3-V LVTTL       :         : 1         : N              
+reg_b[10]                    : U8        : output : 3.3-V LVTTL       :         : 1         : N              
+out_wb[10]                   : U9        : output : 3.3-V LVTTL       :         : 1         : N              
 GND                          : U10       : gnd    :                   :         :           :                
 VCCINT                       : U11       : power  :                   : 1.2V    :           :                
 VCCINT                       : U12       : power  :                   : 1.2V    :           :                
@@ -870,24 +870,24 @@ VCCINT                       : U19       : power  :                   : 1.2V    
 VCCINT                       : U20       : power  :                   : 1.2V    :           :                
 GND                          : U21       : gnd    :                   :         :           :                
 MSEL0                        : U22       :        :                   :         : 6         :                
-co_data128[37]               : U23       : output : 3.3-V LVTTL       :         : 6         : N              
-co_alu128[78]                : U24       : output : 3.3-V LVTTL       :         : 6         : N              
-co_data128[74]               : U25       : output : 3.3-V LVTTL       :         : 6         : N              
+co_alu128[122]               : U23       : output : 3.3-V LVTTL       :         : 6         : N              
+co_alu128[121]               : U24       : output : 3.3-V LVTTL       :         : 6         : N              
+co_alu128[125]               : U25       : output : 3.3-V LVTTL       :         : 6         : N              
 nSTATUS                      : U26       :        :                   :         : 6         :                
 CONF_DONE                    : U27       :        :                   :         : 6         :                
 MSEL1                        : U28       :        :                   :         : 6         :                
-co_data128[2]                : U29       : output : 3.3-V LVTTL       :         : 6         : N              
-co_data128[42]               : U30       : output : 3.3-V LVTTL       :         : 6         : N              
+ins_if[24]                   : U29       : output : 3.3-V LVTTL       :         : 6         : N              
+co_alu128[105]               : U30       : output : 3.3-V LVTTL       :         : 6         : N              
 GND                          : V1        : gnd    :                   :         :           :                
-reg_b[15]                    : V2        : output : 3.3-V LVTTL       :         : 1         : N              
-co_alu128[99]                : V3        : output : 3.3-V LVTTL       :         : 1         : N              
-ins_ex[0]                    : V4        : output : 3.3-V LVTTL       :         : 1         : N              
+reg_b[28]                    : V2        : output : 3.3-V LVTTL       :         : 1         : N              
+reg_a[23]                    : V3        : output : 3.3-V LVTTL       :         : 1         : N              
+reg_b[23]                    : V4        : output : 3.3-V LVTTL       :         : 1         : N              
 VCCIO1                       : V5        : power  :                   : 3.3V    : 1         :                
 GND                          : V6        : gnd    :                   :         :           :                
-out_wb[23]                   : V7        : output : 3.3-V LVTTL       :         : 1         : N              
-ins_mem[15]                  : V8        : output : 3.3-V LVTTL       :         : 1         : N              
-co_data32[15]                : V9        : output : 3.3-V LVTTL       :         : 1         : N              
-ins_mem[6]                   : V10       : output : 3.3-V LVTTL       :         : 1         : N              
+reg_a[8]                     : V7        : output : 3.3-V LVTTL       :         : 1         : N              
+reg_a[20]                    : V8        : output : 3.3-V LVTTL       :         : 1         : N              
+reg_b[11]                    : V9        : output : 3.3-V LVTTL       :         : 1         : N              
+reg_a[3]                     : V10       : output : 3.3-V LVTTL       :         : 1         : N              
 VCCINT                       : V11       : power  :                   : 1.2V    :           :                
 VCCINT                       : V12       : power  :                   : 1.2V    :           :                
 GND                          : V13       : gnd    :                   :         :           :                
@@ -898,26 +898,26 @@ GND                          : V17       : gnd    :                   :         
 GND                          : V18       : gnd    :                   :         :           :                
 VCCINT                       : V19       : power  :                   : 1.2V    :           :                
 VCCINT                       : V20       : power  :                   : 1.2V    :           :                
-ins_id[8]                    : V21       : output : 3.3-V LVTTL       :         : 6         : N              
-co_data128[127]              : V22       : output : 3.3-V LVTTL       :         : 6         : N              
-co_data128[24]               : V23       : output : 3.3-V LVTTL       :         : 6         : N              
-co_data128[61]               : V24       : output : 3.3-V LVTTL       :         : 6         : N              
+alu_result[25]               : V21       : output : 3.3-V LVTTL       :         : 6         : N              
+co_alu128[29]                : V22       : output : 3.3-V LVTTL       :         : 6         : N              
+co_data128[51]               : V23       : output : 3.3-V LVTTL       :         : 6         : N              
+mem_wr_en                    : V24       : output : 3.3-V LVTTL       :         : 6         : N              
 GND                          : V25       : gnd    :                   :         :           :                
 VCCIO6                       : V26       : power  :                   : 3.3V    : 6         :                
-ins_mem[27]                  : V27       : output : 3.3-V LVTTL       :         : 6         : N              
-co_data128[66]               : V28       : output : 3.3-V LVTTL       :         : 6         : N              
-co_alu128[50]                : V29       : output : 3.3-V LVTTL       :         : 6         : N              
+co_alu128[86]                : V27       : output : 3.3-V LVTTL       :         : 6         : N              
+reg_wr_en_wb                 : V28       : output : 3.3-V LVTTL       :         : 6         : N              
+co_alu128[77]                : V29       : output : 3.3-V LVTTL       :         : 6         : N              
 GND                          : V30       : gnd    :                   :         :           :                
-reg_rd_en_a                  : W1        : output : 3.3-V LVTTL       :         : 1         : N              
-alu_result[21]               : W2        : output : 3.3-V LVTTL       :         : 1         : N              
-reg_a[4]                     : W3        : output : 3.3-V LVTTL       :         : 1         : N              
-out_wb[4]                    : W4        : output : 3.3-V LVTTL       :         : 1         : N              
-ins_ex[9]                    : W5        : output : 3.3-V LVTTL       :         : 1         : N              
-ins_ex[27]                   : W6        : output : 3.3-V LVTTL       :         : 1         : N              
-ins_mem[0]                   : W7        : output : 3.3-V LVTTL       :         : 1         : N              
-out_wb[21]                   : W8        : output : 3.3-V LVTTL       :         : 1         : N              
-alu_result[24]               : W9        : output : 3.3-V LVTTL       :         : 1         : N              
-ins_if[29]                   : W10       : output : 3.3-V LVTTL       :         : 1         : N              
+out_wb[26]                   : W1        : output : 3.3-V LVTTL       :         : 1         : N              
+reg_b[26]                    : W2        : output : 3.3-V LVTTL       :         : 1         : N              
+reg_a[9]                     : W3        : output : 3.3-V LVTTL       :         : 1         : N              
+reg_a[16]                    : W4        : output : 3.3-V LVTTL       :         : 1         : N              
+reg_a[2]                     : W5        : output : 3.3-V LVTTL       :         : 1         : N              
+alu_result[22]               : W6        : output : 3.3-V LVTTL       :         : 1         : N              
+ins_mem[18]                  : W7        : output : 3.3-V LVTTL       :         : 1         : N              
+reg_a[27]                    : W8        : output : 3.3-V LVTTL       :         : 1         : N              
+ins_ex[29]                   : W9        : output : 3.3-V LVTTL       :         : 1         : N              
+ins_ex[15]                   : W10       : output : 3.3-V LVTTL       :         : 1         : N              
 GND                          : W11       : gnd    :                   :         :           :                
 VCCINT                       : W12       : power  :                   : 1.2V    :           :                
 VCCINT                       : W13       : power  :                   : 1.2V    :           :                
@@ -928,26 +928,26 @@ VCCINT                       : W17       : power  :                   : 1.2V    
 VCCINT                       : W18       : power  :                   : 1.2V    :           :                
 VCCINT                       : W19       : power  :                   : 1.2V    :           :                
 GND                          : W20       : gnd    :                   :         :           :                
-co_data128[34]               : W21       : output : 3.3-V LVTTL       :         : 6         : N              
-co_data128[14]               : W22       : output : 3.3-V LVTTL       :         : 6         : N              
-co_alu128[20]                : W23       : output : 3.3-V LVTTL       :         : 6         : N              
-co_data128[88]               : W24       : output : 3.3-V LVTTL       :         : 6         : N              
-co_alu128[93]                : W25       : output : 3.3-V LVTTL       :         : 6         : N              
-ins_id[6]                    : W26       : output : 3.3-V LVTTL       :         : 6         : N              
-co_data128[99]               : W27       : output : 3.3-V LVTTL       :         : 6         : N              
-co_alu128[98]                : W28       : output : 3.3-V LVTTL       :         : 6         : N              
-co_alu128[95]                : W29       : output : 3.3-V LVTTL       :         : 6         : N              
-co_alu128[118]               : W30       : output : 3.3-V LVTTL       :         : 6         : N              
-reg_a[14]                    : Y1        : output : 3.3-V LVTTL       :         : 1         : N              
-ins_mem[5]                   : Y2        : output : 3.3-V LVTTL       :         : 1         : N              
-immediate                    : Y3        : output : 3.3-V LVTTL       :         : 1         : N              
-ins_ex[11]                   : Y4        : output : 3.3-V LVTTL       :         : 1         : N              
-co_alu128[115]               : Y5        : output : 3.3-V LVTTL       :         : 1         : N              
-co_data128[60]               : Y6        : output : 3.3-V LVTTL       :         : 1         : N              
-ins_ex[31]                   : Y7        : output : 3.3-V LVTTL       :         : 1         : N              
-co_data128[41]               : Y8        : output : 3.3-V LVTTL       :         : 1         : N              
-co_alu128[12]                : Y9        : output : 3.3-V LVTTL       :         : 1         : N              
-co_alu128[5]                 : Y10       : output : 3.3-V LVTTL       :         : 1         : N              
+alu_result[14]               : W21       : output : 3.3-V LVTTL       :         : 6         : N              
+co_alu128[6]                 : W22       : output : 3.3-V LVTTL       :         : 6         : N              
+co_data128[65]               : W23       : output : 3.3-V LVTTL       :         : 6         : N              
+ins_id[2]                    : W24       : output : 3.3-V LVTTL       :         : 6         : N              
+co_alu128[53]                : W25       : output : 3.3-V LVTTL       :         : 6         : N              
+alu_result[29]               : W26       : output : 3.3-V LVTTL       :         : 6         : N              
+ins_if[0]                    : W27       : output : 3.3-V LVTTL       :         : 6         : N              
+out_wb[24]                   : W28       : output : 3.3-V LVTTL       :         : 6         : N              
+alu_result[16]               : W29       : output : 3.3-V LVTTL       :         : 6         : N              
+co_data128[66]               : W30       : output : 3.3-V LVTTL       :         : 6         : N              
+reg_b[18]                    : Y1        : output : 3.3-V LVTTL       :         : 1         : N              
+reg_a[1]                     : Y2        : output : 3.3-V LVTTL       :         : 1         : N              
+reg_b[22]                    : Y3        : output : 3.3-V LVTTL       :         : 1         : N              
+reg_a[7]                     : Y4        : output : 3.3-V LVTTL       :         : 1         : N              
+ins_id[21]                   : Y5        : output : 3.3-V LVTTL       :         : 1         : N              
+ins_mem[4]                   : Y6        : output : 3.3-V LVTTL       :         : 1         : N              
+reg_b[19]                    : Y7        : output : 3.3-V LVTTL       :         : 1         : N              
+reg_a[21]                    : Y8        : output : 3.3-V LVTTL       :         : 1         : N              
+alu_result[30]               : Y9        : output : 3.3-V LVTTL       :         : 1         : N              
+out_wb[14]                   : Y10       : output : 3.3-V LVTTL       :         : 1         : N              
 VCCIO1                       : Y11       : power  :                   : 3.3V    : 1         :                
 VCCINT                       : Y12       : power  :                   : 1.2V    :           :                
 VCCINT                       : Y13       : power  :                   : 1.2V    :           :                
@@ -958,13 +958,13 @@ VCCINT                       : Y17       : power  :                   : 1.2V    
 VCCINT                       : Y18       : power  :                   : 1.2V    :           :                
 GND                          : Y19       : gnd    :                   :         :           :                
 VCCIO6                       : Y20       : power  :                   : 3.3V    : 6         :                
-co_data128[19]               : Y21       : output : 3.3-V LVTTL       :         : 6         : N              
-co_data128[91]               : Y22       : output : 3.3-V LVTTL       :         : 6         : N              
-co_data128[20]               : Y23       : output : 3.3-V LVTTL       :         : 6         : N              
-co_alu128[116]               : Y24       : output : 3.3-V LVTTL       :         : 6         : N              
-co_data32[3]                 : Y25       : output : 3.3-V LVTTL       :         : 6         : N              
-co_alu128[123]               : Y26       : output : 3.3-V LVTTL       :         : 6         : N              
-co_data128[59]               : Y27       : output : 3.3-V LVTTL       :         : 6         : N              
-co_alu128[91]                : Y28       : output : 3.3-V LVTTL       :         : 6         : N              
-co_alu128[106]               : Y29       : output : 3.3-V LVTTL       :         : 6         : N              
-co_alu128[42]                : Y30       : output : 3.3-V LVTTL       :         : 6         : N              
+alu_result[6]                : Y21       : output : 3.3-V LVTTL       :         : 6         : N              
+co_data128[119]              : Y22       : output : 3.3-V LVTTL       :         : 6         : N              
+co_data128[53]               : Y23       : output : 3.3-V LVTTL       :         : 6         : N              
+co_data128[84]               : Y24       : output : 3.3-V LVTTL       :         : 6         : N              
+ins_id[3]                    : Y25       : output : 3.3-V LVTTL       :         : 6         : N              
+reg_b[2]                     : Y26       : output : 3.3-V LVTTL       :         : 6         : N              
+co_alu128[76]                : Y27       : output : 3.3-V LVTTL       :         : 6         : N              
+pc_count                     : Y28       : output : 3.3-V LVTTL       :         : 6         : N              
+out_wb[3]                    : Y29       : output : 3.3-V LVTTL       :         : 6         : N              
+ins_ex[12]                   : Y30       : output : 3.3-V LVTTL       :         : 6         : N              

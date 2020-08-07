@@ -33861,26 +33861,6 @@ all_one_const_32:inst8|all_one_const_32_lpm_constant_be9:all_one_const_32_lpm_co
 
 # end
 # entity
-reg_selector
-# storage
-db|CPU.(214).cnf
-db|CPU.(214).cnf
-# case_insensitive
-# source_file
-reg_selector.bdf
-3ae48269121bbbdb59abb5d677dab2d
-26
-# internal_option {
-BLOCK_DESIGN_NAMING
-AUTO
-}
-# hierarchies {
-reg_selector:inst19
-}
-# macro_sequence
-
-# end
-# entity
 IF_ID
 # storage
 db|CPU.(131).cnf
@@ -33896,42 +33876,6 @@ AUTO
 }
 # hierarchies {
 IF_ID:inst5
-}
-# macro_sequence
-
-# end
-# entity
-instructions_mem
-# storage
-db|CPU.(139).cnf
-db|CPU.(139).cnf
-# logic_option {
-AUTO_RAM_RECOGNITION
-ON
-}
-# case_sensitive
-# source_file
-instructions_mem.v
-597ad7407178936ad6a879739312365
-8
-# internal_option {
-HDL_INITIAL_FANOUT_LIMIT
-OFF
-AUTO_RESOURCE_SHARING
-OFF
-AUTO_RAM_RECOGNITION
-ON
-AUTO_ROM_RECOGNITION
-ON
-IGNORE_VERILOG_INITIAL_CONSTRUCTS
-OFF
-VERILOG_CONSTANT_LOOP_LIMIT
-5000
-VERILOG_NON_CONSTANT_LOOP_LIMIT
-250
-}
-# hierarchies {
-instructions_mem:inst
 }
 # macro_sequence
 
@@ -34240,6 +34184,142 @@ instructions_mem:inst|altsyncram:altsyncram_component
 
 # end
 # entity
+MEM_WB
+# storage
+db|CPU.(208).cnf
+db|CPU.(208).cnf
+# case_insensitive
+# source_file
+MEM_WB.bdf
+e9224631550a1dc2296106d89a6a225
+26
+# internal_option {
+BLOCK_DESIGN_NAMING
+AUTO
+}
+# hierarchies {
+MEM_WB:inst15
+}
+# macro_sequence
+
+# end
+# entity
+EX_MEM
+# storage
+db|CPU.(506).cnf
+db|CPU.(506).cnf
+# case_insensitive
+# source_file
+EX_MEM.bdf
+a712c2faabf149d6bb39bd4f38991b6
+26
+# internal_option {
+BLOCK_DESIGN_NAMING
+AUTO
+}
+# hierarchies {
+EX_MEM:inst16
+}
+# macro_sequence
+
+# end
+# entity
+ID_EX
+# storage
+db|CPU.(507).cnf
+db|CPU.(507).cnf
+# case_insensitive
+# source_file
+ID_EX.bdf
+8a48f8d22b9959d63172acd2aa3b10e
+26
+# internal_option {
+BLOCK_DESIGN_NAMING
+AUTO
+}
+# hierarchies {
+ID_EX:inst12
+}
+# macro_sequence
+
+# end
+# entity
+instructions_mem
+# storage
+db|CPU.(139).cnf
+db|CPU.(139).cnf
+# logic_option {
+AUTO_RAM_RECOGNITION
+ON
+}
+# case_sensitive
+# source_file
+instructions_mem.v
+597ad7407178936ad6a879739312365
+8
+# internal_option {
+HDL_INITIAL_FANOUT_LIMIT
+OFF
+AUTO_RESOURCE_SHARING
+OFF
+AUTO_RAM_RECOGNITION
+ON
+AUTO_ROM_RECOGNITION
+ON
+IGNORE_VERILOG_INITIAL_CONSTRUCTS
+OFF
+VERILOG_CONSTANT_LOOP_LIMIT
+5000
+VERILOG_NON_CONSTANT_LOOP_LIMIT
+250
+}
+# hierarchies {
+instructions_mem:inst
+}
+# macro_sequence
+
+# end
+# entity
+CPU_pipeline
+# storage
+db|CPU.(132).cnf
+db|CPU.(132).cnf
+# case_insensitive
+# source_file
+CPU_pipeline.bdf
+e188e0d135f0e235c73f2e61caa199a
+26
+# internal_option {
+BLOCK_DESIGN_NAMING
+AUTO
+}
+# hierarchies {
+|
+}
+# macro_sequence
+
+# end
+# entity
+reg_selector
+# storage
+db|CPU.(214).cnf
+db|CPU.(214).cnf
+# case_insensitive
+# source_file
+reg_selector.bdf
+79b64122d787967b4239adc48f135c
+26
+# internal_option {
+BLOCK_DESIGN_NAMING
+AUTO
+}
+# hierarchies {
+reg_selector:inst19
+}
+# macro_sequence
+
+# end
+# entity
 altsyncram_qs81
 # storage
 db|CPU.(172).cnf
@@ -34379,90 +34459,10 @@ address_a0
 }
 # memory_file {
 ins_load2.mif
-69e7f4b1cdd367b6ac42ab809246a3
+6e36e08b60ce97e54ae233fb09829b
 }
 # hierarchies {
 instructions_mem:inst|altsyncram:altsyncram_component|altsyncram_qs81:auto_generated
-}
-# macro_sequence
-
-# end
-# entity
-MEM_WB
-# storage
-db|CPU.(208).cnf
-db|CPU.(208).cnf
-# case_insensitive
-# source_file
-MEM_WB.bdf
-e9224631550a1dc2296106d89a6a225
-26
-# internal_option {
-BLOCK_DESIGN_NAMING
-AUTO
-}
-# hierarchies {
-MEM_WB:inst15
-}
-# macro_sequence
-
-# end
-# entity
-EX_MEM
-# storage
-db|CPU.(506).cnf
-db|CPU.(506).cnf
-# case_insensitive
-# source_file
-EX_MEM.bdf
-a712c2faabf149d6bb39bd4f38991b6
-26
-# internal_option {
-BLOCK_DESIGN_NAMING
-AUTO
-}
-# hierarchies {
-EX_MEM:inst16
-}
-# macro_sequence
-
-# end
-# entity
-ID_EX
-# storage
-db|CPU.(507).cnf
-db|CPU.(507).cnf
-# case_insensitive
-# source_file
-ID_EX.bdf
-8a48f8d22b9959d63172acd2aa3b10e
-26
-# internal_option {
-BLOCK_DESIGN_NAMING
-AUTO
-}
-# hierarchies {
-ID_EX:inst12
-}
-# macro_sequence
-
-# end
-# entity
-CPU_pipeline
-# storage
-db|CPU.(132).cnf
-db|CPU.(132).cnf
-# case_insensitive
-# source_file
-CPU_pipeline.bdf
-8ba4cb5dc04e6b3475f51ce4ebab7
-26
-# internal_option {
-BLOCK_DESIGN_NAMING
-AUTO
-}
-# hierarchies {
-|
 }
 # macro_sequence
 

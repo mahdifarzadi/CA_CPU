@@ -18878,4 +18878,20 @@ VECTOR("F:/dev/CR_CPU/db/CPU.sim.cvwf")
 		VISIBLE = Y;
 		FLAG = N;
 	}
+	LINE{
+		SIGNAL = "load_mem";
+		INDEX = 587;
+		FORMAT = E;
+		SCALE = 1;
+		VISIBLE = Y;
+		FLAG = N;
+	}
+	LINE{
+		SIGNAL = "load_wb";
+		INDEX = 588;
+		FORMAT = E;
+		SCALE = 1;
+		VISIBLE = Y;
+		FLAG = N;
+	}
 }

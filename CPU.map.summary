@@ -1,13 +1,13 @@
-Analysis & Synthesis Status : Successful - Sat Aug 08 02:07:08 2020
+Analysis & Synthesis Status : Successful - Sat Aug 08 03:32:27 2020
 Quartus II Version : 9.0 Build 132 02/25/2009 SJ Web Edition
 Revision Name : CPU
 Top-level Entity Name : CPU_pipeline
 Family : Cyclone II
-Total logic elements : 14,838
-    Total combinational functions : 14,282
+Total logic elements : 14,785
+    Total combinational functions : 14,268
     Dedicated logic registers : 835
 Total registers : 835
-Total pins : 575
+Total pins : 577
 Total virtual pins : 0
 Total memory bits : 19,489
 Embedded Multiplier 9-bit elements : 52
