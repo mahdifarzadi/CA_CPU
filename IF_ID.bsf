@@ -194,9 +194,16 @@ applicable agreement for further details.
 	(port
 		(pt 240 304)
 		(output)
+		(text "load" (rect 0 0 23 14)(font "Arial" (font_size 8)))
+		(text "load" (rect 196 299 219 313)(font "Arial" (font_size 8)))
+		(line (pt 240 304)(pt 224 304)(line_width 1))
+	)
+	(port
+		(pt 240 320)
+		(output)
 		(text "pc_out[7..0]" (rect 0 0 67 14)(font "Arial" (font_size 8)))
-		(text "pc_out[7..0]" (rect 152 299 219 313)(font "Arial" (font_size 8)))
-		(line (pt 240 304)(pt 224 304)(line_width 3))
+		(text "pc_out[7..0]" (rect 152 315 219 329)(font "Arial" (font_size 8)))
+		(line (pt 240 320)(pt 224 320)(line_width 3))
 	)
 	(drawing
 		(rectangle (rect 16 16 224 336)(line_width 1))

@@ -54,9 +54,16 @@ applicable agreement for further details.
 	(port
 		(pt 0 96)
 		(input)
-		(text "clock" (rect 0 0 29 14)(font "Arial" (font_size 8)))
-		(text "clock" (rect 21 91 50 105)(font "Arial" (font_size 8)))
+		(text "load_in" (rect 0 0 40 14)(font "Arial" (font_size 8)))
+		(text "load_in" (rect 21 91 61 105)(font "Arial" (font_size 8)))
 		(line (pt 0 96)(pt 16 96)(line_width 1))
+	)
+	(port
+		(pt 0 112)
+		(input)
+		(text "clock" (rect 0 0 29 14)(font "Arial" (font_size 8)))
+		(text "clock" (rect 21 107 50 121)(font "Arial" (font_size 8)))
+		(line (pt 0 112)(pt 16 112)(line_width 1))
 	)
 	(port
 		(pt 272 32)
@@ -99,6 +106,13 @@ applicable agreement for further details.
 		(text "reg_wr_en_wb" (rect 0 0 89 14)(font "Arial" (font_size 8)))
 		(text "reg_wr_en_wb" (rect 162 107 251 121)(font "Arial" (font_size 8)))
 		(line (pt 272 112)(pt 256 112)(line_width 1))
+	)
+	(port
+		(pt 272 128)
+		(output)
+		(text "load_out" (rect 0 0 48 14)(font "Arial" (font_size 8)))
+		(text "load_out" (rect 203 123 251 137)(font "Arial" (font_size 8)))
+		(line (pt 272 128)(pt 256 128)(line_width 1))
 	)
 	(drawing
 		(rectangle (rect 16 16 256 144)(line_width 1))

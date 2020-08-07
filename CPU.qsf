@@ -83,7 +83,7 @@ set_global_assignment -name MISC_FILE "F:/dev/CR_CPU/CPU.dpf"
 # Analysis & Synthesis Assignments
 # ================================
 set_global_assignment -name FAMILY "Cyclone II"
-set_global_assignment -name TOP_LEVEL_ENTITY reg_selector
+set_global_assignment -name TOP_LEVEL_ENTITY CPU_pipeline
 
 # Fitter Assignments
 # ==================
