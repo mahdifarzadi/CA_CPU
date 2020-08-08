@@ -14044,7 +14044,7 @@ VECTOR("F:/dev/CR_CPU/CPU.vwf")
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "mem_rd_en";
+		SIGNAL = "load1";
 		INDEX = 572;
 		FORMAT = E;
 		SCALE = 1;
@@ -14052,7 +14052,7 @@ VECTOR("F:/dev/CR_CPU/CPU.vwf")
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "mem_word";
+		SIGNAL = "load2";
 		INDEX = 573;
 		FORMAT = E;
 		SCALE = 1;
@@ -14060,7 +14060,7 @@ VECTOR("F:/dev/CR_CPU/CPU.vwf")
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "mem_wr_en";
+		SIGNAL = "mem_rd_en";
 		INDEX = 574;
 		FORMAT = E;
 		SCALE = 1;
@@ -14068,7 +14068,7 @@ VECTOR("F:/dev/CR_CPU/CPU.vwf")
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "pc_count";
+		SIGNAL = "mem_word";
 		INDEX = 575;
 		FORMAT = E;
 		SCALE = 1;
@@ -14076,7 +14076,7 @@ VECTOR("F:/dev/CR_CPU/CPU.vwf")
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "pc_load";
+		SIGNAL = "mem_wr_en";
 		INDEX = 576;
 		FORMAT = E;
 		SCALE = 1;
@@ -14084,7 +14084,7 @@ VECTOR("F:/dev/CR_CPU/CPU.vwf")
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "reg_16bit";
+		SIGNAL = "pc_count";
 		INDEX = 577;
 		FORMAT = E;
 		SCALE = 1;
@@ -14092,7 +14092,7 @@ VECTOR("F:/dev/CR_CPU/CPU.vwf")
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "reg_ldi";
+		SIGNAL = "pc_load";
 		INDEX = 578;
 		FORMAT = E;
 		SCALE = 1;
@@ -14100,7 +14100,7 @@ VECTOR("F:/dev/CR_CPU/CPU.vwf")
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "reg_lui";
+		SIGNAL = "reg_16bit";
 		INDEX = 579;
 		FORMAT = E;
 		SCALE = 1;
@@ -14108,7 +14108,7 @@ VECTOR("F:/dev/CR_CPU/CPU.vwf")
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "reg_rd_en_a";
+		SIGNAL = "reg_ldi";
 		INDEX = 580;
 		FORMAT = E;
 		SCALE = 1;
@@ -14116,7 +14116,7 @@ VECTOR("F:/dev/CR_CPU/CPU.vwf")
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "reg_rd_en_b";
+		SIGNAL = "reg_lui";
 		INDEX = 581;
 		FORMAT = E;
 		SCALE = 1;
@@ -14124,7 +14124,7 @@ VECTOR("F:/dev/CR_CPU/CPU.vwf")
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "reg_word";
+		SIGNAL = "reg_rd_en_a";
 		INDEX = 582;
 		FORMAT = E;
 		SCALE = 1;
@@ -14132,7 +14132,7 @@ VECTOR("F:/dev/CR_CPU/CPU.vwf")
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "reg_wr_en_id";
+		SIGNAL = "reg_rd_en_b";
 		INDEX = 583;
 		FORMAT = E;
 		SCALE = 1;
@@ -14140,7 +14140,7 @@ VECTOR("F:/dev/CR_CPU/CPU.vwf")
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "reg_wr_en_wb";
+		SIGNAL = "reg_word";
 		INDEX = 584;
 		FORMAT = E;
 		SCALE = 1;
@@ -14148,7 +14148,7 @@ VECTOR("F:/dev/CR_CPU/CPU.vwf")
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "sel_mem_rd";
+		SIGNAL = "reg_wr_en_id";
 		INDEX = 585;
 		FORMAT = E;
 		SCALE = 1;
@@ -14156,8 +14156,24 @@ VECTOR("F:/dev/CR_CPU/CPU.vwf")
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "sel_mem_wr";
+		SIGNAL = "reg_wr_en_wb";
 		INDEX = 586;
+		FORMAT = E;
+		SCALE = 1;
+		VISIBLE = Y;
+		FLAG = N;
+	}
+	LINE{
+		SIGNAL = "sel_mem_rd";
+		INDEX = 587;
+		FORMAT = E;
+		SCALE = 1;
+		VISIBLE = Y;
+		FLAG = N;
+	}
+	LINE{
+		SIGNAL = "sel_mem_wr";
+		INDEX = 588;
 		FORMAT = E;
 		SCALE = 1;
 		VISIBLE = Y;

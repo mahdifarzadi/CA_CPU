@@ -2,22 +2,42 @@
 Timing Analyzer Summary
 --------------------------------------------------------------------------------------
 
+Type           : Worst-case tsu
+Slack          : N/A
+Required Time  : None
+Actual Time    : -3.658 ns
+From           : clock
+To             : MEM_WB:inst15|D_FF_1:inst3|lpm_ff:lpm_ff_component|dffs[0]
+From Clock     : --
+To Clock       : clock
+Failed Paths   : 0
+
 Type           : Worst-case tco
 Slack          : N/A
 Required Time  : None
-Actual Time    : 149.225 ns
-From           : CO:inst17|CO_ID_EX:inst8|D_FF_128:inst2|lpm_ff:lpm_ff_component|dffs[33]~_Duplicate_3
-To             : co_alu128[50]
+Actual Time    : 149.094 ns
+From           : MEM_WB:inst15|D_FF_32:inst|lpm_ff:lpm_ff_component|dffs[25]
+To             : alu_result[31]
 From Clock     : clock
 To Clock       : --
+Failed Paths   : 0
+
+Type           : Worst-case th
+Slack          : N/A
+Required Time  : None
+Actual Time    : 3.888 ns
+From           : clock
+To             : MEM_WB:inst15|D_FF_1:inst3|lpm_ff:lpm_ff_component|dffs[0]
+From Clock     : --
+To Clock       : clock
 Failed Paths   : 0
 
 Type           : Clock Setup: 'clock'
 Slack          : N/A
 Required Time  : None
-Actual Time    : 7.15 MHz ( period = 139.869 ns )
-From           : CO:inst17|CO_ID_EX:inst8|D_FF_128:inst2|lpm_ff:lpm_ff_component|dffs[97]~_Duplicate_1
-To             : CO:inst17|CO_EX_WB:inst3|D_FF_128:inst1|lpm_ff:lpm_ff_component|dffs[113]
+Actual Time    : 7.07 MHz ( period = 141.350 ns )
+From           : MEM_WB:inst15|D_FF_32:inst|lpm_ff:lpm_ff_component|dffs[25]
+To             : EX_MEM:inst16|D_FF_32:inst|lpm_ff:lpm_ff_component|dffs[31]
 From Clock     : clock
 To Clock       : clock
 Failed Paths   : 0
@@ -32,6 +52,16 @@ From Clock     : clock_reg
 To Clock       : clock_reg
 Failed Paths   : 0
 
+Type           : Clock Hold: 'clock'
+Slack          : Not operational: Clock Skew > Data Delay
+Required Time  : None
+Actual Time    : N/A
+From           : EX_MEM:inst16|D_FF_32:inst|lpm_ff:lpm_ff_component|dffs[18]
+To             : MEM_WB:inst15|D_FF_32:inst1|lpm_ff:lpm_ff_component|dffs[18]
+From Clock     : clock
+To Clock       : clock
+Failed Paths   : 567
+
 Type           : Total number of failed paths
 Slack          : 
 Required Time  : 
@@ -40,7 +70,7 @@ From           :
 To             : 
 From Clock     : 
 To Clock       : 
-Failed Paths   : 0
+Failed Paths   : 567
 
 --------------------------------------------------------------------------------------
 

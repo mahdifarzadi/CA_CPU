@@ -21,7 +21,7 @@
 		<CBX_INST_ENTRY INSTANCE_NAME="|CPU_pipeline|CO:inst17|CO_ALU:inst|Polynomial_AT_CONS:inst7|MUL_32:inst10|lpm_mult:lpm_mult_component" CBX_FILE_NAME="mult_v3n.tdf"/>
 		<CBX_INST_ENTRY INSTANCE_NAME="|CPU_pipeline|CO:inst17|CO_ALU:inst|derivitivePolynomial:inst6|MUL_0_P:inst21|lpm_mult:lpm_mult_component" CBX_FILE_NAME="mult_9qp.tdf"/>
 		<CBX_INST_ENTRY INSTANCE_NAME="|CPU_pipeline|CO:inst17|CO_IF_ID:inst6|sign_extend_16to32:inst7|zero_const:inst2|lpm_constant:lpm_constant_component" CBX_FILE_NAME="lpm_constant_9k6.tdf"/>
-		<CBX_INST_ENTRY INSTANCE_NAME="|CPU_pipeline|IF_ID:inst5|D_FF_3:inst5|lpm_ff:lpm_ff_component|altshift_taps:dffs_rtl_0" CBX_FILE_NAME="shift_taps_l1m.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|CPU_pipeline|IF_ID:inst5|D_FF_3:inst5|lpm_ff:lpm_ff_component|altshift_taps:dffs_rtl_0" CBX_FILE_NAME="shift_taps_m1m.tdf"/>
 		<CBX_INST_ENTRY INSTANCE_NAME="|CPU_pipeline|reg_selector:inst19|comp_5bit:inst5|lpm_compare:lpm_compare_component" CBX_FILE_NAME="cmpr_ahg.tdf"/>
 		<CBX_INST_ENTRY INSTANCE_NAME="|CPU_pipeline|registers_mem:inst9|regs3_8bit:inst18|alt3pram:alt3pram_component|altdpram:altdpram_component1" CBX_FILE_NAME="dpram_lmj1.tdf"/>
 		<CBX_INST_ENTRY INSTANCE_NAME="|CPU_pipeline|CO:inst17|CO_ALU:inst|Polynomial_AT_CONS:inst7|MUL_32:inst10|lpm_mult:lpm_mult_component|mult_v3n:auto_generated|alt_mac_out:mac_out6" CBX_FILE_NAME="mac_out_8n82.tdf"/>
@@ -52,11 +52,13 @@
 		<CBX_INST_ENTRY INSTANCE_NAME="|CPU_pipeline|registers_mem:inst9|regs_8bit:inst4|alt3pram:alt3pram_component|altdpram:altdpram_component1" CBX_FILE_NAME="dpram_dil1.tdf"/>
 		<CBX_INST_ENTRY INSTANCE_NAME="|CPU_pipeline|main_mem:inst7|main_mem4_8bit:inst3|altsyncram:altsyncram_component" CBX_FILE_NAME="altsyncram_3qr1.tdf"/>
 		<CBX_INST_ENTRY INSTANCE_NAME="|CPU_pipeline|registers_mem:inst9|regs_8bit:inst4|alt3pram:alt3pram_component|altdpram:altdpram_component2" CBX_FILE_NAME="dpram_dil1.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|CPU_pipeline|MEM_WB:inst15|sign_extend_16to32:inst4|zero_const:inst2|lpm_constant:lpm_constant_component" CBX_FILE_NAME="lpm_constant_9k6.tdf"/>
 		<CBX_INST_ENTRY INSTANCE_NAME="|CPU_pipeline|main_mem:inst7|mux21_5bit:inst27|lpm_mux:lpm_mux_component" CBX_FILE_NAME="mux_pmc.tdf"/>
 		<CBX_INST_ENTRY INSTANCE_NAME="|CPU_pipeline|main_mem:inst7|mux21_8bit:inst42|lpm_mux:lpm_mux_component" CBX_FILE_NAME="mux_smc.tdf"/>
 		<CBX_INST_ENTRY INSTANCE_NAME="|CPU_pipeline|CO:inst17|CO_ALU:inst|AdderPolynomial:inst|ADDER_32:inst16|lpm_add_sub:lpm_add_sub_component" CBX_FILE_NAME="add_sub_lcg.tdf"/>
 		<CBX_INST_ENTRY INSTANCE_NAME="|CPU_pipeline|CO:inst17|CO_ALU:inst|DevidorPolynomial:inst2|divide0:inst1|lpm_divide:lpm_divide_component" CBX_FILE_NAME="lpm_divide_46s.tdf"/>
 		<CBX_INST_ENTRY INSTANCE_NAME="|CPU_pipeline|CO:inst17|CO_ALU:inst|derivitivePolynomial:inst6|MUL_1_P:inst20|lpm_mult:lpm_mult_component|mult_6jp:auto_generated|alt_mac_mult:mac_mult3" CBX_FILE_NAME="mac_mult_pvg1.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|CPU_pipeline|mux21_gate:mem_wr2|lpm_mux:lpm_mux_component" CBX_FILE_NAME="mux_9oc.tdf"/>
 		<CBX_INST_ENTRY INSTANCE_NAME="|CPU_pipeline|CO:inst17|CO_ALU:inst|DevidorPolynomial:inst2|divide0:inst2|lpm_divide:lpm_divide_component" CBX_FILE_NAME="lpm_divide_46s.tdf"/>
 		<CBX_INST_ENTRY INSTANCE_NAME="|CPU_pipeline|CO:inst17|CO_IF_ID:inst6|sign_extend_16to32:inst7|all_one_const:inst4|lpm_constant:lpm_constant_component" CBX_FILE_NAME="lpm_constant_1r6.tdf"/>
 		<CBX_INST_ENTRY INSTANCE_NAME="|CPU_pipeline|main_mem:inst7|mux21_8bit:inst44|lpm_mux:lpm_mux_component" CBX_FILE_NAME="mux_smc.tdf"/>
@@ -70,8 +72,6 @@
 		<CBX_INST_ENTRY INSTANCE_NAME="|CPU_pipeline|CO:inst17|CO_EX_WB:inst3|sign_extend_16to32:inst3|all_one_const:inst4|lpm_constant:lpm_constant_component" CBX_FILE_NAME="lpm_constant_1r6.tdf"/>
 		<CBX_INST_ENTRY INSTANCE_NAME="|CPU_pipeline|CO:inst17|co_registers_mem:inst1|mux21_32bit:inst11|lpm_mux:lpm_mux_component" CBX_FILE_NAME="mux_9oc.tdf"/>
 		<CBX_INST_ENTRY INSTANCE_NAME="|CPU_pipeline|immediate_sel:inst4|sign_extend_16to32:inst|zero_const:inst2|lpm_constant:lpm_constant_component" CBX_FILE_NAME="lpm_constant_9k6.tdf"/>
-		<CBX_INST_ENTRY INSTANCE_NAME="|CPU_pipeline|ALU:inst13|mult:inst1|lpm_mult:lpm_mult_component" CBX_FILE_NAME="mult_34n.tdf"/>
-		<CBX_INST_ENTRY INSTANCE_NAME="|CPU_pipeline|CO:inst17|CO_ALU:inst|Polynomial_AT_CONS:inst7|MUL_32:inst1|lpm_mult:lpm_mult_component" CBX_FILE_NAME="mult_v3n.tdf"/>
 		<CBX_INST_ENTRY INSTANCE_NAME="|CPU_pipeline|CO:inst17|CO_ALU:inst|derivitivePolynomial:inst6|MUL_1_P:inst20|lpm_mult:lpm_mult_component" CBX_FILE_NAME="mult_6jp.tdf"/>
 		<CBX_INST_ENTRY INSTANCE_NAME="|CPU_pipeline|CO:inst17|co_registers_mem:inst1|co_reg_mem:inst1|alt3pram:alt3pram_component|altdpram:altdpram_component1|altsyncram:ram_block" CBX_FILE_NAME="altsyncram_ibr1.tdf"/>
 		<CBX_INST_ENTRY INSTANCE_NAME="|CPU_pipeline|CO:inst17|co_registers_mem:inst1|co_reg_mem:inst|alt3pram:alt3pram_component|altdpram:altdpram_component2|altsyncram:ram_block" CBX_FILE_NAME="altsyncram_ibr1.tdf"/>
@@ -110,6 +110,7 @@
 		<CBX_INST_ENTRY INSTANCE_NAME="|CPU_pipeline|CO:inst17|CO_ALU:inst|Polynomial_AT_CONS:inst7|MUL_32:inst10|lpm_mult:lpm_mult_component|mult_v3n:auto_generated|alt_mac_mult:mac_mult7" CBX_FILE_NAME="mac_mult_45h1.tdf"/>
 		<CBX_INST_ENTRY INSTANCE_NAME="|CPU_pipeline|CO:inst17|CO_ALU:inst|derivitivePolynomial:inst6|MUL_3_P:inst18|lpm_mult:lpm_mult_component|mult_6jp:auto_generated|alt_mac_mult:mac_mult5" CBX_FILE_NAME="mac_mult_qvg1.tdf"/>
 		<CBX_INST_ENTRY INSTANCE_NAME="|CPU_pipeline|CO:inst17|co_registers_mem:inst1|dec24:inst12|lpm_decode:lpm_decode_component" CBX_FILE_NAME="decode_uqf.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|CPU_pipeline|MEM_WB:inst15|sign_extend_16to32:inst4|all_one_const:inst4|lpm_constant:lpm_constant_component" CBX_FILE_NAME="lpm_constant_1r6.tdf"/>
 		<CBX_INST_ENTRY INSTANCE_NAME="|CPU_pipeline|reg_selector:inst19|sign_extend_16to32:inst9|all_one_const:inst4|lpm_constant:lpm_constant_component" CBX_FILE_NAME="lpm_constant_1r6.tdf"/>
 		<CBX_INST_ENTRY INSTANCE_NAME="|CPU_pipeline|registers_mem:inst9|regs_8bit:inst4|alt3pram:alt3pram_component|altdpram:altdpram_component1|altsyncram:ram_block" CBX_FILE_NAME="altsyncram_o8r1.tdf"/>
 		<CBX_INST_ENTRY INSTANCE_NAME="|CPU_pipeline|ALU:inst13|adder:inst19|lpm_add_sub:lpm_add_sub_component" CBX_FILE_NAME="add_sub_5qi.tdf"/>
@@ -141,6 +142,7 @@
 		<CBX_INST_ENTRY INSTANCE_NAME="|CPU_pipeline|registers_mem:inst9|regs2_8bit:inst17|alt3pram:alt3pram_component|altdpram:altdpram_component2|altsyncram:ram_block" CBX_FILE_NAME="altsyncram_0dp1.tdf"/>
 		<CBX_INST_ENTRY INSTANCE_NAME="|CPU_pipeline|registers_mem:inst9|regs2_8bit:inst17|alt3pram:alt3pram_component|altdpram:altdpram_component1" CBX_FILE_NAME="dpram_lmj1.tdf"/>
 		<CBX_INST_ENTRY INSTANCE_NAME="|CPU_pipeline|ALU:inst13|shift_left:inst22|lpm_clshift:lpm_clshift_component" CBX_FILE_NAME="lpm_clshift_nrd.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|CPU_pipeline|MEM_WB:inst15|sign_extend_16to32:inst4|mux21:inst|lpm_mux:lpm_mux_component" CBX_FILE_NAME="mux_boc.tdf"/>
 		<CBX_INST_ENTRY INSTANCE_NAME="|CPU_pipeline|registers_mem:inst9|regs2_8bit:inst17|alt3pram:alt3pram_component|altdpram:altdpram_component2" CBX_FILE_NAME="dpram_lmj1.tdf"/>
 		<CBX_INST_ENTRY INSTANCE_NAME="|CPU_pipeline|registers_mem:inst9|regs3_8bit:inst18|alt3pram:alt3pram_component|altdpram:altdpram_component2|altsyncram:ram_block" CBX_FILE_NAME="altsyncram_0dp1.tdf"/>
 		<CBX_INST_ENTRY INSTANCE_NAME="|CPU_pipeline|ALU:inst13|mux21_gate:min|lpm_mux:lpm_mux_component" CBX_FILE_NAME="mux_9oc.tdf"/>
@@ -215,5 +217,7 @@
 		<CBX_INST_ENTRY INSTANCE_NAME="|CPU_pipeline|CO:inst17|CO_ALU:inst|Polynomial_AT_CONS:inst7|MUL_32:inst9|lpm_mult:lpm_mult_component|mult_v3n:auto_generated|alt_mac_mult:mac_mult7" CBX_FILE_NAME="mac_mult_45h1.tdf"/>
 		<CBX_INST_ENTRY INSTANCE_NAME="|CPU_pipeline|CO:inst17|co_registers_mem:inst1|mux21_32bit:inst10|lpm_mux:lpm_mux_component" CBX_FILE_NAME="mux_9oc.tdf"/>
 		<CBX_INST_ENTRY INSTANCE_NAME="|CPU_pipeline|CO:inst17|CO_ALU:inst|Polynomial_AT_CONS:inst7|MUL_32:inst|lpm_mult:lpm_mult_component" CBX_FILE_NAME="mult_v3n.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|CPU_pipeline|ALU:inst13|mult:inst1|lpm_mult:lpm_mult_component" CBX_FILE_NAME="mult_34n.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|CPU_pipeline|CO:inst17|CO_ALU:inst|Polynomial_AT_CONS:inst7|MUL_32:inst1|lpm_mult:lpm_mult_component" CBX_FILE_NAME="mult_v3n.tdf"/>
 	</PROJECT>
 </LOG_ROOT>
